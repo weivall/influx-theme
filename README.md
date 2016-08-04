@@ -3,11 +3,17 @@
 This is the official theme used to build the UI of our web applications. As the theme is used within each application new components & tools are added, and older components are upgraded. [alexpaxton](https://github.com/alexpaxton) will be managing the changelog and direction of the project.
 The goal of the project is to expedite the development of our products' interfaces, as well as maintaining a clear and consistent design language across all user touchpoints. Since there are not styles in the theme for *every* standard component, the primary goal is to have something in the theme for them all. Other goals include finishing documentation for everything currently lacking.
 
-### Theme Docs
+## Theme Docs
 
 Currently working on writing more complete docs for each component, standard and custom. My goal is to not only show how to implement the component, but also shed some light on the design theory behind it. This will hopefully empower whoever is building the UI to make more independent decisions about the design and be effective in doing so.
 
-### Next Release v0.11
+Theme | Notes
+--- | ---
+[Official Theme](http://influxdata.github.io/design.influxdata.com/bootstrap-theme/index.html) | Primary theme used by Influx applications
+[Dark Theme](http://influxdata.github.io/design.influxdata.com/bootstrap-theme/dark-theme.html) | In pretty rough shape, don't think any appplications use this theme currently. Long term goal is to integrate the dark styles into the *Primary Theme*
+[Corporate Website Theme](http://influxdata.github.io/design.influxdata.com/bootstrap-theme/web-theme.html) | Only used on the new `www.influxdata.com` website. Documentation is near non-existant, theme changes often.
+
+## Next Release v0.11
 
 - A veriety of tab styles to theme and extend Bootstrap's `Nav` component. Needed these for a long time
 - Polishing code styles, still a little rough
