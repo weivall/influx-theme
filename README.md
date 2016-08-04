@@ -3,15 +3,50 @@
 This is the official theme used to build the UI of our web applications. As the theme is used within each application new components & tools are added, and older components are upgraded. [alexpaxton](https://github.com/alexpaxton) will be managing the changelog and direction of the project.
 The goal of the project is to expedite the development of our products' interfaces, as well as maintaining a clear and consistent design language across all user touchpoints. Since there are not styles in the theme for *every* standard component, the primary goal is to have something in the theme for them all. Other goals include finishing documentation for everything currently lacking.
 
+
+## How to Use
+
+This theme uses a custom icon font instead of the default `Glyphicons` that comes with Bootstrap, you will need to include the font files in your project. Once you have copied the files to your project open `bootstrap-theme.min.css` and locate `../fonts` and replace with the correct path.
+
+**CSS**
+```
+/dist/css/bootstrap.min.css
+/dist/css/bootstrap-theme.min.css
+/dist/css/bootstrap-theme.min.css.map
+/jquery-ui/jquery-ui.css (Only if using Slider component)
+````
+**Javascript**
+```
+/dist/js/bootstrap.min.js
+/jquery-ui/jquery-ui.min.js (Only if using Slider component)
+```
+**Fonts**
+```
+/fonts/icomoon.eot
+/fonts/icomoon.svg
+/fonts/icomoon.ttf
+/fonts/icomoon.woff
+/fonts/icomoon.woff2
+```
+
 ## Theme Docs
 
 Currently working on writing more complete docs for each component, standard and custom. My goal is to not only show how to implement the component, but also shed some light on the design theory behind it. This will hopefully empower whoever is building the UI to make more independent decisions about the design and be effective in doing so.
 
-Theme | Notes
---- | ---
-[Official Theme](http://influxdata.github.io/design.influxdata.com/bootstrap-theme/index.html) | Primary theme used by Influx applications
-[Dark Theme](http://influxdata.github.io/design.influxdata.com/bootstrap-theme/dark-theme.html) | In pretty rough shape, don't think any appplications use this theme currently. Long term goal is to integrate the dark styles into the *Primary Theme*
-[Corporate Website Theme](http://influxdata.github.io/design.influxdata.com/bootstrap-theme/web-theme.html) | Only used on the new `www.influxdata.com` website. Documentation is near non-existant, theme changes often.
+| Theme | Notes |
+|:--- |:--- |
+[Official Theme](http://influxdata.github.io/design.influxdata.com/bootstrap-theme/index.html) | Primary theme used by Influx applications |
+[Dark Theme](http://influxdata.github.io/design.influxdata.com/bootstrap-theme/dark-theme.html) | In pretty rough shape, don't think any appplications use this theme currently. Long term goal is to integrate the dark styles into the *Primary Theme* |
+[Corporate Website Theme](http://influxdata.github.io/design.influxdata.com/bootstrap-theme/web-theme.html) | Only used on the new `www.influxdata.com` website. Documentation is near non-existant, theme changes often. |
+
+### Basic Layout
+
+There is one main decision to consider: to make the navbar `fixed` or not. As a general rule use a `fixed` navbar when the content is likely to overflow the viewport (which is almost all cases). Having a fixed navbar contributes to the UI feeling like software and not just a website. Below are some boilerplate HTML files to help get you started:
+
+- [Fixed Navbar (Light)](/boilerplate/fixed-nav-light/index.html)
+- [Fixed Navbar (Dark)](/boilerplate/fixed-nav-dark/index.html)
+- [Default Navbar (Light)](/boilerplate/default-nav-light/index.html)
+- [Default Navbar (Dark)](/boilerplate/default-nav-light/index.html)
 
 ## Next Release v0.11
 
