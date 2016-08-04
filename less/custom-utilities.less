@@ -1,0 +1,88 @@
+//
+// Gradient Mixin
+// --------------------------------------------------
+
+.gradient-h(@color1,@color2) {
+	background: @color1;
+	background: -moz-linear-gradient(left,  @color1 0%, @color2 100%);
+	background: -webkit-linear-gradient(left,  @color1 0%,@color2 100%);
+	background: linear-gradient(to right,  @color1 0%,@color2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color1', endColorstr='@color2',GradientType=1 );
+}
+.gradient-v(@color1,@color2) {
+	background: @color1;
+	background: -moz-linear-gradient(top,  @color1 0%, @color2 100%);
+	background: -webkit-linear-gradient(top,  @color1 0%,@color2 100%);
+	background: linear-gradient(to bottom,  @color1 0%,@color2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color1', endColorstr='@color2',GradientType=0 );
+}
+
+//
+// Flexbox Utilities
+// --------------------------------------------------
+
+.u-flex {
+	display: flex;
+	flex-wrap: wrap;
+
+	&.u-jc-flex-start { justify-content: flex-start; }
+	&.u-jc-flex-end { justify-content: flex-end; }
+	&.u-jc-center { justify-content: center; }
+	&.u-jc-space-between { justify-content: space-between; }
+	&.u-jc-space-around { justify-content: space-around; }
+
+	&.u-ai-flex-start { align-items: flex-start; }
+	&.u-ai-flex-end { align-items: flex-end; }
+	&.u-ai-center { align-items: center; }
+	&.u-ai-stretch { align-items: stretch; }
+	&.u-ai-baseline { align-items: baseline; }
+
+	&.u-ac-flex-start { align-content: flex-start; }
+	&.u-ac-flex-end { align-content: flex-end; }
+	&.u-ac-center { align-content: center; }
+	&.u-ac-stretch { align-content: stretch; }
+	&.u-ac-space-between { align-content: space-between; }
+	&.u-ac-space-around { align-content: space-around; }
+}
+
+//
+// Misc. Utilities
+// --------------------------------------------------
+
+.margin-bottom-zero {
+	margin-bottom: 0 !important;
+}
+.margin-top-zero {
+	margin-top: 0 !important;
+}
+
+//
+// Custom Scrollbar Mixin
+// --------------------------------------------------
+.custom-scrollbar(@track,@thumb) {
+	&::-webkit-scrollbar {
+		width: 14px;
+		height: 14px;
+
+		&-button {
+		  background-color: @track;
+		}
+		&-track {
+		  background-color: @track;
+		}
+		&-track-piece {
+		  background: @track;
+		}
+		&-thumb {
+		  background-color: @thumb;
+		  border: 4px solid @track;
+		  border-radius: 7px;
+		}
+		&-corner {
+		  background-color: @track;
+		}
+		&-resizer {
+		  background-color: @thumb;
+		}
+	}
+}

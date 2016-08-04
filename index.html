@@ -1,0 +1,3323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,700,900,700italic' rel='stylesheet' type='text/css'>
+    <link href="favicon-light.png" rel="shortcut icon" type="image/x-icon">
+
+    <title>Light | Influx Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery UI CSS -->
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="dist/css/bootstrap-theme.css" rel="stylesheet">
+
+
+  </head>
+
+  <body class="fixed-nav-offset">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand"><span style="font-size:24px;position: relative;top:-3px;" class="icon cubo"></span></span>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Standard <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Components</li>
+                <li><a href="#section-jumbotron">Jumbotron</a></li>
+                <li><a href="#section-typography">Typography</a></li>
+                <li><a href="#section-labels">Labels</a></li>
+                <li><a href="#section-buttons">Buttons</a></li>
+                <li><a href="#section-buttongroups">Button Groups</a></li>
+                <li><a href="#section-modals">Modals</a></li>
+                <li><a href="#section-forms">Forms</a></li>
+                <li><a href="#section-tables">Tables</a></li>
+                <li><a href="#section-panels">Panels</a></li>
+                <li><a href="#section-badges">Badges</a></li>
+                <li><a href="#section-tooltips">Tooltips</a></li>
+                <li><a href="#section-dropdowns">Dropdowns</a></li>
+                <li><a href="#section-navs">Navs</a></li>
+                <li><a href="#section-navbars">Navbars</a></li>
+                <li><a href="#section-alerts">Alerts</a></li>
+                <li><a href="#section-progressbars">Progress Bars</a></li>
+                <li><a href="#section-listgroups">List Groups</a></li>
+                <li><a href="#section-wells">Wells</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Custom <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Components</li>
+                <li><a href="#section-minimalpanels">Minimal Panels</a></li>
+                <li><a href="#section-collapsiblepanels">Collapsible Panels</a></li>
+                <li><a href="#section-radiopanels">Radio Panels</a></li>
+                <li><a href="#section-heatmap">Heatmap Progress Bars</a></li>
+                <li><a href="#section-slidertoggles">Slider Toggles</a></li>
+                <li><a href="#section-hero">Heros</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Utilities <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#section-colorpalette">Color Palette</a></li>
+                <li><a href="#section-iconfont">Icon Font</a></li>
+                <li><a href="#section-type-tools">Typography Tools</a>
+                <li><a href="#section-flexbox">Flex Box Utilities</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="dark-theme.html">Dark Theme</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="hero hero-light" style="background-image: url(img/tibet.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1>Influx Bootstrap Theme</h1>
+            <h4>Light Style &mdash; v0.10</h4>
+            <p><strong>Downloads:</strong> Right click and save as</p>
+            <a href="dist/css/bootstrap-theme.min.css.map" target="_blank" class="btn btn-sm btn-warning">Map File</a> <a href="dist/css/bootstrap-theme.min.css" target="_blank" class="btn btn-sm btn-warning">Minified Theme</a> <a href="dist/css/bootstrap-theme.css" target="_blank" class="btn btn-sm btn-primary">Theme</a> <a href="influx-icon-font.zip" target="_blank" class="btn btn-sm btn-success">Icon Font</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Jumbotron -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-header">
+            <a class="page-header--anchor" id="section-jumbotron"></a>
+            <a href="#section-jumbotron">
+              <h1>Jumbotron</h1>
+            </a>
+          </div>
+        </div>
+        <!-- Visual Example -->
+        <div class="col-sm-12">
+          <div class="jumbotron">
+            <h1>Large Heading</h1>
+            <p>Use Jumbotrons as a large call to action</p>
+            <pre><code>&lt;div class="jumbotron"&gt;
+  &lt;h1&gt;Large Heading&lt;/h1&gt;
+  &lt;p&gt;Use Jumbotrons as a large call to action&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div><!-- /row -->
+
+      <!-- Typography -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-header">
+            <a class="page-header--anchor" id="section-typography"></a>
+            <a href="#section-typography">
+              <h1>Typography</h1>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Regular Type</h2>
+            </div>
+            <div class="panel-body">
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+              <p>Four loko polaroid tumblr, bicycle rights green juice fashion axe thundercats poutine lomo cray disrupt. Salvia <a href="#">bushwick lo-fi sriracha</a>, cold-pressed farm-to-table pork belly. Hella humblebrag mlkshk, whatever brunch selvage keytar wolf skateboard pug 3 wolf moon normcore. Viral cred ennui, post-ironic blue bottle echo park pop-up mixtape mustache <code>#swag</code> everyday carry kinfolk cardigan tousled sustainable. Direct trade ennui williamsburg kale chips, brooklyn semiotics meditation ugh kogi. Mixtape tilde polaroid meh flannel art party sriracha, authentic kickstarter keytar intelligentsia etsy. Godard etsy plaid pop-up kinfolk roof party.</p>
+            </div>
+          </div><!-- / .panel -->
+        </div>
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Deluxe Headings</h2>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-7">
+                  <h1 class="deluxe">Heading 1</h1>
+                  <h2 class="deluxe">Heading 2</h2>
+                  <h3 class="deluxe">Heading 3</h3>
+                  <h4 class="deluxe">Heading 4</h4>
+                  <h5 class="deluxe">Heading 5</h5>
+                  <h6 class="deluxe">Heading 6</h6>
+                </div>
+                <div class="col-sm-5">
+                  <pre><code>&lt;h1 class="deluxe"&gt;
+&lt;h2 class="deluxe"&gt;
+&lt;h3 class="deluxe"&gt;
+&lt;h4 class="deluxe"&gt;
+&lt;h5 class="deluxe"&gt;
+&lt;h6 class="deluxe"&gt;</pre></code>
+                </div>
+              </div>
+            </div>
+          </div><!-- / .panel -->
+        </div>
+
+      </div><!-- /row -->
+
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-labels"></a>
+        <a href="#section-labels">
+          <h1>Labels</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h1>
+                Heading 1 
+                <span class="label label-default">Dflt</span>
+                <span class="label label-primary">Prmry</span>
+                <span class="label label-success">Scss</span>
+                <span class="label label-info">Inf</span>
+                <span class="label label-warning">Wrn</span>
+                <span class="label label-danger">Dgr</span>
+              </h1>
+              <h2>
+                Heading 2 
+                <span class="label label-default">Dflt</span>
+                <span class="label label-primary">Prmry</span>
+                <span class="label label-success">Scss</span>
+                <span class="label label-info">Inf</span>
+                <span class="label label-warning">Wrn</span>
+                <span class="label label-danger">Dgr</span>
+              </h2>
+              <h3>
+                Heading 3 
+                <span class="label label-default">Dflt</span>
+                <span class="label label-primary">Prmry</span>
+                <span class="label label-success">Scss</span>
+                <span class="label label-info">Inf</span>
+                <span class="label label-warning">Wrn</span>
+                <span class="label label-danger">Dgr</span>
+              </h3>
+              <h4>
+                Heading 4 
+                <span class="label label-default">Dflt</span>
+                <span class="label label-primary">Prmry</span>
+                <span class="label label-success">Scss</span>
+                <span class="label label-info">Inf</span>
+                <span class="label label-warning">Wrn</span>
+                <span class="label label-danger">Dgr</span>
+              </h4>
+              <h5>
+                Heading 5
+                <span class="label label-default">Dflt</span>
+                <span class="label label-primary">Prmry</span>
+                <span class="label label-success">Scss</span>
+                <span class="label label-info">Inf</span>
+                <span class="label label-warning">Wrn</span>
+                <span class="label label-danger">Dgr</span>
+              </h5>
+              <h6>
+                Heading 6
+                <span class="label label-default">Dflt</span>
+                <span class="label label-primary">Prmry</span>
+                <span class="label label-success">Scss</span>
+                <span class="label label-info">Inf</span>
+                <span class="label label-warning">Wrn</span>
+                <span class="label label-danger">Dgr</span>
+              </h6>
+              <p>
+                Paragraph
+                <span class="label label-default">Dflt</span>
+                <span class="label label-primary">Prmry</span>
+                <span class="label label-success">Scss</span>
+                <span class="label label-info">Inf</span>
+                <span class="label label-warning">Wrn</span>
+                <span class="label label-danger">Dgr</span>
+              </p>
+            </div>
+            <div class="panel-footer">Labels inline with Regular Headings</div>
+          </div><!-- / .panel -->
+        </div><!-- / .col-md-12 -->
+
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h1 class="deluxe">
+                Heading 1 
+                <span class="label label-default">Dflt</span>
+                <span class="label label-primary">Prmry</span>
+                <span class="label label-success">Scss</span>
+                <span class="label label-info">Inf</span>
+                <span class="label label-warning">Wrn</span>
+                <span class="label label-danger">Dgr</span>
+              </h1>
+              <h2 class="deluxe">
+                Heading 2 
+                <span class="label label-default">Dflt</span>
+                <span class="label label-primary">Prmry</span>
+                <span class="label label-success">Scss</span>
+                <span class="label label-info">Inf</span>
+                <span class="label label-warning">Wrn</span>
+                <span class="label label-danger">Dgr</span>
+              </h2>
+              <h3 class="deluxe">
+                Heading 3 
+                <span class="label label-default">Dflt</span>
+                <span class="label label-primary">Prmry</span>
+                <span class="label label-success">Scss</span>
+                <span class="label label-info">Inf</span>
+                <span class="label label-warning">Wrn</span>
+                <span class="label label-danger">Dgr</span>
+              </h3>
+              <h4 class="deluxe">
+                Heading 4 
+                <span class="label label-default">Dflt</span>
+                <span class="label label-primary">Prmry</span>
+                <span class="label label-success">Scss</span>
+                <span class="label label-info">Inf</span>
+                <span class="label label-warning">Wrn</span>
+                <span class="label label-danger">Dgr</span>
+              </h4>
+              <h5 class="deluxe">
+                Heading 5
+                <span class="label label-default">Dflt</span>
+                <span class="label label-primary">Prmry</span>
+                <span class="label label-success">Scss</span>
+                <span class="label label-info">Inf</span>
+                <span class="label label-warning">Wrn</span>
+                <span class="label label-danger">Dgr</span>
+              </h5>
+              <h6 class="deluxe">
+                Heading 6
+                <span class="label label-default">Dflt</span>
+                <span class="label label-primary">Prmry</span>
+                <span class="label label-success">Scss</span>
+                <span class="label label-info">Inf</span>
+                <span class="label label-warning">Wrn</span>
+                <span class="label label-danger">Dgr</span>
+              </h6>
+              <p>
+                Paragraph
+                <span class="label label-default">Dflt</span>
+                <span class="label label-primary">Prmry</span>
+                <span class="label label-success">Scss</span>
+                <span class="label label-info">Inf</span>
+                <span class="label label-warning">Wrn</span>
+                <span class="label label-danger">Dgr</span>
+              </p>
+            </div>
+            <div class="panel-footer">Labels inline with Deluxe Headings</div>
+          </div><!-- / .panel -->
+        </div><!-- / .col-md-12 -->
+      </div><!-- / .row -->
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-buttons"></a>
+        <a href="#section-buttons">
+          <h1>Buttons</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="col-sm-4 col-md-5">
+                <h4>How to use</h4>
+                <p>Buttons are to software as links are to web sites. They serve to confirm user input, activate tools, change views, etc. Depending on the context you may want a button of a different size or color. In bootstrap there are two ways to make a button:</p>
+              </div>
+              <div class="col-sm-8 col-md-7">
+                <p><strong>1. Anchor Tag</strong> for when you want a text link to look and behave like a button</p>
+                <pre><code>&lt;a class="btn btn-default" role="button" href="#"&gt;Button Text&lt;/a&gt;</code></pre>
+                <p><strong>2. Button Tag</strong> for when you want an actual button</p>
+                <pre><code>&lt;button class="btn btn-default"&gt;Button Text&lt;/button&gt;</code></pre>
+              </div>
+
+              <table class="table v-center margin-bottom-zero">
+                <thead>
+                  <tr>
+                    <th><h4>Button Styles</h4></th>
+                    <th class="text-center"><code>.btn.btn-xs</code></th>
+                    <th class="text-center"><code>.btn.btn-sm</code></th>
+                    <th class="text-center"><code>.btn</code></th>
+                    <th class="text-center"><code>.btn.btn-lg</code></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>.btn-default</code></td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-default btn-xs">Button</button>
+                      <button type="button" class="btn btn-default btn-xs disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-default btn-sm">Button</button>
+                      <button type="button" class="btn btn-default btn-sm disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-default">Button</button>
+                      <button type="button" class="btn btn-default disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-default btn-lg">Button</button>
+                      <button type="button" class="btn btn-default btn-lg disabled" disabled>Disabled</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>.btn-primary</code></td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-primary btn-xs">Button</button>
+                      <button type="button" class="btn btn-primary btn-xs disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-primary btn-sm">Button</button>
+                      <button type="button" class="btn btn-primary btn-sm disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-primary">Button</button>
+                      <button type="button" class="btn btn-primary disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-primary btn-lg">Button</button>
+                      <button type="button" class="btn btn-primary btn-lg disabled" disabled>Disabled</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>.btn-success</code></td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-success btn-xs">Button</button>
+                      <button type="button" class="btn btn-success btn-xs disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-success btn-sm">Button</button>
+                      <button type="button" class="btn btn-success btn-sm disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-success">Button</button>
+                      <button type="button" class="btn btn-success disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-success btn-lg">Button</button>
+                      <button type="button" class="btn btn-success btn-lg disabled" disabled>Disabled</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>.btn-warning</code></td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-warning btn-xs">Button</button>
+                      <button type="button" class="btn btn-warning btn-xs disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-warning btn-sm">Button</button>
+                      <button type="button" class="btn btn-warning btn-sm disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-warning">Button</button>
+                      <button type="button" class="btn btn-warning disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-warning btn-lg">Button</button>
+                      <button type="button" class="btn btn-warning btn-lg disabled" disabled>Disabled</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>.btn-danger</code></td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-danger btn-xs">Button</button>
+                      <button type="button" class="btn btn-danger btn-xs disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-danger btn-sm">Button</button>
+                      <button type="button" class="btn btn-danger btn-sm disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-danger">Button</button>
+                      <button type="button" class="btn btn-danger disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-danger btn-lg">Button</button>
+                      <button type="button" class="btn btn-danger btn-lg disabled" disabled>Disabled</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>.btn-info</code></td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-info btn-xs">Button</button>
+                      <button type="button" class="btn btn-info btn-xs disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-info btn-sm">Button</button>
+                      <button type="button" class="btn btn-info btn-sm disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-info">Button</button>
+                      <button type="button" class="btn btn-info disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-info btn-lg">Button</button>
+                      <button type="button" class="btn btn-info btn-lg disabled" disabled>Disabled</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>.btn-link</code></td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-link btn-xs">Button</button>
+                      <button type="button" class="btn btn-link btn-xs disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-link btn-sm">Button</button>
+                      <button type="button" class="btn btn-link btn-sm disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-link">Button</button>
+                      <button type="button" class="btn btn-link disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-link btn-lg">Button</button>
+                      <button type="button" class="btn btn-link btn-lg disabled" disabled>Disabled</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>.btn-link-danger</code></td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-link-danger btn-xs">Button</button>
+                      <button type="button" class="btn btn-link-danger btn-xs disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-link-danger btn-sm">Button</button>
+                      <button type="button" class="btn btn-link-danger btn-sm disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-link-danger">Button</button>
+                      <button type="button" class="btn btn-link-danger disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-link-danger btn-lg">Button</button>
+                      <button type="button" class="btn btn-link-danger btn-lg disabled" disabled>Disabled</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>.btn-link-success</code></td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-link-success btn-xs">Button</button>
+                      <button type="button" class="btn btn-link-success btn-xs disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-link-success btn-sm">Button</button>
+                      <button type="button" class="btn btn-link-success btn-sm disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-link-success">Button</button>
+                      <button type="button" class="btn btn-link-success disabled" disabled>Disabled</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-link-success btn-lg">Button</button>
+                      <button type="button" class="btn btn-link-success btn-lg disabled" disabled>Disabled</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>          
+            </div>
+          </div><!-- / .panel -->
+        </div><!-- / .col-md-12 -->
+      </div><!-- / .row -->
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-buttongroups"></a>
+        <a href="#section-buttongroups">
+          <h1>Button Groups</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <p>
+                <code>.btn-group.btn-group-lg</code><br/>
+                <div class="btn-group btn-group-lg">
+                  <button type="button" class="btn btn-default">Edit</button>
+                  <button type="button" class="btn btn-default disabled" disabled>Delete</button>
+                  <button type="button" class="btn btn-default">Transfer</button>
+                  <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Share
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </p>
+              <p>
+                <code>.btn-group</code><br/>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">Edit</button>
+                  <button type="button" class="btn btn-default disabled" disabled>Delete</button>
+                  <button type="button" class="btn btn-default">Transfer</button>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Share
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </p>
+              <p>
+                <code>.btn-group.btn-group-sm</code><br/>
+                <div class="btn-group btn-group-sm">
+                  <button type="button" class="btn btn-default">Edit</button>
+                  <button type="button" class="btn btn-default disabled" disabled>Delete</button>
+                  <button type="button" class="btn btn-default">Transfer</button>
+                  <div class="btn-group btn-group-sm" role="group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Share
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </p>
+              <p>
+                <code>.btn-group.btn-group-xs</code><br/>
+                <div class="btn-group btn-group-xs">
+                  <button type="button" class="btn btn-default">Edit</button>
+                  <button type="button" class="btn btn-default disabled" disabled>Delete</button>
+                  <button type="button" class="btn btn-default">Share</button>
+                  <button type="button" class="btn btn-default">Transfer</button>
+                  <div class="btn-group btn-group-xs" role="group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Share
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </p>
+            </div>
+          </div><!-- / .panel -->
+        </div><!-- / .col-md-12 -->
+      </div><!-- / .row -->
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-modals"></a>
+        <a href="#section-modals">
+          <h1>Modals</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">How to Use</h2>
+            </div>
+            <div class="panel-body">
+              <p><strong>Definition from <a href="http://www.webopedia.com/TERM/M/modal_window.html" taret="_blank">Webopedia</a></strong></p>
+              <blockquote><small>A modal window is any type of window that is a child (secondary window) to a parent window and usurps the parent's control. It is commonly associated with an Internet Web site pop-up window that stays in front of the original window.  A user may not press any controls or enter any information on the parent window (the original window which opened the modal) until the modal has been closed. A modal window is commonly used when the author wants to retain the user's focus on the information in the modal as it is impossible for the user to interact with the other windows of the same process.</small></blockquote>
+              <p><strong>Modals & UX</strong><br/>Modals are one of the most extreme ways to get a user's attention. Hence the name, modals (or "Modal Dialogs", "Modal Windows") cause a complete shift in the modality of the user. Thus it is best to only use a modal when it feels expected, in the interest of reducing cognitive overhead.</p>
+              <p><strong>Examples of when to use a Modal</strong></p>
+              <ul>
+                <li>User exits current view without saving changes<br/><small>This action could have expensive consequences, so it is worth it to hijack the user's attention</small></li>
+                <li>User deletes a large amount of data<br/><small>Also an expensive action, wise to double check before completing.</small></li>
+                <li>User clicks on a thumbnail<br/><small>It is common for thumbnails (or other elements with zoom affordance) to trigger a modal with a larger version of the same thing</small></li>
+              </ul>
+              <p><strong>Transparency and Context Switching</strong><br/>Switching contexts is super expensive for the user, and some user flows have too much context switching. Modals provide a great way to focus the user on a (usually) small experience without completely divorcing them from their previous task. The transparent background underneath Modals tells the user that they haven't completely left what they were just doing. It's as if the interface is saying "Do this real quick then I'll be out of your way". In effect, modals are micro-pages layered on top of an existing page.</p>
+              <p>The smaller a Modal is, the less "in your face" it feels. It is best to keep modals as small as possible.</p>
+              <p><strong>How not to use a Modal</strong><br/>If you aren't sure whether a modal is the appropriate interaction, see if there are other less intrusive means such as a <a href="#">Popover</a>. In most cases, the modal feels heavyhanded when other options are available.</p>
+              <hr/>
+              <p><strong>Implementation</strong><br/>See <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Bootstrap Docs: Javascript - Modals</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Modal Sizes</h2>
+            </div>
+            <div class="panel-body">
+              <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#example-regular-modal">Regular Modal</button>
+              <br/><br/>
+              <pre><code>&lt;div class="modal-dialog" role="document"&gt;
+  &lt;div class="modal-content"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              <hr/>
+              <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#example-large-modal">Large Modal</button>
+              <br/><br/>
+              <pre><code>&lt;div class="modal-dialog modal-lg" role="document"&gt;
+  &lt;div class="modal-content"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              <hr/>
+              <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#example-small-modal">Small Modal</button>
+              <br/><br/>
+              <pre><code>&lt;div class="modal-dialog modal-sm" role="document"&gt;
+  &lt;div class="modal-content"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div><!-- / .panel -->
+        </div><!-- / .col-md-4 -->
+      </div><!-- / .row -->
+
+      <!-- Example Modal -->
+      <div class="modal fade" id="example-regular-modal" tabindex="-1" role="dialog" aria-labelledby="addNodeLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="addNodeLabel">Feedback</h4>
+            </div>
+            <div class="modal-body">
+              <p>Tell us more about your issue, and we'll do our best to take care of it</p>
+              <form>
+                <div class="form-group col-md-6">
+                  <label for="modalFormEmail">Email address</label>
+                  <input type="email" class="form-control" id="modalFormEmail" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="modalFormPassword">Password</label>
+                  <input type="password" class="form-control" id="modalFormPassword" placeholder="Password">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="modalFormSelect"># of Rabbits</label>
+                  <select class="form-control" id="modalFormSelect">
+                    <option>100</option>
+                    <option>200</option>
+                    <option>300</option>
+                    <option>400</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="modalFormNumber"># of Souls</label>
+                  <input type="number" class="form-control" id="modalFormNumber" value="6" min="1" max="666">
+                </div>
+                <div class="form-group col-md-5">
+                  <label for="modalFormDate">Exp. Date</label>
+                  <input type="date" class="form-control" id="modalFormDate">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="modalFormParagraph">What is your quest?</label>
+                  <textarea class="form-control" id="modalFormParagraph" rows="5" placeholder="Ex: I seek the holy grail!"></textarea>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="modalInputDisabled" class="sr-only">Disabled</label>
+                  <input type="text" class="form-control disabled" disabled id="modalInputDisabled" placeholder="Disabled" value="Disabled">
+                </div>
+                <div class="form-group col-md-3 has-success">
+                  <label for="modalInputSuccess" class="sr-only">Success</label>
+                  <input type="text" class="form-control" id="modalInputSuccess" placeholder="Success" value="Success">
+                </div>
+                <div class="form-group col-md-3 has-warning">
+                  <label for="modalInputWarning" class="sr-only">Warning</label>
+                  <input type="text" class="form-control" id="modalInputWarning" placeholder="Warning" value="Warning">
+                </div>
+                <div class="form-group col-md-3 has-error">
+                  <label for="modalInputError" class="sr-only">Error</label>
+                  <input type="text" class="form-control" id="modalInputError" placeholder="Error" value="Error">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-success">Add Nodes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Large Modal -->
+      <div class="modal fade" id="example-large-modal" tabindex="-1" role="dialog" aria-labelledby="addNodeLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="addNodeLabel">Feedback</h4>
+            </div>
+            <div class="modal-body">
+              <p>Tell us more about your issue, and we'll do our best to take care of it</p>
+              <form>
+                <div class="form-group col-md-6">
+                  <label for="modalFormEmail">Email address</label>
+                  <input type="email" class="form-control" id="modalFormEmail" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="modalFormPassword">Password</label>
+                  <input type="password" class="form-control" id="modalFormPassword" placeholder="Password">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="modalFormSelect"># of Rabbits</label>
+                  <select class="form-control" id="modalFormSelect">
+                    <option>100</option>
+                    <option>200</option>
+                    <option>300</option>
+                    <option>400</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="modalFormNumber"># of Souls</label>
+                  <input type="number" class="form-control" id="modalFormNumber" value="6" min="1" max="666">
+                </div>
+                <div class="form-group col-md-5">
+                  <label for="modalFormDate">Exp. Date</label>
+                  <input type="date" class="form-control" id="modalFormDate">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="modalFormParagraph">What is your quest?</label>
+                  <textarea class="form-control" id="modalFormParagraph" rows="5" placeholder="Ex: I seek the holy grail!"></textarea>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="modalInputDisabled" class="sr-only">Disabled</label>
+                  <input type="text" class="form-control disabled" disabled id="modalInputDisabled" placeholder="Disabled" value="Disabled">
+                </div>
+                <div class="form-group col-md-3 has-success">
+                  <label for="modalInputSuccess" class="sr-only">Success</label>
+                  <input type="text" class="form-control" id="modalInputSuccess" placeholder="Success" value="Success">
+                </div>
+                <div class="form-group col-md-3 has-warning">
+                  <label for="modalInputWarning" class="sr-only">Warning</label>
+                  <input type="text" class="form-control" id="modalInputWarning" placeholder="Warning" value="Warning">
+                </div>
+                <div class="form-group col-md-3 has-error">
+                  <label for="modalInputError" class="sr-only">Error</label>
+                  <input type="text" class="form-control" id="modalInputError" placeholder="Error" value="Error">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-success">Add Nodes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Small Modal -->
+      <div class="modal fade" id="example-small-modal" tabindex="-1" role="dialog" aria-labelledby="addNodeLabel">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="addNodeLabel">Report a Bug</h4>
+            </div>
+            <div class="modal-body">
+              <p>Tell us more about the issue, and we'll do our best to take care of it</p>
+              <form>
+                <div class="form-group col-md-12">
+                  <label for="modalFormEmail">Which Product were you using?</label>
+                  <select class="form-control" id="modalFormEmail">
+                    <option>Telegraf</option>
+                    <option>InfluxDB</option>
+                    <option>Chronograf</option>
+                    <option>Kapacitor</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="modalFormParagraph">Describe the bug</label>
+                  <textarea class="form-control" id="modalFormParagraph" rows="5" placeholder="Ex: The modal wouldn't load for me"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-success">Submit Report</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-forms"></a>
+        <a href="#section-forms">
+          <h1>Form Elements</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Example Form <em>(With Labels)</em></h3><br/>
+          <p>When your goal is usability, use form labels. They are less aesthetic and increase the height of your form, but studies have indicated that this approach results in the least amount of user errors. This is because you can see the label and the field at the same time.</p>
+          <p><strong>Basic Implementation</strong><br/>The entirety of the form is wrapped in <code>&lt;form&gt;</code> tags. Within that each form element is wrapped in <code>div.form-group</code> and paired with <code>&lt;label&gt;</code> for screen-reader purposes.</p>
+          <pre><code>&lt;form&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="example-input-id"&gt;Example Input&lt;/label&gt;
+    &lt;input class="form-control" id="example-input-id" type="text" /&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+          <p><strong>Using the Bootstrap Grid</strong><br/>You can add on the bootstrap grid classes to <code>div.form-group</code> to make the form more interesting and space-efficient. This can be achieved simply by adding the desired grid classes:</p>
+          <pre><code>&lt;div class="form-group col-sm-6"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+        </div><!-- / col-sm-6 -->
+
+        <div class="col-sm-6">
+          <div class="panel panel-spring">
+            <div class="panel-heading text-center">
+              <h3 class="margin-top-zero">Order a Rabbit</h3>
+              <p class="margin-bottom-zero">Our rabbits are 100% gluten-free and raised on a diet of kale, carrots & apples.</p>
+            </div>
+            <div class="panel-body">
+              <form>
+                <div class="form-group col-sm-6">
+                  <label for="ex-standard-firstname">First Name</label>
+                  <input id="ex-standard-firstname" type="text" class="form-control" />
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="ex-standard-lastname">Last Name</label>
+                  <input id="ex-standard-lastname" type="text" class="form-control" />
+                </div>
+                <div class="form-group col-sm-12">
+                  <label for="ex-standard-address1">Address</label>
+                  <input id="ex-standard-address1" type="text" class="form-control" />
+                </div>
+                <div class="form-group col-sm-4">
+                  <label for="ex-standard-city">City</label>
+                  <input id="ex-standard-city" type="text" class="form-control" />
+                </div>
+                <div class="form-group col-sm-4">
+                  <label for="ex-standard-zipcode">ZIP Code</label>
+                  <input id="ex-standard-zipcode" type="text" class="form-control" />
+                </div>
+                <div class="form-group col-sm-4">
+                  <label for="ex-standard-state">State</label>
+                  <input id="ex-standard-state" type="text" class="form-control" />
+                </div>
+                <div class="form-group col-sm-5">
+                  <label for="ex-standard-rabbit">Type of Rabbit</label>
+                  <select id="ex-standard-rabbit" class="form-control">
+                    <optgroup label="Common Rabbits">
+                      <option value="Black Rabbit">Black Rabbit</option>
+                      <option value="Brown Rabbit">Brown Rabbit</option>
+                      <option value="Grey Rabbit">Grey Rabbit</option>
+                      <option value="White Rabbit">White Rabbit</option>
+                    </optgroup>
+                    <optgroup label="Spotted Rabbits">
+                      <option value="Black & White Rabbit">Black & White Rabbit</option>
+                      <option value="Black & Brown Rabbit">Black & Brown Rabbit</option>
+                      <option value="Brown & White Rabbit">Brown & White Rabbit</option>
+                      <option value="Grey & Black Rabbit">Grey & Black Rabbit</option>
+                    </optgroup>
+                    <optgroup label="Magic Rabbits">
+                      <option value="Gold Rabbit">Gold Rabbit</option>
+                      <option value="Purple Rabbit">Purple Rabbit</option>
+                      <option value="Rainbow Rabbit">Rainbow Rabbit</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="form-group col-sm-7">
+                  <label for="ex-standard-rabbitname">Name your Rabbit</label>
+                  <input id="ex-standard-rabbitname" type="text" class="form-control" />
+                </div>
+                <div class="form-group col-sm-12">
+                  <label for="ex-standard-requests">Special Requests</label>
+                  <textarea id="ex-standard-requests" rows="6" class="form-control"></textarea>
+                </div>
+                <div class="form-group col-sm-12 text-center">
+                  <a class="btn btn-default" role="button" href="#">Save for Later</a>
+                  <input type="submit" class="btn btn-primary" value="Order Your Rabbit"/>
+                </div>
+              </form>
+            </div>
+          </div><!-- / .panel -->
+        </div><!-- / col-sm-6 -->
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <hr class="dark"/>
+        </div>
+        <div class="col-sm-6">
+          <h3>Example Form <em>(Without Labels)</em></h3><br/>
+          <p>This type of form is most common in newer web and mobile apps. It instead relies on placeholder text to guide the user, which disappears once they have inputted something. This approach assumes the user is savvy enough to fill out the form even if the input labels are not always present. It can be useful if you are trying to save space, or are going for a more minimalistic aesthetic in your interface.</p>
+          <p><strong>Implementation</strong><br/>These forms are built the same as the above example, except for a couple differences. Instead of deleting the <code>&lt;label&gt;</code> element you simply add the <code>.sr-only</code> class which blocks it from rendering, but keeps it available for screen reading software. This keeps the form compliant with usability standards. Since there is now no label, you probably want to add a placeholder to the input.</p>
+          <pre><code>&lt;div class="form-group"&gt;
+  &lt;label for="example-input-id" class="sr-only" &gt;Example Input&lt;/label&gt;
+  &lt;input class="form-control" id="example-input-id" type="text" placeholder="Example Placeholder" /&gt;
+&lt;/div&gt;</code></pre>
+          <p><strong>Effective Placeholders</strong><br/>It may seem obvious to set the placeholder to the same value as the (now obscured) form label, but this is not always true. For example, in an email form one could leave the placeholder as <code>Email Address</code> and call it a day. This can be improved slightly, as the user has no not only recall their email but the appropriate format as well. You can improve the recall time by instead using a placeholder with an example email <code>yourname@website.com</code>. It's a small difference, but it contributes to faster form completion times which in turn improve the user's sentiment about the product. Use examples whenever possible</p>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title text-center">Create your account</h3>
+            </div>
+            <div class="panel-body">
+              <form>
+                <div class="form-group col-sm-6">
+                  <label class="sr-only" for="ex-standard-firstname">First Name</label>
+                  <input id="ex-standard-firstname" placeholder="First Name" type="text" class="form-control" />
+                </div>
+                <div class="form-group col-sm-6">
+                  <label class="sr-only" for="ex-standard-lastname">Last Name</label>
+                  <input id="ex-standard-lastname" placeholder="Last Name" type="text" class="form-control" />
+                </div>
+                <div class="form-group col-sm-12">
+                  <label class="sr-only" for="ex-standard-email">Email</label>
+                  <input id="ex-standard-email" placeholder="Email Address" type="text" class="form-control" />
+                </div>
+                <div class="form-group col-sm-12">
+                  <label class="sr-only" for="ex-standard-password">Email</label>
+                  <input id="ex-standard-password" placeholder="Password" type="password" class="form-control" />
+                </div>
+                <div class="form-group col-sm-12 text-center">
+                  <input type="submit" class="btn btn-success" value="Sign Up"/>
+                </div>
+              </form>
+            </div>
+          </div><!-- / .panel -->
+        </div><!-- / col-sm-6 -->
+      </div><!-- /row -->
+
+      <div class="row">
+        <div class="col-sm-12">
+          <hr class="dark"/>
+        </div>
+        <div class="col-md-6">
+          <h3>Example Form <em>(Horizontal Style)</em></h3><br/>
+          <p>Bootstrap offers a variant on form layouts called "Horizontal Forms". This layout keeps all the labels to the left of their respective inputs for a more aesthetically pleasing layout. This approach generally only works for forms with very few inputs (such as a login form, or lost password) because it takes the eye more time to digest the information. Scanning left and right between label and input is slower than having the label above the input.</p>
+          <p><strong>Basic Implementation</strong><br/>To use this style of form, all you have to do is add the <code>.form-horizontal</code> class to your form element. The other difference is instead of using grid classes on <code>.form-group</code> you use them on both the <code>&lt;label&gt;</code> and <code>&lt;input&gt;</code> elements. Here's an example:</p>
+          <pre><code>&lt;div class="form-group"&gt;
+  &lt;label for="example-input-1" class="col-sm-3"&gt;Example Input&lt;/label&gt;
+  &lt;input id="example-input-1" class="form-control col-sm-9" type="text" /&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <div class="panel-title">Login</div>
+            </div>
+            <div class="panel-body">
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+                  <div class="col-sm-9">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+                  <div class="col-sm-9">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleSelect2" class="col-sm-3 control-label">Age</label>
+                  <div class="col-sm-9">
+                    <select class="form-control" id="exampleSelect2">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-3 col-sm-9">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Remember me
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-3 col-sm-9">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div><!-- / panel -->
+        </div><!-- / col-md-6 -->
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <hr class="dark"/>
+        </div>
+        <div class="col-md-6">
+          <h3>Example Form <em>(Inline)</em></h3><br/>
+          <p>Inline forms are the most minimal, compact form you can create. Hence the name, they are designed for forms small enough to fit on a single line. It is common to combined Form Add-Ons with an inline form for added context (see examples to the right).</p>
+          <p><strong>Basic Implementation:</strong><br/>Add the <code>.form-inline</code> class to your form element. This does not affect form groups, but does affect their children. Everything inside a form group will now behave like an inline-block element, including the form label. In these examples I have obscured the label using <code>label.sr-only</code> to keep the form cleaner, but you can a keep them if you like.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-info">
+            <div class="panel-body text-center">
+              <h4>Transfer Funds to @mr.rogers1</h4>
+              <form class="form-inline">
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <input type="text" class="form-control" id="exampleInputAmount" size="9" placeholder="Amount">
+                    <div class="input-group-addon">.00</div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-success">Send</button>
+              </form>
+            </div>
+          </div><!-- / panel -->
+
+          <div class="panel panel-info">
+            <div class="panel-body text-center">
+              <h4>Pick a username</h4>
+              <form class="form-inline">
+                <div class="form-group">
+                  <label class="sr-only" for="exampleUsername">Amount (in dollars)</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">@</div>
+                    <input type="text" class="form-control" id="exampleUsername" placeholder="ex: swag_daddy555">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-default">Confirm</button>
+              </form>
+            </div>
+          </div><!-- / panel -->
+        </div><!-- / col-md-5 -->
+      </div><!-- / row -->
+
+      <hr class="dark"/>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Form Add-Ons & Form States</h3><br/>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <div class="panel-title">Examples:</div>
+            </div>
+            <div class="panel-body">
+              <!-- Default Form -->
+              <form>
+                <div class="form-group col-md-4">
+                  <label for="exampleInputAmount">Homepage URL</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">http://</div>
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="yourdomain.com">
+                    <div class="input-group-addon">.com</div>
+                  </div>
+                </div><!-- / form-group -->
+                <div class="form-group col-md-3">
+                  <label for="exampleInputDinosaurs">Favorite Food</label>
+                  <input type="text" class="form-control" id="exampleInputDinosaurs" placeholder="Chicken Pot Pie">
+                </div><!-- / form-group -->
+                <div class="form-group col-md-2">
+                  <label for="ex-standard-rabbit">Type of Rabbit</label>
+                  <select id="ex-standard-rabbit" class="form-control">
+                    <optgroup label="Common Rabbits">
+                      <option value="Black Rabbit">Black Rabbit</option>
+                      <option value="Brown Rabbit">Brown Rabbit</option>
+                      <option value="Grey Rabbit">Grey Rabbit</option>
+                      <option value="White Rabbit">White Rabbit</option>
+                    </optgroup>
+                    <optgroup label="Spotted Rabbits">
+                      <option value="Black & White Rabbit">Black & White Rabbit</option>
+                      <option value="Black & Brown Rabbit">Black & Brown Rabbit</option>
+                      <option value="Brown & White Rabbit">Brown & White Rabbit</option>
+                      <option value="Grey & Black Rabbit">Grey & Black Rabbit</option>
+                    </optgroup>
+                    <optgroup label="Magic Rabbits">
+                      <option value="Gold Rabbit">Gold Rabbit</option>
+                      <option value="Purple Rabbit">Purple Rabbit</option>
+                      <option value="Rainbow Rabbit">Rainbow Rabbit</option>
+                    </optgroup>
+                  </select>
+                </div><!-- / form-group -->
+                <div class="form-group col-md-3">
+                  <label for="exampleTextArea">Message</label>
+                  <textarea class="form-control" id="exampleTextArea" rows="3" placeholder="Tell them something that will make their day"></textarea>
+                </div><!-- / form-group -->
+              </form>
+              <!-- Disabled Form -->
+              <form>
+                <div class="form-group col-md-4">
+                  <label for="exampleInputAmount">Homepage URL</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">http://</div>
+                    <input type="text" class="form-control disabled" disabled id="exampleInputAmount" placeholder="yourdomain.com">
+                    <div class="input-group-addon">.com</div>
+                  </div>
+                </div><!-- / form-group -->
+                <div class="form-group col-md-3">
+                  <label for="exampleInputDinosaurs">Favorite Food</label>
+                  <input type="text" class="form-control disabled" disabled id="exampleInputDinosaurs" placeholder="Chicken Pot Pie">
+                </div><!-- / form-group -->
+                <div class="form-group col-md-2">
+                  <label for="ex-standard-rabbit">Type of Rabbit</label>
+                  <select id="ex-standard-rabbit" class="form-control disabled" disabled>
+                    <optgroup label="Common Rabbits">
+                      <option value="Black Rabbit">Black Rabbit</option>
+                      <option value="Brown Rabbit">Brown Rabbit</option>
+                      <option value="Grey Rabbit">Grey Rabbit</option>
+                      <option value="White Rabbit">White Rabbit</option>
+                    </optgroup>
+                    <optgroup label="Spotted Rabbits">
+                      <option value="Black & White Rabbit">Black & White Rabbit</option>
+                      <option value="Black & Brown Rabbit">Black & Brown Rabbit</option>
+                      <option value="Brown & White Rabbit">Brown & White Rabbit</option>
+                      <option value="Grey & Black Rabbit">Grey & Black Rabbit</option>
+                    </optgroup>
+                    <optgroup label="Magic Rabbits">
+                      <option value="Gold Rabbit">Gold Rabbit</option>
+                      <option value="Purple Rabbit">Purple Rabbit</option>
+                      <option value="Rainbow Rabbit">Rainbow Rabbit</option>
+                    </optgroup>
+                  </select>
+                </div><!-- / form-group -->
+                <div class="form-group col-md-3">
+                  <label for="exampleTextArea">Message</label>
+                  <textarea class="form-control disabled" disabled id="exampleTextArea" rows="3" placeholder="Tell them something that will make their day"></textarea>
+                </div><!-- / form-group -->
+              </form>
+              <!-- Error Form -->
+              <form>
+                <div class="form-group col-md-4 has-error">
+                  <label for="exampleInputAmount">Homepage URL</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">http://</div>
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="yourdomain.com">
+                    <div class="input-group-addon">.com</div>
+                  </div>
+                </div><!-- / form-group -->
+                <div class="form-group col-md-3 has-error">
+                  <label for="exampleInputDinosaurs">Favorite Food</label>
+                  <input type="text" class="form-control" id="exampleInputDinosaurs" placeholder="Chicken Pot Pie">
+                </div><!-- / form-group -->
+                <div class="form-group col-md-2 has-error">
+                  <label for="ex-standard-rabbit">Type of Rabbit</label>
+                  <select id="ex-standard-rabbit" class="form-control">
+                    <optgroup label="Common Rabbits">
+                      <option value="Black Rabbit">Black Rabbit</option>
+                      <option value="Brown Rabbit">Brown Rabbit</option>
+                      <option value="Grey Rabbit">Grey Rabbit</option>
+                      <option value="White Rabbit">White Rabbit</option>
+                    </optgroup>
+                    <optgroup label="Spotted Rabbits">
+                      <option value="Black & White Rabbit">Black & White Rabbit</option>
+                      <option value="Black & Brown Rabbit">Black & Brown Rabbit</option>
+                      <option value="Brown & White Rabbit">Brown & White Rabbit</option>
+                      <option value="Grey & Black Rabbit">Grey & Black Rabbit</option>
+                    </optgroup>
+                    <optgroup label="Magic Rabbits">
+                      <option value="Gold Rabbit">Gold Rabbit</option>
+                      <option value="Purple Rabbit">Purple Rabbit</option>
+                      <option value="Rainbow Rabbit">Rainbow Rabbit</option>
+                    </optgroup>
+                  </select>
+                </div><!-- / form-group -->
+                <div class="form-group col-md-3 has-error">
+                  <label for="exampleTextArea">Message</label>
+                  <textarea class="form-control" id="exampleTextArea" rows="3" placeholder="Tell them something that will make their day"></textarea>
+                </div><!-- / form-group -->
+              </form>
+              <!-- Valid Form -->
+              <form>
+                <div class="form-group col-md-4 has-success">
+                  <label for="exampleInputAmount">Homepage URL</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">http://</div>
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="yourdomain.com">
+                    <div class="input-group-addon">.com</div>
+                  </div>
+                </div><!-- / form-group -->
+                <div class="form-group col-md-3 has-success">
+                  <label for="exampleInputDinosaurs">Favorite Food</label>
+                  <input type="text" class="form-control" id="exampleInputDinosaurs" placeholder="Chicken Pot Pie">
+                </div><!-- / form-group -->
+                <div class="form-group col-md-2 has-success">
+                  <label for="ex-standard-rabbit">Type of Rabbit</label>
+                  <select id="ex-standard-rabbit" class="form-control">
+                    <optgroup label="Common Rabbits">
+                      <option value="Black Rabbit">Black Rabbit</option>
+                      <option value="Brown Rabbit">Brown Rabbit</option>
+                      <option value="Grey Rabbit">Grey Rabbit</option>
+                      <option value="White Rabbit">White Rabbit</option>
+                    </optgroup>
+                    <optgroup label="Spotted Rabbits">
+                      <option value="Black & White Rabbit">Black & White Rabbit</option>
+                      <option value="Black & Brown Rabbit">Black & Brown Rabbit</option>
+                      <option value="Brown & White Rabbit">Brown & White Rabbit</option>
+                      <option value="Grey & Black Rabbit">Grey & Black Rabbit</option>
+                    </optgroup>
+                    <optgroup label="Magic Rabbits">
+                      <option value="Gold Rabbit">Gold Rabbit</option>
+                      <option value="Purple Rabbit">Purple Rabbit</option>
+                      <option value="Rainbow Rabbit">Rainbow Rabbit</option>
+                    </optgroup>
+                  </select>
+                </div><!-- / form-group -->
+                <div class="form-group col-md-3 has-success">
+                  <label for="exampleTextArea">Message</label>
+                  <textarea class="form-control" id="exampleTextArea" rows="3" placeholder="Tell them something that will make their day"></textarea>
+                </div><!-- / form-group -->
+              </form>
+              <!-- Warning Form -->
+              <form>
+                <div class="form-group col-md-4 has-warning">
+                  <label for="exampleInputAmount">Homepage URL</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">http://</div>
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="yourdomain.com">
+                    <div class="input-group-addon">.com</div>
+                  </div>
+                </div><!-- / form-group -->
+                <div class="form-group col-md-3 has-warning">
+                  <label for="exampleInputDinosaurs">Favorite Food</label>
+                  <input type="text" class="form-control" id="exampleInputDinosaurs" placeholder="Chicken Pot Pie">
+                </div><!-- / form-group -->
+                <div class="form-group col-md-2 has-warning">
+                  <label for="ex-standard-rabbit">Type of Rabbit</label>
+                  <select id="ex-standard-rabbit" class="form-control">
+                    <optgroup label="Common Rabbits">
+                      <option value="Black Rabbit">Black Rabbit</option>
+                      <option value="Brown Rabbit">Brown Rabbit</option>
+                      <option value="Grey Rabbit">Grey Rabbit</option>
+                      <option value="White Rabbit">White Rabbit</option>
+                    </optgroup>
+                    <optgroup label="Spotted Rabbits">
+                      <option value="Black & White Rabbit">Black & White Rabbit</option>
+                      <option value="Black & Brown Rabbit">Black & Brown Rabbit</option>
+                      <option value="Brown & White Rabbit">Brown & White Rabbit</option>
+                      <option value="Grey & Black Rabbit">Grey & Black Rabbit</option>
+                    </optgroup>
+                    <optgroup label="Magic Rabbits">
+                      <option value="Gold Rabbit">Gold Rabbit</option>
+                      <option value="Purple Rabbit">Purple Rabbit</option>
+                      <option value="Rainbow Rabbit">Rainbow Rabbit</option>
+                    </optgroup>
+                  </select>
+                </div><!-- / form-group -->
+                <div class="form-group col-md-3 has-warning">
+                  <label for="exampleTextArea">Message</label>
+                  <textarea class="form-control" id="exampleTextArea" rows="3" placeholder="Tell them something that will make their day"></textarea>
+                </div><!-- / form-group -->
+              </form>
+            </div>
+          </div><!-- / panel -->
+        </div><!-- / col-md-12 -->
+
+      </div><!-- / row -->
+
+
+
+
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-tables"></a>
+        <a href="#section-tables">
+          <h1>Tables</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@TwBootstrap</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <table class="table table-condensed">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-panels"></a>
+        <a href="#section-panels">
+          <h1>Panels</h1>
+        </a>
+      </div>
+      <div class="row">
+        <!-- default panel -->
+        <div class="col-sm-3 col-xs-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Default</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel body content<br/><br/><code>.panel.panel-default</code></p>
+            </div>
+            <div class="panel-footer">Panel footer content</div>
+          </div>
+        </div>
+        <!-- info panel -->
+        <div class="col-sm-3 col-xs-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Info</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel body content<br/><br/><code>.panel.panel-info</code></p>
+            </div>
+            <div class="panel-footer">Panel footer content</div>
+          </div>
+        </div>
+        <!-- primary panel -->
+        <div class="col-sm-3 col-xs-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Primary</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel body content<br/><br/><code>.panel.panel-primary</code></p>
+            </div>
+            <div class="panel-footer">Panel footer content</div>
+          </div>
+        </div>
+        <!-- success panel -->
+        <div class="col-sm-3 col-xs-6">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">Success</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel body content<br/><br/><code>.panel.panel-success</code></p>
+            </div>
+            <div class="panel-footer">Panel footer content</div>
+          </div>
+        </div>
+      </div><!-- / .row -->
+      <div class="row">
+        <!-- warning panel -->
+        <div class="col-sm-3 col-xs-6">
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3 class="panel-title">Warning</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel body content<br/><br/><code>.panel.panel-warning</code></p>
+            </div>
+            <div class="panel-footer">Panel footer content</div>
+          </div>
+        </div>
+        <!-- danger panel -->
+        <div class="col-sm-3 col-xs-6">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">Danger</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel body content<br/><br/><code>.panel.panel-danger</code></p>
+            </div>
+            <div class="panel-footer">Panel footer content</div>
+          </div>
+        </div>
+        <!-- summer panel -->
+        <div class="col-sm-3 col-xs-6">
+          <div class="panel panel-summer">
+            <div class="panel-heading">
+              <h3 class="panel-title">Summer</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel body content<br/><br/><code>.panel.panel-summer</code></p>
+            </div>
+            <div class="panel-footer">Panel footer content</div>
+          </div>
+        </div>
+        <!-- spring panel -->
+        <div class="col-sm-3 col-xs-6">
+          <div class="panel panel-spring">
+            <div class="panel-heading">
+              <h3 class="panel-title">Spring</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel body content<br/><br/><code>.panel.panel-spring</code></p>
+            </div>
+            <div class="panel-footer">Panel footer content</div>
+          </div>
+        </div>
+      </div><!-- / .row -->
+      <div class="row">
+        <!-- fall panel -->
+        <div class="col-sm-3 col-xs-6">
+          <div class="panel panel-fall">
+            <div class="panel-heading">
+              <h3 class="panel-title">Fall</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel body content<br/><br/><code>.panel.panel-fall</code></p>
+            </div>
+            <div class="panel-footer">Panel footer content</div>
+          </div>
+        </div>
+        <!-- winter panel -->
+        <div class="col-sm-3 col-xs-6">
+          <div class="panel panel-winter">
+            <div class="panel-heading">
+              <h3 class="panel-title">Winter</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel body content<br/><br/><code>.panel.panel-winter</code></p>
+            </div>
+            <div class="panel-footer">Panel footer content</div>
+          </div>
+        </div>
+        <!-- telegraf panel -->
+        <div class="col-sm-3 col-xs-6">
+          <div class="panel panel-telegraf">
+            <div class="panel-heading">
+              <h3 class="panel-title">Telegraf</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel body content<br/><br/><code>.panel.panel-telegraf</code></p>
+            </div>
+            <div class="panel-footer">Panel footer content</div>
+          </div>
+        </div>
+        <!-- influxdb panel -->
+        <div class="col-sm-3 col-xs-6">
+          <div class="panel panel-influxdb">
+            <div class="panel-heading">
+              <h3 class="panel-title">InfluxDB</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel body content<br/><br/><code>.panel.panel-influxdb</code></p>
+            </div>
+            <div class="panel-footer">Panel footer content</div>
+          </div>
+        </div>
+      </div><!-- / .row -->
+      <div class="row">
+        <!-- chronograf panel -->
+        <div class="col-sm-3 col-xs-6">
+          <div class="panel panel-chronograf">
+            <div class="panel-heading">
+              <h3 class="panel-title">Chronograf</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel body content<br/><br/><code>.panel.panel-chronograf</code></p>
+            </div>
+            <div class="panel-footer">Panel footer content</div>
+          </div>
+        </div>
+        <!-- kapacitor panel -->
+        <div class="col-sm-3 col-xs-6">
+          <div class="panel panel-kapacitor">
+            <div class="panel-heading">
+              <h3 class="panel-title">Kapacitor</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel body content<br/><br/><code>.panel.panel-kapacitor</code></p>
+            </div>
+            <div class="panel-footer">Panel footer content</div>
+          </div>
+        </div>
+
+      </div><!-- / .row -->
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-badges"></a>
+        <a href="#section-badges">
+          <h1>Badges</h1>
+        </a>
+      </div>
+      <p>Used inside a <code>&lt;p&gt;</code></p>
+      <p>Paragraph <a href="#">Inbox <span class="badge">42</span></a></p>
+      <br/>
+      <p>Used inside <code>.nav.nav-pills</code></p>
+      <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+      </ul>
+
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-tooltips"></a>
+        <a href="#section-tooltips">
+          <h1>Tooltips</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">How to use</h2>
+            </div>
+            <div class="panel-body">
+              <p>Tooltips are used to display additional information about a UI element on hover. Tooltips cater to the curious mouse. The benefit of using tooltips is a less cluttered UI.</p>
+              <p><strong>Implementation:</strong><br/>Tooltips can be added to an element via custom attributes. The content of the Tooltip comes from the <code>title</code> attribute.</p>
+              <pre><code>&lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left"&gt;Tooltip on left&lt;/button&gt;</code></pre>
+              <p>Tooltips won't appear until Bootstrap's Tooltips are initialized via:</p>
+              <pre><code>$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})</code></pre>
+              <p>Read more about Tooltips on <a href="http://getbootstrap.com/javascript/#tooltips" target="_blank">Bootstrap Docs: Javascript - Tooltips</a></p>
+              <hr/>
+              <p><strong>Contextual Alternatives:</strong><br/>In some cases you may want a different context color for a tooltip. Simply add the modifier class to the element that triggers the tooltip.</p>
+              <table class="table v-center">
+                <tbody>
+                  <tr>
+                    <td><strong>Primary</strong></td>
+                    <td><code><span style="color:#A4A8B6;">element</span>.tooltip-primary</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Success</strong></td>
+                    <td><code><span style="color:#A4A8B6;">element</span>.tooltip-success</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Warning</strong></td>
+                    <td><code><span style="color:#A4A8B6;">element</span>.tooltip-warning</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Danger</strong></td>
+                    <td><code><span style="color:#A4A8B6;">element</span>.tooltip-danger</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Info</strong></td>
+                    <td><code><span style="color:#A4A8B6;">element</span>.tooltip-info</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="well well-outline text-center">
+            <h4 class="text-left">Examples:</h4>
+            <br/>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+            <br/><br/>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+            <br/><br/>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+            <br/><br/>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+          </div>
+          <div class="well well-outline margin-bottom-zero text-center">
+            <h4 class="text-left">Contextual Alternatives:</h4>
+            <br/>
+            <button type="button" class="btn btn-default tooltip-primary" data-toggle="tooltip" data-placement="left" title="Primary Tooltip">Primary Tooltip</button>
+            <br/><br/>
+            <button type="button" class="btn btn-default tooltip-success" data-toggle="tooltip" data-placement="left" title="Success Tooltip">Success Tooltip</button>
+            <br/><br/>
+            <button type="button" class="btn btn-default tooltip-warning" data-toggle="tooltip" data-placement="left" title="Warning Tooltip">Warning Tooltip</button>
+            <br/><br/>
+            <button type="button" class="btn btn-default tooltip-danger" data-toggle="tooltip" data-placement="left" title="Danger Tooltip">Danger Tooltip</button>
+            <br/><br/>
+            <button type="button" class="btn btn-default tooltip-info" data-toggle="tooltip" data-placement="left" title="Info Tooltip">Info Tooltip</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-dropdowns"></a>
+        <a href="#section-dropdowns">
+          <h1>Dropdowns</h1>
+        </a>
+      </div>
+      <p>Dropdown Menu</p>
+      <div class="dropdown theme-dropdown clearfix">
+        <a class="page-header--anchor" id="dropdownMenu1" href="#" class="sr-only dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li class="active"><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li class="dropdown-header">Nav header</li>
+          <li><a href="#">Separated link <span class="badge">621</span></a></li>
+          <li><a href="#">Another action</a></li>
+          <li class="disabled"><a href="#">Something else here</a></li>
+          <li><a href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <br/>
+      <p>Closed Primary Dropdown</p>
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Dropdown
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-navs"></a>
+        <a href="#section-navs">
+          <h1>Navs</h1>
+        </a>
+      </div>
+      <p>Nav Tabs</p>
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home <span class="badge">7</span></a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+      </ul>
+      <br/>
+      <p>Nav Pills</p>
+      <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home <span class="badge">7</span></a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+      </ul>
+
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-navbars"></a>
+        <a href="#section-navbars">
+          <h1>Navbars</h1>
+        </a>
+      </div>
+
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="influx-logo" src="img/influxcloud-logo.svg" alt="InfluxCloud" /></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="influx-logo" src="img/influxcloud-logo-white.svg" alt="InfluxCloud" /></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-alerts"></a>
+        <a href="#section-alerts">
+          <h1>Alerts</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Regular Alerts</h2>
+            </div>
+            <div class="panel-body">
+              <p>Cannot be dismissed, can contain links and/or buttons to resolve issue. Usually sits at the top of the page, just below the navbar.</p>
+              <p><strong>Useful for:</strong></p>
+              <ul>
+                <li>User needs to verify email</li>
+                <li>Form validation</li>
+                <li>Confirming a user's action</li>
+              </ul>
+              <p><strong>How to Implement:</strong></p>
+              <pre><code>&lt;div class="alert alert-success" role="alert"&gt;
+  Alert text goes here
+&lt;/div&gt;</code></pre>
+              <br/>
+              <p>Contextual Alternatives:</p>
+              <table class="table v-center">
+                <tbody>
+                  <tr>
+                    <td><strong>Success</strong></td>
+                    <td><code><span style="color:#A4A8B6;">div.alert</span>.alert-success</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Primary</strong></td>
+                    <td><code><span style="color:#A4A8B6;">div.alert</span>.alert-primary</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Warning</strong></td>
+                    <td><code><span style="color:#A4A8B6;">div.alert</span>.alert-warning</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Danger</strong></td>
+                    <td><code><span style="color:#A4A8B6;">div.alert</span>.alert-danger</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Info</strong></td>
+                    <td><code><span style="color:#A4A8B6;">div.alert</span>.alert-info</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <div class="alert alert-success" role="alert">
+            <strong>Well done!</strong> You successfully read this important alert message. <a href="#">Here's a link</a>
+          </div>
+          <div class="alert alert-primary" role="alert">
+            <strong>Heads up!</strong> This alert needs your attention, but it's not super important. <a href="#">Here's a link</a>
+          </div>
+          <div class="alert alert-warning" role="alert">
+            <strong>Warning!</strong> Best check yo self, you're not looking too good. <a href="#">Here's a link</a>
+          </div>
+          <div class="alert alert-danger" role="alert">
+            <strong>Oh snap!</strong> Change a few things up and try submitting again. <a href="#">Here's a link</a>
+          </div>
+          <div class="alert alert-info" role="alert">
+            <strong>Greetings!</strong> Welcome to our wonderful world of madness <a href="#">Take the Tour</a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="dark"/>
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Dismissable Alerts</h2>
+            </div>
+            <div class="panel-body">
+              <p>Useful when the information or task at hand is low priority. Serves to let the user know then get out of the way.</p>
+              <p><strong>Useful for:</strong></p>
+              <ul>
+                <li>User views a feature for the first time, tutorial text</li>
+                <li>System Updates</li>
+                <li>Confirming a user's action</li>
+              </ul>
+              <p><strong>How to Implement:</strong></p>
+              <pre><code>&lt;div class="alert alert-success" role="alert"&gt;
+  Alert text goes here
+  &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+    &lt;span aria-hidden="true"&gt;
+      &lt;span class="icon remove"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <div class="alert alert-success" role="alert">
+            <strong>supercoolphoto.jpg</strong> was uploaded successfully. <a href="#">View your file</a>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true"><span class="icon remove"></span></span>
+            </button>
+          </div>
+          <div class="alert alert-primary" role="alert">
+            <strong>Heads up!</strong><br/>Our servers will be down for maintainance Aug 7 - Aug 9.<br/>We will be partially available during this time. <a href="#">Learn More</a>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true"><span class="icon remove"></span></span>
+            </button>
+          </div>
+          <div class="alert alert-warning" role="alert">
+            <strong>Jordan Wilde</strong> liked your blog post
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true"><span class="icon remove"></span></span>
+            </button>
+          </div>
+          <div class="alert alert-danger" role="alert">
+            <strong>Oh snap!</strong> Server couldn't process your request, try again later.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true"><span class="icon remove"></span></span>
+            </button>
+          </div>
+          <div class="alert alert-info" role="alert">
+            <strong>Oh snap!</strong> Server couldn't process your request, try again later.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true"><span class="icon remove"></span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="dark"/>
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Alerts + Icons</h2>
+            </div>
+            <div class="panel-body">
+              <p>Useful when you want to draw the more attention to the alert, and add a little more context. Any icon from the <a href="#section-iconfont">Icon Font</a> can be used.</p>
+              <p><strong>How to Implement:</strong></p>
+              <pre><code>&lt;div class="alert alert-success" role="alert"&gt;
+  &lt;span class="icon alert-triangle"&gt;&lt;/span&gt;
+  Alert text goes here
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <div class="alert alert-success" role="alert">
+            <span class="icon access-key"></span>
+            <strong>supercoolphoto.jpg</strong> was uploaded successfully. <a href="#">View your file</a>
+          </div>
+          <div class="alert alert-primary" role="alert">
+            <span class="icon cubo-uniform"></span>
+            <strong>Heads up!</strong><br/>Our servers will be down for maintainance Aug 7 - Aug 9.<br/>We will be partially available during this time. <a href="#">Learn More</a>
+          </div>
+          <div class="alert alert-warning" role="alert">
+            <span class="icon zap"></span>
+            <strong>Jordan Wilde</strong> liked your blog post
+          </div>
+          <div class="alert alert-danger" role="alert">
+            <span class="icon alert-triangle"></span>
+            <strong>Oh snap!</strong> Server couldn't process your request, try again later.
+          </div>
+          <div class="alert alert-info" role="alert">
+            <span class="icon heart"></span>
+            <strong>Greetings!</strong> Welcome to our wonderful world of madness
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-progressbars"></a>
+        <a href="#section-progressbars">
+          <h1>Progress bars</h1>
+        </a>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% Complete</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete (success)</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (warning)</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete (danger)</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
+        <div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
+        <div class="progress-bar progress-bar-danger" style="width: 10%"><span class='sr-only'>10% Complete (danger)</span></div>
+      </div>
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-listgroups"></a>
+        <a href="#section-listgroups">
+          <h1>List groups</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">
+              Cras justo odio <span class="badge">9</span>
+            </a>
+            <a href="#" class="list-group-item">Dapibus ac facilisis in <span class="badge">11</span></a>
+            <a href="#" class="list-group-item">Morbi leo risus</a>
+            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+            <a href="#" class="list-group-item">Vestibulum at eros</a>
+          </div>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">
+              <h4 class="list-group-item-heading">List group item heading</h4>
+              <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a>
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">List group item heading</h4>
+              <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a>
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">List group item heading</h4>
+              <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a>
+          </div>
+        </div><!-- /.col-sm-4 -->
+      </div>
+
+
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-wells"></a>
+        <a href="#section-wells">
+          <h1>Wells</h1>
+        </a>
+      </div>
+      <p><code>div.well</code></p>
+      <div class="well">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+      </div>
+      <br/>
+      <p><code>div.well.well-light</code></p>
+      <div class="well well-light">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+      </div>
+      <br/>
+      <p><code>div.well.well-white</code></p>
+      <div class="well well-white">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+      </div>
+      <br/>
+      <p><code>div.well.well-outline</code></p>
+      <div class="well well-outline">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+      </div>
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-minimalpanels"></a>
+        <a href="#section-minimalpanels">
+          <h1>Minimal Panels</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-minimal">
+            <div class="panel-heading">
+              <h2 class="panel-title">Panel title goes here</h2>
+            </div>
+            <div class="panel-body">
+              <p>Minimal panels were created for use in the Enterprise Application. The main difference from other panels is that the title is not contained within the panel. This helps differentiate vertically stacked panels from each other. Panel titles are styled similarly to <code>.page-header</code></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-collapsiblepanels"></a>
+        <a href="#section-collapsiblepanels">
+          <h1>Collapsible Panels</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>Default Version</h4>
+          <div class="panel panel-collapse">
+            <div class="panel-heading">
+              <h2 class="panel-title"><a role="button" data-toggle="collapse" class="collapsed" href="#collapsePanel"><span class="caret"></span> Click to toggle</a></h2>
+            </div>
+            <div class="collapse" id="collapsePanel">
+              <div class="panel-body">
+                <p>The blue link is considered to have greater usability because of its affordance.</p>
+                <pre><code>&lt;div class="panel panel-collapse"&gt;
+  &lt;div class="panel-heading"&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-body"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <p>See more on <a href="http://getbootstrap.com/javascript/#collapse" target="_blank">Bootstrap's Docs</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h4>Grey Text</h4>
+          <div class="panel panel-collapse panel-collapse-grey">
+            <div class="panel-heading">
+              <h2 class="panel-title"><a role="button" data-toggle="collapse" class="collapsed" href="#collapsePanel2"><span class="caret"></span> Click to toggle</a></h2>
+            </div>
+            <div class="collapse" id="collapsePanel2">
+              <div class="panel-body">
+                <p>The grey version can help tone down the UI if there are lots of collapsible panels</p>
+                <pre><code>&lt;div class="panel panel-collapse panel-collapse-grey"&gt;
+  &lt;div class="panel-heading"&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-body"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <p>See more on <a href="http://getbootstrap.com/javascript/#collapse" target="_blank">Bootstrap's Docs</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h4>Mint (Kapacitor Theme)</h4>
+          <div class="panel panel-collapse panel-collapse-mint">
+            <div class="panel-heading">
+              <h2 class="panel-title"><a role="button" data-toggle="collapse" class="collapsed" href="#collapsePanel3"><span class="caret"></span> Click to toggle</a></h2>
+            </div>
+            <div class="collapse" id="collapsePanel3">
+              <div class="panel-body">
+                <p>This version is for Kapacitor Nodes in the Cloud UI. Could theoretically be used for something else as well.</p>
+                <pre><code>&lt;div class="panel panel-collapse panel-collapse-mint"&gt;
+  &lt;div class="panel-heading"&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-body"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <p>See more on <a href="http://getbootstrap.com/javascript/#collapse" target="_blank">Bootstrap's Docs</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h4>Frost (Grafana Theme)</h4>
+          <div class="panel panel-collapse panel-collapse-frost">
+            <div class="panel-heading">
+              <h2 class="panel-title"><a role="button" data-toggle="collapse" class="collapsed" href="#collapsePanel4"><span class="caret"></span> Click to toggle</a></h2>
+            </div>
+            <div class="collapse" id="collapsePanel4">
+              <div class="panel-body">
+                <p>This version is for Grafana Nodes in the Cloud UI. Could theoretically be used for something else as well.</p>
+                <pre><code>&lt;div class="panel panel-collapse panel-collapse-frost"&gt;
+  &lt;div class="panel-heading"&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-body"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <p>See more on <a href="http://getbootstrap.com/javascript/#collapse" target="_blank">Bootstrap's Docs</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-radiopanels"></a>
+        <a href="#section-radiopanels">
+          <h1>Radio Panels</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Disabled Radio Panel <code>.panel-disabled.panel-anim</code></p>
+          <button class="panel panel-anim panel-disabled">
+            <div class="panel-checkmark">!!</div>
+            <div class="panel-heading">
+              <h3 class="panel-title">A</h3>
+            </div>
+            <div class="panel-body">
+              <p><strong>10GB</strong> Storage</p>
+              <p><strong>1GB</strong> RAM</p>
+              <p><strong>1</strong> Core</p>
+            </div>
+          </button>
+        </div><!-- /.col-sm-4 -->
+
+        <div class="col-sm-4">
+          <p>Radio Panel <code>.panel-available.panel-anim</code></p>
+          <button class="panel panel-anim panel-available">
+            <div class="panel-checkmark">!!</div>
+            <div class="panel-heading">
+              <h3 class="panel-title">B</h3>
+            </div>
+            <div class="panel-body">
+              <p><strong>20GB</strong> Storage</p>
+              <p><strong>2GB</strong> RAM</p>
+              <p><strong>2</strong> Cores</p>
+            </div>
+          </button>
+        </div><!-- /.col-sm-4 -->
+
+        <div class="col-sm-4">
+          <p>Active Radio Panel <code>.panel-selected.panel-anim</code></p>
+          <button class="panel panel-anim panel-selected">
+            <div class="panel-checkmark">!!</div>
+            <div class="panel-heading">
+              <h3 class="panel-title">C</h3>
+            </div>
+            <div class="panel-body">
+              <p><strong>64GB</strong> Storage</p>
+              <p><strong>8GB</strong> RAM</p>
+              <p><strong>4</strong> Cores</p>
+            </div>
+          </button>
+        </div><!-- /.col-sm-4 -->
+
+      </div><!-- / .row -->
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-heatmap"></a>
+        <a href="#section-heatmap">
+          <h1>Heatmap Progress Bars</h1>
+        </a>
+        <p><code>.progress.progress-heatmap</code></p>
+      </div>
+      <div class="progress progress-heatmap">
+        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
+      </div>
+      <div class="progress progress-heatmap">
+        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete</span></div>
+      </div>
+      <div class="progress progress-heatmap">
+        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete</span></div>
+      </div>
+      <div class="progress progress-heatmap">
+        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete</span></div>
+      </div>
+      <div class="progress progress-heatmap">
+        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"><span class="sr-only">90% Complete</span></div>
+      </div>
+      <div class="progress progress-heatmap">
+        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%"><span class="sr-only">98% Complete</span></div>
+      </div>
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-slidertoggles"></a>
+        <a href="#section-slidertoggles">
+          <h1>Slider Toggles</h1>
+        </a>
+        <p>Uses jQuery UI. Initialized with javascript, see options <a href="http://api.jqueryui.com/slider/#option-animate" target="_blank">here</a>.
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <p>Default Slider</p>
+              <div class="slider-container slider-default">
+                <div class="slider-label">Small</div>
+                <div class="slider-cell"><div id="exampleSlider1"></div></div>
+                <div class="slider-label">Large</div>
+              </div>
+
+              <p>Primary Slider</p>
+              <div class="slider-container slider-primary">
+                <div class="slider-label">Small</div>
+                <div class="slider-cell"><div id="exampleSlider2"></div></div>
+                <div class="slider-label">Large</div>
+              </div>
+
+              <p>Success Slider</p>
+              <div class="slider-container slider-success">
+                <div class="slider-label">Small</div>
+                <div class="slider-cell"><div id="exampleSlider3"></div></div>
+                <div class="slider-label">Large</div>
+              </div>
+            </div>
+            <div class="panel-footer">Horizontal Sliders with 8 Steps, for use on plan selector</div>
+          </div><!-- / .panel -->
+        </div><!-- / .col-md-6 -->
+
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <p>Info Slider</p>
+              <div class="slider-container slider-info">
+                <div class="slider-label">Small</div>
+                <div class="slider-cell"><div id="exampleSlider4"></div></div>
+                <div class="slider-label">Large</div>
+              </div>
+
+              <p>Warning Slider</p>
+              <div class="slider-container slider-warning">
+                <div class="slider-label">Small</div>
+                <div class="slider-cell"><div id="exampleSlider5"></div></div>
+                <div class="slider-label">Large</div>
+              </div>
+
+              <p>Danger Slider</p>
+              <div class="slider-container slider-danger">
+                <div class="slider-label">Small</div>
+                <div class="slider-cell"><div id="exampleSlider6"></div></div>
+                <div class="slider-label">Large</div>
+              </div>
+            </div>
+            <div class="panel-footer">Horizontal Sliders with 8 Steps, for use on plan selector</div>
+          </div><!-- / .panel -->
+        </div><!-- / .col-md-6 -->
+
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="slider-container slider-primary">
+                <div class="slider-label">Small</div>
+                <div class="slider-cell"><div id="exampleRangeSlider"></div></div>
+                <div class="slider-label">Large</div>
+              </div>
+            </div>
+            <div class="panel-footer">Example of a range slider. <code>min: 1 / max: 100 / step: 1</code></div>
+          </div><!-- / .panel -->
+
+          <div class="panel panel-default">
+            <div class="panel-body slider-plan-picker-example">
+              <div class="slider-container slider-plan-picker">
+                <div class="slider-cell">
+                  <div id="exampleSlider7">
+                    <div class="slider-increment" style="left:0%"></div>
+                    <div class="slider-increment" style="left:20%"></div>
+                    <div class="slider-increment" style="left:40%"></div>
+                    <div class="slider-increment" style="left:60%"></div>
+                    <div class="slider-increment" style="left:80%"></div>
+                    <div class="slider-increment" style="left:100%"></div>
+                    <div class="slider-overlay uno" data-name="uno"></div>
+                    <div class="slider-overlay kilowatt" style="left:30%" data-name="kilowatt"></div>
+                    <div class="slider-overlay megawatt" style="left:80%" data-name="megawatt"></div>
+                    <div id="plan-picker-handle" class="ui-slider-handle ui-state-default ui-corner-all slider-pos-3" style="left:40%;">
+                      <div class="slider-handle"></div>
+                      <div class="slider-pulse"></div>
+                    </div>
+                    <div class="most-popular-plan">Most Popular</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">Example of a <code>.slider-plan-picker</code> and using some custom javascript for resizing the handle</div>
+          </div><!-- / .panel -->
+        </div><!-- / .col-md-12 -->
+      </div><!-- / .row -->
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-hero"></a>
+        <a href="#section-hero">
+          <h1>Hero</h1>
+        </a>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2 class="panel-title">How to use it</h2>
+        </div>
+        <div class="panel-body">
+          <div class="col-sm-6">
+            <p><strong>Theory</strong><br/><br/>In design speak a "Hero" is the large (sometimes massive) full-width header atop a page. They typically have a visually stunning photo or illustration, sometimes a video, and are the most attention grabbing element on the page. A lot of landing pages have heros with a bold tagline and a call to action button. Heros not only look pretty but tend to convert pretty well also. Heros work best when the content inside is focused, short, and has a clear call to action button. Heros are usually the first element on the page, but this is not a hard rule.</p>
+          </div>
+          <div class="col-sm-6">
+            <p><strong>Implementation</strong><br/><br/>In bootstrap, page sections are designated with a <code>div.container</code>. This element has margins on either side, giving it the appearance of being centered. Because Heros are full-width by definition, you must wrap the container you want to be a hero, in the hero div</p>
+            <pre><code>&lt;div class="hero hero-light"&gt;
+  &lt;div class="container"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <p><strong>Hero Types</strong><br/><br/><code>hero</code> Assumes a light colored background, uses dark text for contrast<br/><code>hero-light</code> Assumes a dark colored background, uses light text for contrast</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="hero hero-light" style="background-image: url(img/graphs.svg);">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1>Hero Container</h1>
+            <p>Pretty cool huh?</p><br/><br/>
+            <a href="#" class="btn btn-lg btn-success" role="button">Click me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-colorpalette"></a>
+        <a href="#section-colorpalette">
+          <h1>Color Palette</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="panel panel-minimal">
+            <!-- <div class="panel-heading">
+              <h2 class="panel-title">Influx Nuetrals</h2>
+            </div> -->
+            <div class="panel-body">
+              <h4>Influx Nuetrals</h4>
+              <div class="docs-color-grid" id="docs-nuetral-swatches"></div>
+              <hr/>
+              <h4>Telegraf Spectrum</h4>
+              <div class="docs-color-grid" id="docs-telegraf-swatches"></div>
+              <hr/>
+              <h4>InfluxDB Spectrum</h4>
+              <div class="docs-color-grid" id="docs-influxdb-swatches"></div>
+              <hr/>
+              <h4>Chronograf Spectrum</h4>
+              <div class="docs-color-grid" id="docs-chronograf-swatches"></div>
+              <hr/>
+              <h4>Kapacitor Spectrum</h4>
+              <div class="docs-color-grid" id="docs-kapacitor-swatches"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-iconfont"></a>
+        <a href="#section-iconfont">
+          <h1>Icon Font</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Icon font created using <a href="http://icomoon.io" target="_blank">icomoon.io</a></h2>
+            </div>
+            <div class="panel-body">
+              <p>Font files are referenced from <code>bootstrap-theme.min.css</code> as a relative path <code>../fonts/</code>. To ensure proper display, make sure your folder structure is like this:</p>
+              <pre><code>css/
+    bootstrap.min.css
+    bootstrap-theme.min.css
+    bootstrap-theme.min.css.map
+fonts/
+    icomoon.eot
+    icomoon.svg
+    icomoon.ttf
+    icomoon.woff
+    icomoob.woff2</code></pre><br/>
+              <h4>How to use:</h4>
+              <p>The icon class can be applied to any element, but realistically works best when applied to inline elements such as <code>&lt;span&gt;</code></p>
+              <table class="table icon-font-matrix">
+                <tbody>
+                  <tr>
+                    <td><span class="icon cpu"></span><strong>CPU</strong><code>.icon.cpu</code></td>
+                    <td><span class="icon server"></span><strong>Server</strong><code>.icon.server</code></td>
+                    <td><span class="icon plus"></span><strong>Plus</strong><code>.icon.plus</code></td>
+                    <td><span class="icon remove"></span><strong>Remove (X)</strong><code>.icon.remove</code></td>
+                    <td><span class="icon crown"></span><strong>Crown (Admin)</strong><code>.icon.crown</code></td>
+                  </tr>
+                  <tr>
+                    <td><span class="icon cog"></span><strong>Cog (Thin)</strong><code>.icon.cog</code></td>
+                    <td><span class="icon cog-thick"></span><strong>Cog (Thick)</strong><code>.icon.cog-thick</code></td>
+                    <td><span class="icon graphline"></span><strong>Graph Line</strong><code>.icon.graphline</code></td>
+                    <td><span class="icon flag"></span><strong>Help Flag</strong><code>.icon.flag</code></td>
+                    <td><span class="icon cubo"></span><strong>Cuboctahedron</strong><code>.icon.cubo</code></td>
+                  </tr>
+                  <tr>
+                    <td><span class="icon trash"></span><strong>Trash (Solid)</strong><code>.icon.trash</code></td>
+                    <td><span class="icon trash-outline"></span><strong>Trash (Outline)</strong><code>.icon.trash-outline</code></td>
+                    <td><span class="icon search"></span><strong>Magnifying Glass</strong><code>.icon.search</code></td>
+                    <td><span class="icon wrenches"></span><strong>Wrenches</strong><code>.icon.wrenches</code></td>
+                    <td><span class="icon wrench"></span><strong>Wrench</strong><code>.icon.wrench</code></td>
+                  </tr>
+                  <tr>
+                    <td><span class="icon caret-right"></span><strong>Caret (Right)</strong><code>.icon.caret-right</code></td>
+                    <td><span class="icon caret-left"></span><strong>Caret (Left)</strong><code>.icon.caret-left</code></td>
+                    <td><span class="icon caret-up"></span><strong>Caret (Up)</strong><code>.icon.caret-up</code></td>
+                    <td><span class="icon caret-down"></span><strong>Caret (Down)</strong><code>.icon.caret-down</code></td>
+                    <td><span class="icon duplicate"></span><strong>Duplicate</strong><code>.icon.duplicate</code></td>
+                  </tr>
+                  <tr>
+                    <td><span class="icon arrow-right"></span><strong>Arrow (Right)</strong><code>.icon.arrow-right</code></td>
+                    <td><span class="icon arrow-left"></span><strong>Arrow (Left)</strong><code>.icon.arrow-left</code></td>
+                    <td><span class="icon arrow-up"></span><strong>Arrow (Up)</strong><code>.icon.arrow-up</code></td>
+                    <td><span class="icon arrow-down"></span><strong>Arrow (Down)</strong><code>.icon.arrow-down</code></td>
+                    <td><span class="icon alert-triangle"></span><strong>Alert</strong><code>.icon.alert-triangle</code></td>
+                  </tr>
+                  <tr>
+                    <td><span class="icon location"></span><strong>Map Pin</strong><code>.icon.location</code></td>
+                    <td><span class="icon stop"></span><strong>Stop Sign Alert</strong><code>.icon.stop</code></td>
+                    <td><span class="icon comment"></span><strong>Comment</strong><code>.icon.comment</code></td>
+                    <td><span class="icon comment-discussion"></span><strong>Discussion</strong><code>.icon.comment-discussion</code></td>
+                    <td><span class="icon heart"></span><strong>Heart</strong><code>.icon.heart</code></td>
+                  </tr>
+                  <tr>
+                    <td><span class="icon checkmark"></span><strong>Check Mark</strong><code>.icon.checkmark</code></td>
+                    <td><span class="icon pencil"></span><strong>Pencil</strong><code>.icon.pencil</code></td>
+                    <td><span class="icon cubo-node"></span><strong>Node Cubo</strong><code>.icon.cubo-node</code></td>
+                    <td><span class="icon cubo-uniform"></span><strong>Uniform Width Cubo</strong><code>.icon.cubo-uniform</code></td>
+                    <td><span class="icon clock"></span><strong>Clock</strong><code>.icon.clock</code></td>
+                  </tr>
+                  <tr>
+                    <td><span class="icon star"></span><strong>Star</strong><code>.icon.star</code></td>
+                    <td><span class="icon zap"></span><strong>Lightning (Zap)</strong><code>.icon.zap</code></td>
+                    <td><span class="icon sync"></span><strong>Sync</strong><code>.icon.sync</code></td>
+                    <td><span class="icon link"></span><strong>Hyperlink</strong><code>.icon.link</code></td>
+                    <td><span class="icon user-outline"></span><strong>Profile</strong><code>.icon.user-outline</code></td>
+                  </tr>
+                  <tr>
+                    <td><span class="icon eye"></span><strong>Eye</strong><code>.icon.eye</code></td>
+                    <td><span class="icon download"></span><strong>Download</strong><code>.icon.download</code></td>
+                    <td><span class="icon maximize"></span><strong>Maximize</strong><code>.icon.maximize</code></td>
+                    <td><span class="icon minimize"></span><strong>Minimize</strong><code>.icon.minimize</code></td>
+                    <td><span class="icon google"></span><strong>Google Logo</strong><code>.icon.google</code></td>
+                  </tr>
+                  <tr>
+                    <td><span class="icon google3"></span><strong>Google Logo (Circle)</strong><code>.icon.google3</code></td>
+                    <td><span class="icon google-plus"></span><strong>Google+ Logo</strong><code>.icon.google-plus</code></td>
+                    <td><span class="icon facebook"></span><strong>Facebook Logo</strong><code>.icon.facebook</code></td>
+                    <td><span class="icon facebook2"></span><strong>Facebook Logo (Square)</strong><code>.icon.facebook2</code></td>
+                    <td><span class="icon twitter"></span><strong>Twitter Logo</strong><code>.icon.twitter</code></td>
+                  </tr>
+                  <tr>
+                    <td><span class="icon github"></span><strong>GitHub Logo</strong><code>.icon.github</code></td>
+                    <td><span class="icon trello"></span><strong>Trello Logo</strong><code>.icon.trello</code></td>
+                    <td><span class="icon linkedin"></span><strong>LinkedIn Logo (Square)</strong><code>.icon.linkedin</code></td>
+                    <td><span class="icon linkedin2"></span><strong>LinkedIn Logo</strong><code>.icon.linkedin2</code></td>
+                    <td><span class="icon stackoverflow"></span><strong>Stack Overflow Logo</strong><code>.icon.stackoverflow</code></td>
+                  </tr>
+                  <tr>
+                    <td><span class="icon access-key"></span><strong>Key</strong><code>.icon.acess-key</code></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-type-tools"></a>
+        <a href="#section-type-tools">
+          <h1>Typography Tools</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Colored Links</h2>
+            </div>
+            <div class="panel-body">
+              <a href="#" class="link-success">Success Link</a>
+              <br/><br/>
+              <pre><code>&lt;a href="#" class="link-success"&gt;Success Link&lt;/a&gt;</code></pre>
+              <br/>
+              <a href="#" class="link-danger">Danger Link</a>
+              <br/><br/>
+              <pre><code>&lt;a href="#" class="link-danger"&gt;Danger Link&lt;/a&gt;</code></pre>
+              <br/>
+              <a href="#" class="link-warning">Warning Link</a>
+              <br/><br/>
+              <pre><code>&lt;a href="#" class="link-warning"&gt;Warning Link&lt;/a&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Colored Text</h2>
+            </div>
+            <div class="panel-body">
+              <span class="text-color-success">Success Text</span>
+              <br/><br/>
+              <pre><code>&lt;span class="text-color-success"&gt;Success Text&lt;/span&gt;</code></pre>
+              <br/>
+              <span class="text-color-danger">Danger Text</span>
+              <br/><br/>
+              <pre><code>&lt;span class="text-color-danger"&gt;Danger Text&lt;/span&gt;</code></pre>
+              <br/>
+              <span class="text-color-warning">Warning Text</span>
+              <br/><br/>
+              <pre><code>&lt;span class="text-color-warning"&gt;Warning Text&lt;/span&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <a class="page-header--anchor" id="section-flexbox"></a>
+        <a href="#section-flexbox">
+          <h1>Flex Box Utilities</h1>
+        </a>
+      </div>
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <p>These utility classes are designed for use on any element. They are modular and are helful when you want to use a flex-box based layout but don't want to write additional custom classes</p><br/>
+            <table class="table v-center">
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>What it does</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>.u-flex</code></td>
+                  <td>When used on an element, sets <code>display: flex;</code>. Usually placed on the parent element in which you want to layout the children with flex box.</td>
+                </tr>
+                <tr class="active">
+                  <td><strong>Align Items (ai)</strong></td>
+                  <td>Used on the parent element to vertically align children</td>
+                </tr>
+                <tr>
+                  <td><code>.u-ai-center</code></td>
+                  <td>Aligns children to their vertical centers</td>
+                </tr>
+                <tr>
+                  <td><code>.u-ai-stretch</code></td>
+                  <td>Stretches children vertically to match the height of the parent</td>
+                </tr>
+                <tr>
+                  <td><code>.u-ai-baseline</code></td>
+                  <td>Aligns children vertically to their textual baselines</td>
+                </tr>
+                <tr>
+                  <td><code>.u-ai-flex-start</code></td>
+                  <td>Aligns children to the start of the flex object (the top of the parent)</td>
+                </tr>
+                <tr>
+                  <td><code>.u-ai-flex-end</code></td>
+                  <td>Aligns children to the end of the flex object (the bottom of the parent)</td>
+                </tr>
+                <tr class="active">
+                  <td><strong>Justify Content (jc)</strong></td>
+                  <td>Used on the parent to control horizontal distribution of children</td>
+                </tr>
+                <tr>
+                  <td><code>.u-jc-flex-start</code></td>
+                  <td>Aligns children to the beginning of the flex object (the left edge of the parent)</td>
+                </tr>
+                <tr>
+                  <td><code>.u-jc-flex-end</code></td>
+                  <td>Aligns children to the end of the flex object (the right edge of the parent)</td>
+                </tr>
+                <tr>
+                  <td><code>.u-jc-center</code></td>
+                  <td>Aligns children to the horizontal center of the flex object</td>
+                </tr>
+                <tr>
+                  <td><code>.u-jc-space-between</code></td>
+                  <td>Puts as much space between each child as possible</td>
+                </tr>
+                <tr>
+                  <td><code>.u-jc-space-around</code></td>
+                  <td>Puts as much space around each child as possible</td>
+                </tr>
+                <tr class="active">
+                  <td><strong>Align Content (ac)</strong></td>
+                  <td>Used on the parent to control positioning of the children when there are multiple rows of children</td>
+                </tr>
+                <tr>
+                  <td><code>.u-ac-flex-start</code></td>
+                  <td>Aligns each row of children to the start of the flex object (the top of the parent)</td>
+                </tr>
+                <tr>
+                  <td><code>.u-ac-flex-end</code></td>
+                  <td>Aligns each row of children to the end of the flex object (the bottom of the parent)</td>
+                </tr>
+                <tr>
+                  <td><code>.u-ac-center</code></td>
+                  <td>Aligns all rows of children to the parent's vertical center</td>
+                </tr>
+                <tr>
+                  <td><code>.u-ac-stretch</code></td>
+                  <td>Stretches all rows of children such that they fill the height of the parent</td>
+                </tr>
+                <tr>
+                  <td><code>.u-ac-space-between</code></td>
+                  <td>Maximizes space between each each row of children</td>
+                </tr>
+                <tr>
+                  <td><code>.u-ac-space-around</code></td>
+                  <td>Maximizes space around each each row of children</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script>
+    /*
+        Bootstrap Tooltips
+    */
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    /*
+        Radio Panels
+    */
+    $('.panel').on( "click", function() {
+
+      if ( $(this).hasClass('panel-available') ) {
+        $(this).removeClass('panel-available').addClass('panel-selected');
+        $uncles = $(this).parent().siblings();
+        $uncles.each( function() {
+          $(this).find('.panel-selected').removeClass('panel-selected').addClass('panel-available');
+        });
+      }
+  
+    });
+
+    /*
+        Example Sliders
+    */
+    $( "#exampleSlider1" ).slider({
+      min: 1,
+      max: 8,
+      step: 1,
+      value: 4
+    });
+    $( "#exampleSlider2" ).slider({
+      min: 1,
+      max: 8,
+      step: 1,
+      value: 4
+    });
+    $( "#exampleSlider3" ).slider({
+      min: 1,
+      max: 8,
+      step: 1,
+      value: 4
+    });
+    $( "#exampleSlider4" ).slider({
+      min: 1,
+      max: 8,
+      step: 1,
+      value: 4
+    });
+    $( "#exampleSlider5" ).slider({
+      min: 1,
+      max: 8,
+      step: 1,
+      value: 4
+    });
+    $( "#exampleSlider6" ).slider({
+      min: 1,
+      max: 8,
+      step: 1,
+      value: 4
+    });
+    $numberOfPlans = 6;
+    $minHandleSize = 12;
+    $maxHandleSize = 32;
+    $handleRange = Math.abs($maxHandleSize - $minHandleSize);
+    $handleSizeIncrement = (100/$numberOfPlans)/100
+    $( "#exampleSlider7" ).slider({
+      min: 1,
+      max: $numberOfPlans,
+      step: 1,
+      value: 3,
+      slide: function( event, ui ) {
+        $newClassName = 'slider-pos-'+ui.value;
+        $('#plan-picker-handle')
+          .removeClass('slider-pos-1')
+          .removeClass('slider-pos-2')
+          .removeClass('slider-pos-3')
+          .removeClass('slider-pos-4')
+          .removeClass('slider-pos-5')
+          .removeClass('slider-pos-6')
+          .addClass($newClassName);
+      }
+    });
+    $( "#exampleRangeSlider" ).slider({
+      min: 1,
+      max: 100,
+      step: 1,
+      range: true,
+      values: [20,80]
+    });
+
+    $(document).on("ready", function(){
+      $influxNuetrals = [
+        { hexcode: "0f0e15",
+          name: "G0 Obsidian",
+          lightBg: false
+        },
+        { hexcode: "1c1c21",
+          name: "G1 Raven",
+          lightBg: false
+        },
+        { hexcode: "202028",
+          name: "G2 Kevlar",
+          lightBg: false
+        },
+        { hexcode: "292933",
+          name: "G3 Castle",
+          lightBg: false
+        },
+        { hexcode: "292933",
+          name: "G4 Onyx",
+          lightBg: false
+        },
+        { hexcode: "383846",
+          name: "G5 Pepper",
+          lightBg: false
+        },
+        { hexcode: "434453",
+          name: "G6 Smoke",
+          lightBg: false
+        },
+        { hexcode: "545667",
+          name: "G7 Graphite",
+          lightBg: false
+        },
+        { hexcode: "676978",
+          name: "G8 Storm",
+          lightBg: false
+        },
+        { hexcode: "757888",
+          name: "G9 Mountain",
+          lightBg: false
+        },
+        { hexcode: "8e91a1",
+          name: "G10 Wolf",
+          lightBg: false
+        },
+        { hexcode: "999dab",
+          name: "G11 Sidewalk",
+          lightBg: false
+        },
+        { hexcode: "a4a8b6",
+          name: "G12 Forge",
+          lightBg: false
+        },
+        { hexcode: "bec2cc",
+          name: "G13 Mist",
+          lightBg: true
+        },
+        { hexcode: "c6cad3",
+          name: "G14 Chromium",
+          lightBg: true
+        },
+        { hexcode: "d4d7dd",
+          name: "G15 Platinum",
+          lightBg: true
+        },
+        { hexcode: "e7e8eb",
+          name: "G16 Pearl",
+          lightBg: true
+        },
+        { hexcode: "eeeff2",
+          name: "G17 Whisper",
+          lightBg: true
+        },
+        { hexcode: "f6f6f8",
+          name: "G18 Cloud",
+          lightBg: true
+        },
+        { hexcode: "fafafc",
+          name: "G19 Ghost",
+          lightBg: true
+        },
+        { hexcode: "ffffff",
+          name: "G20 White",
+          lightBg: true
+        }
+      ]
+      $influxTelegraf = [
+        { hexcode: "2F1F29",
+          name: "T0 Basalt",
+          lightBg: false
+        },
+        { hexcode: "BF3D5E",
+          name: "T1 Ruby",
+          lightBg: false
+        },
+        { hexcode: "DC4E58",
+          name: "T2 Fire",
+          lightBg: false
+        },
+        { hexcode: "F95F53",
+          name: "T3 Curaçao",
+          lightBg: false
+        },
+        { hexcode: "FF8564",
+          name: "T4 Dreamsicle",
+          lightBg: false
+        },
+        { hexcode: "FFB6A0",
+          name: "T5 Tungsten",
+          lightBg: true
+        },
+        { hexcode: "FFDCCF",
+          name: "T6 Marmelade",
+          lightBg: true
+        },
+        { hexcode: "FFF7F4",
+          name: "T7 Flan",
+          lightBg: true
+        }
+      ]
+      $influxDB = [
+        { hexcode: "182838",
+          name: "I0 Abyss",
+          lightBg: false
+        },
+        { hexcode: "326BBA",
+          name: "I1 Sapphire",
+          lightBg: false
+        },
+        { hexcode: "4591ED",
+          name: "I2 Ocean",
+          lightBg: false
+        },
+        { hexcode: "22ADF6",
+          name: "I3 Pool",
+          lightBg: false
+        },
+        { hexcode: "00C9FF",
+          name: "I4 Laser",
+          lightBg: false
+        },
+        { hexcode: "6BDFFF",
+          name: "I5 Hydrogen",
+          lightBg: true
+        },
+        { hexcode: "BEF0FF",
+          name: "I6 Neutrino",
+          lightBg: true
+        },
+        { hexcode: "F0FCFF",
+          name: "I7 Yeti",
+          lightBg: true
+        }
+      ]
+      $influxChronograf = [
+        { hexcode: "1F2039",
+          name: "C0 Shadow",
+          lightBg: false
+        },
+        { hexcode: "311F94",
+          name: "C1 Void",
+          lightBg: false
+        },
+        { hexcode: "513CC6",
+          name: "C2 Planet",
+          lightBg: false
+        },
+        { hexcode: "7A65F2",
+          name: "C3 Star",
+          lightBg: false
+        },
+        { hexcode: "9394FF",
+          name: "C4 Comet",
+          lightBg: false
+        },
+        { hexcode: "B1B6FF",
+          name: "C5 Potassium",
+          lightBg: true
+        },
+        { hexcode: "C9D0FF",
+          name: "C6 Moonstone",
+          lightBg: true
+        },
+        { hexcode: "F2F4FF",
+          name: "C7 Crème de Violette",
+          lightBg: true
+        }
+      ]
+      $influxKapacitor = [
+        { hexcode: "152B2D",
+          name: "K0 Gypsy",
+          lightBg: false
+        },
+        { hexcode: "108174",
+          name: "K1 Emerald",
+          lightBg: false
+        },
+        { hexcode: "32B08C",
+          name: "K2 Viridian",
+          lightBg: false
+        },
+        { hexcode: "4ED8A0",
+          name: "K3 Rainforest",
+          lightBg: false
+        },
+        { hexcode: "7CE490",
+          name: "K4 Honeydew",
+          lightBg: false
+        },
+        { hexcode: "A5F3B4",
+          name: "K5 Krypton",
+          lightBg: true
+        },
+        { hexcode: "C6FFD0",
+          name: "K6 Wasabi",
+          lightBg: true
+        },
+        { hexcode: "F2FFF4",
+          name: "K7 Mint",
+          lightBg: true
+        }
+      ]
+
+      // Create Templates for Nuetrals
+      for (i = 0; i < $influxNuetrals.length; i++) {
+        $colorObject = $influxNuetrals[i];
+
+        // Color Name
+        $colorName = $("<h4 />")
+          .text($colorObject.name);
+
+        // Color Code
+        $colorCode = $("<input />")
+          .attr("type","text")
+          .addClass("docs-color-field")
+          .attr("readonly","true")
+          .attr("value","#"+$colorObject.hexcode);
+
+        // Color Swatch
+        $colorSwatch = $('<div />')
+          .addClass('docs-color-swatch')
+          .attr('style','background-color: #'+$colorObject.hexcode)
+          .append($colorName, $colorCode);
+        // Check lightBg, add class if necessary (legibility)
+        if ($colorObject.lightBg) {
+          $colorSwatch.addClass('light-bg');
+        }
+        
+        // Bootstrap Grid Item
+        $gridItem = $('<div />')
+          .addClass('')
+          .append($colorSwatch);
+
+        // Inject into DOM
+        $("#docs-nuetral-swatches").append($colorSwatch);
+      }
+
+      // Create Templates for Telegraf
+      for (i = 0; i < $influxTelegraf.length; i++) {
+        $colorObject = $influxTelegraf[i];
+
+        // Color Name
+        $colorName = $("<h4 />")
+          .text($colorObject.name);
+
+        // Color Code
+        $colorCode = $("<input />")
+          .attr("type","text")
+          .addClass("docs-color-field")
+          .attr("readonly","true")
+          .attr("value","#"+$colorObject.hexcode);
+
+        // Color Swatch
+        $colorSwatch = $('<div />')
+          .addClass('docs-color-swatch')
+          .attr('style','background-color: #'+$colorObject.hexcode)
+          .append($colorName, $colorCode);
+        // Check lightBg, add class if necessary (legibility)
+        if ($colorObject.lightBg) {
+          $colorSwatch.addClass('light-bg');
+        }
+        
+        // Bootstrap Grid Item
+        $gridItem = $('<div />')
+          .addClass('')
+          .append($colorSwatch);
+
+        // Inject into DOM
+        $("#docs-telegraf-swatches").append($colorSwatch);
+      }
+
+      // Create Templates for InfluxDB
+      for (i = 0; i < $influxDB.length; i++) {
+        $colorObject = $influxDB[i];
+
+        // Color Name
+        $colorName = $("<h4 />")
+          .text($colorObject.name);
+
+        // Color Code
+        $colorCode = $("<input />")
+          .attr("type","text")
+          .addClass("docs-color-field")
+          .attr("readonly","true")
+          .attr("value","#"+$colorObject.hexcode);
+
+        // Color Swatch
+        $colorSwatch = $('<div />')
+          .addClass('docs-color-swatch')
+          .attr('style','background-color: #'+$colorObject.hexcode)
+          .append($colorName, $colorCode);
+        // Check lightBg, add class if necessary (legibility)
+        if ($colorObject.lightBg) {
+          $colorSwatch.addClass('light-bg');
+        }
+        
+        // Bootstrap Grid Item
+        $gridItem = $('<div />')
+          .addClass('')
+          .append($colorSwatch);
+
+        // Inject into DOM
+        $("#docs-influxdb-swatches").append($colorSwatch);
+      }
+      // Create Templates for Chronograf
+      for (i = 0; i < $influxChronograf.length; i++) {
+        $colorObject = $influxChronograf[i];
+
+        // Color Name
+        $colorName = $("<h4 />")
+          .text($colorObject.name);
+
+        // Color Code
+        $colorCode = $("<input />")
+          .attr("type","text")
+          .addClass("docs-color-field")
+          .attr("readonly","true")
+          .attr("value","#"+$colorObject.hexcode);
+
+        // Color Swatch
+        $colorSwatch = $('<div />')
+          .addClass('docs-color-swatch')
+          .attr('style','background-color: #'+$colorObject.hexcode)
+          .append($colorName, $colorCode);
+        // Check lightBg, add class if necessary (legibility)
+        if ($colorObject.lightBg) {
+          $colorSwatch.addClass('light-bg');
+        }
+        
+        // Bootstrap Grid Item
+        $gridItem = $('<div />')
+          .addClass('')
+          .append($colorSwatch);
+
+        // Inject into DOM
+        $("#docs-chronograf-swatches").append($colorSwatch);
+      }
+      // Create Templates for Kapacitor
+      for (i = 0; i < $influxKapacitor.length; i++) {
+        $colorObject = $influxKapacitor[i];
+
+        // Color Name
+        $colorName = $("<h4 />")
+          .text($colorObject.name);
+
+        // Color Code
+        $colorCode = $("<input />")
+          .attr("type","text")
+          .addClass("docs-color-field")
+          .attr("readonly","true")
+          .attr("value","#"+$colorObject.hexcode);
+
+        // Color Swatch
+        $colorSwatch = $('<div />')
+          .addClass('docs-color-swatch')
+          .attr('style','background-color: #'+$colorObject.hexcode)
+          .append($colorName, $colorCode);
+        // Check lightBg, add class if necessary (legibility)
+        if ($colorObject.lightBg) {
+          $colorSwatch.addClass('light-bg');
+        }
+        
+        // Bootstrap Grid Item
+        $gridItem = $('<div />')
+          .addClass('')
+          .append($colorSwatch);
+
+        // Inject into DOM
+        $("#docs-kapacitor-swatches").append($colorSwatch);
+      }
+
+      // Click to select hexcode
+      $('.docs-color-swatch').on('click', function(){
+        $field = $(this).children('.docs-color-field');
+        $field.select();
+      });
+      
+    });
+    </script>
+  </body>
+</html>
