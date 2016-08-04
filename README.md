@@ -39,14 +39,16 @@ Currently working on writing more complete docs for each component, standard and
 [Dark Theme](http://influxdata.github.io/design.influxdata.com/bootstrap-theme/dark-theme.html) | In pretty rough shape, don't think any appplications use this theme currently. Long term goal is to integrate the dark styles into the *Primary Theme* |
 [Corporate Website Theme](http://influxdata.github.io/design.influxdata.com/bootstrap-theme/web-theme.html) | Only used on the new `www.influxdata.com` website. Documentation is near non-existant, theme changes often. |
 
-### Basic Layout
+If you need help implementing Bootstrap specifcally check out the very handy [Bootstrap 3 Docs](http://getbootstrap.com/getting-started/)
+
+### Boilerplate Files
 
 There is one main decision to consider: to make the navbar `fixed` or not. As a general rule use a `fixed` navbar when the content is likely to overflow the viewport (which is almost all cases). Having a fixed navbar contributes to the UI feeling like software and not just a website. Below are some boilerplate HTML files to help get you started:
 
 - [Fixed Navbar (Light)](/boilerplate/fixed-nav-light/index.html)
 - [Fixed Navbar (Dark)](/boilerplate/fixed-nav-dark/index.html)
-- [Default Navbar (Light)](/boilerplate/default-nav-light/index.html)
-- [Default Navbar (Dark)](/boilerplate/default-nav-light/index.html)
+- [Static Navbar (Light)](/boilerplate/static-nav-light/index.html)
+- [Static Navbar (Dark)](/boilerplate/static-nav-light/index.html)
 
 ## Next Release v0.11
 
