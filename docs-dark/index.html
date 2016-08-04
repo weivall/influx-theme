@@ -8,22 +8,24 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,700,900,700italic' rel='stylesheet' type='text/css'>
+    <link href="../favicon-dark.png" rel="shortcut icon" type="image/x-icon">
 
-    <title>Influx Bootstrap Theme</title>
+    <title>Influx Bootstrap Theme (Dark)</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery UI CSS -->
-    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <link href="../jquery-ui/jquery-ui.css" rel="stylesheet">
     <!-- Bootstrap theme -->
-    <link href="dist/css/bootstrap-theme-web.css" rel="stylesheet">
+    <link href="../dist/css/bootstrap-theme-dark.css" rel="stylesheet">
+
 
   </head>
 
   <body role="document">
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -32,66 +34,23 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><img class="influx-logo" src="https://influxdata.com/wp-content/themes/influx/images/logo-combined.svg" alt="InfluxData" /></a>
+          <a class="navbar-brand" href="#"><img class="influx-logo" src="img/influxcloud-logo-white.svg" alt="InfluxCloud" /></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Use Cases</a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Custom DevOps Monitoring</a></li>
-                <li><a href="#">Real-Time Analytics</a></li>
-                <li><a href="#">IoT & Sensor Data</a></li>
-                <li><a href="#">Cloud & OpenStack</a></li>
-                <li><a href="#">Testimonials</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Platform</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Telegraf</a></li>
-                <li><a href="#">InfluxDB</a></li>
-                <li><a href="#">Chronograf</a></li>
-                <li><a href="#">Kapacitor</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Get Started</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Consulting</a></li>
-                <li><a href="#">Managed Hosting</a></li>
-                <li><a href="#">Technical Support</a></li>
-                <li><a href="#">Training</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pricing</a>
-              <ul class="dropdown-menu">
-                <li><a href="">Product & Support</a></li>
-                <li><a href="">Subscriptions</a></li>
-                <li><a href="">Managed Hosting</a></li>
-                <li><a href="#">Professional Services</a></li>
-                <li><a href="#">Training</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Developers</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Get Started</a></li>
-                <li><a href="#">Downloads</a></li>
-                <li><a href="#">Documentation</a></li>
-                <li><a href="#">Videos</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Community Resources</a></li>
-                <li><a href="#">Public Training</a></li>
-                <li><a href="#">Virtual Training</a></li>
-                <li><a href="#">Events</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Blog</a></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
           </ul>
@@ -99,10 +58,10 @@
       </div>
     </nav>
 
-    <div class="hero hero-light" style="background-image: url(https://embassynetwork.com/media/events/58bc76e5-4cec-4c3b-a707-e26c583d26de.jpg);">
+    <div class="hero hero-light" style="background-image: url(../img/graphs.svg);">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-8 col-md-offset-2">
             <h1>Hero Container</h1>
             <p>Pretty cool huh?</p><br/><br/>
             <a href="#" class="btn btn-lg btn-success" role="button">Click me</a>
@@ -111,203 +70,7 @@
       </div>
     </div>
 
-    <div class="page-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Page Section</h1>
-            <hr/>
-            <p>Default has padding on top & bottom</p>
-            <pre><code>&lt;div class="page-section"&gt;
-  &lt;div class="container"&gt;...&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-section offwhite">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Page Section + Offwhite</h1>
-            <hr/>
-            <p>Same as default but slightly darker</p>
-            <pre><code>&lt;div class="page-section offwhite"&gt;
-  &lt;div class="container"&gt;...&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-section gradient-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Page Section + Gradient Light</h1>
-            <hr/>
-            <p>Same as default but with background gradient</p>
-            <pre><code>&lt;div class="page-section gradient-light"&gt;
-  &lt;div class="container"&gt;...&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-section dark">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Page Section + Dark</h1>
-            <hr/>
-            <p>Same as default but with dark background. Type and horizontal rules are darker to match</p>
-            <pre><code>&lt;div class="page-section dark"&gt;
-  &lt;div class="container"&gt;...&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-section gradient-dark">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Page Section + Gradient Dark</h1>
-            <hr/>
-            <p>Same as default but with dark background gradient. Type and horizontal rules are darker to match</p>
-            <pre><code>&lt;div class="page-section gradient-dark"&gt;
-  &lt;div class="container"&gt;...&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-section ice">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Page Section + Ice</h1>
-            <hr/>
-            <p>Same as gradient light but with subtle blue coloring</p>
-            <pre><code>&lt;div class="page-section ice"&gt;
-  &lt;div class="container"&gt;...&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-section tropical">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Page Section + Tropical</h1>
-            <hr/>
-            <p>Uses a horizontal gradient that makes use of <em>mixed product colors</em></p>
-            <pre><code>&lt;div class="page-section tropical"&gt;
-  &lt;div class="container"&gt;...&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-section aurora">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Page Section + Aurora</h1>
-            <hr/>
-            <p>Uses a horizontal gradient that makes use of <em>mixed product colors</em></p>
-            <pre><code>&lt;div class="page-section aurora"&gt;
-  &lt;div class="container"&gt;...&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-section sunset">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Page Section + Sunset</h1>
-            <hr/>
-            <p>Uses a horizontal gradient that makes use of <em>mixed product colors</em></p>
-            <pre><code>&lt;div class="page-section sunset"&gt;
-  &lt;div class="container"&gt;...&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-section spring">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Page Section + Spring</h1>
-            <hr/>
-            <p>Uses a horizontal gradient that makes use of <em>mixed product colors</em></p>
-            <pre><code>&lt;div class="page-section spring"&gt;
-  &lt;div class="container"&gt;...&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-section tidepool">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Page Section + Tidepool</h1>
-            <hr/>
-            <p>Uses a horizontal gradient that makes use of <em>mixed product colors</em></p>
-            <pre><code>&lt;div class="page-section tidepool"&gt;
-  &lt;div class="container"&gt;...&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-section arctic">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Page Section + Arctic</h1>
-            <hr/>
-            <p>Uses a horizontal gradient that makes use of <em>mixed product colors</em></p>
-            <pre><code>&lt;div class="page-section arctic"&gt;
-  &lt;div class="container"&gt;...&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-section burning-sky">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Page Section + Burning Sky</h1>
-            <hr/>
-            <p>Uses a horizontal gradient that makes use of <em>mixed product colors</em></p>
-            <pre><code>&lt;div class="page-section burning-sky"&gt;
-  &lt;div class="container"&gt;...&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <div class="page-section">
-    <div class="container">
+    <div class="container theme-showcase" role="main">
 
       <div class="page-header">
         <h1>Jumbotron</h1>
@@ -366,6 +129,85 @@
           </div><!-- / .panel -->
         </div><!-- / .col-md-8 -->         
       </div><!-- / .row -->
+
+      <div class="page-header">
+        <h1>Icon Font</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Icon font created using icomoon.io</h2>
+            </div>
+            <div class="panel-body">
+              <p>Font files are referenced from <code>bootstrap-theme.min.css</code> as a relative path <code>../fonts/</code>. To ensure proper display, make sure your folder structure is like this:</p>
+              <pre><code>css/
+    bootstrap.min.css
+    bootstrap-theme.min.css
+    bootstrap-theme.min.css.map
+fonts/
+    icomoon.eot
+    icomoon.svg
+    icomoon.ttf
+    icomoon.woff
+    icomoob.woff2</code></pre><br/>
+              <h4>How to use:</h4>
+              <p>The icon class can be applied to any element, but realistically works best when applied to inline elements such as <code>&lt;span&gt;</code></p>
+              <table class="table v-center table-bordered">
+                <tbody>
+                  <tr>
+                    <td class="text-center"><span style="font-size:50px;" class="icon cpu"></span><br/><br/><strong>CPU</strong><br/><code>.icon.cpu</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon server"></span><br/><br/><strong>Server</strong><br/><code>.icon.server</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon plus"></span><br/><br/><strong>Plus</strong><br/><code>.icon.plus</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon remove"></span><br/><br/><strong>Remove (X)</strong><br/><code>.icon.remove</code></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><span style="font-size:50px;" class="icon crown"></span><br/><br/><strong>Crown (Admin)</strong><br/><code>.icon.crown</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon graphline"></span><br/><br/><strong>Graph Line</strong><br/><code>.icon.graphline</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon flag"></span><br/><br/><strong>Help Flag</strong><br/><code>.icon.flag</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon cubo"></span><br/><br/><strong>Cuboctahedron</strong><br/><code>.icon.cubo</code></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><span style="font-size:50px;" class="icon cog"></span><br/><br/><strong>Cog (Thin)</strong><br/><code>.icon.cog</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon cog-thick"></span><br/><br/><strong>Cog (Thick)</strong><br/><code>.icon.cog-thick</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon wrenches"></span><br/><br/><strong>Wrenches</strong><br/><code>.icon.wrenches</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon wrench"></span><br/><br/><strong>Wrench</strong><br/><code>.icon.wrench</code></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><span style="font-size:50px;" class="icon trash"></span><br/><br/><strong>Trash (Solid)</strong><br/><code>.icon.trash</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon trash-outline"></span><br/><br/><strong>Trash (Outline)</strong><br/><code>.icon.trash-outline</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon search"></span><br/><br/><strong>Magnifying Glass</strong><br/><code>.icon.search</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon duplicate"></span><br/><br/><strong>Duplicate</strong><br/><code>.icon.duplicate</code></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><span style="font-size:50px;" class="icon caret-right"></span><br/><br/><strong>Caret (Right)</strong><br/><code>.icon.caret-right</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon caret-left"></span><br/><br/><strong>Caret (Left)</strong><br/><code>.icon.caret-left</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon caret-up"></span><br/><br/><strong>Caret (Up)</strong><br/><code>.icon.caret-up</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon caret-down"></span><br/><br/><strong>Caret (Down)</strong><br/><code>.icon.caret-down</code></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><span style="font-size:50px;" class="icon arrow-right"></span><br/><br/><strong>Arrow (Right)</strong><br/><code>.icon.arrow-right</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon arrow-left"></span><br/><br/><strong>Arrow (Left)</strong><br/><code>.icon.arrow-left</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon arrow-up"></span><br/><br/><strong>Arrow (Up)</strong><br/><code>.icon.arrow-up</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon arrow-down"></span><br/><br/><strong>Arrow (Down)</strong><br/><code>.icon.arrow-down</code></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><span style="font-size:50px;" class="icon alert-triangle"></span><br/><br/><strong>Alert</strong><br/><code>.icon.alert-triangle</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon comment"></span><br/><br/><strong>Comment</strong><br/><code>.icon.comment</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon comment-discussion"></span><br/><br/><strong>Discussion</strong><br/><code>.icon.comment-discussion</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon heart"></span><br/><br/><strong>Heart</strong><br/><code>.icon.heart</code></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><span style="font-size:50px;" class="icon location"></span><br/><br/><strong>Map Pin</strong><br/><code>.icon.location</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon stop"></span><br/><br/><strong>Stop Sign Alert</strong><br/><code>.icon.stop</code></td>
+                    <td class="text-center"><span style="font-size:50px;" class="icon checkmark"></span><br/><br/><strong>Check Mark</strong><br/><code>.icon.checkmark</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="page-header">
         <h1>Labels</h1>
@@ -643,34 +485,19 @@
           <div class="panel panel-default">
             <div class="panel-body">
               <p>
-                <div class="btn-group" data-toggle="buttons">
-                  <label class="btn btn-primary active">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> All
-                  </label>
-                  <label class="btn btn-primary">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> IoT & Sensor Data
-                  </label>
-                  <label class="btn btn-primary">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Custom Monitoring
-                  </label>
-                  <label class="btn btn-primary">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Real-Time Analytics
-                  </label>
-                  <label class="btn btn-primary">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> OpenStack, Docker & Virtualization
-                  </label>
-                </div>
-              </p>
-            </div>
-            <div class="panel-footer">Basic Button Group</div>
-          </div><!-- / .panel -->
-
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <p>
                 <div class="btn-group">
                   <button type="button" class="btn btn-default disalbed" disabled="disabled">Add</button>
                   <button type="button" class="btn btn-default">Remove</button>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Alpha</a></li>
+                      <li><a href="#">Beta</a></li>
+                    </ul>
+                  </div>
                   <div class="btn-group" role="group">
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Dropdown
@@ -710,33 +537,6 @@
           </div><!-- / .panel -->
         </div><!-- / .col-md-12 -->
       </div><!-- / .row -->
-
-      <div class="page-header">
-        <h1>Pagination</h1>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <nav>
-            <ul class="pagination">
-              <li>
-                <a href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="active"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
 
       <div class="page-header">
         <h1>Form Elements</h1>
@@ -1389,6 +1189,24 @@
       </div><!-- / .row -->
 
       <div class="page-header">
+        <h1>Collapsible Panels</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title"><a role="button" data-toggle="collapse" class="collapsed" href="#collapsePanel"><span class="caret"></span> Click to toggle</a></h2>
+            </div>
+            <div class="collapse" id="collapsePanel">
+              <div class="panel-body">
+                <p>Listicle freegan cliche four loko marfa direct trade, disrupt microdosing mixtape lomo. Kogi echo park lo-fi pug, pabst letterpress helvetica authentic mixtape literally VHS schlitz cred neutra. Plaid banjo sustainable blue bottle, bespoke fanny pack poutine tousled. Next level knausgaard gochujang, meditation mixtape disrupt church-key master cleanse XOXO affogato cred food truck venmo messenger bag pop-up. Hella brooklyn pitchfork swag, bespoke dreamcatcher food truck crucifix 90's next level sustainable put a bird on it. Poutine sustainable locavore, leggings umami health goth seitan. Gochujang meggings kickstarter chia taxidermy authentic pinterest.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
         <h1>Advanced Panels</h1>
       </div>
       <div class="row">
@@ -1959,7 +1777,6 @@
 
 
     </div> <!-- /container -->
-  </div> <!-- /page-section -->
 
 
     <!-- Bootstrap core JavaScript
@@ -1967,8 +1784,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="dist/js/bootstrap.min.js"></script>
-    <script src="jquery-ui/jquery-ui.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="../jquery-ui/jquery-ui.js"></script>
     <script>
     $('.panel').on( "click", function() {
 
