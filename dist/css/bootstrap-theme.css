@@ -1,8 +1,15 @@
-/*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+/*
+ 	Bootstrap v3.3.6 (http://getbootstrap.com)
+ 	--------------------------------------------------
+	Copyright 2011-2015 Twitter, Inc.
+	Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+
+
+	Theme design by Alex Paxton (alexpaxton.com)
+	Intended for use exclusively with InfluxData products
+
+	* NOTE: Items are in no particular order
+*/
 .u-flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3752,5 +3759,13 @@ span.text-color-warning {
 }
 span.text-color-danger {
   color: #f95f53;
+}
+section.docs-section {
+  width: 100%;
+  padding: 100px 0;
+  border-bottom: 2px solid #eef0f2;
+}
+section.docs-section:last-of-type {
+  border-bottom: 0;
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */
