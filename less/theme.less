@@ -1585,8 +1585,8 @@ h6.deluxe {
 
 code {
 	font-weight: 600;
-	background-color: @c-cremedeviolette;
-	border: 1px solid @c-cremedeviolette;
+	background-color: @g19-ghost;
+	border: 1px solid @g19-ghost;
 	text-shadow: none;
 	color: @c-star;
 	font-family: Consolas,"Lucida Console",Monaco,monospace;
@@ -1597,9 +1597,9 @@ code {
 }
 pre {
 	font-size: 11px;
-	line-height: 16px;
-	background-color: @c-cremedeviolette;
-	border: 2px solid @c-cremedeviolette;
+	line-height: 17px;
+	background-color: @g19-ghost;
+	border: 2px solid @g19-ghost;
 	color: @c-star;
 	border-bottom-width: 3px;
 	white-space: pre;
@@ -1609,7 +1609,7 @@ pre {
 		background-color: none;
 		white-space: pre;
 	}
-	.custom-scrollbar(@c-cremedeviolette,@c-potassium);
+	.custom-scrollbar(@g19-ghost,@c-moonstone);
 }
 
 //
@@ -2726,6 +2726,10 @@ section.docs-section {
 	border-bottom: 2px solid #eef0f2;
 
 	&:last-of-type {
+		border-bottom: 0;
+	}
+
+	.page-header {
 		border-bottom: 0;
 	}
 }
