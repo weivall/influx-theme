@@ -1,6 +1,6 @@
 /*
- 	Bootstrap v3.3.6 (http://getbootstrap.com)
- 	--------------------------------------------------
+	Bootstrap v3.3.6 (http://getbootstrap.com)
+	--------------------------------------------------
 	Copyright 2011-2015 Twitter, Inc.
 	Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 
@@ -991,6 +991,9 @@ fieldset[disabled] .btn-link-success:active:focus {
   color: inherit;
   letter-spacing: .015em;
 }
+.panel-title .icon:first-child {
+  margin-right: 7px;
+}
 .panel-title .caret {
   position: relative;
   display: inline-block;
@@ -1105,40 +1108,40 @@ fieldset[disabled] .btn-link-success:active:focus {
   background:         linear-gradient(to right, #4ed8a0 0%, #7ce490 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
 }
+.panel-spring .panel-heading {
+  color: #fff;
+  background: #22adf6;
+  background: -webkit-linear-gradient(left, #22adf6 0%, #4ed8a0 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#22adf6), to(#4ed8a0));
+  background:      -o-linear-gradient(left, #22adf6 0%, #4ed8a0 100%);
+  background:         linear-gradient(to right, #22adf6 0%, #4ed8a0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
+}
 .panel-summer .panel-heading {
+  color: #fff;
+  background: #00c9ff;
+  background: -webkit-linear-gradient(left, #00c9ff 0%, #b1b6ff 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#00c9ff), to(#b1b6ff));
+  background:      -o-linear-gradient(left, #00c9ff 0%, #b1b6ff 100%);
+  background:         linear-gradient(to right, #00c9ff 0%, #b1b6ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
+}
+.panel-fall .panel-heading {
+  color: #fff;
+  background: #9394ff;
+  background: -webkit-linear-gradient(left, #9394ff 0%, #ff8564 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#9394ff), to(#ff8564));
+  background:      -o-linear-gradient(left, #9394ff 0%, #ff8564 100%);
+  background:         linear-gradient(to right, #9394ff 0%, #ff8564 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
+}
+.panel-winter .panel-heading {
   color: #fff;
   background: #22adf6;
   background: -webkit-linear-gradient(left, #22adf6 0%, #9394ff 100%);
   background: -webkit-gradient(linear, left top, right top, from(#22adf6), to(#9394ff));
   background:      -o-linear-gradient(left, #22adf6 0%, #9394ff 100%);
   background:         linear-gradient(to right, #22adf6 0%, #9394ff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
-}
-.panel-spring .panel-heading {
-  color: #fff;
-  background: #4ed8a0;
-  background: -webkit-linear-gradient(left, #4ed8a0 0%, #00c9ff 100%);
-  background: -webkit-gradient(linear, left top, right top, from(#4ed8a0), to(#00c9ff));
-  background:      -o-linear-gradient(left, #4ed8a0 0%, #00c9ff 100%);
-  background:         linear-gradient(to right, #4ed8a0 0%, #00c9ff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
-}
-.panel-winter .panel-heading {
-  color: #fff;
-  background: #326bba;
-  background: -webkit-linear-gradient(left, #326bba 0%, #7a65f2 100%);
-  background: -webkit-gradient(linear, left top, right top, from(#326bba), to(#7a65f2));
-  background:      -o-linear-gradient(left, #326bba 0%, #7a65f2 100%);
-  background:         linear-gradient(to right, #326bba 0%, #7a65f2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
-}
-.panel-fall .panel-heading {
-  color: #fff;
-  background: #ff8564;
-  background: -webkit-linear-gradient(left, #ff8564 0%, #9394ff 100%);
-  background: -webkit-gradient(linear, left top, right top, from(#ff8564), to(#9394ff));
-  background:      -o-linear-gradient(left, #ff8564 0%, #9394ff 100%);
-  background:         linear-gradient(to right, #ff8564 0%, #9394ff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
 }
 .panel-minimal {
@@ -3770,5 +3773,465 @@ section.docs-section:last-of-type {
 }
 section.docs-section .page-header {
   border-bottom: 0;
+}
+.nav-tablist {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  /* Size Modifiers */
+}
+.nav-tablist > li > a {
+  position: relative;
+  height: 41px;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 37px;
+  color: #999dab;
+  background-color: #eeeff2;
+  border: 2px solid #eeeff2;
+  border-right-width: 0;
+  -webkit-transition: background-color .25s ease, color .25s ease;
+       -o-transition: background-color .25s ease, color .25s ease;
+          transition: background-color .25s ease, color .25s ease;
+}
+.nav-tablist > li > a:hover {
+  color: #676978;
+  cursor: pointer;
+  background-color: #f6f6f8;
+}
+.nav-tablist > li:first-of-type > a {
+  border-radius: 4px 0 0 4px;
+}
+.nav-tablist > li:last-of-type > a {
+  border-right-width: 2px;
+  border-radius: 0 4px 4px 0;
+}
+.nav-tablist > li.active > a {
+  color: #676978;
+  background-color: #fff;
+}
+.nav-tablist > li.disabled > a {
+  font-style: italic;
+  color: #c6cad3;
+}
+.nav-tablist > li.disabled > a:hover,
+.nav-tablist > li.disabled > a:focus {
+  color: #c6cad3;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: #eeeff2;
+}
+.nav-tablist.nav-tablist-lg > li > a {
+  height: 54px;
+  padding: 0 19px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 50px;
+}
+.nav-tablist.nav-tablist-lg > li:first-of-type > a {
+  border-radius: 4px 0 0 4px;
+}
+.nav-tablist.nav-tablist-lg > li:last-of-type > a {
+  border-radius: 0 4px 4px 0;
+}
+.nav-tablist.nav-tablist-sm > li > a {
+  height: 31px;
+  padding: 0 9px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 27px;
+}
+.nav-tablist.nav-tablist-sm > li:first-of-type > a {
+  border-radius: 3px 0 0 3px;
+}
+.nav-tablist.nav-tablist-sm > li:last-of-type > a {
+  border-radius: 0 3px 3px 0;
+}
+.nav-tablist.nav-tablist-xs > li > a {
+  height: 27px;
+  padding: 0 7px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 23px;
+}
+.nav-tablist.nav-tablist-xs > li:first-of-type > a {
+  border-radius: 3px 0 0 3px;
+}
+.nav-tablist.nav-tablist-xs > li:last-of-type > a {
+  border-radius: 0 3px 3px 0;
+}
+.microtabs-dismiss {
+  position: relative;
+  top: -1px;
+  right: -3px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: -2px;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  /* Using pseudo elements to render an X */
+  /* Hover State */
+}
+.microtabs-dismiss:after,
+.microtabs-dismiss:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 11px;
+  content: '';
+  background-color: #d4d7dd;
+  border-radius: 1px;
+  -webkit-transition: background-color .25s ease;
+       -o-transition: background-color .25s ease;
+          transition: background-color .25s ease;
+}
+.microtabs-dismiss:after {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+       -o-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.microtabs-dismiss:before {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+       -o-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+.microtabs-dismiss:hover {
+  cursor: pointer;
+}
+.microtabs-dismiss:hover:after,
+.microtabs-dismiss:hover:before {
+  background-color: #ff8564;
+}
+.nav-microtabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  padding: 9px 9px 0 9px;
+  background-color: #eeeff2;
+
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  /* Contextual Alternatives */
+  /* Common Seasonal Styles */
+}
+.nav-microtabs > li > a {
+  position: relative;
+  height: 30px;
+  padding: 0 9px;
+  margin: 0 2px 0 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #999dab;
+  background-color: #eeeff2;
+  border: 0;
+  border-radius: 3px 3px 0 0;
+  -webkit-transition: background-color .25s ease, color .25s ease;
+       -o-transition: background-color .25s ease, color .25s ease;
+          transition: background-color .25s ease, color .25s ease;
+}
+.nav-microtabs > li > a:hover {
+  color: #676978;
+  cursor: pointer;
+  background-color: #fafafc;
+}
+.nav-microtabs > li:last-of-type > a {
+  margin-right: 0;
+}
+.nav-microtabs > li.active > a {
+  color: #757888;
+  background-color: #fff;
+}
+.nav-microtabs > li.disabled > a {
+  font-style: italic;
+  color: #c6cad3;
+}
+.nav-microtabs > li.disabled > a:hover,
+.nav-microtabs > li.disabled > a:focus {
+  color: #c6cad3;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: #eeeff2;
+}
+.nav-microtabs-dark {
+  background-color: #434453;
+}
+.nav-microtabs-dark .microtabs-dismiss {
+  background-color: transparent;
+  /* Using pseudo elements to render an X */
+  /* Hover State */
+}
+.nav-microtabs-dark .microtabs-dismiss:after,
+.nav-microtabs-dark .microtabs-dismiss:before {
+  width: 2px;
+  background-color: #8e91a1;
+}
+.nav-microtabs-dark .microtabs-dismiss:hover:after,
+.nav-microtabs-dark .microtabs-dismiss:hover:before {
+  background-color: #ffb6a0;
+}
+.nav-microtabs-dark > li > a {
+  color: #bec2cc;
+  background-color: #545667;
+}
+.nav-microtabs-dark > li > a:hover {
+  color: #f6f6f8;
+  background-color: #676978;
+}
+.nav-microtabs-dark > li.active > a {
+  color: #f6f6f8;
+  background-color: #676978;
+}
+.nav-microtabs-dark > li.disabled > a {
+  color: #999dab;
+  background-color: #545667;
+}
+.nav-microtabs-dark > li.disabled > a:hover,
+.nav-microtabs-dark > li.disabled > a:focus {
+  color: #999dab;
+  background-color: #545667;
+}
+.nav-microtabs-darker {
+  background-color: #383846;
+}
+.nav-microtabs-darker .microtabs-dismiss {
+  background-color: transparent;
+  /* Using pseudo elements to render an X */
+  /* Hover State */
+}
+.nav-microtabs-darker .microtabs-dismiss:after,
+.nav-microtabs-darker .microtabs-dismiss:before {
+  width: 2px;
+  background-color: #8e91a1;
+}
+.nav-microtabs-darker .microtabs-dismiss:hover:after,
+.nav-microtabs-darker .microtabs-dismiss:hover:before {
+  background-color: #ffb6a0;
+}
+.nav-microtabs-darker > li > a {
+  color: #bec2cc;
+  background-color: #383846;
+}
+.nav-microtabs-darker > li > a:hover {
+  color: #f6f6f8;
+  background-color: #434453;
+}
+.nav-microtabs-darker > li.active > a {
+  color: #f6f6f8;
+  background-color: #434453;
+}
+.nav-microtabs-darker > li.disabled > a {
+  color: #8e91a1;
+  background-color: #383846;
+}
+.nav-microtabs-darker > li.disabled > a:hover,
+.nav-microtabs-darker > li.disabled > a:focus {
+  color: #8e91a1;
+  background-color: #383846;
+}
+.nav-microtabs-white {
+  background-color: #fff;
+}
+.nav-microtabs-white > li > a {
+  background-color: #fff;
+}
+.nav-microtabs-white > li > a:hover {
+  background-color: #fafafc;
+}
+.nav-microtabs-white > li.active > a {
+  color: #676978;
+  background-color: #eeeff2;
+}
+.nav-microtabs-white > li.disabled > a {
+  color: #c6cad3;
+}
+.nav-microtabs-white > li.disabled > a:hover,
+.nav-microtabs-white > li.disabled > a:focus {
+  color: #c6cad3;
+  background-color: #fff;
+}
+.nav-microtabs-spring,
+.nav-microtabs-summer,
+.nav-microtabs-fall,
+.nav-microtabs-winter {
+  /* Styles for dismiss buttons inside seasonal alternatives */
+}
+.panel-heading + .nav-microtabs-spring,
+.panel-heading + .nav-microtabs-summer,
+.panel-heading + .nav-microtabs-fall,
+.panel-heading + .nav-microtabs-winter {
+  /* Reduced top padding looks better when next to a matching panel heading */
+  padding-top: 2px;
+}
+.nav-microtabs-spring .microtabs-dismiss,
+.nav-microtabs-summer .microtabs-dismiss,
+.nav-microtabs-fall .microtabs-dismiss,
+.nav-microtabs-winter .microtabs-dismiss {
+  right: -5px;
+  margin-left: -4px;
+  /* Using pseudo elements to render an X */
+  /* Hover State */
+}
+.nav-microtabs-spring .microtabs-dismiss:after,
+.nav-microtabs-summer .microtabs-dismiss:after,
+.nav-microtabs-fall .microtabs-dismiss:after,
+.nav-microtabs-winter .microtabs-dismiss:after,
+.nav-microtabs-spring .microtabs-dismiss:before,
+.nav-microtabs-summer .microtabs-dismiss:before,
+.nav-microtabs-fall .microtabs-dismiss:before,
+.nav-microtabs-winter .microtabs-dismiss:before {
+  width: 2px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 0;
+  -webkit-transition: height .25s ease;
+       -o-transition: height .25s ease;
+          transition: height .25s ease;
+}
+.nav-microtabs-spring .microtabs-dismiss:after,
+.nav-microtabs-summer .microtabs-dismiss:after,
+.nav-microtabs-fall .microtabs-dismiss:after,
+.nav-microtabs-winter .microtabs-dismiss:after {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+       -o-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.nav-microtabs-spring .microtabs-dismiss:before,
+.nav-microtabs-summer .microtabs-dismiss:before,
+.nav-microtabs-fall .microtabs-dismiss:before,
+.nav-microtabs-winter .microtabs-dismiss:before {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+       -o-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+.nav-microtabs-spring .microtabs-dismiss:hover,
+.nav-microtabs-summer .microtabs-dismiss:hover,
+.nav-microtabs-fall .microtabs-dismiss:hover,
+.nav-microtabs-winter .microtabs-dismiss:hover {
+  cursor: pointer;
+}
+.nav-microtabs-spring .microtabs-dismiss:hover:after,
+.nav-microtabs-summer .microtabs-dismiss:hover:after,
+.nav-microtabs-fall .microtabs-dismiss:hover:after,
+.nav-microtabs-winter .microtabs-dismiss:hover:after,
+.nav-microtabs-spring .microtabs-dismiss:hover:before,
+.nav-microtabs-summer .microtabs-dismiss:hover:before,
+.nav-microtabs-fall .microtabs-dismiss:hover:before,
+.nav-microtabs-winter .microtabs-dismiss:hover:before {
+  height: 12px;
+  background-color: #fff;
+}
+.nav-microtabs-spring > li > a,
+.nav-microtabs-summer > li > a,
+.nav-microtabs-fall > li > a,
+.nav-microtabs-winter > li > a {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .19);
+}
+.nav-microtabs-spring > li > a:hover,
+.nav-microtabs-summer > li > a:hover,
+.nav-microtabs-fall > li > a:hover,
+.nav-microtabs-winter > li > a:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .3);
+}
+.nav-microtabs-spring > li.active > a,
+.nav-microtabs-summer > li.active > a,
+.nav-microtabs-fall > li.active > a,
+.nav-microtabs-winter > li.active > a {
+  color: #676978;
+  background-color: #fff;
+}
+.nav-microtabs-spring > li.active > a .microtabs-dismiss,
+.nav-microtabs-summer > li.active > a .microtabs-dismiss,
+.nav-microtabs-fall > li.active > a .microtabs-dismiss,
+.nav-microtabs-winter > li.active > a .microtabs-dismiss {
+  background-color: transparent;
+}
+.nav-microtabs-spring > li.active > a .microtabs-dismiss:after,
+.nav-microtabs-summer > li.active > a .microtabs-dismiss:after,
+.nav-microtabs-fall > li.active > a .microtabs-dismiss:after,
+.nav-microtabs-winter > li.active > a .microtabs-dismiss:after,
+.nav-microtabs-spring > li.active > a .microtabs-dismiss:before,
+.nav-microtabs-summer > li.active > a .microtabs-dismiss:before,
+.nav-microtabs-fall > li.active > a .microtabs-dismiss:before,
+.nav-microtabs-winter > li.active > a .microtabs-dismiss:before {
+  background-color: #bec2cc;
+}
+.nav-microtabs-spring > li.disabled > a,
+.nav-microtabs-summer > li.disabled > a,
+.nav-microtabs-fall > li.disabled > a,
+.nav-microtabs-winter > li.disabled > a {
+  color: rgba(255, 255, 255, .68);
+  background-color: rgba(255, 255, 255, .19);
+}
+.nav-microtabs-spring > li.disabled > a:hover,
+.nav-microtabs-summer > li.disabled > a:hover,
+.nav-microtabs-fall > li.disabled > a:hover,
+.nav-microtabs-winter > li.disabled > a:hover,
+.nav-microtabs-spring > li.disabled > a:focus,
+.nav-microtabs-summer > li.disabled > a:focus,
+.nav-microtabs-fall > li.disabled > a:focus,
+.nav-microtabs-winter > li.disabled > a:focus {
+  color: rgba(255, 255, 255, .68);
+  background-color: rgba(255, 255, 255, .19);
+}
+.nav-microtabs-spring {
+  background: #22adf6;
+  background: -webkit-linear-gradient(left, #22adf6 0%, #4ed8a0 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#22adf6), to(#4ed8a0));
+  background:      -o-linear-gradient(left, #22adf6 0%, #4ed8a0 100%);
+  background:         linear-gradient(to right, #22adf6 0%, #4ed8a0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
+}
+.nav-microtabs-summer {
+  background: #00c9ff;
+  background: -webkit-linear-gradient(left, #00c9ff 0%, #b1b6ff 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#00c9ff), to(#b1b6ff));
+  background:      -o-linear-gradient(left, #00c9ff 0%, #b1b6ff 100%);
+  background:         linear-gradient(to right, #00c9ff 0%, #b1b6ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
+}
+.nav-microtabs-fall {
+  background: #9394ff;
+  background: -webkit-linear-gradient(left, #9394ff 0%, #ff8564 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#9394ff), to(#ff8564));
+  background:      -o-linear-gradient(left, #9394ff 0%, #ff8564 100%);
+  background:         linear-gradient(to right, #9394ff 0%, #ff8564 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
+}
+.nav-microtabs-winter {
+  background: #22adf6;
+  background: -webkit-linear-gradient(left, #22adf6 0%, #9394ff 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#22adf6), to(#9394ff));
+  background:      -o-linear-gradient(left, #22adf6 0%, #9394ff 100%);
+  background:         linear-gradient(to right, #22adf6 0%, #9394ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
+}
+/*
+		Increase left & right padding on tab container to match panel paadding
+		when it is directly inside a panel
+*/
+.panel > .nav-microtabs {
+  padding-right: 30px;
+  padding-left: 30px;
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */

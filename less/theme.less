@@ -1,6 +1,6 @@
 /*
- 	Bootstrap v3.3.6 (http://getbootstrap.com)
- 	--------------------------------------------------
+	Bootstrap v3.3.6 (http://getbootstrap.com)
+	--------------------------------------------------
 	Copyright 2011-2015 Twitter, Inc.
 	Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 
@@ -446,6 +446,10 @@ a:active {
 	margin: 5px 0;
 	font-size: 18px;
 
+	.icon:first-child {
+		margin-right: 7px;
+	}
+
 	.caret {
 		width: 14px;
 		height: 14px;
@@ -520,20 +524,20 @@ a:active {
 }
 
 // Solid Alternatives
-.panel-summer .panel-heading {
-	.gradient-h(@c-pool,@c-comet);
-	color: @g20-white;
-}
 .panel-spring .panel-heading {
-	.gradient-h(@c-rainforest,@c-laser);
+	.gradient-h(@c-pool,@c-rainforest);
 	color: @g20-white;
 }
-.panel-winter .panel-heading {
-	.gradient-h(@c-sapphire,@c-star);
+.panel-summer .panel-heading {
+	.gradient-h(@c-laser,@c-potassium);
 	color: @g20-white;
 }
 .panel-fall .panel-heading {
-	.gradient-h(@c-dreamsicle,@c-comet);
+	.gradient-h(@c-comet,@c-dreamsicle);
+	color: @g20-white;
+}
+.panel-winter .panel-heading {
+	.gradient-h(@c-pool,@c-comet);
 	color: @g20-white;
 }
 
@@ -1395,22 +1399,22 @@ a.list-group-item {
 	}
 }
 .table-bordered {
-  border: 2px solid @g18-cloud;
-  > thead,
-  > tbody,
-  > tfoot {
-    > tr {
-      > th,
-      > td {
-        border: 2px solid @g18-cloud;
-      }
-    }
-  }
+	border: 2px solid @g18-cloud;
+	> thead,
+	> tbody,
+	> tfoot {
+		> tr {
+			> th,
+			> td {
+				border: 2px solid @g18-cloud;
+			}
+		}
+	}
 }
 .table-responsive {
-  @media screen and (max-width: @screen-xs-max) {
-    border: 2px solid @g18-cloud;
-  }
+	@media screen and (max-width: @screen-xs-max) {
+		border: 2px solid @g18-cloud;
+	}
 }
 
 
@@ -2515,39 +2519,39 @@ table.table.icon-font-matrix {
 
 // Wrapper for the tooltip content
 .tooltip-inner {
-  padding: 4px 8px;
-  color: @tooltip-text-color;
-  text-align: center;
-  background-color: @tooltip-background;
-  border-radius: @border-radius-base;
-  font-size: 13px;
-  font-weight: 600;
+	padding: 4px 8px;
+	color: @tooltip-text-color;
+	text-align: center;
+	background-color: @tooltip-background;
+	border-radius: @border-radius-base;
+	font-size: 13px;
+	font-weight: 600;
 }
 .tooltip {
-  &.top .tooltip-arrow {
-    border-top-color: @tooltip-background;
-  }
-  &.top-left .tooltip-arrow {
-    border-top-color: @tooltip-background;
-  }
-  &.top-right .tooltip-arrow {
-    border-top-color: @tooltip-background;
-  }
-  &.right .tooltip-arrow {
-    border-right-color: @tooltip-background;
-  }
-  &.left .tooltip-arrow {
-    border-left-color: @tooltip-background;
-  }
-  &.bottom .tooltip-arrow {
-    border-bottom-color: @tooltip-background;
-  }
-  &.bottom-left .tooltip-arrow {
-    border-bottom-color: @tooltip-background;
-  }
-  &.bottom-right .tooltip-arrow {
-    border-bottom-color: @tooltip-background;
-  }
+	&.top .tooltip-arrow {
+		border-top-color: @tooltip-background;
+	}
+	&.top-left .tooltip-arrow {
+		border-top-color: @tooltip-background;
+	}
+	&.top-right .tooltip-arrow {
+		border-top-color: @tooltip-background;
+	}
+	&.right .tooltip-arrow {
+		border-right-color: @tooltip-background;
+	}
+	&.left .tooltip-arrow {
+		border-left-color: @tooltip-background;
+	}
+	&.bottom .tooltip-arrow {
+		border-bottom-color: @tooltip-background;
+	}
+	&.bottom-left .tooltip-arrow {
+		border-bottom-color: @tooltip-background;
+	}
+	&.bottom-right .tooltip-arrow {
+		border-bottom-color: @tooltip-background;
+	}
 }
 
 .tooltip-warning + .tooltip {
@@ -2556,29 +2560,29 @@ table.table.icon-font-matrix {
 		color: @c-cremedeviolette;
 	}
 	&.top .tooltip-arrow {
-	    border-top-color: @c-star;
-	  }
-	  &.top-left .tooltip-arrow {
-	    border-top-color: @c-star;
-	  }
-	  &.top-right .tooltip-arrow {
-	    border-top-color: @c-star;
-	  }
-	  &.right .tooltip-arrow {
-	    border-right-color: @c-star;
-	  }
-	  &.left .tooltip-arrow {
-	    border-left-color: @c-star;
-	  }
-	  &.bottom .tooltip-arrow {
-	    border-bottom-color: @c-star;
-	  }
-	  &.bottom-left .tooltip-arrow {
-	    border-bottom-color: @c-star;
-	  }
-	  &.bottom-right .tooltip-arrow {
-	    border-bottom-color: @c-star;
-	  }
+			border-top-color: @c-star;
+		}
+		&.top-left .tooltip-arrow {
+			border-top-color: @c-star;
+		}
+		&.top-right .tooltip-arrow {
+			border-top-color: @c-star;
+		}
+		&.right .tooltip-arrow {
+			border-right-color: @c-star;
+		}
+		&.left .tooltip-arrow {
+			border-left-color: @c-star;
+		}
+		&.bottom .tooltip-arrow {
+			border-bottom-color: @c-star;
+		}
+		&.bottom-left .tooltip-arrow {
+			border-bottom-color: @c-star;
+		}
+		&.bottom-right .tooltip-arrow {
+			border-bottom-color: @c-star;
+		}
 }
 .tooltip-danger + .tooltip {
 	.tooltip-inner {
@@ -2586,29 +2590,29 @@ table.table.icon-font-matrix {
 		color: @c-dreamsicle;
 	}
 	&.top .tooltip-arrow {
-	    border-top-color: @g1-raven;
-	  }
-	  &.top-left .tooltip-arrow {
-	    border-top-color: @g1-raven;
-	  }
-	  &.top-right .tooltip-arrow {
-	    border-top-color: @g1-raven;
-	  }
-	  &.right .tooltip-arrow {
-	    border-right-color: @g1-raven;
-	  }
-	  &.left .tooltip-arrow {
-	    border-left-color: @g1-raven;
-	  }
-	  &.bottom .tooltip-arrow {
-	    border-bottom-color: @g1-raven;
-	  }
-	  &.bottom-left .tooltip-arrow {
-	    border-bottom-color: @g1-raven;
-	  }
-	  &.bottom-right .tooltip-arrow {
-	    border-bottom-color: @g1-raven;
-	  }
+			border-top-color: @g1-raven;
+		}
+		&.top-left .tooltip-arrow {
+			border-top-color: @g1-raven;
+		}
+		&.top-right .tooltip-arrow {
+			border-top-color: @g1-raven;
+		}
+		&.right .tooltip-arrow {
+			border-right-color: @g1-raven;
+		}
+		&.left .tooltip-arrow {
+			border-left-color: @g1-raven;
+		}
+		&.bottom .tooltip-arrow {
+			border-bottom-color: @g1-raven;
+		}
+		&.bottom-left .tooltip-arrow {
+			border-bottom-color: @g1-raven;
+		}
+		&.bottom-right .tooltip-arrow {
+			border-bottom-color: @g1-raven;
+		}
 }
 .tooltip-success + .tooltip {
 	.tooltip-inner {
@@ -2616,29 +2620,29 @@ table.table.icon-font-matrix {
 		color: @c-mint;
 	}
 	&.top .tooltip-arrow {
-	    border-top-color: @c-rainforest;
-	  }
-	  &.top-left .tooltip-arrow {
-	    border-top-color: @c-rainforest;
-	  }
-	  &.top-right .tooltip-arrow {
-	    border-top-color: @c-rainforest;
-	  }
-	  &.right .tooltip-arrow {
-	    border-right-color: @c-rainforest;
-	  }
-	  &.left .tooltip-arrow {
-	    border-left-color: @c-rainforest;
-	  }
-	  &.bottom .tooltip-arrow {
-	    border-bottom-color: @c-rainforest;
-	  }
-	  &.bottom-left .tooltip-arrow {
-	    border-bottom-color: @c-rainforest;
-	  }
-	  &.bottom-right .tooltip-arrow {
-	    border-bottom-color: @c-rainforest;
-	  }
+			border-top-color: @c-rainforest;
+		}
+		&.top-left .tooltip-arrow {
+			border-top-color: @c-rainforest;
+		}
+		&.top-right .tooltip-arrow {
+			border-top-color: @c-rainforest;
+		}
+		&.right .tooltip-arrow {
+			border-right-color: @c-rainforest;
+		}
+		&.left .tooltip-arrow {
+			border-left-color: @c-rainforest;
+		}
+		&.bottom .tooltip-arrow {
+			border-bottom-color: @c-rainforest;
+		}
+		&.bottom-left .tooltip-arrow {
+			border-bottom-color: @c-rainforest;
+		}
+		&.bottom-right .tooltip-arrow {
+			border-bottom-color: @c-rainforest;
+		}
 }
 .tooltip-info + .tooltip {
 	.tooltip-inner {
@@ -2646,29 +2650,29 @@ table.table.icon-font-matrix {
 		color: @g8-storm;
 	}
 	&.top .tooltip-arrow {
-	    border-top-color: @g19-ghost;
-	  }
-	  &.top-left .tooltip-arrow {
-	    border-top-color: @g19-ghost;
-	  }
-	  &.top-right .tooltip-arrow {
-	    border-top-color: @g19-ghost;
-	  }
-	  &.right .tooltip-arrow {
-	    border-right-color: @g19-ghost;
-	  }
-	  &.left .tooltip-arrow {
-	    border-left-color: @g19-ghost;
-	  }
-	  &.bottom .tooltip-arrow {
-	    border-bottom-color: @g19-ghost;
-	  }
-	  &.bottom-left .tooltip-arrow {
-	    border-bottom-color: @g19-ghost;
-	  }
-	  &.bottom-right .tooltip-arrow {
-	    border-bottom-color: @g19-ghost;
-	  }
+			border-top-color: @g19-ghost;
+		}
+		&.top-left .tooltip-arrow {
+			border-top-color: @g19-ghost;
+		}
+		&.top-right .tooltip-arrow {
+			border-top-color: @g19-ghost;
+		}
+		&.right .tooltip-arrow {
+			border-right-color: @g19-ghost;
+		}
+		&.left .tooltip-arrow {
+			border-left-color: @g19-ghost;
+		}
+		&.bottom .tooltip-arrow {
+			border-bottom-color: @g19-ghost;
+		}
+		&.bottom-left .tooltip-arrow {
+			border-bottom-color: @g19-ghost;
+		}
+		&.bottom-right .tooltip-arrow {
+			border-bottom-color: @g19-ghost;
+		}
 }
 .tooltip-primary + .tooltip {
 	.tooltip-inner {
@@ -2676,29 +2680,29 @@ table.table.icon-font-matrix {
 		color: @c-yeti;
 	}
 	&.top .tooltip-arrow {
-	    border-top-color: @c-pool;
-	  }
-	  &.top-left .tooltip-arrow {
-	    border-top-color: @c-pool;
-	  }
-	  &.top-right .tooltip-arrow {
-	    border-top-color: @c-pool;
-	  }
-	  &.right .tooltip-arrow {
-	    border-right-color: @c-pool;
-	  }
-	  &.left .tooltip-arrow {
-	    border-left-color: @c-pool;
-	  }
-	  &.bottom .tooltip-arrow {
-	    border-bottom-color: @c-pool;
-	  }
-	  &.bottom-left .tooltip-arrow {
-	    border-bottom-color: @c-pool;
-	  }
-	  &.bottom-right .tooltip-arrow {
-	    border-bottom-color: @c-pool;
-	  }
+			border-top-color: @c-pool;
+		}
+		&.top-left .tooltip-arrow {
+			border-top-color: @c-pool;
+		}
+		&.top-right .tooltip-arrow {
+			border-top-color: @c-pool;
+		}
+		&.right .tooltip-arrow {
+			border-right-color: @c-pool;
+		}
+		&.left .tooltip-arrow {
+			border-left-color: @c-pool;
+		}
+		&.bottom .tooltip-arrow {
+			border-bottom-color: @c-pool;
+		}
+		&.bottom-left .tooltip-arrow {
+			border-bottom-color: @c-pool;
+		}
+		&.bottom-right .tooltip-arrow {
+			border-bottom-color: @c-pool;
+		}
 }
 
 
@@ -2733,3 +2737,433 @@ section.docs-section {
 		border-bottom: 0;
 	}
 }
+
+
+//
+// Navs
+// --------------------------------------------------
+.nav-tablist {
+	display: flex;
+	align-items: center;
+
+	> li {
+
+		> a {
+			position: relative;
+			font-size: 14px;
+			font-weight: 500;
+			padding: 0 12px;
+			background-color: @g17-whisper;
+			color: @g11-sidewalk;
+			height: 41px;
+			line-height: 37px;
+			border: 2px solid @g17-whisper;
+			border-right-width: 0;
+			transition:
+				background-color 0.25s ease,
+				color 0.25s ease;
+
+			&:hover {
+				background-color: @g18-cloud;
+				color: @g8-storm;
+				cursor: pointer;
+			}
+		}
+		&:first-of-type > a {
+			border-radius: 4px 0 0 4px;
+		}
+		&:last-of-type > a {
+			border-right-width: 2px;
+			border-radius: 0 4px 4px 0;
+		}
+
+		&.active > a {
+			background-color: @g20-white;
+			color: @g8-storm;
+		}
+		&.disabled > a {
+			color: @g14-chromium;
+			font-style: italic;
+
+			&:hover,
+			&:focus {
+				color: @g14-chromium;
+				text-decoration: none;
+				background-color: @g17-whisper;
+				cursor: @cursor-disabled;
+			}
+			}
+	}
+
+	/* Size Modifiers */
+	&.nav-tablist-lg {
+		> li > a {
+			font-size: 18px;
+			padding: 0 19px;
+			font-weight: 400;
+			height: 54px;
+			line-height: 50px;
+		}
+		> li:first-of-type > a {
+			border-radius: 4px 0 0 4px;
+		}
+		> li:last-of-type > a {
+			border-radius: 0 4px 4px 0;
+		}
+	}
+	&.nav-tablist-sm {
+		> li > a {
+			font-size: 12px;
+			padding: 0 9px;
+			font-weight: 600;
+			height: 31px;
+			line-height: 27px;
+		}
+		> li:first-of-type > a {
+			border-radius: 3px 0 0 3px;
+		}
+		> li:last-of-type > a {
+			border-radius: 0 3px 3px 0;
+		}
+	}
+	&.nav-tablist-xs {
+		> li > a {
+			font-size: 11px;
+			padding: 0 7px;
+			font-weight: 600;
+			height: 27px;
+			line-height: 23px;
+		}
+		> li:first-of-type > a {
+			border-radius: 3px 0 0 3px;
+		}
+		> li:last-of-type > a {
+			border-radius: 0 3px 3px 0;
+		}
+	}
+}
+
+.microtabs-dismiss {
+	position: relative;
+	top: -1px;
+	right: -3px;
+	margin-left: -2px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	background-color: transparent;
+	border: 0;
+	outline: none;
+
+	/* Using pseudo elements to render an X */
+	&:after,
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 2px;
+		height: 11px;
+		background-color: @g15-platinum;
+		border-radius: 1px;
+		transition:
+			background-color 0.25s ease;
+	}
+	&:after {
+		transform: translate(-50%,-50%) rotate(45deg);
+	}
+	&:before {
+		transform: translate(-50%,-50%) rotate(-45deg);
+	}
+	/* Hover State */
+	&:hover {
+		cursor: pointer;
+
+		&:after,
+		&:before {
+			background-color: @c-dreamsicle;
+		}
+	}
+}
+.nav-microtabs {
+	display: flex;
+	align-items: center;
+	background-color: @g17-whisper;
+	padding: 9px 9px 0 9px;
+
+	> li {
+
+		> a {
+			position: relative;
+			font-size: 13px;
+			font-weight: 500;
+			padding: 0 9px;
+			margin: 0 2px 0 0;
+			background-color: @g17-whisper;
+			color: @g11-sidewalk;
+			height: 30px;
+			line-height: 30px;
+			border: 0;
+			border-radius: 3px 3px 0 0;
+			transition:
+				background-color 0.25s ease,
+				color 0.25s ease;
+
+			&:hover {
+				background-color: @g19-ghost;
+				color: @g8-storm;
+				cursor: pointer;
+			}
+		}
+		&:last-of-type > a {
+			margin-right: 0;
+		}
+
+		&.active > a {
+			background-color: @g20-white;
+			color: @g9-mountain;
+		}
+		&.disabled > a {
+			color: @g14-chromium;
+			font-style: italic;
+
+			&:hover,
+			&:focus {
+				color: @g14-chromium;
+				text-decoration: none;
+				background-color: @g17-whisper;
+				cursor: @cursor-disabled;
+			}
+		}
+	}
+
+	/* Contextual Alternatives */
+	&-dark {
+		background-color: @g6-smoke;
+
+		.microtabs-dismiss {
+			background-color: transparent;
+
+			/* Using pseudo elements to render an X */
+			&:after,
+			&:before {
+				width: 2px;
+				background-color: @g10-wolf;
+			}
+			/* Hover State */
+			&:hover {
+
+				&:after,
+				&:before {
+					background-color: @c-tungsten;
+				}
+			}
+		}
+
+		> li {
+
+			> a {
+				color: @g13-mist;
+				background-color: @g7-graphite;
+
+				&:hover {
+					background-color: @g8-storm;
+					color: @g18-cloud;
+				}
+			}
+			&.active > a {
+				background-color: @g8-storm;
+				color: @g18-cloud;
+			}
+			&.disabled > a {
+				color: @g11-sidewalk;
+				background-color: @g7-graphite;
+
+				&:hover,
+				&:focus {
+					color: @g11-sidewalk;
+					background-color: @g7-graphite;
+				}
+			}
+		}
+	}
+	&-darker {
+		background-color: @g5-pepper;
+
+		.microtabs-dismiss {
+			background-color: transparent;
+
+			/* Using pseudo elements to render an X */
+			&:after,
+			&:before {
+				width: 2px;
+				background-color: @g10-wolf;
+			}
+			/* Hover State */
+			&:hover {
+
+				&:after,
+				&:before {
+					background-color: @c-tungsten;
+				}
+			}
+		}
+
+		> li {
+
+			> a {
+				color: @g13-mist;
+				background-color: @g5-pepper;
+
+				&:hover {
+					background-color: @g6-smoke;
+					color: @g18-cloud;
+				}
+			}
+			&.active > a {
+				background-color: @g6-smoke;
+				color: @g18-cloud;
+			}
+			&.disabled > a {
+				color: @g10-wolf;
+				background-color: @g5-pepper;
+
+				&:hover,
+				&:focus {
+					color: @g10-wolf;
+					background-color: @g5-pepper;
+				}
+			}
+		}
+	}
+	&-white {
+		background-color: @g20-white;
+
+		> li {
+
+			> a {
+				background-color: @g20-white;
+
+				&:hover {
+					background-color: @g19-ghost;
+				}
+			}
+			&.active > a {
+				background-color: @g17-whisper;
+				color: @g8-storm;
+			}
+			&.disabled > a {
+				color: @g14-chromium;
+
+				&:hover,
+				&:focus {
+					color: @g14-chromium;
+					background-color: @g20-white;
+				}
+			}
+		}
+	}
+	/* Common Seasonal Styles */
+	&-spring,
+	&-summer,
+	&-fall,
+	&-winter {
+
+		.panel-heading + & {
+			/* Reduced top padding looks better when next to a matching panel heading */
+			padding-top: 2px;
+		}
+
+		/* Styles for dismiss buttons inside seasonal alternatives */
+		.microtabs-dismiss {
+			right: -5px;
+			margin-left: -4px;
+
+			/* Using pseudo elements to render an X */
+			&:after,
+			&:before {
+				height: 8px;
+				width: 2px;
+				background-color: @g20-white;
+				border-radius: 0;
+				transition:
+					height 0.25s ease;
+			}
+			&:after {
+				transform: translate(-50%,-50%) rotate(45deg);
+			}
+			&:before {
+				transform: translate(-50%,-50%) rotate(-45deg);
+			}
+			/* Hover State */
+			&:hover {
+				cursor: pointer;
+
+				&:after,
+				&:before {
+					background-color: @g20-white;
+					height: 12px;
+				}
+			}
+		}
+
+
+		> li {
+
+			> a {
+				color: @g20-white;
+				background-color: fadeout(@g20-white, 81%);
+
+				&:hover {
+					color: @g20-white;
+					background-color: fadeout(@g20-white, 70%);
+				}
+			}
+			&.active > a {
+				background-color: @g20-white;
+				color: @g8-storm;
+
+				.microtabs-dismiss {
+					background-color: transparent;
+				}
+				.microtabs-dismiss:after,
+				.microtabs-dismiss:before {
+					background-color: @g13-mist;
+				}
+			}
+			&.disabled > a {
+				background-color: fadeout(@g20-white, 81%);
+				color: fadeout(@g20-white, 32%);
+
+				&:hover,
+				&:focus {
+					color: fadeout(@g20-white, 32%);
+					background-color: fadeout(@g20-white, 81%);
+				}
+			}
+		}
+	}
+	&-spring {
+		.gradient-h(@c-pool,@c-rainforest);
+	}
+	&-summer {
+		.gradient-h(@c-laser,@c-potassium);
+	}
+	&-fall {
+		.gradient-h(@c-comet,@c-dreamsicle);
+	}
+	&-winter {
+		.gradient-h(@c-pool,@c-comet);
+	}
+}
+
+/*
+		Increase left & right padding on tab container to match panel paadding
+		when it is directly inside a panel
+*/
+.panel > .nav-microtabs {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+

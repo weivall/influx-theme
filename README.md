@@ -50,10 +50,8 @@ There is one main decision to consider: to make the navbar `fixed` or not. As a 
 - [Static Navbar (Light)](/boilerplate/static-nav-light/index.html)
 - [Static Navbar (Dark)](/boilerplate/static-nav-light/index.html)
 
-## Next Release v0.11
+## Next Release v0.12
 
-- A veriety of tab styles to theme and extend Bootstrap's `Nav` component. Needed these for a long time
-- Polishing code styles, still a little rough
 - Add Bootstrap's `Popover` component to the theme and style it
 - Write docs for `Progress Bar` component
 - Add size modifizers to the `Progress Bar` component
@@ -61,6 +59,13 @@ There is one main decision to consider: to make the navbar `fixed` or not. As a 
 - Write docs for `.panel-collapse` component
 
 ### Changelog
+
+**0.11**
+- Adjusted code block styles, less harsh on the retina
+- Created 2 variations on Bootstrap's standard `nav` component. Both of these began as custom Enterprise styles, but it makes more sense to integrate them into the theme
+- Dismissable tabs UI. Looks great, zero functionality
+- Organized docs more
+- If `span.icon` is the first child within `.panel-title` it adds a subtle margin to look breathable
 
 **0.10**
 - Re-designed alert styles, now has the option for an icon, and dismissable alerts are styled

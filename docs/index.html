@@ -1797,7 +1797,7 @@
           </div>
           <div class="col-sm-6">
             <div class="well well-outline text-center">
-              <h4 class="text-left">Examples:</h4>
+              <h4 class="text-left margin-top-zero">Examples:</h4>
               <br/>
               <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
               <br/><br/>
@@ -1808,7 +1808,7 @@
               <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
             </div>
             <div class="well well-outline margin-bottom-zero text-center">
-              <h4 class="text-left">Contextual Alternatives:</h4>
+              <h4 class="text-left margin-top-zero">Contextual Alternatives:</h4>
               <br/>
               <button type="button" class="btn btn-default tooltip-primary" data-toggle="tooltip" data-placement="left" title="Primary Tooltip">Primary Tooltip</button>
               <br/><br/>
@@ -1874,20 +1874,297 @@
             <h1>Navs</h1>
           </a>
         </div>
-        <p>Nav Tabs</p>
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#">Home <span class="badge">7</span></a></li>
-          <li role="presentation"><a href="#">Profile</a></li>
-          <li role="presentation"><a href="#">Messages</a></li>
-        </ul>
-        <br/>
-        <p>Nav Pills</p>
-        <ul class="nav nav-pills" role="tablist">
-          <li role="presentation" class="active"><a href="#">Home <span class="badge">7</span></a></li>
-          <li role="presentation"><a href="#">Profile</a></li>
-          <li role="presentation"><a href="#">Messages</a></li>
-        </ul>
-      </div>
+        <!-- Tabs -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h2 class="panel-title">Tabs <em>(Tab Lists)</em></h2>
+              </div>
+              <div class="panel-body">
+                <p><strong>Useful For:</strong><br/>Tertiary navigation within a page. Best used at the top of the page, to indicate that anything below will be affected by tab-switching</p>
+                <p><strong>Implementation:</strong></p>
+                <pre><code>&lt;ul class="nav nav-tablist" role="tablist"&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;Active Tab&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Tab&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Tab&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <p><strong>Size Alternatives:</strong></p>
+                <table class="table v-center">
+                  <tbody>
+                    <tr>
+                      <td><strong>Large</strong></td>
+                      <td><code><span style="color:#A4A8B6;">ul.nav.nav-tablist</span>.nav-tablist-lg</code></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Default</strong></td>
+                      <td><code><span style="color:#A4A8B6;">ul.nav.nav-tablist</span></code></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Small</strong></td>
+                      <td><code><span style="color:#A4A8B6;">ul.nav.nav-tablist</span>.nav-tablist-sm</code></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Extra Small</strong></td>
+                      <td><code><span style="color:#A4A8B6;">ul.nav.nav-tablist</span>.nav-tablist-xs</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="well well-outline">
+              <h4 class="margin-top-zero">Basic Examples:</h4>
+              <br/>
+              <ul class="nav nav-tablist nav-tablist-lg" role="tablist">
+                <li role="presentation" class="active"><a href="#">Active Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Tab</a></li>
+                <li class="disabled" role="presentation" disabled><a href="#section-navs">Disabled Tab</a></li>
+              </ul>
+              <br/>
+              <ul class="nav nav-tablist" role="tablist">
+                <li role="presentation" class="active"><a href="#section-navs">Active Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Tab</a></li>
+                <li class="disabled" role="presentation" disabled><a href="#section-navs">Disabled Tab</a></li>
+              </ul>
+              <br/>
+              <ul class="nav nav-tablist nav-tablist-sm" role="tablist">
+                <li role="presentation" class="active"><a href="#section-navs">Active Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Tab</a></li>
+                <li class="disabled" role="presentation" disabled><a href="#section-navs">Disabled Tab</a></li>
+              </ul>
+              <br/>
+              <ul class="nav nav-tablist nav-tablist-xs" role="tablist">
+                <li role="presentation" class="active"><a href="#section-navs">Active Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Tab</a></li>
+                <li class="disabled" role="presentation" disabled><a href="#section-navs">Disabled Tab</a></li>
+              </ul>
+              <br/><br/>
+              <h4>Used in a Panel:</h4>
+              <br/>
+              <div class="panel panel-info">
+                <div class="panel-heading u-flex u-ai-center u-jc-space-between">
+                  <h2 class="panel-title">My Account</h2>
+                  <ul class="nav nav-tablist nav-tablist-sm" role="tablist">
+                    <li role="presentation" class="active"><a href="#section-navs">Profile</a></li>
+                    <li role="presentation"><a href="#section-navs">Billing</a></li>
+                    <li role="presentation"><a href="#section-navs">Linked Accounts</a></li>
+                  </ul>
+                </div>
+                <div class="panel-body">
+                  <p>Wooooo</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <hr class="dark" />
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h2 class="panel-title">Micro Tabs</h2>
+              </div>
+              <div class="panel-body">
+                <p><strong>Useful For:</strong><br/>When you have a smaller component that requires tab functionality. Currently used in the Data Explorer.</p>
+                <p><strong>Implementation:</strong></p>
+                <pre><code>&lt;ul class="nav nav-microtabs" role="tablist"&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;Active Tab&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Tab&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Tab&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <p><strong>Dismissable Tabs</strong><br/>Designed to mimic browser tabs.</p>
+                <blockquote><small>NOTE:<br/>Since the dismiss UI is custom, there is no corresponding JS included in the standard Bootstrap package. You will have to write something to handle tab dismissing.</small></blockquote>
+                <pre><code>&lt;li&gt;
+  &lt;a href="#"&gt;
+    Tab Label &lt;button class="microtabs-dismiss"&gt;&lt;/button&gt;
+  &lt;/a&gt;
+&lt;/li&gt;</code></pre>
+                <p><strong>Contextual Alternatives:</strong><br/>Depending on the context in which the tabs are used, you may want to stylize them differently. There are options to match different panel types as well as an option for dark UI.</p>
+                <table class="table v-center">
+                  <tbody>
+                    <tr>
+                      <td><strong>Dark</strong></td>
+                      <td><code><span style="color:#A4A8B6;">ul.nav.nav-microtabs</span>.nav-microtabs-dark</code></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Darker</strong></td>
+                      <td><code><span style="color:#A4A8B6;">ul.nav.nav-microtabs</span>.nav-microtabs-darker</code></td>
+                    </tr>
+                    <tr>
+                      <td><strong>White</strong></td>
+                      <td><code><span style="color:#A4A8B6;">ul.nav.nav-microtabs</span>.nav-microtabs-white</code></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Spring</strong></td>
+                      <td><code><span style="color:#A4A8B6;">ul.nav.nav-microtabs</span>.nav-microtabs-spring</code></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Summer</strong></td>
+                      <td><code><span style="color:#A4A8B6;">ul.nav.nav-microtabs</span>.nav-microtabs-summer</code></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Fall</strong></td>
+                      <td><code><span style="color:#A4A8B6;">ul.nav.nav-microtabs</span>.nav-microtabs-fall</code></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Winter</strong></td>
+                      <td><code><span style="color:#A4A8B6;">ul.nav.nav-microtabs</span>.nav-microtabs-winter</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="well well-outline">
+              <h4 class="margin-top-zero">Examples:</h4>
+              <br/>
+              <ul class="nav nav-microtabs" role="tablist">
+                <li role="presentation" class="active"><a href="#section-navs">Active Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Tab</a></li>
+                <li class="disabled" role="presentation" disabled><a href="#section-navs">Disabled Tab</a></li>
+              </ul>
+              <br/><br/>
+              <h4>Used in a Panel:</h4>
+              <br/>
+              <div class="panel panel-default margin-bottom-zero">
+                <div class="panel-heading">
+                  <h2 class="panel-title">My Account</h2>
+                </div>
+                <ul class="nav nav-microtabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#section-navs">Profile</a></li>
+                  <li role="presentation"><a href="#section-navs">Billing</a></li>
+                  <li role="presentation"><a href="#section-navs">Linked Accounts</a></li>
+                </ul>
+                <div class="panel-body">
+                  <p>Wooooo</p>
+                </div>
+              </div>
+              <br/><br/>
+              <h4>Dismissable Tabs:</h4>
+              <br/>
+              <ul class="nav nav-microtabs" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#section-navs">
+                    Active Tab
+                    <button class="microtabs-dismiss"></button>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="#section-navs">
+                    Tab
+                    <button class="microtabs-dismiss"></button>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="#section-navs">
+                    Tab
+                    <button class="microtabs-dismiss"></button>
+                  </a>
+                </li>
+              </ul>
+              <br/><br/>
+              <h4>Contextual Alternatives:</h4>
+              <br/>
+              <ul class="nav nav-microtabs nav-microtabs-dark" role="tablist">
+                <li role="presentation" class="active"><a href="#section-navs">Active Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Dismissiable Tab <button class="microtabs-dismiss"></button></a></li>
+                <li class="disabled" role="presentation" disabled><a href="#section-navs">Disabled Tab</a></li>
+              </ul>
+              <br/>
+              <ul class="nav nav-microtabs nav-microtabs-darker" role="tablist">
+                <li role="presentation" class="active"><a href="#section-navs">Active Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Dismissiable Tab <button class="microtabs-dismiss"></button></a></li>
+                <li class="disabled" role="presentation" disabled><a href="#section-navs">Disabled Tab</a></li>
+              </ul>
+              <br/>
+              <ul class="nav nav-microtabs nav-microtabs-white" role="tablist">
+                <li role="presentation" class="active"><a href="#section-navs">Active Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Dismissiable Tab <button class="microtabs-dismiss"></button></a></li>
+                <li class="disabled" role="presentation" disabled><a href="#section-navs">Disabled Tab</a></li>
+              </ul>
+              <br/>
+              <p>Use these in combination with seasonal panel styles:</p>
+              <ul class="nav nav-microtabs nav-microtabs-spring" role="tablist">
+                <li role="presentation" class="active"><a href="#section-navs">Active Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Dismissiable Tab <button class="microtabs-dismiss"></button></a></li>
+                <li class="disabled" role="presentation" disabled><a href="#section-navs">Disabled Tab</a></li>
+              </ul>
+              <br/>
+              <ul class="nav nav-microtabs nav-microtabs-summer" role="tablist">
+                <li role="presentation" class="active"><a href="#section-navs">Active Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Dismissiable Tab <button class="microtabs-dismiss"></button></a></li>
+                <li class="disabled" role="presentation" disabled><a href="#section-navs">Disabled Tab</a></li>
+              </ul>
+              <br/>
+              <ul class="nav nav-microtabs nav-microtabs-fall" role="tablist">
+                <li role="presentation" class="active"><a href="#section-navs">Active Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Dismissiable Tab <button class="microtabs-dismiss"></button></a></li>
+                <li class="disabled" role="presentation" disabled><a href="#section-navs">Disabled Tab</a></li>
+              </ul>
+              <br/>
+              <ul class="nav nav-microtabs nav-microtabs-winter" role="tablist">
+                <li role="presentation" class="active"><a href="#section-navs">Active Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Tab</a></li>
+                <li role="presentation"><a href="#section-navs">Dismissiable Tab <button class="microtabs-dismiss"></button></a></li>
+                <li class="disabled" role="presentation" disabled><a href="#section-navs">Disabled Tab</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <hr class="dark" />
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h2 class="panel-title">Bootstrap Togglable Tabs</h2>
+              </div>
+              <div class="panel-body">
+                <p>This feature is built into `bootstrap.js` and allows for simple toggling between tabs. Bootstrap requires that each instance of a tab bar be initialized separately. Read more at <a href="" target="_blank">Bootstrap JS Docs - Tabs</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="well well-outline">
+              <h4 class="margin-top-zero">Example:</h4>
+              <br/>
+              <div class="panel panel-spring">
+                <div class="panel-heading u-flex u-ai-center u-jc-space-between">
+                  <h2 class="panel-title"><span class="icon user-outline"></span> Account Settings</h2>
+                  <a href="#section-navs" class="btn btn-sm btn-info">Save Changes</a>
+                </div>
+                <ul class="nav nav-microtabs nav-microtabs-spring" role="tablist" id="exampleTabToggle">
+                  <li role="tab" data-toggle="tab" class="active"><a href="#exampleTab1">Basic Info</a></li>
+                  <li role="tab" data-toggle="tab"><a href="#exampleTab2">Security</a></li>
+                  <li role="tab" data-toggle="tab"><a href="#exampleTab3">Organization</a></li>
+                  <li role="tab" data-toggle="tab"><a href="#exampleTab4">Billing</a></li>
+                </ul>
+                <div class="panel-body">
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="exampleTab1">Basic Info</div>
+                    <div role="tabpanel" class="tab-pane" id="exampleTab2">Security</div>
+                    <div role="tabpanel" class="tab-pane" id="exampleTab3">Organization</div>
+                    <div role="tabpanel" class="tab-pane" id="exampleTab4">Billing</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
     </section>
 
     <section class="docs-section">
@@ -2965,6 +3242,13 @@
       $('[data-toggle="tooltip"]').tooltip()
     })
 
+    /*
+        Bootstrap Togglable Tabs
+    */
+    $('#exampleTabToggle a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
     /*
         Radio Panels
     */
