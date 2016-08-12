@@ -2282,6 +2282,44 @@ code, pre {
 		opacity: 0.8;
 	}
 }
+/* Backdrop Alternatives */
+
+body.modal-dark {
+	.modal-backdrop {
+		.gradient-v(@g4-onyx,@g6-smoke);
+	}
+}
+body.modal-light {
+	.modal-backdrop {
+		.gradient-v(@g16-pearl,@g14-chromium);
+	}
+}
+body.modal-spring {
+	.modal-backdrop {
+		.gradient-h(@c-pool,@c-rainforest);
+	}
+}
+body.modal-summer {
+	.modal-backdrop {
+		.gradient-h(@c-laser,@c-potassium);
+	}
+}
+body.modal-fall {
+	.modal-backdrop {
+		.gradient-h(@c-comet,@c-dreamsicle);
+	}
+}
+body.modal-winter {
+	.modal-backdrop {
+		.gradient-h(@c-pool,@c-star);
+	}
+}
+body.modal-midnight {
+	.modal-backdrop {
+		.gradient-v(@c-shadow,@c-sapphire);
+	}
+}
+
 .modal-content {
 	background-color: @g18-cloud;
 	box-shadow: none;
@@ -3290,4 +3328,5 @@ section.docs-section {
 	padding-left: 30px;
 	padding-right: 30px;
 }
+
 
