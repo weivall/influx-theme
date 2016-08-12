@@ -1587,33 +1587,101 @@ h6.deluxe {
 // Code Styles
 // --------------------------------------------------
 
+@code-bg-color:	@g19-ghost;
+@code-scrollbar: @c-moonstone;
+@code-font-color: @c-star;
+@code-font-size: 11px;
+@code-font-weight: 600;
+
 code {
-	font-weight: 600;
-	background-color: @g19-ghost;
-	border: 1px solid @g19-ghost;
+	font-weight: @code-font-weight;
+	background-color: @code-bg-color;
+	border: 1px solid @code-bg-color;
 	text-shadow: none;
-	color: @c-star;
+	color: @code-font-color;
 	font-family: Consolas,"Lucida Console",Monaco,monospace;
 	-webkit-font-smoothing: initial;
 	font-smoothing: initial;
-	font-size: 11px;
+	font-size: @code-font-size;
 	letter-spacing: 0.02em;
+	border-radius: 4px;
 }
 pre {
-	font-size: 11px;
+	font-size: @code-font-size;
 	line-height: 17px;
-	background-color: @g19-ghost;
-	border: 2px solid @g19-ghost;
-	color: @c-star;
-	border-bottom-width: 3px;
+	background-color: @code-bg-color;
+	border: 2px solid @code-bg-color;
+	color: @code-font-color;
 	white-space: pre;
+	border-radius: 4px;
 
 	code {
 		border: none;
 		background-color: none;
 		white-space: pre;
+		border-radius: 0;
 	}
-	.custom-scrollbar(@g19-ghost,@c-moonstone);
+	.custom-scrollbar(@code-bg-color,@code-scrollbar);
+
+	&.rainbow-highlighter {
+		.custom-scrollbar(@c-shadow,@c-potassium);
+	}
+}
+
+/* Code Highlighting */
+@code-highlight-a: fadeout(@c-star-disabled,50%);
+@code-highlight-b: #fcdb9e;
+@code-highlight-c: @c-pool;
+@code-highlight-d: @c-viridian;
+@code-highlight-e: @c-honeydew;
+@code-highlight-f: #fff;
+@code-highlight-g: @c-fire;
+@code-highlight-h: @c-dreamsicle;
+@code-highlight-i: @c-honeydew;
+@code-highlight-j: @c-comet;
+@code-highlight-k: @g5-pepper;
+
+code, pre {
+
+	/* Reset default tag styles */
+	b,strong,i,em,mark,small,del,ins,sub,sup,u {
+		font-size: @code-font-size;
+		font-weight: @code-font-weight;
+		text-decoration: none;
+		font-style: normal;
+		background-color: inherit;
+		color: @code-font-color;
+		position: static;
+		top: 0;
+		bottom: 0;
+		padding: 0;
+	}
+
+	&.rainbow-highlighter {
+		background-color: @c-shadow;
+		color: @c-potassium;
+		border-color: @c-shadow;
+
+		b { color: @code-highlight-a; }
+		strong { color: @code-highlight-b; }
+		i { color: @code-highlight-c; }
+		em { color: @code-highlight-d; }
+		mark { color: @code-highlight-e; }
+		small { color: @code-highlight-f; }
+		del { color: @code-highlight-g; }
+		ins { color: @code-highlight-h; }
+		sub { color: @code-highlight-i; }
+		sup { color: @code-highlight-j; }
+
+		/* Literal highlighting */
+		u {
+			color: @c-potassium;
+			background-color: @code-highlight-k;
+			padding: 2px 4px;
+			border-radius: 3px;
+			text-indent: -4px;
+		}
+	}
 }
 
 //
@@ -2508,6 +2576,28 @@ table.table.icon-font-matrix {
 		font-size: 14px;
 		margin: 0 0 4px 0;
 		font-weight: 900;
+	}
+}
+
+.docs-micro-swatch {
+	width: 24px;
+	height: 12px;
+	border-radius: 6px;
+	display: inline-block;
+	vertical-align: middle;
+
+	&.highlight {
+		&-b { background-color: @code-highlight-a; }
+		&-strong { background-color: @code-highlight-b; }
+		&-i { background-color: @code-highlight-c; }
+		&-em { background-color: @code-highlight-d; }
+		&-mark { background-color: @code-highlight-e; }
+		&-small { background-color: @code-highlight-f; }
+		&-del { background-color: @code-highlight-g; }
+		&-ins { background-color: @code-highlight-h; }
+		&-sub { background-color: @code-highlight-i; }
+		&-sup { background-color: @code-highlight-j; }
+		&-u { background-color: @code-highlight-k; }
 	}
 }
 

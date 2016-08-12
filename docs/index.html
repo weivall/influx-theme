@@ -78,7 +78,8 @@
               <ul class="dropdown-menu">
                 <li><a href="#section-colorpalette">Color Palette</a></li>
                 <li><a href="#section-iconfont">Icon Font</a></li>
-                <li><a href="#section-type-tools">Typography Tools</a>
+                <li><a href="#section-type-tools">Typography Tools</a></li>
+                <li><a href="#section-code-samples">Code Samples</a></li>
                 <li><a href="#section-flexbox">Flex Box Utilities</a></li>
               </ul>
             </li>
@@ -3110,6 +3111,158 @@
                   <span class="text-color-warning">Warning Text</span>
                   <br/><br/>
                   <pre><code>&lt;span class="text-color-warning"&gt;Warning Text&lt;/span&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <div class="container">
+
+          <div class="page-header">
+            <a class="page-header--anchor" id="section-code-samples"></a>
+            <a href="#section-code-samples">
+              <h1>Code Samples</h1>
+            </a>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <h2 class="panel-title">How to Use</h2>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <p>There are many code highlighting JS libraries out there, for example we use <a href="#" target="_blank">Prism.js</a> to handle code highlighting in our Developer Docs</a>. There is no built-in code highlighting within Bootstrap, so I have created a set of highlighters for manual use. In the future there will be a code highlighting feature built into the theme.</p>
+
+                      <p><strong>Concept</strong><br/>In HTML there are a variety of tags specifically for formatting text. Most websites and applications no longer use these tags as the same effect can be achieved with CSS more cleanly. I have repurposed these tags to function as code highlighters, scoped within code samples.</p>
+                      <p>Taking into consideration the possibility that a external code highlighter might be used in conjunction with this theme, I have put a failsafe in play:</p>
+                      <p>For Code Highlighting to take effect, just add a class to your sample,</p>
+                      <pre><code>&lt;pre class="rainbow-highlighter"&gt;
+  &lt;code&gt;&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;code class="rainbow-highlighter"&gt; &lt;/code&gt;</code></pre>
+                      <p>Then use these tags to apply highlights:</p>
+                      <table class="table v-center">
+                        <tbody>
+                          <tr>
+                            <td><div class="docs-micro-swatch highlight-b"></div>
+                            <td>Bold</td>
+                            <td><code>&lt;b&gt;</code></td>
+                            <td><code class="rainbow-highlighter"><b>Obtuse Mystical Being</b></code></td>
+                          </tr>
+                          <tr>
+                            <td><div class="docs-micro-swatch highlight-strong"></div>
+                            <td>Important</td>
+                            <td><code>&lt;strong&gt;</code></td>
+                            <td><code class="rainbow-highlighter"><strong>Obtuse Mystical Being</strong></code></td>
+                          </tr>
+                          <tr>
+                            <td><div class="docs-micro-swatch highlight-i"></div>
+                            <td>Italic</td>
+                            <td><code>&lt;i&gt;</code></td>
+                            <td><code class="rainbow-highlighter"><i>Obtuse Mystical Being</i></code></td>
+                          </tr>
+                          <tr>
+                            <td><div class="docs-micro-swatch highlight-em"></div>
+                            <td>Emphasized</td>
+                            <td><code>&lt;em&gt;</code></td>
+                            <td><code class="rainbow-highlighter"><em>Obtuse Mystical Being</em></code></td>
+                          </tr>
+                          <tr>
+                            <td><div class="docs-micro-swatch highlight-mark"></div>
+                            <td>Marked</td>
+                            <td><code>&lt;mark&gt;</code></td>
+                            <td><code class="rainbow-highlighter"><mark>Obtuse Mystical Being</mark></code></td>
+                          </tr>
+                          <tr>
+                            <td><div class="docs-micro-swatch highlight-small"></div>
+                            <td>Small</td>
+                            <td><code>&lt;small&gt;</code></td>
+                            <td><code class="rainbow-highlighter"><small>Obtuse Mystical Being</small></code></td>
+                          </tr>
+                          <tr>
+                            <td><div class="docs-micro-swatch highlight-del"></div>
+                            <td>Deleted</td>
+                            <td><code>&lt;del&gt;</code></td>
+                            <td><code class="rainbow-highlighter"><del>Obtuse Mystical Being</del></code></td>
+                          </tr>
+                          <tr>
+                            <td><div class="docs-micro-swatch highlight-ins"></div>
+                            <td>Inserted</td>
+                            <td><code>&lt;ins&gt;</code></td>
+                            <td><code class="rainbow-highlighter"><ins>Obtuse Mystical Being</ins></code></td>
+                          </tr>
+                          <tr>
+                            <td><div class="docs-micro-swatch highlight-sub"></div>
+                            <td>Subscript</td>
+                            <td><code>&lt;sub&gt;</code></td>
+                            <td><code class="rainbow-highlighter"><sub>Obtuse Mystical Being</sub></code></td>
+                          </tr>
+                          <tr>
+                            <td><div class="docs-micro-swatch highlight-sup"></div>
+                            <td>Superscript</td>
+                            <td><code>&lt;sup&gt;</code></td>
+                            <td><code class="rainbow-highlighter"><sup>Obtuse Mystical Being</sup></code></td>
+                          </tr>
+                          <tr>
+                            <td><div class="docs-micro-swatch highlight-u"></div>
+                            <td>Underline</td>
+                            <td><code>&lt;u&gt;</code></td>
+                            <td><code class="rainbow-highlighter"><u>Obtuse Mystical Being</u></code></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col-sm-6">
+                      <p><strong>Example SCSS with Code Highlighting</strong></p>
+                      <pre class="rainbow-highlighter" data-language="SCSS"><code><b>/*
+  Basic Button
+  -------------------------------------------------
+*/</b>
+
+<mark>@transition-time</mark>: 0.25s;
+
+<sup>.btn</sup> {
+  <i>height</i>: <strong>32px</strong>;
+  <i>line-height</i>: <strong>32px</strong>;
+  <i>border-radius</i>: <strong>4px</strong>;
+  <i>padding</i>: <strong>0 13px</strong>;
+  <i>font-size</i>: <strong>15px</strong>;
+  <i>font-weight</i>: <strong>500</strong>;
+  <i>background-color</i>: <mark>@btn-default-bg</mark>;
+<u>  <i>border</i>: <strong>none</strong>;
+  <i>text-align</i>: <strong>center</strong>;
+  <i>color</i>: <mark>@btn-default-text</mark>;
+</u>
+  <i>transition</i>: <strong>
+    color <mark>@transition-time</mark> ease</strong>,<strong>
+    background-color <mark>@transition-time</mark> ease</strong>;
+
+  <b>/* Hover State */</b>
+  <ins>&</ins><del>:hover</del> {
+    <i>cursor</i>: <strong>pointer</strong>;
+    <i>background-color</i>: <mark>@btn-default-bg-hover</mark>;
+    <i>color</i>: <mark>@btn-default-text-hover</mark>;
+  }
+
+  <b>/* Color Alternatives */</b>
+  <ins>&</ins><sup>.blue</sup> {
+    <i>background-color</i>: <mark>@btn-blue-bg</mark>;
+    <i>color</i>: <mark>@btn-blue-text</mark>;
+
+    <ins>&</ins><del>:hover</del> {
+      <i>background-color</i>: <mark>@btn-blue-bg-hover</mark>;
+      <i>color</i>: <mark>@btn-blue-text-hover</mark>;
+    }
+  }
+}</code></pre>
+                    </div>  
+                  </div>
                 </div>
               </div>
             </div>

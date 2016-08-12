@@ -66,6 +66,7 @@ There is one main decision to consider: to make the navbar `fixed` or not. As a 
 - Dismissable tabs UI. Looks great, zero functionality
 - Organized docs more
 - If `span.icon` is the first child within `.panel-title` it adds a subtle margin to look breathable
+- Code highlighting, manual only
 
 **0.10**
 - Re-designed alert styles, now has the option for an icon, and dismissable alerts are styled

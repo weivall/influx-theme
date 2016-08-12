@@ -2289,6 +2289,7 @@ code {
   letter-spacing: .02em;
   background-color: #fafafc;
   border: 1px solid #fafafc;
+  border-radius: 4px;
 
   -webkit-font-smoothing: initial;
           font-smoothing: initial;
@@ -2300,12 +2301,13 @@ pre {
   white-space: pre;
   background-color: #fafafc;
   border: 2px solid #fafafc;
-  border-bottom-width: 3px;
+  border-radius: 4px;
 }
 pre code {
   white-space: pre;
   background-color: none;
   border: none;
+  border-radius: 0;
 }
 pre::-webkit-scrollbar {
   width: 14px;
@@ -2330,6 +2332,123 @@ pre::-webkit-scrollbar-corner {
 }
 pre::-webkit-scrollbar-resizer {
   background-color: #c9d0ff;
+}
+pre.rainbow-highlighter::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+pre.rainbow-highlighter::-webkit-scrollbar-button {
+  background-color: #1f2039;
+}
+pre.rainbow-highlighter::-webkit-scrollbar-track {
+  background-color: #1f2039;
+}
+pre.rainbow-highlighter::-webkit-scrollbar-track-piece {
+  background: #1f2039;
+}
+pre.rainbow-highlighter::-webkit-scrollbar-thumb {
+  background-color: #b1b6ff;
+  border: 4px solid #1f2039;
+  border-radius: 7px;
+}
+pre.rainbow-highlighter::-webkit-scrollbar-corner {
+  background-color: #1f2039;
+}
+pre.rainbow-highlighter::-webkit-scrollbar-resizer {
+  background-color: #b1b6ff;
+}
+/* Code Highlighting */
+code,
+pre {
+  /* Reset default tag styles */
+}
+code b,
+pre b,
+code strong,
+pre strong,
+code i,
+pre i,
+code em,
+pre em,
+code mark,
+pre mark,
+code small,
+pre small,
+code del,
+pre del,
+code ins,
+pre ins,
+code sub,
+pre sub,
+code sup,
+pre sup,
+code u,
+pre u {
+  position: static;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  color: #7a65f2;
+  text-decoration: none;
+  background-color: inherit;
+}
+code.rainbow-highlighter,
+pre.rainbow-highlighter {
+  color: #b1b6ff;
+  background-color: #1f2039;
+  border-color: #1f2039;
+  /* Literal highlighting */
+}
+code.rainbow-highlighter b,
+pre.rainbow-highlighter b {
+  color: rgba(214, 213, 237, .5);
+}
+code.rainbow-highlighter strong,
+pre.rainbow-highlighter strong {
+  color: #fcdb9e;
+}
+code.rainbow-highlighter i,
+pre.rainbow-highlighter i {
+  color: #22adf6;
+}
+code.rainbow-highlighter em,
+pre.rainbow-highlighter em {
+  color: #32b08c;
+}
+code.rainbow-highlighter mark,
+pre.rainbow-highlighter mark {
+  color: #7ce490;
+}
+code.rainbow-highlighter small,
+pre.rainbow-highlighter small {
+  color: #fff;
+}
+code.rainbow-highlighter del,
+pre.rainbow-highlighter del {
+  color: #dc4e58;
+}
+code.rainbow-highlighter ins,
+pre.rainbow-highlighter ins {
+  color: #ff8564;
+}
+code.rainbow-highlighter sub,
+pre.rainbow-highlighter sub {
+  color: #7ce490;
+}
+code.rainbow-highlighter sup,
+pre.rainbow-highlighter sup {
+  color: #9394ff;
+}
+code.rainbow-highlighter u,
+pre.rainbow-highlighter u {
+  padding: 2px 4px;
+  color: #b1b6ff;
+  text-indent: -4px;
+  background-color: #383846;
+  border-radius: 3px;
 }
 .badge {
   color: #fff;
@@ -3580,6 +3699,46 @@ table.table.icon-font-matrix tr > td strong {
   margin: 0 0 4px 0;
   font-size: 14px;
   font-weight: 900;
+}
+.docs-micro-swatch {
+  display: inline-block;
+  width: 24px;
+  height: 12px;
+  vertical-align: middle;
+  border-radius: 6px;
+}
+.docs-micro-swatch.highlight-b {
+  background-color: rgba(214, 213, 237, .5);
+}
+.docs-micro-swatch.highlight-strong {
+  background-color: #fcdb9e;
+}
+.docs-micro-swatch.highlight-i {
+  background-color: #22adf6;
+}
+.docs-micro-swatch.highlight-em {
+  background-color: #32b08c;
+}
+.docs-micro-swatch.highlight-mark {
+  background-color: #7ce490;
+}
+.docs-micro-swatch.highlight-small {
+  background-color: #fff;
+}
+.docs-micro-swatch.highlight-del {
+  background-color: #dc4e58;
+}
+.docs-micro-swatch.highlight-ins {
+  background-color: #ff8564;
+}
+.docs-micro-swatch.highlight-sub {
+  background-color: #7ce490;
+}
+.docs-micro-swatch.highlight-sup {
+  background-color: #9394ff;
+}
+.docs-micro-swatch.highlight-u {
+  background-color: #383846;
 }
 .tooltip-inner {
   padding: 4px 8px;
