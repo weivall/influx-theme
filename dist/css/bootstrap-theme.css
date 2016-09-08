@@ -1,14 +1,14 @@
 /*
-	Bootstrap v3.3.6 (http://getbootstrap.com)
-	--------------------------------------------------
-	Copyright 2011-2015 Twitter, Inc.
-	Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  Bootstrap v3.3.6 (http://getbootstrap.com)
+  --------------------------------------------------
+  Copyright 2011-2015 Twitter, Inc.
+  Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 
 
-	Theme design by Alex Paxton (alexpaxton.com)
-	Intended for use exclusively with InfluxData products
+  Theme design by Alex Paxton (alexpaxton.com)
+  Intended for use exclusively with InfluxData products
 
-	* NOTE: Items are in no particular order
+  * NOTE: Items are in no particular order
 */
 .u-flex {
   display: -webkit-box;
@@ -109,11 +109,20 @@
   -ms-flex-line-pack: distribute;
           align-content: space-around;
 }
+.margin-zero {
+  margin: 0 !important;
+}
 .margin-bottom-zero {
   margin-bottom: 0 !important;
 }
 .margin-top-zero {
   margin-top: 0 !important;
+}
+.margin-left-zero {
+  margin-left: 0 !important;
+}
+.margin-right-zero {
+  margin-right: 0 !important;
 }
 @font-face {
   font-family: 'icomoon';
@@ -1796,21 +1805,70 @@ h6.deluxe .label {
 }
 .progress,
 .progress-bar {
-  height: 12px;
+  height: 16px;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
 .progress {
   background-color: #eeeff2;
-  border-radius: 6px;
+  border-radius: 8px;
+}
+.progress.progress-lg {
+  height: 32px;
+  border-radius: 16px;
+}
+.progress.progress-lg .progress-bar {
+  height: 32px;
+}
+.progress.progress-lg .progress-bar span {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.progress.progress-sm {
+  height: 10px;
+  border-radius: 5px;
+}
+.progress.progress-sm .progress-bar {
+  height: 10px;
+}
+.progress.progress-xs {
+  height: 2px;
+  border-radius: 1px;
+}
+.progress.progress-xs .progress-bar {
+  height: 2px;
+}
+.progress.progress-sm .progress-bar span,
+.progress.progress-xs .progress-bar span {
+  display: none !important;
 }
 .progress-bar {
+  position: relative;
+  background-color: #d4d7dd;
+}
+.progress-bar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #676978;
+  text-align: center;
+}
+.progress-bar-primary {
   background: #22adf6;
   background: -webkit-linear-gradient(left, #22adf6 0%, #00c9ff 100%);
   background: -webkit-gradient(linear, left top, right top, from(#22adf6), to(#00c9ff));
   background:      -o-linear-gradient(left, #22adf6 0%, #00c9ff 100%);
   background:         linear-gradient(to right, #22adf6 0%, #00c9ff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
+}
+.progress-bar-primary span {
+  color: #fff;
 }
 .progress-bar-success {
   background: #4ed8a0;
@@ -1820,6 +1878,9 @@ h6.deluxe .label {
   background:         linear-gradient(to right, #4ed8a0 0%, #7ce490 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
 }
+.progress-bar-success span {
+  color: #fff;
+}
 .progress-bar-info {
   background: #434453;
   background: -webkit-linear-gradient(left, #434453 0%, #676978 100%);
@@ -1827,6 +1888,9 @@ h6.deluxe .label {
   background:      -o-linear-gradient(left, #434453 0%, #676978 100%);
   background:         linear-gradient(to right, #434453 0%, #676978 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
+}
+.progress-bar-info span {
+  color: #fff;
 }
 .progress-bar-warning {
   background: #7a65f2;
@@ -1836,6 +1900,9 @@ h6.deluxe .label {
   background:         linear-gradient(to right, #7a65f2 0%, #9394ff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
 }
+.progress-bar-warning span {
+  color: #fff;
+}
 .progress-bar-danger {
   background: #f95f53;
   background: -webkit-linear-gradient(left, #f95f53 0%, #ff8564 100%);
@@ -1843,6 +1910,9 @@ h6.deluxe .label {
   background:      -o-linear-gradient(left, #f95f53 0%, #ff8564 100%);
   background:         linear-gradient(to right, #f95f53 0%, #ff8564 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
+}
+.progress-bar-danger span {
+  color: #fff;
 }
 .progress-heatmap {
   background: #00c9ff;
@@ -4475,8 +4545,8 @@ section.docs-section .page-header {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
 }
 /*
-		Increase left & right padding on tab container to match panel paadding
-		when it is directly inside a panel
+    Increase left & right padding on tab container to match panel paadding
+    when it is directly inside a panel
 */
 .panel > .nav-microtabs {
   padding-right: 30px;
