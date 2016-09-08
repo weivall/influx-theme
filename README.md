@@ -53,8 +53,6 @@ There is one main decision to consider: to make the navbar `fixed` or not. As a 
 ## Next Release v0.12
 
 - Add Bootstrap's `Popover` component to the theme and style it
-- Write docs for `Progress Bar` component
-- Add size modifizers to the `Progress Bar` component
 - "Compact" version of `.panel-collapse`
 - Write docs for `.panel-collapse` component
 
@@ -67,6 +65,8 @@ There is one main decision to consider: to make the navbar `fixed` or not. As a 
 - Organized docs more
 - If `span.icon` is the first child within `.panel-title` it adds a subtle margin to look breathable
 - Code highlighting, manual only
+- New docs for `Progress Bar` component
+- Size modifizers for the `Progress Bar` component
 
 **0.10**
 - Re-designed alert styles, now has the option for an icon, and dismissable alerts are styled
