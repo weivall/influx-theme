@@ -52,6 +52,7 @@
                 <li><a href="#section-panels">Panels</a></li>
                 <li><a href="#section-badges">Badges</a></li>
                 <li><a href="#section-tooltips">Tooltips</a></li>
+                <li><a href="#section-popovers">Popovers</a></li>
                 <li><a href="#section-dropdowns">Dropdowns</a></li>
                 <li><a href="#section-navs">Navs</a></li>
                 <li><a href="#section-navbars">Navbars</a></li>
@@ -1829,6 +1830,163 @@
     <section class="docs-section">
       <div class="container">
         <div class="page-header">
+          <a class="page-header--anchor" id="section-popovers"></a>
+          <a href="#section-popovers">
+            <h1>Popovers</h1>
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h2 class="panel-title">Default Popover</h2>
+              </div>
+              <div class="panel-body">
+                <p>When you want something kind of like a Tooltip but appears on click instead of hover. Also useful because you can pass in a title and content separately. If you are feeling really fancy, you can inject custom HTML into the Popover.</p>
+                <p><strong>Common Use Cases</strong></p>
+                <ul>
+                  <li>Quick preview of shopping cart from navbar</li>
+                  <li>Quick preview of a clothing item, doesn't cause user to leave page</li>
+                  <li>Asking confirmation of delete without using a modal</li>
+                </ul>
+                <hr />
+                <p><strong>Implementation</strong></p>
+                <p>Popovers are activated via custom HTML attributes applied to an element. In these examples a <code>&lt;button&gt;</code> is used, but you could theoretically use anything.</p>
+                <pre><code><span style="color:#A4A8B6;">&lt;button type="button" class="btn btn-primary"</span>
+  data-toggle="popover"
+  title="Popover title"
+  data-content="Popover content goes here"
+<span style="color:#A4A8B6;">&gt;
+  Click to toggle popover
+&lt;/button&gt;</span></code></pre>
+                <p>It is possible to use <code>data-content</code> and <code>title</code> without each other for a simpler Popover</p>
+                <p><strong>Positioning</strong></p>
+                <p>By adding a third custom HTML attribute you can control where the popover appears relative to the toggle. If no value is specified, the default is <code>"right"</code></p>
+                <pre><code>data-placement="top"<br/>data-placement="right"<br/>data-placement="bottom"<br/>data-placement="left"</code></pre>
+                <p><strong>Limitations</strong></p>
+                <p>Since the component makes use of custom attributes, you can only pass in plaintext. To inject custom HTML into a popover, follow <a href="http://getbootstrap.com/javascript/#popovers" target="_blank">Boostrap's Popover</a> instructions.</p>
+                <p>Popovers have a maximum width of <code>276px</code></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <p>Basic Popover with <code>title</code> and <code>data-content</code> values</p>
+            <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="Popover text is poppin' yo!">Click to toggle popover</button>
+            <br/><br/>
+            <p>Basic Popover with <code>data-content</code> only</p>
+            <button type="button" class="btn btn-primary" data-toggle="popover" data-content="Oh no! Something went wrong here. Your CD tray is ajar :(">Click to toggle popover</button>
+            <br/><br/>
+            <p>Basic Popover with <code>data-placement="top"</code></p>
+            <button type="button" class="btn btn-primary" data-toggle="popover" data-placement="top" data-content="Oh no! Something went wrong here. Your CD tray is ajar :(">Click to toggle popover</button>
+            <br/><br/>
+            <p>Basic Popover with <code>data-placement="right"</code></p>
+            <button type="button" class="btn btn-primary" data-toggle="popover" data-placement="right" data-content="Oh no! Something went wrong here. Your CD tray is ajar :(">Click to toggle popover</button>
+            <br/><br/>
+            <p>Basic Popover with <code>data-placement="bottom"</code></p>
+            <button type="button" class="btn btn-primary" data-toggle="popover" data-placement="bottom" data-content="Oh no! Something went wrong here. Your CD tray is ajar :(">Click to toggle popover</button>
+            <br/><br/>
+            <p>Basic Popover with <code>data-placement="left"</code></p>
+            <button type="button" class="btn btn-primary" data-toggle="popover" data-placement="left" data-content="Oh no! Something went wrong here. Your CD tray is ajar :(">Click to toggle popover</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h2 class="panel-title">Dismissable Popover</h2>
+              </div>
+              <div class="panel-body">
+                <p>Normally Popovers can only be dismissed by clicking the same element that triggered it. Unless the Popover is intended to be in your face, it is best to make it dismissable. This causes the Popover to dismiss on the next click, regardless of where it is.</p>
+                <p><strong>Implementation</strong></p>
+<pre><code><span style="color:#A4A8B6;">&lt;button type="button" class="btn btn-primary"
+  data-toggle="popover"
+  title="Popover title"
+  data-content="Popover content goes here"</span>
+  data-trigger="focus"
+<span style="color:#A4A8B6;">&gt;
+  Click to toggle popover
+&lt;/button&gt;</span></code></pre>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <p>Dismissable Popover with <code>title</code> and <code>data-content</code> values</p>
+            <button type="button" class="btn btn-primary" data-trigger="focus" data-toggle="popover" title="Popover title" data-content="Popover text is poppin' yo!">Click to toggle popover</button>
+            <br/><br/>
+            <p>Dismissable Popover with <code>data-content</code> only</p>
+            <button type="button" class="btn btn-primary" data-trigger="focus" data-toggle="popover" data-content="Oh no! Something went wrong here. Your CD tray is ajar :(">Click to toggle popover</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h2 class="panel-title">Contextual Alternatives</h2>
+              </div>
+              <div class="panel-body">
+                <p>The look & feel of the Popover can be modified to fit its context. By default Popovers are blue & white. This can be done through yet another custom attribute:</p>
+                <p><strong>Implementation</strong></p>
+<pre><code><span style="color:#A4A8B6;">&lt;button type="button" class="btn btn-primary"
+  data-toggle="popover"
+  title="Popover title"
+  data-content="Popover content goes here"
+  data-trigger="focus"</span>
+  data-theme="data-explorer"
+<span style="color:#A4A8B6;">&gt;
+  Click to toggle popover
+&lt;/button&gt;</span></code></pre>
+                <p><strong>Themes</strong></p>
+                <table class="table v-center">
+                  <tbody>
+                    <tr>
+                      <td><code>"data-explorer"</code></td>
+                      <td>For use in the data explorer as a tutorial component. Works best on dark backgrounds.</td>
+                    </tr>
+                    <tr>
+                      <td><code>"nuetral"</code></td>
+                      <td>Colorless, more subtle.</td>
+                    </tr>
+                    <tr>
+                      <td><code>"success"</code></td>
+                      <td>Green instead of blue.</td>
+                    </tr>
+                    <tr>
+                      <td><code>"warning"</code></td>
+                      <td>Purple instead of blue.</td>
+                    </tr>
+                    <tr>
+                      <td><code>"danger"</code></td>
+                      <td>Red instead of blue.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <p>Dismissable Popover with <code>data-content</code> and <code>data-theme="data-explorer"</code></p>
+            <button type="button" class="btn btn-info" data-trigger="focus" data-theme="data-explorer" data-toggle="popover" data-content="Oh no! Something went wrong here. Your CD tray is ajar :(">Click to toggle popover</button>
+            <br/><br/>
+            <p>Dismissable Popover with <code>data-content</code> and <code>data-theme="primary"</code></p>
+            <button type="button" class="btn btn-primary" data-trigger="focus" data-theme="primary" data-toggle="popover" data-content="Oh no! Something went wrong here. Your CD tray is ajar :(">Click to toggle popover</button>
+            <br/><br/>
+            <p>Dismissable Popover with <code>data-content</code> and <code>data-theme="success"</code></p>
+            <button type="button" class="btn btn-success" data-trigger="focus" data-theme="success" data-toggle="popover" data-content="Oh no! Something went wrong here. Your CD tray is ajar :(">Click to toggle popover</button>
+            <br/><br/>
+            <p>Dismissable Popover with <code>data-content</code> and <code>data-theme="warning"</code></p>
+            <button type="button" class="btn btn-warning" data-trigger="focus" data-theme="warning" data-toggle="popover" data-content="Oh no! Something went wrong here. Your CD tray is ajar :(">Click to toggle popover</button>
+            <br/><br/>
+            <p>Dismissable Popover with <code>data-content</code> and <code>data-theme="danger"</code></p>
+            <button type="button" class="btn btn-danger" data-trigger="focus" data-theme="danger" data-toggle="popover" data-content="Oh no! Something went wrong here. Your CD tray is ajar :(">Click to toggle popover</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="docs-section">
+      <div class="container">
+        <div class="page-header">
           <a class="page-header--anchor" id="section-dropdowns"></a>
           <a href="#section-dropdowns">
             <h1>Dropdowns</h1>
@@ -3540,6 +3698,13 @@
     */
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    /*
+        Bootstrap Popovers
+    */
+    $(function () {
+      $('[data-toggle="popover"]').popover()
     })
 
     /*
