@@ -456,7 +456,7 @@ a:active {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 5px;
     transition: transform 0.25s ease;
     border: none;
 
@@ -567,7 +567,7 @@ a:active {
   }
 }
 
-// Panels for Enterprise (Minimal Panel)
+// Collapse Panel
 .panel-collapse {
 
   .panel-heading {
@@ -577,8 +577,12 @@ a:active {
   
   .panel-body {
     border-top: 2px solid @g19-ghost;
-  }
 
+    > *:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+  // Grey Text Alternative
   &.panel-collapse-grey {
     .panel-title a {
       color: @g8-storm !important;
@@ -588,6 +592,7 @@ a:active {
       }
     }
   }
+  // Mint Alternative
   &.panel-collapse-mint {
     border-color: @c-wasabi;
 
@@ -596,7 +601,7 @@ a:active {
     }
     .panel-body {
       border-color: @c-wasabi;
-      .gradient-v(@c-wasabi, @c-mint);
+      background-color: @c-mint;
     }
     .panel-title a {
       color: @g8-storm !important;
@@ -616,6 +621,7 @@ a:active {
       .custom-scrollbar(@c-viridian,@c-wasabi);
     }
   }
+  // Frost Alternative
   &.panel-collapse-frost {
     border-color: @c-neutrino;
 
@@ -624,7 +630,7 @@ a:active {
     }
     .panel-body {
       border-color: @c-neutrino;
-      .gradient-v(@c-neutrino, @c-yeti);
+      background-color: @c-yeti;
     }
     .panel-title a {
       color: @g8-storm !important;
@@ -642,6 +648,26 @@ a:active {
     }
     pre {
       .custom-scrollbar(@c-ocean,@g20-white);
+    }
+  }
+  // Size Modifiers
+  &.panel-collapse-sm {
+    .panel-heading {
+      padding: 6px 11px;
+    }
+    .panel-title {
+      margin: 2px 0 3px 0;
+    }
+    .panel-title a {
+      font-weight: 600;
+      font-size: 14px;
+
+      span.caret {
+        margin-right: 4px;
+      }
+      span.caret:after {
+        font-size: 13px;
+      }
     }
   }
 }

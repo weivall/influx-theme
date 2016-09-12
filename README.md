@@ -1,4 +1,4 @@
-# Influx Bootstrap Theme v0.10
+# Influx Bootstrap Theme v0.11
 
 This is the official theme used to build the UI of our web applications. As the theme is used within each application new components & tools are added, and older components are upgraded. [alexpaxton](https://github.com/alexpaxton) will be managing the changelog and direction of the project.
 The goal of the project is to expedite the development of our products' interfaces, as well as maintaining a clear and consistent design language across all user touchpoints. Since there are not styles in the theme for *every* standard component, the primary goal is to have something in the theme for them all. Other goals include finishing documentation for everything currently lacking.
@@ -51,10 +51,7 @@ There is one main decision to consider: to make the navbar `fixed` or not. As a 
 - [Static Navbar (Dark)](/boilerplate/static-nav-light/index.html)
 
 ## Next Release v0.12
-
-
-- "Compact" version of `.panel-collapse`
-- Write docs for `.panel-collapse` component
+- TBD
 
 ### Changelog
 
@@ -68,6 +65,8 @@ There is one main decision to consider: to make the navbar `fixed` or not. As a 
 - New docs for `Progress Bar` component
 - Size modifizers for the `Progress Bar` component
 - Styled Bootstrap's `Popover` component and added contextual alternatives
+- New docs for `Collapsible Panels` custom component
+- Added size modifier `panel-collapse-sm` for compact panels
 
 **0.10**
 - Re-designed alert styles, now has the option for an icon, and dismissable alerts are styled
