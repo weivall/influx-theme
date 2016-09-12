@@ -51,7 +51,14 @@ There is one main decision to consider: to make the navbar `fixed` or not. As a 
 - [Static Navbar (Dark)](/boilerplate/static-nav-light/index.html)
 
 ## Next Release v0.12
-- TBD
+- Docs for `Heatmap Progress Bars`
+- Docs for `Badges`
+- Docs for `Panels`
+- Docs for `Tables`
+- Docs for `Dropdowns`
+- Docs for `List Groups`
+- Docs for `Wells`
+- Cleanup `Slider Toggles`
 
 ### Changelog
 
@@ -67,6 +74,8 @@ There is one main decision to consider: to make the navbar `fixed` or not. As a 
 - Styled Bootstrap's `Popover` component and added contextual alternatives
 - New docs for `Collapsible Panels` custom component
 - Added size modifier `panel-collapse-sm` for compact panels
+- Added icons for "Dashboards" feature (9 variations)
+- Added `Triangle` and `Octagon` icons as well (for errors / alerts)
 
 **0.10**
 - Re-designed alert styles, now has the option for an icon, and dismissable alerts are styled
