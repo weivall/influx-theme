@@ -59,6 +59,7 @@ There is one main decision to consider: to make the navbar `fixed` or not. As a 
 - Docs for `List Groups`
 - Docs for `Wells`
 - Cleanup `Slider Toggles`
+- Docs for `Navbars`
 
 ### Changelog
 
