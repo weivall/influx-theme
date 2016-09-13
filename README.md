@@ -51,15 +51,7 @@ There is one main decision to consider: to make the navbar `fixed` or not. As a 
 - [Static Navbar (Dark)](/boilerplate/static-nav-light/index.html)
 
 ## Next Release v0.12
-- Docs for `Heatmap Progress Bars`
-- Docs for `Badges`
-- Docs for `Panels`
-- Docs for `Tables`
-- Docs for `Dropdowns`
-- Docs for `List Groups`
-- Docs for `Wells`
-- Cleanup `Slider Toggles`
-- Docs for `Navbars`
+See GitHub milestone: https://github.com/influxdata/influx-theme/milestone/2
 
 ### Changelog
 
