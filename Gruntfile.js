@@ -51,7 +51,7 @@ module.exports = function (grunt) {
 
     // Task configuration.
     clean: {
-      dist: 'dist',
+      dist: 'docs/dist',
       docs: 'docs/dist'
     },
 
@@ -120,7 +120,7 @@ module.exports = function (grunt) {
           'js/tab.js',
           'js/affix.js'
         ],
-        dest: 'dist/js/<%= pkg.name %>.js'
+        dest: 'docs/dist/js/<%= pkg.name %>.js'
       }
     },
 
@@ -134,7 +134,7 @@ module.exports = function (grunt) {
       },
       core: {
         src: '<%= concat.bootstrap.dest %>',
-        dest: 'dist/js/<%= pkg.name %>.min.js'
+        dest: 'docs/dist/js/<%= pkg.name %>.min.js'
       },
       customize: {
         src: configBridge.paths.customizerJs,
@@ -160,10 +160,10 @@ module.exports = function (grunt) {
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>.css.map',
-          sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
+          sourceMapFilename: 'docs/dist/css/<%= pkg.name %>.css.map'
         },
         src: 'less/bootstrap.less',
-        dest: 'dist/css/<%= pkg.name %>.css'
+        dest: 'docs/dist/css/<%= pkg.name %>.css'
       },
       compileTheme: {
         options: {
@@ -171,10 +171,10 @@ module.exports = function (grunt) {
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>-theme.css.map',
-          sourceMapFilename: 'dist/css/<%= pkg.name %>-theme.css.map'
+          sourceMapFilename: 'docs/dist/css/<%= pkg.name %>-theme.css.map'
         },
         src: 'less/theme.less',
-        dest: 'dist/css/<%= pkg.name %>-theme.css'
+        dest: 'docs/dist/css/<%= pkg.name %>-theme.css'
       },
       compileThemeDark: {
         options: {
@@ -182,10 +182,10 @@ module.exports = function (grunt) {
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>-theme-dark.css.map',
-          sourceMapFilename: 'dist/css/<%= pkg.name %>-theme-dark.css.map'
+          sourceMapFilename: 'docs/dist/css/<%= pkg.name %>-theme-dark.css.map'
         },
         src: 'less/theme-dark.less',
-        dest: 'dist/css/<%= pkg.name %>-theme-dark.css'
+        dest: 'docs/dist/css/<%= pkg.name %>-theme-dark.css'
       },
       compileThemeWeb: {
         options: {
@@ -193,10 +193,10 @@ module.exports = function (grunt) {
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>-theme-web.css.map',
-          sourceMapFilename: 'dist/css/<%= pkg.name %>-theme-web.css.map'
+          sourceMapFilename: 'docs/dist/css/<%= pkg.name %>-theme-web.css.map'
         },
         src: 'less/theme-web.less',
-        dest: 'dist/css/<%= pkg.name %>-theme-web.css'
+        dest: 'docs/dist/css/<%= pkg.name %>-theme-web.css'
       }
     },
 
@@ -208,25 +208,25 @@ module.exports = function (grunt) {
         options: {
           map: true
         },
-        src: 'dist/css/<%= pkg.name %>.css'
+        src: 'docs/dist/css/<%= pkg.name %>.css'
       },
       theme: {
         options: {
           map: true
         },
-        src: 'dist/css/<%= pkg.name %>-theme.css'
+        src: 'docs/dist/css/<%= pkg.name %>-theme.css'
       },
       themeDark: {
         options: {
           map: true
         },
-        src: 'dist/css/<%= pkg.name %>-theme-dark.css'
+        src: 'docs/dist/css/<%= pkg.name %>-theme-dark.css'
       },
       themeWeb: {
         options: {
           map: true
         },
-        src: 'dist/css/<%= pkg.name %>-theme-web.css'
+        src: 'docs/dist/css/<%= pkg.name %>-theme-web.css'
       },
       docs: {
         src: ['docs/assets/css/src/docs.css']
@@ -244,10 +244,10 @@ module.exports = function (grunt) {
         csslintrc: 'less/.csslintrc'
       },
       dist: [
-        'dist/css/bootstrap.css',
-        'dist/css/bootstrap-theme.css',
-        'dist/css/bootstrap-theme-dark.css',
-        'dist/css/bootstrap-theme-web.css'
+        'docs/dist/css/bootstrap.css',
+        'docs/dist/css/bootstrap-theme.css',
+        'docs/dist/css/bootstrap-theme-dark.css',
+        'docs/dist/css/bootstrap-theme-web.css'
       ],
       examples: [
         'docs/examples/**/*.css'
@@ -271,20 +271,20 @@ module.exports = function (grunt) {
         advanced: false
       },
       minifyCore: {
-        src: 'dist/css/<%= pkg.name %>.css',
-        dest: 'dist/css/<%= pkg.name %>.min.css'
+        src: 'docs/dist/css/<%= pkg.name %>.css',
+        dest: 'docs/dist/css/<%= pkg.name %>.min.css'
       },
       minifyTheme: {
-        src: 'dist/css/<%= pkg.name %>-theme.css',
-        dest: 'dist/css/<%= pkg.name %>-theme.min.css'
+        src: 'docs/dist/css/<%= pkg.name %>-theme.css',
+        dest: 'docs/dist/css/<%= pkg.name %>-theme.min.css'
       },
       minifyThemeDark: {
-        src: 'dist/css/<%= pkg.name %>-theme-dark.css',
-        dest: 'dist/css/<%= pkg.name %>-theme-dark.min.css'
+        src: 'docs/dist/css/<%= pkg.name %>-theme-dark.css',
+        dest: 'docs/dist/css/<%= pkg.name %>-theme-dark.min.css'
       },
       minifyThemeWeb: {
-        src: 'dist/css/<%= pkg.name %>-theme-web.css',
-        dest: 'dist/css/<%= pkg.name %>-theme-web.min.css'
+        src: 'docs/dist/css/<%= pkg.name %>-theme-web.css',
+        dest: 'docs/dist/css/<%= pkg.name %>-theme-web.min.css'
       },
       docs: {
         src: [
@@ -302,9 +302,9 @@ module.exports = function (grunt) {
       },
       dist: {
         expand: true,
-        cwd: 'dist/css/',
+        cwd: 'docs/dist/css/',
         src: ['*.css', '!*.min.css'],
-        dest: 'dist/css/'
+        dest: 'docs/dist/css/'
       },
       examples: {
         expand: true,
@@ -322,7 +322,7 @@ module.exports = function (grunt) {
       fonts: {
         expand: true,
         src: 'fonts/*',
-        dest: 'dist/'
+        dest: 'docs/dist/'
       },
       docs: {
         expand: true,
@@ -546,7 +546,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('commonjs', 'Generate CommonJS entrypoint module in dist dir.', function () {
     var srcFiles = grunt.config.get('concat.bootstrap.src');
-    var destFilepath = 'dist/js/npm.js';
+    var destFilepath = 'docs/dist/js/npm.js';
     generateCommonJSModule(grunt, srcFiles, destFilepath);
   });
 
