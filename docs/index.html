@@ -3355,20 +3355,30 @@
           <div class="col-xs-12">
             <div class="panel panel-minimal">
               <div class="panel-body">
-                <h4>Influx Nuetrals</h4>
-                <div class="docs-color-grid" id="docs-nuetral-swatches"></div>
-                <hr/>
-                <h4>Telegraf Spectrum</h4>
-                <div class="docs-color-grid" id="docs-telegraf-swatches"></div>
-                <hr/>
-                <h4>InfluxDB Spectrum</h4>
-                <div class="docs-color-grid" id="docs-influxdb-swatches"></div>
-                <hr/>
-                <h4>Chronograf Spectrum</h4>
-                <div class="docs-color-grid" id="docs-chronograf-swatches"></div>
-                <hr/>
-                <h4>Kapacitor Spectrum</h4>
-                <div class="docs-color-grid" id="docs-kapacitor-swatches"></div>
+                <div class="docs-color-grid">
+                  <div class="docs-color-column" id="docs-telegraf-swatches">
+                    <h4 class="text-center">Telegraf</h4>
+                    <br/>
+                  </div>
+                  <div class="docs-color-column" id="docs-influxdb-swatches">
+                    <h4 class="text-center">InfluxDB</h4>
+                    <br/>
+                  </div>
+                  <div class="docs-color-column" id="docs-chronograf-swatches">
+                    <h4 class="text-center">Chronograf</h4>
+                    <br/>
+                  </div>
+                  <div class="docs-color-column" id="docs-kapacitor-swatches">
+                    <h4 class="text-center">Kapacitor</h4>
+                    <br/>
+                  </div>
+                </div>
+                <br/>
+                <div class="docs-color-grid">
+                  <div class="docs-color-column" id="docs-nuetral-swatches">
+                    <h4 class="text-center">Influx Nuetrals</h4>
+                    <br/>
+                  </div>
               </div>
             </div>
           </div>
@@ -3673,7 +3683,7 @@
                     </div>
                     <div class="col-sm-6">
                       <p><strong>Example SCSS with Code Highlighting</strong></p>
-                      <pre class="rainbow-highlighter" data-language="SCSS"><code><b>/*
+                      <pre class="rainbow-highlighter"><code><b>/*
   Basic Button
   -------------------------------------------------
 */</b>
@@ -3949,223 +3959,276 @@
     $(document).on("ready", function(){
       $influxNuetrals = [
         { hexcode: "0f0e15",
-          name: "G0 Obsidian",
+          number: "G0",
+          name: "Obsidian",
           lightBg: false
         },
         { hexcode: "1c1c21",
-          name: "G1 Raven",
+          number: "G1",
+          name: "Raven",
           lightBg: false
         },
         { hexcode: "202028",
-          name: "G2 Kevlar",
+          number: "G2",
+          name: "Kevlar",
           lightBg: false
         },
         { hexcode: "292933",
-          name: "G3 Castle",
+          number: "G3",
+          name: "Castle",
           lightBg: false
         },
-        { hexcode: "292933",
-          name: "G4 Onyx",
+        { hexcode: "2C2C38",
+          number: "G4",
+          name: "Onyx",
           lightBg: false
         },
         { hexcode: "383846",
-          name: "G5 Pepper",
+          number: "G5",
+          name: "Pepper",
           lightBg: false
         },
         { hexcode: "434453",
-          name: "G6 Smoke",
+          number: "G6",
+          name: "Smoke",
           lightBg: false
         },
         { hexcode: "545667",
-          name: "G7 Graphite",
+          number: "G7",
+          name: "Graphite",
           lightBg: false
         },
         { hexcode: "676978",
-          name: "G8 Storm",
+          number: "G8",
+          name: "Storm",
           lightBg: false
         },
         { hexcode: "757888",
-          name: "G9 Mountain",
+          number: "G9",
+          name: "Mountain",
           lightBg: false
         },
         { hexcode: "8e91a1",
-          name: "G10 Wolf",
+          number: "G10",
+          name: "Wolf",
           lightBg: false
         },
         { hexcode: "999dab",
-          name: "G11 Sidewalk",
+          number: "G11",
+          name: "Sidewalk",
           lightBg: false
         },
         { hexcode: "a4a8b6",
-          name: "G12 Forge",
+          number: "G12",
+          name: "Forge",
           lightBg: false
         },
         { hexcode: "bec2cc",
-          name: "G13 Mist",
+          number: "G13",
+          name: "Mist",
           lightBg: true
         },
         { hexcode: "c6cad3",
-          name: "G14 Chromium",
+          number: "G14",
+          name: "Chromium",
           lightBg: true
         },
         { hexcode: "d4d7dd",
-          name: "G15 Platinum",
+          number: "G15",
+          name: "Platinum",
           lightBg: true
         },
         { hexcode: "e7e8eb",
-          name: "G16 Pearl",
+          number: "G16",
+          name: "Pearl",
           lightBg: true
         },
         { hexcode: "eeeff2",
-          name: "G17 Whisper",
+          number: "G17",
+          name: "Whisper",
           lightBg: true
         },
         { hexcode: "f6f6f8",
-          name: "G18 Cloud",
+          number: "G18",
+          name: "Cloud",
           lightBg: true
         },
         { hexcode: "fafafc",
-          name: "G19 Ghost",
+          number: "G19",
+          name: "Ghost",
           lightBg: true
         },
         { hexcode: "ffffff",
-          name: "G20 White",
+          number: "G20",
+          name: "White",
           lightBg: true
         }
       ]
       $influxTelegraf = [
         { hexcode: "2F1F29",
-          name: "T0 Basalt",
+          number: "T0",
+          name: "Basalt",
           lightBg: false
         },
         { hexcode: "BF3D5E",
-          name: "T1 Ruby",
+          number: "T1",
+          name: "Ruby",
           lightBg: false
         },
         { hexcode: "DC4E58",
-          name: "T2 Fire",
+          number: "T2",
+          name: "Fire",
           lightBg: false
         },
         { hexcode: "F95F53",
-          name: "T3 Curaçao",
+          number: "T3",
+          name: "Curaçao",
           lightBg: false
         },
         { hexcode: "FF8564",
-          name: "T4 Dreamsicle",
+          number: "T4",
+          name: "Dreamsicle",
           lightBg: false
         },
         { hexcode: "FFB6A0",
-          name: "T5 Tungsten",
+          number: "T5",
+          name: "Tungsten",
           lightBg: true
         },
         { hexcode: "FFDCCF",
-          name: "T6 Marmelade",
+          number: "T6",
+          name: "Marmelade",
           lightBg: true
         },
         { hexcode: "FFF7F4",
-          name: "T7 Flan",
+          number: "T7",
+          name: "Flan",
           lightBg: true
         }
       ]
       $influxDB = [
         { hexcode: "182838",
-          name: "I0 Abyss",
+          number: "I0",
+          name: "Abyss",
           lightBg: false
         },
         { hexcode: "326BBA",
-          name: "I1 Sapphire",
+          number: "I1",
+          name: "Sapphire",
           lightBg: false
         },
         { hexcode: "4591ED",
-          name: "I2 Ocean",
+          number: "I2",
+          name: "Ocean",
           lightBg: false
         },
         { hexcode: "22ADF6",
-          name: "I3 Pool",
+          number: "I3",
+          name: "Pool",
           lightBg: false
         },
         { hexcode: "00C9FF",
-          name: "I4 Laser",
+          number: "I4",
+          name: "Laser",
           lightBg: false
         },
         { hexcode: "6BDFFF",
-          name: "I5 Hydrogen",
+          number: "I5",
+          name: "Hydrogen",
           lightBg: true
         },
         { hexcode: "BEF0FF",
-          name: "I6 Neutrino",
+          number: "I6",
+          name: "Neutrino",
           lightBg: true
         },
         { hexcode: "F0FCFF",
-          name: "I7 Yeti",
+          number: "I7",
+          name: "Yeti",
           lightBg: true
         }
       ]
       $influxChronograf = [
         { hexcode: "1F2039",
-          name: "C0 Shadow",
+          number: "C0",
+          name: "Shadow",
           lightBg: false
         },
         { hexcode: "311F94",
-          name: "C1 Void",
+          number: "C1",
+          name: "Void",
           lightBg: false
         },
         { hexcode: "513CC6",
-          name: "C2 Planet",
+          number: "C2",
+          name: "Planet",
           lightBg: false
         },
         { hexcode: "7A65F2",
-          name: "C3 Star",
+          number: "C3",
+          name: "Star",
           lightBg: false
         },
         { hexcode: "9394FF",
-          name: "C4 Comet",
+          number: "C4",
+          name: "Comet",
           lightBg: false
         },
         { hexcode: "B1B6FF",
-          name: "C5 Potassium",
+          number: "C5",
+          name: "Potassium",
           lightBg: true
         },
         { hexcode: "C9D0FF",
-          name: "C6 Moonstone",
+          number: "C6",
+          name: "Moonstone",
           lightBg: true
         },
         { hexcode: "F2F4FF",
-          name: "C7 Crème de Violette",
+          number: "C7",
+          name: "Crème de Violette",
           lightBg: true
         }
       ]
       $influxKapacitor = [
         { hexcode: "152B2D",
-          name: "K0 Gypsy",
+          number: "K0",
+          name: "Gypsy",
           lightBg: false
         },
         { hexcode: "108174",
-          name: "K1 Emerald",
+          number: "K1",
+          name: "Emerald",
           lightBg: false
         },
         { hexcode: "32B08C",
-          name: "K2 Viridian",
+          number: "K2",
+          name: "Viridian",
           lightBg: false
         },
         { hexcode: "4ED8A0",
-          name: "K3 Rainforest",
+          number: "K3",
+          name: "Rainforest",
           lightBg: false
         },
         { hexcode: "7CE490",
-          name: "K4 Honeydew",
+          number: "K4",
+          name: "Honeydew",
           lightBg: false
         },
         { hexcode: "A5F3B4",
-          name: "K5 Krypton",
+          number: "K5",
+          name: "Krypton",
           lightBg: true
         },
         { hexcode: "C6FFD0",
-          name: "K6 Wasabi",
+          number: "K6",
+          name: "Wasabi",
           lightBg: true
         },
         { hexcode: "F2FFF4",
-          name: "K7 Mint",
+          number: "K7",
+          name: "Mint",
           lightBg: true
         }
       ]
@@ -4178,6 +4241,10 @@
         $colorName = $("<h4 />")
           .text($colorObject.name);
 
+        // Color Number
+        $colorNumber = $("<h5 />")
+          .text($colorObject.number);
+
         // Color Code
         $colorCode = $("<input />")
           .attr("type","text")
@@ -4189,7 +4256,7 @@
         $colorSwatch = $('<div />')
           .addClass('docs-color-swatch')
           .attr('style','background-color: #'+$colorObject.hexcode)
-          .append($colorName, $colorCode);
+          .append($colorName, $colorNumber, $colorCode);
         // Check lightBg, add class if necessary (legibility)
         if ($colorObject.lightBg) {
           $colorSwatch.addClass('light-bg');
@@ -4212,6 +4279,10 @@
         $colorName = $("<h4 />")
           .text($colorObject.name);
 
+        // Color Number
+        $colorNumber = $("<h5 />")
+          .text($colorObject.number);
+
         // Color Code
         $colorCode = $("<input />")
           .attr("type","text")
@@ -4223,7 +4294,7 @@
         $colorSwatch = $('<div />')
           .addClass('docs-color-swatch')
           .attr('style','background-color: #'+$colorObject.hexcode)
-          .append($colorName, $colorCode);
+          .append($colorName, $colorNumber, $colorCode);
         // Check lightBg, add class if necessary (legibility)
         if ($colorObject.lightBg) {
           $colorSwatch.addClass('light-bg');
@@ -4246,6 +4317,10 @@
         $colorName = $("<h4 />")
           .text($colorObject.name);
 
+        // Color Number
+        $colorNumber = $("<h5 />")
+          .text($colorObject.number);
+
         // Color Code
         $colorCode = $("<input />")
           .attr("type","text")
@@ -4257,7 +4332,7 @@
         $colorSwatch = $('<div />')
           .addClass('docs-color-swatch')
           .attr('style','background-color: #'+$colorObject.hexcode)
-          .append($colorName, $colorCode);
+          .append($colorName, $colorNumber, $colorCode);
         // Check lightBg, add class if necessary (legibility)
         if ($colorObject.lightBg) {
           $colorSwatch.addClass('light-bg');
@@ -4279,6 +4354,10 @@
         $colorName = $("<h4 />")
           .text($colorObject.name);
 
+        // Color Number
+        $colorNumber = $("<h5 />")
+          .text($colorObject.number);
+
         // Color Code
         $colorCode = $("<input />")
           .attr("type","text")
@@ -4290,7 +4369,7 @@
         $colorSwatch = $('<div />')
           .addClass('docs-color-swatch')
           .attr('style','background-color: #'+$colorObject.hexcode)
-          .append($colorName, $colorCode);
+          .append($colorName, $colorNumber, $colorCode);
         // Check lightBg, add class if necessary (legibility)
         if ($colorObject.lightBg) {
           $colorSwatch.addClass('light-bg');
@@ -4312,6 +4391,10 @@
         $colorName = $("<h4 />")
           .text($colorObject.name);
 
+        // Color Number
+        $colorNumber = $("<h5 />")
+          .text($colorObject.number);
+
         // Color Code
         $colorCode = $("<input />")
           .attr("type","text")
@@ -4323,7 +4406,7 @@
         $colorSwatch = $('<div />')
           .addClass('docs-color-swatch')
           .attr('style','background-color: #'+$colorObject.hexcode)
-          .append($colorName, $colorCode);
+          .append($colorName, $colorNumber, $colorCode);
         // Check lightBg, add class if necessary (legibility)
         if ($colorObject.lightBg) {
           $colorSwatch.addClass('light-bg');

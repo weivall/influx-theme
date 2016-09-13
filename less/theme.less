@@ -2661,33 +2661,57 @@ table.table.icon-font-matrix {
 // --------------------------------------------------
 .docs-color-grid {
   display: flex;
-  flex-wrap: wrap;
-  border-radius: 7px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.docs-color-column {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
   overflow: hidden;
-  border: 2px solid @g18-cloud;
+  padding: 0 2px;
+
+  &:first-of-type {
+    padding-left: 0;
+  }
+  &:last-of-type {
+    padding-right: 0;
+  }
 }
 .docs-color-field {
   background-color: transparent;
   display: inline-block;
   width: 80px;
-  font-weight: 200;
+  font-weight: 300;
   font-family: Consolas,"Lucida Console",Monaco,monospace;
   border: 0;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
+  margin-bottom: -6px;
 }
 .docs-color-swatch {
-  flex-grow: 1;
-  font-size: 16px;
+  position: relative;
+  font-size: 14px;
   margin: 0;
-  padding: 60px 22px 45px 22px;
+  padding: 36px 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   text-align: center;
   color: @g20-white;
+
+  &:first-of-type {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  &:last-of-type {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
 
   &:hover {
     cursor: pointer;
@@ -2700,10 +2724,20 @@ table.table.icon-font-matrix {
       color: @g8-storm
     }
   }
-  h4 {
+  h4, h5 {
+    position: absolute;
+    top: 8px;
     font-size: 14px;
-    margin: 0 0 4px 0;
+    margin: 0;
+    opacity: 0.4;
+  }
+  h4 {
+    right: 8px;
+    font-weight: 600;
+  }
+  h5 {
     font-weight: 900;
+    left: 8px;
   }
 }
 

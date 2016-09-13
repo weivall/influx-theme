@@ -1341,7 +1341,7 @@ h6.deluxe .label {
   outline: none;
 }
 .navbar-inverse {
-  background-color: #292933;
+  background-color: #2c2c38;
   border: none;
 }
 .navbar-inverse .navbar-nav {
@@ -1349,7 +1349,7 @@ h6.deluxe .label {
 }
 .navbar-inverse .navbar-nav > li > a {
   color: #fff;
-  background-color: #292933;
+  background-color: #2c2c38;
   -webkit-transition: color .2s ease, background-color .2s ease;
        -o-transition: color .2s ease, background-color .2s ease;
           transition: color .2s ease, background-color .2s ease;
@@ -2574,7 +2574,7 @@ a.badge:focus {
 .modal-content .form-control {
   color: #bec2cc;
   background-color: #1c1c21;
-  border-color: #292933;
+  border-color: #2c2c38;
 }
 .modal-content .form-control:focus {
   background-color: #202028;
