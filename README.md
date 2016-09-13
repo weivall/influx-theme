@@ -1,4 +1,4 @@
-# Influx Bootstrap Theme v0.10
+# Influx Bootstrap Theme v0.11
 
 This is the official theme used to build the UI of our web applications. As the theme is used within each application new components & tools are added, and older components are upgraded. [alexpaxton](https://github.com/alexpaxton) will be managing the changelog and direction of the project.
 The goal of the project is to expedite the development of our products' interfaces, as well as maintaining a clear and consistent design language across all user touchpoints. Since there are not styles in the theme for *every* standard component, the primary goal is to have something in the theme for them all. Other goals include finishing documentation for everything currently lacking.
@@ -50,17 +50,33 @@ There is one main decision to consider: to make the navbar `fixed` or not. As a 
 - [Static Navbar (Light)](/boilerplate/static-nav-light/index.html)
 - [Static Navbar (Dark)](/boilerplate/static-nav-light/index.html)
 
-## Next Release v0.11
-
-- A veriety of tab styles to theme and extend Bootstrap's `Nav` component. Needed these for a long time
-- Polishing code styles, still a little rough
-- Add Bootstrap's `Popover` component to the theme and style it
-- Write docs for `Progress Bar` component
-- Add size modifizers to the `Progress Bar` component
-- "Compact" version of `.panel-collapse`
-- Write docs for `.panel-collapse` component
+## Next Release v0.12
+- Docs for `Heatmap Progress Bars`
+- Docs for `Badges`
+- Docs for `Panels`
+- Docs for `Tables`
+- Docs for `Dropdowns`
+- Docs for `List Groups`
+- Docs for `Wells`
+- Cleanup `Slider Toggles`
+- Docs for `Navbars`
 
 ### Changelog
+
+**0.11**
+- Adjusted code block styles, less harsh on the retina
+- Created 2 variations on Bootstrap's standard `nav` component. Both of these began as custom Enterprise styles, but it makes more sense to integrate them into the theme
+- Dismissable tabs UI. Looks great, zero functionality
+- Organized docs more
+- If `span.icon` is the first child within `.panel-title` it adds a subtle margin to look breathable
+- Code highlighting, manual only
+- New docs for `Progress Bar` component
+- Size modifizers for the `Progress Bar` component
+- Styled Bootstrap's `Popover` component and added contextual alternatives
+- New docs for `Collapsible Panels` custom component
+- Added size modifier `panel-collapse-sm` for compact panels
+- Added icons for "Dashboards" feature (9 variations)
+- Added `Triangle` and `Octagon` icons as well (for errors / alerts)
 
 **0.10**
 - Re-designed alert styles, now has the option for an icon, and dismissable alerts are styled
