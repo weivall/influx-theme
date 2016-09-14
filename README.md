@@ -69,6 +69,8 @@ See GitHub milestone: https://github.com/influxdata/influx-theme/milestone/2
 - Added size modifier `panel-collapse-sm` for compact panels
 - Added icons for "Dashboards" feature (9 variations)
 - Added `Triangle` and `Octagon` icons as well (for errors / alerts)
+- Redesigned color palette section
+- Added color palette in LESS format for easy grabbing
 
 **0.10**
 - Re-designed alert styles, now has the option for an icon, and dismissable alerts are styled
