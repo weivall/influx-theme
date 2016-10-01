@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,700,900,700italic' rel='stylesheet' type='text/css'>
-    <link href="favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
 
     <title>Light | Influx Theme</title>
 
@@ -98,9 +98,7 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <h1>Influx Bootstrap Theme</h1>
-            <h4>Light Style &mdash; v0.11</h4>
-            <p><strong>Downloads:</strong> Right click and save as</p>
-            <a href="dist/css/bootstrap-theme.min.css.map" target="_blank" class="btn btn-sm btn-warning">Map File</a> <a href="dist/css/bootstrap-theme.min.css" target="_blank" class="btn btn-sm btn-warning">Minified Theme</a> <a href="dist/css/bootstrap-theme.css" target="_blank" class="btn btn-sm btn-primary">Theme</a> <a href="influx-icon-font.zip" target="_blank" class="btn btn-sm btn-success">Icon Font</a>
+            <h4>Design Documentation &mdash; v0.11</h4>
           </div>
         </div>
       </div>
@@ -123,10 +121,7 @@
             <div class="jumbotron">
               <h1>Large Heading</h1>
               <p>Use Jumbotrons as a large call to action</p>
-              <pre><code>&lt;div class="jumbotron"&gt;
-  &lt;h1&gt;Large Heading&lt;/h1&gt;
-  &lt;p&gt;Use Jumbotrons as a large call to action&lt;/p&gt;
-&lt;/div&gt;</code></pre>
+              <pre><code data-lang="html">&lt;div class="jumbotron"&gt;<br/>  &lt;h1&gt;Large Heading&lt;/h1&gt;<br/>  &lt;p&gt;Use Jumbotrons as a large call to action&lt;/p&gt;  <br/>&lt;/div&gt;</code></pre>
             </div>
           </div>
         </div><!-- /row -->
@@ -177,7 +172,7 @@
                     <h6 class="deluxe">Heading 6</h6>
                   </div>
                   <div class="col-sm-5">
-                    <pre><code>&lt;h1 class="deluxe"&gt;
+                    <pre><code data-lang="html">&lt;h1 class="deluxe"&gt;
 &lt;h2 class="deluxe"&gt;
 &lt;h3 class="deluxe"&gt;
 &lt;h4 class="deluxe"&gt;
@@ -359,20 +354,22 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div class="panel panel-default">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">How to Use</h3>
+              </div>
               <div class="panel-body">
                 <div class="col-sm-4 col-md-5">
-                  <h4>How to use</h4>
                   <p>Buttons are to software as links are to web sites. They serve to confirm user input, activate tools, change views, etc. Depending on the context you may want a button of a different size or color. In bootstrap there are two ways to make a button:</p>
                 </div>
                 <div class="col-sm-8 col-md-7">
                   <p><strong>1. Anchor Tag</strong> for when you want a text link to look and behave like a button</p>
-                  <pre><code>&lt;a class="btn btn-default" role="button" href="#"&gt;Button Text&lt;/a&gt;</code></pre>
+                  <pre><code data-lang="html">&lt;a class="btn btn-default" role="button" href="#"&gt;Button Text&lt;/a&gt;</code></pre>
                   <p><strong>2. Button Tag</strong> for when you want an actual button</p>
-                  <pre><code>&lt;button class="btn btn-default"&gt;Button Text&lt;/button&gt;</code></pre>
+                  <pre><code data-lang="html">&lt;button class="btn btn-default"&gt;Button Text&lt;/button&gt;</code></pre>
                 </div>
 
-                <table class="table v-center margin-bottom-zero">
+                <table class="table v-center">
                   <thead>
                     <tr>
                       <th><h4>Button Styles</h4></th>
@@ -560,6 +557,84 @@
             </div><!-- / .panel -->
           </div><!-- / .col-md-12 -->
         </div><!-- / .row -->
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Buttons with Icons</h3>
+              </div>
+              <div class="panel-body">
+                <p><code>span.icon</code> should always be before the button text</p>
+                <table class="table v-center margin-bottom-zero">
+                  <thead>
+                    <tr>
+                      <th class="text-center"><code>.btn.btn-xs</code></th>
+                      <th class="text-center"><code>.btn.btn-sm</code></th>
+                      <th class="text-center"><code>.btn</code></th>
+                      <th class="text-center"><code>.btn.btn-lg</code></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-warning btn-xs"><span class="icon star"></span> Button</button>
+                      </td>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-warning btn-sm"><span class="icon star"></span> Button</button>
+                      </td>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-warning"><span class="icon star"></span> Button</button> 
+                      </td>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-warning btn-lg"><span class="icon star"></span> Button</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Square Buttons (Icons Only)</h3>
+              </div>
+              <div class="panel-body">
+                <table class="table v-center margin-bottom-zero">
+                  <thead>
+                    <tr>
+                      <th class="text-center"><code>.btn.btn-square.btn-xs</code></th>
+                      <th class="text-center"><code>.btn.btn-square.btn-sm</code></th>
+                      <th class="text-center"><code>.btn.btn-square</code></th>
+                      <th class="text-center"><code>.btn.btn-square.btn-lg</code></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-square btn-warning btn-xs"><span class="icon star"></span></button>
+                      </td>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-square btn-warning btn-sm"><span class="icon star"></span></button>
+                      </td>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-square btn-warning"><span class="icon star"></span></button> 
+                      </td>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-square btn-warning btn-lg"><span class="icon star"></span></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -1547,7 +1622,7 @@
         </div>
         <div class="row">
           <!-- default panel -->
-          <div class="col-sm-3 col-xs-6">
+          <div class="col-sm-4 col-xs-6">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Default</h3>
@@ -1559,7 +1634,7 @@
             </div>
           </div>
           <!-- info panel -->
-          <div class="col-sm-3 col-xs-6">
+          <div class="col-sm-4 col-xs-6">
             <div class="panel panel-info">
               <div class="panel-heading">
                 <h3 class="panel-title">Info</h3>
@@ -1571,7 +1646,7 @@
             </div>
           </div>
           <!-- primary panel -->
-          <div class="col-sm-3 col-xs-6">
+          <div class="col-sm-4 col-xs-6">
             <div class="panel panel-primary">
               <div class="panel-heading">
                 <h3 class="panel-title">Primary</h3>
@@ -1583,7 +1658,7 @@
             </div>
           </div>
           <!-- success panel -->
-          <div class="col-sm-3 col-xs-6">
+          <div class="col-sm-4 col-xs-6">
             <div class="panel panel-success">
               <div class="panel-heading">
                 <h3 class="panel-title">Success</h3>
@@ -1594,10 +1669,8 @@
               <div class="panel-footer">Panel footer content</div>
             </div>
           </div>
-        </div><!-- / .row -->
-        <div class="row">
           <!-- warning panel -->
-          <div class="col-sm-3 col-xs-6">
+          <div class="col-sm-4 col-xs-6">
             <div class="panel panel-warning">
               <div class="panel-heading">
                 <h3 class="panel-title">Warning</h3>
@@ -1609,37 +1682,13 @@
             </div>
           </div>
           <!-- danger panel -->
-          <div class="col-sm-3 col-xs-6">
+          <div class="col-sm-4 col-xs-6">
             <div class="panel panel-danger">
               <div class="panel-heading">
                 <h3 class="panel-title">Danger</h3>
               </div>
               <div class="panel-body">
                 <p>Panel body content<br/><br/><code>.panel.panel-danger</code></p>
-              </div>
-              <div class="panel-footer">Panel footer content</div>
-            </div>
-          </div>
-          <!-- summer panel -->
-          <div class="col-sm-3 col-xs-6">
-            <div class="panel panel-summer">
-              <div class="panel-heading">
-                <h3 class="panel-title">Summer</h3>
-              </div>
-              <div class="panel-body">
-                <p>Panel body content<br/><br/><code>.panel.panel-summer</code></p>
-              </div>
-              <div class="panel-footer">Panel footer content</div>
-            </div>
-          </div>
-          <!-- spring panel -->
-          <div class="col-sm-3 col-xs-6">
-            <div class="panel panel-spring">
-              <div class="panel-heading">
-                <h3 class="panel-title">Spring</h3>
-              </div>
-              <div class="panel-body">
-                <p>Panel body content<br/><br/><code>.panel.panel-spring</code></p>
               </div>
               <div class="panel-footer">Panel footer content</div>
             </div>
@@ -1658,6 +1707,18 @@
               <div class="panel-footer">Panel footer content</div>
             </div>
           </div>
+          <!-- summer panel -->
+          <div class="col-sm-3 col-xs-6">
+            <div class="panel panel-summer">
+              <div class="panel-heading">
+                <h3 class="panel-title">Summer</h3>
+              </div>
+              <div class="panel-body">
+                <p>Panel body content<br/><br/><code>.panel.panel-summer</code></p>
+              </div>
+              <div class="panel-footer">Panel footer content</div>
+            </div>
+          </div>
           <!-- winter panel -->
           <div class="col-sm-3 col-xs-6">
             <div class="panel panel-winter">
@@ -1670,6 +1731,20 @@
               <div class="panel-footer">Panel footer content</div>
             </div>
           </div>
+          <!-- spring panel -->
+          <div class="col-sm-3 col-xs-6">
+            <div class="panel panel-spring">
+              <div class="panel-heading">
+                <h3 class="panel-title">Spring</h3>
+              </div>
+              <div class="panel-body">
+                <p>Panel body content<br/><br/><code>.panel.panel-spring</code></p>
+              </div>
+              <div class="panel-footer">Panel footer content</div>
+            </div>
+          </div>
+        </div><!-- / .row -->
+        <div class="row">
           <!-- telegraf panel -->
           <div class="col-sm-3 col-xs-6">
             <div class="panel panel-telegraf">
@@ -3151,7 +3226,6 @@
           <a href="#section-heatmap">
             <h1>Heatmap Progress Bars</h1>
           </a>
-          <p><code>.progress.progress-heatmap</code></p>
         </div>
         <div class="row">
           <div class="col-sm-6">
@@ -3160,31 +3234,50 @@
                 <h2 class="panel-title">How to Use</h2>
               </div>
               <div class="panel-body">
-                <p>sdgsdgdsf</p>
+                <p>For when you want to show a little more urgency when a progress bar is filling up. Useful for <strong>Disk Space</strong> or <strong>Plan Usage</strong>.</p>
+                <p><strong>Implementation</strong><br/>You must use the inverse of your value, since the design shows the value in the negative space. For example, if you wanted to display <code>20%</code> progress, you would use <code>80%</code> instead.</p>
+                <pre><code data-lang="html">&lt;div class="progress progress-heatmap"&gt;<br/>  &lt;div class="progress-bar" style="width: 40%;"&gt;<br/>    &lt;span&gt;40%&lt;/span&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+                <p><em>NOTE:</em> Since the modifier class is applied to the parent element insted of the progress bar itself, there is no need for a modifier class on <code>div.progress-bar</code></p>
               </div>
             </div>
           </div>
           <div class="col-sm-6">
-
+            <h4 class="margin-top-zero">Examples</h4>
+            <br/>
+            <div class="progress progress-heatmap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 66%"><span class="sr-only">66% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%"><span class="sr-only">55% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100" style="width: 44%"><span class="sr-only">44% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%"><span class="sr-only">33% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 22%"><span class="sr-only">22% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100" style="width: 11%"><span class="sr-only">11% Complete</span></div>
+            </div>
+            <br/>
+            <h4>Size Modifiers</h4>
+            <br/>
+            <div class="progress progress-heatmap progress-lg">
+              <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%"><span class="sr-only">12% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%"><span class="sr-only">12% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap progress-sm">
+              <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%"><span class="sr-only">12% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap progress-xs">
+              <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%"><span class="sr-only">12% Complete</span></div>
+            </div>
           </div>
-        </div>
-        <div class="progress progress-heatmap">
-          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
-        </div>
-        <div class="progress progress-heatmap">
-          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete</span></div>
-        </div>
-        <div class="progress progress-heatmap">
-          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete</span></div>
-        </div>
-        <div class="progress progress-heatmap">
-          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete</span></div>
-        </div>
-        <div class="progress progress-heatmap">
-          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"><span class="sr-only">90% Complete</span></div>
-        </div>
-        <div class="progress progress-heatmap">
-          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%"><span class="sr-only">98% Complete</span></div>
         </div>
 
       </div>

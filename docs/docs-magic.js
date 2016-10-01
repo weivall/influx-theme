@@ -573,5 +573,20 @@ $(document).on("ready", function(){
     $field = $(this).children('.docs-color-field');
     $field.select();
   });
-  
+
+  // Highlight code samples
+  $('code').each(function(){
+    $contents = String($(this).html());
+    if ( $(this).attr('data-lang') === "html" ) {
+      console.log('Before')
+      console.log($contents);
+      console.log('After');
+      $contents = $contents.replace(/[&][l][t][;][\w="\s/]+[&][g][t][;]/g, '<i>$&</i>'); // Highlight HTML Elements
+      $contents = $contents.replace(/["][\S]+["]/g, '<b>$&</b>'); // Wrap HTML attributes with <b>
+      console.log($contents);
+      console.log('--------------------------------------------------');
+      $(this).html($contents);
+    }
+    // replace(/blue/g, "red");
+  });
 });

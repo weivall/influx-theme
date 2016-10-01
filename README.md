@@ -35,7 +35,7 @@ Currently working on writing more complete docs for each component, standard and
 
 | Theme | Notes |
 |:--- |:--- |
-[Official Theme](http://influxdata.github.io/design.influxdata.com/bootstrap-theme/index.html) | Primary theme used by Influx applications |
+[Official Theme](http://influxdata.github.io/influx-theme/index.html) | Primary theme used by Influx applications |
 [Dark Theme](http://influxdata.github.io/design.influxdata.com/bootstrap-theme/dark-theme.html) | In pretty rough shape, don't think any appplications use this theme currently. Long term goal is to integrate the dark styles into the *Primary Theme* |
 [Corporate Website Theme](http://influxdata.github.io/design.influxdata.com/bootstrap-theme/web-theme.html) | Only used on the new `www.influxdata.com` website. Documentation is near non-existant, theme changes often. |
 
