@@ -354,20 +354,22 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div class="panel panel-default">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">How to Use</h3>
+              </div>
               <div class="panel-body">
                 <div class="col-sm-4 col-md-5">
-                  <h4>How to use</h4>
                   <p>Buttons are to software as links are to web sites. They serve to confirm user input, activate tools, change views, etc. Depending on the context you may want a button of a different size or color. In bootstrap there are two ways to make a button:</p>
                 </div>
                 <div class="col-sm-8 col-md-7">
                   <p><strong>1. Anchor Tag</strong> for when you want a text link to look and behave like a button</p>
-                  <pre><code>&lt;a class="btn btn-default" role="button" href="#"&gt;Button Text&lt;/a&gt;</code></pre>
+                  <pre><code data-lang="html">&lt;a class="btn btn-default" role="button" href="#"&gt;Button Text&lt;/a&gt;</code></pre>
                   <p><strong>2. Button Tag</strong> for when you want an actual button</p>
-                  <pre><code>&lt;button class="btn btn-default"&gt;Button Text&lt;/button&gt;</code></pre>
+                  <pre><code data-lang="html">&lt;button class="btn btn-default"&gt;Button Text&lt;/button&gt;</code></pre>
                 </div>
 
-                <table class="table v-center margin-bottom-zero">
+                <table class="table v-center">
                   <thead>
                     <tr>
                       <th><h4>Button Styles</h4></th>
@@ -555,6 +557,84 @@
             </div><!-- / .panel -->
           </div><!-- / .col-md-12 -->
         </div><!-- / .row -->
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Buttons with Icons</h3>
+              </div>
+              <div class="panel-body">
+                <p><code>span.icon</code> should always be before the button text</p>
+                <table class="table v-center margin-bottom-zero">
+                  <thead>
+                    <tr>
+                      <th class="text-center"><code>.btn.btn-xs</code></th>
+                      <th class="text-center"><code>.btn.btn-sm</code></th>
+                      <th class="text-center"><code>.btn</code></th>
+                      <th class="text-center"><code>.btn.btn-lg</code></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-warning btn-xs"><span class="icon star"></span> Button</button>
+                      </td>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-warning btn-sm"><span class="icon star"></span> Button</button>
+                      </td>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-warning"><span class="icon star"></span> Button</button> 
+                      </td>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-warning btn-lg"><span class="icon star"></span> Button</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Square Buttons (Icons Only)</h3>
+              </div>
+              <div class="panel-body">
+                <table class="table v-center margin-bottom-zero">
+                  <thead>
+                    <tr>
+                      <th class="text-center"><code>.btn.btn-square.btn-xs</code></th>
+                      <th class="text-center"><code>.btn.btn-square.btn-sm</code></th>
+                      <th class="text-center"><code>.btn.btn-square</code></th>
+                      <th class="text-center"><code>.btn.btn-square.btn-lg</code></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-square btn-warning btn-xs"><span class="icon star"></span></button>
+                      </td>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-square btn-warning btn-sm"><span class="icon star"></span></button>
+                      </td>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-square btn-warning"><span class="icon star"></span></button> 
+                      </td>
+                      <td class="text-center">
+                        <button type="button" class="btn btn-square btn-warning btn-lg"><span class="icon star"></span></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
