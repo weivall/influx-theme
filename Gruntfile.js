@@ -176,28 +176,6 @@ module.exports = function (grunt) {
         src: 'less/theme.less',
         dest: 'docs/dist/css/<%= pkg.name %>-theme.css'
       },
-      compileThemeDark: {
-        options: {
-          strictMath: true,
-          sourceMap: true,
-          outputSourceFiles: true,
-          sourceMapURL: '<%= pkg.name %>-theme-dark.css.map',
-          sourceMapFilename: 'docs/dist/css/<%= pkg.name %>-theme-dark.css.map'
-        },
-        src: 'less/theme-dark.less',
-        dest: 'docs/dist/css/<%= pkg.name %>-theme-dark.css'
-      },
-      compileThemeWeb: {
-        options: {
-          strictMath: true,
-          sourceMap: true,
-          outputSourceFiles: true,
-          sourceMapURL: '<%= pkg.name %>-theme-web.css.map',
-          sourceMapFilename: 'docs/dist/css/<%= pkg.name %>-theme-web.css.map'
-        },
-        src: 'less/theme-web.less',
-        dest: 'docs/dist/css/<%= pkg.name %>-theme-web.css'
-      }
     },
 
     autoprefixer: {
@@ -215,18 +193,6 @@ module.exports = function (grunt) {
           map: true
         },
         src: 'docs/dist/css/<%= pkg.name %>-theme.css'
-      },
-      themeDark: {
-        options: {
-          map: true
-        },
-        src: 'docs/dist/css/<%= pkg.name %>-theme-dark.css'
-      },
-      themeWeb: {
-        options: {
-          map: true
-        },
-        src: 'docs/dist/css/<%= pkg.name %>-theme-web.css'
       },
       docs: {
         src: ['docs/assets/css/src/docs.css']
@@ -246,8 +212,6 @@ module.exports = function (grunt) {
       dist: [
         'docs/dist/css/bootstrap.css',
         'docs/dist/css/bootstrap-theme.css',
-        'docs/dist/css/bootstrap-theme-dark.css',
-        'docs/dist/css/bootstrap-theme-web.css'
       ],
       examples: [
         'docs/examples/**/*.css'
@@ -277,14 +241,6 @@ module.exports = function (grunt) {
       minifyTheme: {
         src: 'docs/dist/css/<%= pkg.name %>-theme.css',
         dest: 'docs/dist/css/<%= pkg.name %>-theme.min.css'
-      },
-      minifyThemeDark: {
-        src: 'docs/dist/css/<%= pkg.name %>-theme-dark.css',
-        dest: 'docs/dist/css/<%= pkg.name %>-theme-dark.min.css'
-      },
-      minifyThemeWeb: {
-        src: 'docs/dist/css/<%= pkg.name %>-theme-web.css',
-        dest: 'docs/dist/css/<%= pkg.name %>-theme-web.min.css'
       },
       docs: {
         src: [
@@ -520,8 +476,8 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs']);
 
   // CSS distribution task.
-  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileTheme', 'less:compileThemeDark', 'less:compileThemeWeb']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:theme', 'autoprefixer:themeDark', 'autoprefixer:themeWeb', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyTheme', 'cssmin:minifyThemeDark', 'cssmin:minifyThemeWeb']);
+  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileTheme']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:theme', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyTheme',]);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
