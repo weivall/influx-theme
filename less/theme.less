@@ -3586,7 +3586,7 @@ section.docs-section {
       &:before {
         height: 8px;
         width: 2px;
-        background-color: @g20-white;
+        background-color: @g8-storm;
         border-radius: 0;
         transition:
           height 0.25s ease;
@@ -3603,7 +3603,6 @@ section.docs-section {
 
         &:after,
         &:before {
-          background-color: @g20-white;
           height: 12px;
         }
       }
@@ -3613,12 +3612,12 @@ section.docs-section {
     > li {
 
       > a {
-        color: @g20-white;
-        background-color: fadeout(@g20-white, 81%);
+        color: @g8-storm;
+        background-color: fadeout(@g20-white, 60%);
 
         &:hover {
-          color: @g20-white;
-          background-color: fadeout(@g20-white, 70%);
+          color: @g8-storm;
+          background-color: fadeout(@g20-white, 33%);
         }
       }
       &.active > a {
@@ -3646,16 +3645,16 @@ section.docs-section {
     }
   }
   &-spring {
-    .gradient-h(@c-pool,@c-rainforest);
+    .gradient-h(@c-laser,@c-honeydew);
   }
   &-summer {
-    .gradient-h(@c-laser,@c-potassium);
+    .gradient-h(@c-pool,@c-hydrogen);
   }
   &-fall {
-    .gradient-h(@c-comet,@c-dreamsicle);
+    .gradient-h(@c-dreamsicle,@c-potassium);
   }
   &-winter {
-    .gradient-h(@c-pool,@c-comet);
+    .gradient-h(@c-pool,@c-potassium);
   }
 }
 
