@@ -3226,7 +3226,6 @@
           <a href="#section-heatmap">
             <h1>Heatmap Progress Bars</h1>
           </a>
-          <p><code>.progress.progress-heatmap</code></p>
         </div>
         <div class="row">
           <div class="col-sm-6">
@@ -3235,31 +3234,50 @@
                 <h2 class="panel-title">How to Use</h2>
               </div>
               <div class="panel-body">
-                <p>sdgsdgdsf</p>
+                <p>For when you want to show a little more urgency when a progress bar is filling up. Useful for <strong>Disk Space</strong> or <strong>Plan Usage</strong>.</p>
+                <p><strong>Implementation</strong><br/>You must use the inverse of your value, since the design shows the value in the negative space. For example, if you wanted to display <code>20%</code> progress, you would use <code>80%</code> instead.</p>
+                <pre><code data-lang="html">&lt;div class="progress progress-heatmap"&gt;<br/>  &lt;div class="progress-bar" style="width: 40%;"&gt;<br/>    &lt;span&gt;40%&lt;/span&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+                <p><em>NOTE:</em> Since the modifier class is applied to the parent element insted of the progress bar itself, there is no need for a modifier class on <code>div.progress-bar</code></p>
               </div>
             </div>
           </div>
           <div class="col-sm-6">
-
+            <h4 class="margin-top-zero">Examples</h4>
+            <br/>
+            <div class="progress progress-heatmap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 66%"><span class="sr-only">66% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%"><span class="sr-only">55% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100" style="width: 44%"><span class="sr-only">44% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%"><span class="sr-only">33% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 22%"><span class="sr-only">22% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100" style="width: 11%"><span class="sr-only">11% Complete</span></div>
+            </div>
+            <br/>
+            <h4>Size Modifiers</h4>
+            <br/>
+            <div class="progress progress-heatmap progress-lg">
+              <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%"><span class="sr-only">12% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%"><span class="sr-only">12% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap progress-sm">
+              <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%"><span class="sr-only">12% Complete</span></div>
+            </div>
+            <div class="progress progress-heatmap progress-xs">
+              <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%"><span class="sr-only">12% Complete</span></div>
+            </div>
           </div>
-        </div>
-        <div class="progress progress-heatmap">
-          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
-        </div>
-        <div class="progress progress-heatmap">
-          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete</span></div>
-        </div>
-        <div class="progress progress-heatmap">
-          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete</span></div>
-        </div>
-        <div class="progress progress-heatmap">
-          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete</span></div>
-        </div>
-        <div class="progress progress-heatmap">
-          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"><span class="sr-only">90% Complete</span></div>
-        </div>
-        <div class="progress progress-heatmap">
-          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%"><span class="sr-only">98% Complete</span></div>
         </div>
 
       </div>
