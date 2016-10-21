@@ -1801,6 +1801,9 @@ fieldset[disabled] .btn-link-success:after {
        -o-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
+.u-flex .panel-title {
+  width: auto !important;
+}
 .panel-default .panel-heading {
   padding: 0 30px;
   background-color: #fff;
@@ -3033,12 +3036,18 @@ a.list-group-item p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+  width: auto !important;
+  margin: 0;
 
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
           align-items: center;
   /* Size Modifiers */
+}
+.nav-tablist > li {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .nav-tablist > li > a {
   position: relative;
@@ -3175,6 +3184,7 @@ a.list-group-item p {
   display: -ms-flexbox;
   display:         flex;
   padding: 9px 9px 0 9px;
+  margin: 0;
   background-color: #eeeff2;
 
   -webkit-box-align: center;
@@ -3183,6 +3193,10 @@ a.list-group-item p {
           align-items: center;
   /* Contextual Alternatives */
   /* Common Seasonal Styles */
+}
+.nav-microtabs > li {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .nav-microtabs > li > a {
   position: relative;
