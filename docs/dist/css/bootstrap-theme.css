@@ -3715,6 +3715,9 @@ code b {
 code i {
   color: #5aa3fa;
 }
+code.rainbow-highlighter {
+  text-shadow: none;
+}
 pre {
   position: relative;
   font-size: 11px;
@@ -3741,10 +3744,20 @@ pre:after {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=0);
   border-radius: 4px 4px 0 0;
 }
+pre:before {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  z-index: 2;
+  font-size: 12px;
+  font-weight: 700;
+  color: #c6cad3;
+  text-transform: uppercase;
+}
 pre code {
   white-space: pre;
-  background-color: none;
-  border: transparent;
+  background-color: transparent;
+  border: none;
   border-radius: 0;
 }
 pre::-webkit-scrollbar {
@@ -3794,6 +3807,9 @@ pre.rainbow-highlighter::-webkit-scrollbar-corner {
 }
 pre.rainbow-highlighter::-webkit-scrollbar-resizer {
   background-color: #9394ff;
+}
+pre.rainbow-highlighter code {
+  text-shadow: none;
 }
 /* Code Highlighting */
 code.rainbow-highlighter,
@@ -3850,6 +3866,10 @@ pre.rainbow-highlighter u {
   text-indent: -4px;
   background-color: #434453;
   border-radius: 3px;
+}
+/* Language Labels */
+pre[data-lang="html"]:before {
+  content: attr(data-lang);
 }
 .badge {
   color: #fff;

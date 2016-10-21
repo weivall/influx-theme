@@ -140,7 +140,7 @@
                 <div class="jumbotron">
                   <h1>Large Heading</h1>
                   <p>Use Jumbotrons as a large call to action</p>
-                  <pre><code data-lang="html">&lt;div class="jumbotron"&gt;<br/>  &lt;h1&gt;Large Heading&lt;/h1&gt;<br/>  &lt;p&gt;Use Jumbotrons as a large call to action&lt;/p&gt;  <br/>&lt;/div&gt;</code></pre>
+                  <pre data-lang="html"><code>&lt;div class="jumbotron"&gt;<br/>  &lt;h1&gt;Large Heading&lt;/h1&gt;<br/>  &lt;p&gt;Use Jumbotrons as a large call to action&lt;/p&gt;  <br/>&lt;/div&gt;</code></pre>
                 </div>
               </div>
             </div><!-- /row -->
@@ -312,9 +312,9 @@
                     </div>
                     <div class="col-sm-8 col-md-7">
                       <p><strong>1. Anchor Tag</strong> for when you want a text link to look and behave like a button</p>
-                      <pre><code data-lang="html">&lt;a class="btn btn-default" role="button" href="#"&gt;Button Text&lt;/a&gt;</code></pre>
+                      <pre data-lang="html"><code>&lt;a class="btn btn-default" role="button" href="#"&gt;Button Text&lt;/a&gt;</code></pre>
                       <p><strong>2. Button Tag</strong> for when you want an actual button</p>
-                      <pre><code data-lang="html">&lt;button class="btn btn-default"&gt;Button Text&lt;/button&gt;</code></pre>
+                      <pre data-lang="html"><code>&lt;button class="btn btn-default"&gt;Button Text&lt;/button&gt;</code></pre>
                     </div>
 
                     <table class="table v-center">
@@ -720,15 +720,15 @@
                   <div class="panel-body">
                     <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#example-regular-modal">Regular Modal</button>
                     <br/><br/>
-                    <pre><code>&lt;div class="modal-dialog" role="document"&gt;<br/>  &lt;div class="modal-content"&gt;<br/>    ...<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;div class="modal-dialog" role="document"&gt;<br/>  &lt;div class="modal-content"&gt;<br/>    ...<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
                     <hr/>
                     <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#example-large-modal">Large Modal</button>
                     <br/><br/>
-                    <pre><code>&lt;div class="modal-dialog modal-lg" role="document"&gt;<br/>  &lt;div class="modal-content"&gt;<br/>    ...<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;div class="modal-dialog modal-lg" role="document"&gt;<br/>  &lt;div class="modal-content"&gt;<br/>    ...<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
                     <hr/>
                     <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#example-small-modal">Small Modal</button>
                     <br/><br/>
-                    <pre><code>&lt;div class="modal-dialog modal-sm" role="document"&gt;<br/>  &lt;div class="modal-content"&gt;<br/>    ...<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;div class="modal-dialog modal-sm" role="document"&gt;<br/>  &lt;div class="modal-content"&gt;<br/>    ...<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
                   </div>
                 </div><!-- / .panel -->
               </div><!-- / .col-md-4 -->
@@ -920,9 +920,9 @@
                   <div class="panel-body">
                     <p>When your goal is usability, use form labels. They are less aesthetic and increase the height of your form, but studies have indicated that this approach results in the least amount of user errors. This is because you can see the label and the field at the same time.</p>
                     <p><strong>Basic Implementation</strong><br/>The entirety of the form is wrapped in <code>&lt;form&gt;</code> tags. Within that each form element is wrapped in <code>div.form-group</code> and paired with <code>&lt;label&gt;</code> for screen-reader purposes.</p>
-                    <pre><code>&lt;form&gt;<br/>  &lt;div class="form-group"&gt;<br/>    &lt;label for="example-input-id"&gt;Example Input&lt;/label&gt;<br/>        &lt;input class="form-control" id="example-input-id" type="text" /&gt;<br/>  &lt;/div&gt;<br/>&lt;/form&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;form&gt;<br/>  &lt;div class="form-group"&gt;<br/>    &lt;label for="example-input-id"&gt;Example Input&lt;/label&gt;<br/>        &lt;input class="form-control" id="example-input-id" type="text" /&gt;<br/>  &lt;/div&gt;<br/>&lt;/form&gt;</code></pre>
                     <p><strong>Using the Bootstrap Grid</strong><br/>You can add on the bootstrap grid classes to <code>div.form-group</code> to make the form more interesting and space-efficient. This can be achieved simply by adding the desired grid classes:</p>
-                    <pre><code>&lt;div class="form-group col-sm-6"&gt;<br/>  ...<br/>&lt;/div&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;div class="form-group col-sm-6"&gt;<br/>  ...<br/>&lt;/div&gt;</code></pre>
                   </div>
                 </div>
               </div><!-- / col-sm-6 -->
@@ -1011,7 +1011,7 @@
                   <div class="panel-body">
                     <p>This type of form is most common in newer web and mobile apps. It instead relies on placeholder text to guide the user, which disappears once they have inputted something. This approach assumes the user is savvy enough to fill out the form even if the input labels are not always present. It can be useful if you are trying to save space, or are going for a more minimalistic aesthetic in your interface.</p>
                     <p><strong>Implementation</strong><br/>These forms are built the same as the above example, except for a couple differences. Instead of deleting the <code>&lt;label&gt;</code> element you simply add the <code>.sr-only</code> class which blocks it from rendering, but keeps it available for screen reading software. This keeps the form compliant with usability standards. Since there is now no label, you probably want to add a placeholder to the input.</p>
-                    <pre><code>&lt;div class="form-group"&gt;<br/>  &lt;label for="example-input-id" class="sr-only" &gt;Example Input&lt;/label&gt;<br/>  &lt;input class="form-control" id="example-input-id" type="text" placeholder="Example Placeholder" /&gt;<br/>&lt;/div&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;div class="form-group"&gt;<br/>  &lt;label for="example-input-id" class="sr-only" &gt;Example Input&lt;/label&gt;<br/>  &lt;input class="form-control" id="example-input-id" type="text" placeholder="Example Placeholder" /&gt;<br/>&lt;/div&gt;</code></pre>
                     <p><strong>Effective Placeholders</strong><br/>It may seem obvious to set the placeholder to the same value as the (now obscured) form label, but this is not always true. For example, in an email form one could leave the placeholder as <code>Email Address</code> and call it a day. This can be improved slightly, as the user has no not only recall their email but the appropriate format as well. You can improve the recall time by instead using a placeholder with an example email <code>yourname@website.com</code>. It's a small difference, but it contributes to faster form completion times which in turn improve the user's sentiment about the product. Use examples whenever possible</p>
                   </div>
                 </div>
@@ -1061,7 +1061,7 @@
                   <div class="panel-body">
                     <p>Bootstrap offers a variant on form layouts called "Horizontal Forms". This layout keeps all the labels to the left of their respective inputs for a more aesthetically pleasing layout. This approach generally only works for forms with very few inputs (such as a login form, or lost password) because it takes the eye more time to digest the information. Scanning left and right between label and input is slower than having the label above the input.</p>
                     <p><strong>Basic Implementation</strong><br/>To use this style of form, all you have to do is add the <code>.form-horizontal</code> class to your form element. The other difference is instead of using grid classes on <code>.form-group</code> you use them on both the <code>&lt;label&gt;</code> and <code>&lt;input&gt;</code> elements. Here's an example:</p>
-                    <pre><code>&lt;div class="form-group"&gt;<br/>  &lt;label for="example-input-1" class="col-sm-3"&gt;Example Input&lt;/label&gt;<br/>  &lt;input id="example-input-1" class="form-control col-sm-9" type="text" /&gt;<br/>&lt;/div&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;div class="form-group"&gt;<br/>  &lt;label for="example-input-1" class="col-sm-3"&gt;Example Input&lt;/label&gt;<br/>  &lt;input id="example-input-1" class="form-control col-sm-9" type="text" /&gt;<br/>&lt;/div&gt;</code></pre>
                   </div>
                 </div>
               </div>
@@ -1171,10 +1171,9 @@
 
             <div class="row">
               <div class="col-md-12">
-                <h3>Form Add-Ons & Form States</h3><br/>
                 <div class="panel panel-info">
                   <div class="panel-heading">
-                    <div class="panel-title">Examples:</div>
+                    <div class="panel-title">Form Add-Ons & Form States</div>
                   </div>
                   <div class="panel-body">
                     <!-- Default Form -->
@@ -1713,9 +1712,9 @@
                   <div class="panel-body">
                     <p>Tooltips are used to display additional information about a UI element on hover. Tooltips cater to the curious mouse. The benefit of using tooltips is a less cluttered UI.</p>
                     <p><strong>Implementation:</strong><br/>Tooltips can be added to an element via custom attributes. The content of the Tooltip comes from the <code>title</code> attribute.</p>
-                    <pre><code>&lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left"&gt;Tooltip on left&lt;/button&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left"&gt;Tooltip on left&lt;/button&gt;</code></pre>
                     <p>Tooltips won't appear until Bootstrap's Tooltips are initialized via:</p>
-                    <pre><code>$(function () {<br/>  $('[data-toggle="tooltip"]').tooltip()<br/>});</code></pre>
+                    <pre data-lang="js"><code>$(function () {<br/>  $('[data-toggle="tooltip"]').tooltip()<br/>});</code></pre>
                     <p>Read more about Tooltips on <a href="http://getbootstrap.com/javascript/#tooltips" target="_blank">Bootstrap Docs: Javascript - Tooltips</a></p>
                     <hr/>
                     <p><strong>Contextual Alternatives:</strong><br/>In some cases you may want a different context color for a tooltip. Simply add the modifier class to the element that triggers the tooltip.</p>
@@ -1802,11 +1801,11 @@
                     <hr />
                     <p><strong>Implementation</strong></p>
                     <p>Popovers are activated via custom HTML attributes applied to an element. In these examples a <code>&lt;button&gt;</code> is used, but you could theoretically use anything.</p>
-                    <pre><code><span style="color:#A4A8B6;">&lt;button type="button" class="btn btn-primary"</span><br/>  data-toggle="popover"<br/>  title="Popover title"<br/>  data-content="Popover content goes here"<br/><span style="color:#A4A8B6;">&gt;<br/>  Click to toggle popover<br/>&lt;/button&gt;</span></code></pre>
+                    <pre data-lang="html"><code><span style="color:#A4A8B6;">&lt;button<br/>  type="button"<br/>  class="btn btn-primary"</span><br/>  data-toggle="popover"<br/>  title="Popover title"<br/>  data-content="Popover content goes here"<br/><span style="color:#A4A8B6;">&gt;<br/>  Click to toggle popover<br/>&lt;/button&gt;</span></code></pre>
                     <p>It is possible to use <code>data-content</code> and <code>title</code> without each other for a simpler Popover</p>
                     <p><strong>Positioning</strong></p>
                     <p>By adding a third custom HTML attribute you can control where the popover appears relative to the toggle. If no value is specified, the default is <code>"right"</code></p>
-                    <pre><code>data-placement="top"<br/>data-placement="right"<br/>data-placement="bottom"<br/>data-placement="left"</code></pre>
+                    <pre data-lang="html"><code>data-placement="top"<br/>data-placement="right"<br/>data-placement="bottom"<br/>data-placement="left"</code></pre>
                     <p><strong>Limitations</strong></p>
                     <p>Since the component makes use of custom attributes, you can only pass in plaintext. To inject custom HTML into a popover, follow <a href="http://getbootstrap.com/javascript/#popovers" target="_blank">Boostrap's Popover</a> instructions.</p>
                     <p>Popovers have a maximum width of <code>276px</code></p>
@@ -1845,7 +1844,7 @@
                   <div class="panel-body">
                     <p>Normally Popovers can only be dismissed by clicking the same element that triggered it. Unless the Popover is intended to be in your face, it is best to make it dismissable. This causes the Popover to dismiss on the next click, regardless of where it is.</p>
                     <p><strong>Implementation</strong></p>
-                    <pre><code><span style="color:#A4A8B6;">&lt;button type="button" class="btn btn-primary"<br/>  data-toggle="popover"<br/>  title="Popover title"<br/>  data-content="Popover content goes here"</span><br/>  data-trigger="focus"<br/><span style="color:#A4A8B6;">&gt;<br/>  Click to toggle popover<br/>&lt;/button&gt;</span></code></pre>
+                    <pre data-lang="html"><code><span style="color:#A4A8B6;">&lt;button type="button" class="btn btn-primary"<br/>  data-toggle="popover"<br/>  title="Popover title"<br/>  data-content="Popover content goes here"</span><br/>  data-trigger="focus"<br/><span style="color:#A4A8B6;">&gt;<br/>  Click to toggle popover<br/>&lt;/button&gt;</span></code></pre>
                   </div>
                 </div>
               </div>
@@ -1867,7 +1866,7 @@
                   <div class="panel-body">
                     <p>The look & feel of the Popover can be modified to fit its context. By default Popovers are blue & white. This can be done through yet another custom attribute:</p>
                     <p><strong>Implementation</strong></p>
-                    <pre><code><span style="color:#A4A8B6;">&lt;button type="button" class="btn btn-primary"<br/>  data-toggle="popover"<br/>  title="Popover title"<br/>  data-content="Popover content goes here"<br/>  data-trigger="focus"</span><br/>  data-theme="data-explorer"<br/><span style="color:#A4A8B6;">&gt;<br/>  Click to toggle popover<br/>&lt;/button&gt;</span></code></pre>
+                    <pre data-lang="html"><code><span style="color:#A4A8B6;">&lt;button type="button" class="btn btn-primary"<br/>  data-toggle="popover"<br/>  title="Popover title"<br/>  data-content="Popover content goes here"<br/>  data-trigger="focus"</span><br/>  data-theme="data-explorer"<br/><span style="color:#A4A8B6;">&gt;<br/>  Click to toggle popover<br/>&lt;/button&gt;</span></code></pre>
                     <p><strong>Themes</strong></p>
                     <table class="table v-center">
                       <tbody>
@@ -1978,7 +1977,7 @@
                   <div class="panel-body">
                     <p><strong>Useful For:</strong><br/>Tertiary navigation within a page. Best used at the top of the page, to indicate that anything below will be affected by tab-switching</p>
                     <p><strong>Implementation:</strong></p>
-                    <pre><code>&lt;ul class="nav nav-tablist" role="tablist"&gt;<br/>  &lt;li class="active"&gt;&lt;a href="#"&gt;Active Tab&lt;/a&gt;&lt;/li&gt;<br/>  &lt;li&gt;&lt;a href="#"&gt;Tab&lt;/a&gt;&lt;/li&gt;<br/>  &lt;li&gt;&lt;a href="#"&gt;Tab&lt;/a&gt;&lt;/li&gt;<br/>&lt;/ul&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;ul class="nav nav-tablist" role="tablist"&gt;<br/>  &lt;li class="active"&gt;&lt;a href="#"&gt;Active Tab&lt;/a&gt;&lt;/li&gt;<br/>  &lt;li&gt;&lt;a href="#"&gt;Tab&lt;/a&gt;&lt;/li&gt;<br/>  &lt;li&gt;&lt;a href="#"&gt;Tab&lt;/a&gt;&lt;/li&gt;<br/>&lt;/ul&gt;</code></pre>
                     <p><strong>Size Alternatives:</strong></p>
                     <table class="table v-center">
                       <tbody>
@@ -2064,10 +2063,10 @@
                   <div class="panel-body">
                     <p><strong>Useful For:</strong><br/>When you have a smaller component that requires tab functionality. Currently used in the Data Explorer.</p>
                     <p><strong>Implementation:</strong></p>
-                    <pre><code>&lt;ul class="nav nav-microtabs" role="tablist"&gt;<br/>  &lt;li class="active"&gt;&lt;a href="#"&gt;Active Tab&lt;/a&gt;&lt;/li&gt;<br/>  &lt;li&gt;&lt;a href="#"&gt;Tab&lt;/a&gt;&lt;/li&gt;<br/>  &lt;li&gt;&lt;a href="#"&gt;Tab&lt;/a&gt;&lt;/li&gt;<br/>&lt;/ul&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;ul class="nav nav-microtabs" role="tablist"&gt;<br/>  &lt;li class="active"&gt;&lt;a href="#"&gt;Active Tab&lt;/a&gt;&lt;/li&gt;<br/>  &lt;li&gt;&lt;a href="#"&gt;Tab&lt;/a&gt;&lt;/li&gt;<br/>  &lt;li&gt;&lt;a href="#"&gt;Tab&lt;/a&gt;&lt;/li&gt;<br/>&lt;/ul&gt;</code></pre>
                     <p><strong>Dismissable Tabs</strong><br/>Designed to mimic browser tabs.</p>
                     <blockquote><small>NOTE:<br/>Since the dismiss UI is custom, there is no corresponding JS included in the standard Bootstrap package. You will have to write something to handle tab dismissing.</small></blockquote>
-                    <pre><code>&lt;li&gt;<br/>  &lt;a href="#"&gt;<br/>    Tab Label &lt;button class="microtabs-dismiss"&gt;&lt;/button&gt;<br/>  &lt;/a&gt;<br/>&lt;/li&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;li&gt;<br/>  &lt;a href="#"&gt;<br/>    Tab Label &lt;button class="microtabs-dismiss"&gt;&lt;/button&gt;<br/>  &lt;/a&gt;<br/>&lt;/li&gt;</code></pre>
                     <p><strong>Contextual Alternatives:</strong><br/>Depending on the context in which the tabs are used, you may want to stylize them differently. There are options to match different panel types as well as an option for dark UI.</p>
                     <table class="table v-center">
                       <tbody>
@@ -2354,7 +2353,7 @@
                       <li>Confirming a user's action</li>
                     </ul>
                     <p><strong>How to Implement:</strong></p>
-                    <pre><code>&lt;div class="alert alert-success" role="alert"&gt;<br/>  Alert text goes here<br/>&lt;/div&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;div class="alert alert-success" role="alert"&gt;<br/>  Alert text goes here<br/>&lt;/div&gt;</code></pre>
                     <br/>
                     <p>Contextual Alternatives:</p>
                     <table class="table v-center">
@@ -2420,7 +2419,7 @@
                       <li>Confirming a user's action</li>
                     </ul>
                     <p><strong>How to Implement:</strong></p>
-                    <pre><code>&lt;div class="alert alert-success" role="alert"&gt;<br/>    Alert text goes here<br/>  &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;<br/>    &lt;span aria-hidden="true"&gt;<br/>      &lt;span class="icon remove"&gt;&lt;/span&gt;<br/>    &lt;/span&gt;<br/>  &lt;/button&gt;<br/>&lt;/div&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;div class="alert alert-success" role="alert"&gt;<br/>    Alert text goes here<br/>  &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;<br/>    &lt;span aria-hidden="true"&gt;<br/>      &lt;span class="icon remove"&gt;&lt;/span&gt;<br/>    &lt;/span&gt;<br/>  &lt;/button&gt;<br/>&lt;/div&gt;</code></pre>
                   </div>
                 </div>
               </div>
@@ -2469,7 +2468,7 @@
                   <div class="panel-body">
                     <p>Useful when you want to draw the more attention to the alert, and add a little more context. Any icon from the <a href="#section-iconfont">Icon Font</a> can be used.</p>
                     <p><strong>How to Implement:</strong></p>
-                    <pre><code>&lt;div class="alert alert-icon alert-success" role="alert"&gt;<br/>  &lt;span class="icon alert-triangle"&gt;&lt;/span&gt;<br/>  Alert text goes here<br/>&lt;/div&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;div class="alert alert-icon alert-success" role="alert"&gt;<br/>  &lt;span class="icon alert-triangle"&gt;&lt;/span&gt;<br/>  Alert text goes here<br/>&lt;/div&gt;</code></pre>
                   </div>
                 </div>
               </div>
@@ -2517,7 +2516,7 @@
                   <div class="panel-body">
                     <p>Fairly self explanatory, you've seen these before. The only design consideration is showing the progress as a number or hiding it. Depending on the use of the progress bar, having a label can be helpful or cluttering.</p>
                     <p><strong>Implementation</strong></p>
-                    <pre><code>&lt;div class="progress"&gt;<br/>  &lt;div class="progress-bar" style="width: 60%;"&gt;<br/>    &lt;span class="sr-only"&gt;60%&lt;/span&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;div class="progress"&gt;<br/>  &lt;div class="progress-bar" style="width: 60%;"&gt;<br/>    &lt;span class="sr-only"&gt;60%&lt;/span&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
                     <p><code>.sr-only</code> stands for "Screenreader Only" and hides the element such that only screenreaders can see it. This is for accessibility. If you remove the class, the label text will be visible inside the progress bar.</p>
                     <p><strong>Contextual Alternatives</strong></p>
                     <table class="table v-center">
@@ -2795,7 +2794,7 @@
                     <hr/>
                     <p><strong>Implementation</strong></p>
                     <p>Since the collapse functionality is built-in, this is pretty straightforward. Collapse works by wrapping an element with a collapsing <code>&lt;div&gt;</code> and assigning it a trigger via custom HTML attributes. In these collapsible panels, <code><span style="color:#A4A8B6;">div</span>.panel-body</code> gets wrapped.</p>
-                    <pre><code>&lt;div class="panel panel-collapse"&gt;<br/>  &lt;div class="panel-heading"&gt;<br/>    &lt;h2 class="panel-title"&gt;<br/>      &lt;a role="button" data-toggle="collapse" class="collapsed" href="<span style="color:#22ADF6;">#panel-id-here</span>"&gt;<br/>        &lt;span class="caret"&gt;&lt;/span&gt; Click to Toggle<br/>      &lt;/a&gt;<br/>    &lt;/h2&gt;<br/>  &lt;/div&gt;<br/>  &lt;div class="collapse" id="<span style="color:#22ADF6;">panel-id-here</span>" style="height: 0px;"&gt;<br/>    &lt;div class="panel-body"&gt;<br/>      ...<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;div class="panel panel-collapse"&gt;<br/>  &lt;div class="panel-heading"&gt;<br/>    &lt;h2 class="panel-title"&gt;<br/>      &lt;a role="button" data-toggle="collapse" class="collapsed" href="<span style="color:#22ADF6;">#panel-id-here</span>"&gt;<br/>        &lt;span class="caret"&gt;&lt;/span&gt; Click to Toggle<br/>      &lt;/a&gt;<br/>    &lt;/h2&gt;<br/>  &lt;/div&gt;<br/>  &lt;div class="collapse" id="<span style="color:#22ADF6;">panel-id-here</span>" style="height: 0px;"&gt;<br/>    &lt;div class="panel-body"&gt;<br/>      ...<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
                     <p>Adding <code>style="height: 0px;"</code> sets the collapsible panel to be closed by default</p>
                     <hr/>
                     <p><strong>Size Modifiers & Contextual Alternatives</strong></p>
@@ -2893,7 +2892,7 @@
                   </div>
                   <div class="panel-body">
                     <p>This effect can be achieved by simply wrapping all your collapsible panels with <code>div.panel-group</code> and adding the <code>data-parent</code> attribute to collapse element.</p>
-                    <pre><code><span style="color:#22ADF6;">&lt;div class="panel-group" id="panel-group-id" role="tablist"&gt;</span><br/>  &lt;div class="panel panel-collapse"&gt;<br/>    &lt;div class="panel-heading"&gt;<br/>      &lt;h2 class="panel-title"&gt;<br/>        &lt;a role="button" data-toggle="collapse" class="collapsed" <span style="color:#22ADF6;">data-parent="#panel-group-id"</span> href="#panel-id-1"&gt;<br/>          &lt;span class="caret"&gt;&lt;/span&gt; Click to Toggle<br/>        &lt;/a&gt;<br/>      &lt;/h2&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="collapse" id="panel-id-1"&gt;<br/>      &lt;div class="panel-body"&gt;<br/>        ...<br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/><br/>  &lt;div class="panel panel-collapse"&gt;<br/>    &lt;div class="panel-heading"&gt;<br/>      &lt;h2 class="panel-title"&gt;<br/>        &lt;a role="button" data-toggle="collapse" class="collapsed" <span style="color:#22ADF6;">data-parent="#panel-group-id"</span> href="#panel-id-2"&gt;<br/>          &lt;span class="caret"&gt;&lt;/span&gt; Click to Toggle<br/>        &lt;/a&gt;<br/>      &lt;/h2&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="collapse" id="panel-id-2"&gt;<br/>      &lt;div class="panel-body"&gt;<br/>        ...<br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/><br/>  &lt;div class="panel panel-collapse"&gt;<br/>    &lt;div class="panel-heading"&gt;<br/>      &lt;h2 class="panel-title"&gt;<br/>        &lt;a role="button" data-toggle="collapse" class="collapsed" <span style="color:#22ADF6;">data-parent="#panel-group-id"</span> href="#panel-id-3"&gt;<br/>          &lt;span class="caret"&gt;&lt;/span&gt; Click to Toggle<br/>        &lt;/a&gt;<br/>      &lt;/h2&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="collapse" id="panel-id-3"&gt;<br/>      &lt;div class="panel-body"&gt;<br/>        ...<br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/><span style="color:#22ADF6;">&lt;/div&gt;</span></code></pre>
+                    <pre data-lang="html"><code><span style="color:#22ADF6;">&lt;div class="panel-group" id="panel-group-id" role="tablist"&gt;</span><br/>  &lt;div class="panel panel-collapse"&gt;<br/>    &lt;div class="panel-heading"&gt;<br/>      &lt;h2 class="panel-title"&gt;<br/>        &lt;a role="button" data-toggle="collapse" class="collapsed" <span style="color:#22ADF6;">data-parent="#panel-group-id"</span> href="#panel-id-1"&gt;<br/>          &lt;span class="caret"&gt;&lt;/span&gt; Click to Toggle<br/>        &lt;/a&gt;<br/>      &lt;/h2&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="collapse" id="panel-id-1"&gt;<br/>      &lt;div class="panel-body"&gt;<br/>        ...<br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/><br/>  &lt;div class="panel panel-collapse"&gt;<br/>    &lt;div class="panel-heading"&gt;<br/>      &lt;h2 class="panel-title"&gt;<br/>        &lt;a role="button" data-toggle="collapse" class="collapsed" <span style="color:#22ADF6;">data-parent="#panel-group-id"</span> href="#panel-id-2"&gt;<br/>          &lt;span class="caret"&gt;&lt;/span&gt; Click to Toggle<br/>        &lt;/a&gt;<br/>      &lt;/h2&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="collapse" id="panel-id-2"&gt;<br/>      &lt;div class="panel-body"&gt;<br/>        ...<br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/><br/>  &lt;div class="panel panel-collapse"&gt;<br/>    &lt;div class="panel-heading"&gt;<br/>      &lt;h2 class="panel-title"&gt;<br/>        &lt;a role="button" data-toggle="collapse" class="collapsed" <span style="color:#22ADF6;">data-parent="#panel-group-id"</span> href="#panel-id-3"&gt;<br/>          &lt;span class="caret"&gt;&lt;/span&gt; Click to Toggle<br/>        &lt;/a&gt;<br/>      &lt;/h2&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="collapse" id="panel-id-3"&gt;<br/>      &lt;div class="panel-body"&gt;<br/>        ...<br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/><span style="color:#22ADF6;">&lt;/div&gt;</span></code></pre>
                   </div>
                 </div>
               </div>
@@ -2959,7 +2958,7 @@
                   <div class="panel-body">
                     <p>For when you want to show a little more urgency when a progress bar is filling up. Useful for <strong>Disk Space</strong> or <strong>Plan Usage</strong>.</p>
                     <p><strong>Implementation</strong><br/>You must use the inverse of your value, since the design shows the value in the negative space. For example, if you wanted to display <code>20%</code> progress, you would use <code>80%</code> instead.</p>
-                    <pre><code data-lang="html">&lt;div class="progress progress-heatmap"&gt;<br/>  &lt;div class="progress-bar" style="width: 40%;"&gt;<br/>    &lt;span&gt;40%&lt;/span&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;div class="progress progress-heatmap"&gt;<br/>  &lt;div class="progress-bar" style="width: 40%;"&gt;<br/>    &lt;span&gt;40%&lt;/span&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
                     <p><em>NOTE:</em> Since the modifier class is applied to the parent element insted of the progress bar itself, there is no need for a modifier class on <code>div.progress-bar</code></p>
                   </div>
                 </div>
@@ -3136,7 +3135,7 @@
                 </div>
                 <div class="col-sm-6">
                   <p><strong>Implementation</strong><br/><br/>In bootstrap, page sections are designated with a <code>div.container</code>. This element has margins on either side, giving it the appearance of being centered. Because Heros are full-width by definition, you must wrap the container you want to be a hero, in the hero div</p>
-                  <pre><code>&lt;div class="hero hero-light"&gt;<br/>  &lt;div class="container"&gt;<br/>    ...<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+                  <pre data-lang="html"><code>&lt;div class="hero hero-light"&gt;<br/>  &lt;div class="container"&gt;<br/>    ...<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
                   <p><strong>Hero Types</strong><br/><br/><code>hero</code> Assumes a light colored background, uses dark text for contrast<br/><code>hero-light</code> Assumes a dark colored background, uses light text for contrast</p>
                 </div>
               </div>
@@ -3355,15 +3354,15 @@
                   <div class="panel-body">
                     <a href="#" class="link-success">Success Link</a>
                     <br/><br/>
-                    <pre><code>&lt;a href="#" class="link-success"&gt;Success Link&lt;/a&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;a href="#" class="link-success"&gt;Success Link&lt;/a&gt;</code></pre>
                     <br/>
                     <a href="#" class="link-danger">Danger Link</a>
                     <br/><br/>
-                    <pre><code>&lt;a href="#" class="link-danger"&gt;Danger Link&lt;/a&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;a href="#" class="link-danger"&gt;Danger Link&lt;/a&gt;</code></pre>
                     <br/>
                     <a href="#" class="link-warning">Warning Link</a>
                     <br/><br/>
-                    <pre><code>&lt;a href="#" class="link-warning"&gt;Warning Link&lt;/a&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;a href="#" class="link-warning"&gt;Warning Link&lt;/a&gt;</code></pre>
                   </div>
                 </div>
               </div>
@@ -3376,15 +3375,15 @@
                   <div class="panel-body">
                     <span class="text-color-success">Success Text</span>
                     <br/><br/>
-                    <pre><code>&lt;span class="text-color-success"&gt;Success Text&lt;/span&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;span class="text-color-success"&gt;Success Text&lt;/span&gt;</code></pre>
                     <br/>
                     <span class="text-color-danger">Danger Text</span>
                     <br/><br/>
-                    <pre><code>&lt;span class="text-color-danger"&gt;Danger Text&lt;/span&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;span class="text-color-danger"&gt;Danger Text&lt;/span&gt;</code></pre>
                     <br/>
                     <span class="text-color-warning">Warning Text</span>
                     <br/><br/>
-                    <pre><code>&lt;span class="text-color-warning"&gt;Warning Text&lt;/span&gt;</code></pre>
+                    <pre data-lang="html"><code>&lt;span class="text-color-warning"&gt;Warning Text&lt;/span&gt;</code></pre>
                   </div>
                 </div>
               </div>

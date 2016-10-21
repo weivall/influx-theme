@@ -36,6 +36,10 @@ code {
 
   b { color: @c-dreamsicle;}
   i { color: @c-pool;}
+
+  &.rainbow-highlighter {
+    text-shadow: none;
+  }
 }
 pre {
   font-size: @code-font-size;
@@ -47,6 +51,7 @@ pre {
   border-radius: @ix-radius;
   position: relative;
 
+  // Shadow
   &:after {
     position: absolute;
     content: '';
@@ -58,10 +63,21 @@ pre {
     border-radius: @ix-radius @ix-radius 0 0;
     .gradient-v(@code-bg-shadow,@code-bg-color);
   }
+  // Language Label
+  &:before {
+    text-transform: uppercase;
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    color: @g14-chromium;
+    font-weight: 700;
+    font-size: 12px;
+    z-index: 2;
+  }
 
   code {
-    border: transparent;
-    background-color: none;
+    border: none;
+    background-color: transparent;
     white-space: pre;
     border-radius: 0;
   }
@@ -69,6 +85,10 @@ pre {
 
   &.rainbow-highlighter {
     .custom-scrollbar(@g3-castle,@c-comet);
+
+    code {
+      text-shadow: none;
+    }
   }
 }
 
@@ -112,5 +132,22 @@ code, pre {
       border-radius: 3px;
       text-indent: -4px;
     }
+  }
+}
+
+/* Language Labels */
+pre[data-lang="html"] {
+  &:before {
+    content: attr(data-lang);
+  }
+}
+pre[data-lang="css"] {
+  &:before {
+    content: attr(data-lang);
+  }
+}
+pre[data-lang="js"] {
+  &:before {
+    content: attr(data-lang);
   }
 }
