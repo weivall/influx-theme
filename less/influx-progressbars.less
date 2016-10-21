@@ -1,0 +1,110 @@
+//
+// Progress bars
+// --------------------------------------------------
+
+// Give the progress background some depth
+
+@progressBarHeightLg: 32px;
+@progressBarHeight:   16px;
+@progressBarHeightSm: 10px;
+@progressBarHeightXs: 2px;
+
+.progress,
+.progress-bar {
+  height: @progressBarHeight;
+  box-shadow: none !important;
+}
+.progress {
+  background-color: @g17-whisper;
+  border-radius: (@progressBarHeight /2);
+
+  &.progress-lg {
+    height: @progressBarHeightLg;
+    border-radius: (@progressBarHeightLg /2);
+    .progress-bar {
+      height: @progressBarHeightLg;
+      
+      span {
+        line-height: @progressBarHeightLg;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+  &.progress-sm {
+    height: @progressBarHeightSm;
+    border-radius: (@progressBarHeightSm /2);
+    .progress-bar {
+      height: @progressBarHeightSm;
+    }
+  }
+  &.progress-xs {
+    height: @progressBarHeightXs;
+    border-radius: (@progressBarHeightXs /2);
+    .progress-bar {
+      height: @progressBarHeightXs;
+    }
+  }
+  // These sizes are too small to have readable text
+  &.progress-sm,
+  &.progress-xs {
+    .progress-bar span {
+      display: none !important;
+    }
+  }
+}
+
+.progress-bar {
+  background-color: @g15-platinum;
+  position: relative;
+
+  span {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    color: @g8-storm;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: @progressBarHeight;
+  }
+  &-primary {
+    .gradient-h(@c-pool,@c-laser);
+    span { color: @g20-white; }
+  }
+  &-success {
+    .gradient-h(@c-rainforest,@c-honeydew);
+    span { color: @g20-white; }
+  }
+  &-info {
+    .gradient-h(@g6-smoke,@g8-storm);
+    span { color: @g20-white; }
+  }
+  &-warning {
+    .gradient-h(@c-star,@c-comet);
+    span { color: @g20-white; }
+  }
+  &-danger {
+    .gradient-h(@c-curacao,@c-dreamsicle);
+    span { color: @g20-white; }
+  }
+}
+
+
+.progress-heatmap {
+  position: relative;
+  background: @c-laser;
+  background-image: url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABkAAD/4QMxaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzA2NyA3OS4xNTc3NDcsIDIwMTUvMDMvMzAtMjM6NDA6NDIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjcwRTdFMEY5N0VBRjExRTZCMEYzOUNENTVGMzE3QkRCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjcwRTdFMEZBN0VBRjExRTZCMEYzOUNENTVGMzE3QkRCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NzBFN0UwRjc3RUFGMTFFNkIwRjM5Q0Q1NUYzMTdCREIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NzBFN0UwRjg3RUFGMTFFNkIwRjM5Q0Q1NUYzMTdCREIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAgICAgICAgICAgIDAwMDAwMDAwMDAQEBAQEBAQIBAQICAgECAgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwP/wAARCAACA+gDAREAAhEBAxEB/8QAcAABAQEBAQEBAAAAAAAAAAAAAgMBAAUECQEAAwEBAQEAAAAAAAAAAAAAAQIFAwQACRAAAQMEAgIDAQEAAAAAAAAAAAExAkFxgcHwUdEDkaGxMgQRAQADAQEBAQEBAQAAAAAAAAABMQMCQcEEgXEy/9oADAMBAAIRAxEAPwD9kj6mvmIMmUMWMWAxmoCT806TZPQeLA1ihaF4JPgaDRQhFistlDzYganizAdJXW4x4ppq8EnwGDRQhEJPgaDRQhEZOgYo/LjzUJPgaDRQhEJOo0UeKYEUhjskyhixixC2ihlQMG5EJk5Oo0UaKYrLYIxaY52Spzo9DXmhCdNXW4x4oZMoYsYsBjMk6him8UEmUMWMWAxwk+BoNFOpg961jxMZoEnwNBooe7KePzYjNQk+BoNFCrBac/8AQhapydRoo8Uyi4D6fixC1Tk6jRRop0myehtFgMYO7qFtzTJNkMHixQMtOQGbCoYPx6xWWwWkWCBltzQyfAYPFOpg962jwEcZpFjJ1DFNYpi/zzsPrXkQtIsZOoYptFOX+ednvWvIoGWvNjJ1DFNYp0mU9FtosUYLWKGq4D424oVcz7dGdf1OVb7OXtQy8SV8bOLRQypGVDj09UsrQltSdranj8SlXnRO1VcfEpVspN2+qmKEq2UmbfVbFCWtkrZYw8RlrSkrb6r4IS0SNljCkZaXZH2WcEJaJGyxhSEq28kbep/1Z/OjLWyNvcrWHiMtEb9C1hSEq28kbf1Z/OhLRG3WcL/qUqZ/EIm9Ss4orTJH/RcrWCMtkTdY/OkteUI+/wBV8PEl0R9/qxhSStzsj72r42mr48kfapVcU1rn8JOyrj4nJs6JOyplYK6WJeqnjQq+EJetSpZBJ0t5JunqhlQq3xsnaW7snIcGru4+skcPbszpyeDj0dfFvohz6Ofp3ZPtjowlvNPt9T58HP25u6el6aY0cvbi0ev6efJxaJ+r1/Q/Ozj6tO1e5/npkMJez2/RS+zWEzV7Xp59mkJuj0vXz4GinF2+tGSwznm2gBx55x55x55x55//2Q==);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: repeat-y;
+
+  .progress-bar {
+    float: right;
+    background: transparent;
+    position: relative;
+    background-color: @g17-whisper;
+  }
+}

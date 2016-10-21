@@ -1,0 +1,74 @@
+//
+// Tables
+// --------------------------------------------------
+.table th {
+  color: @g8-storm;
+  font-weight: 500;
+}
+.table td {
+  color: @g8-storm;
+}
+// Generate the contextual variants
+.table-row-variant(active; @g19-ghost);
+.table-row-variant(primary; @c-yeti);
+.table-row-variant(success; @c-mint);
+.table-row-variant(info; @g8-storm);
+.table-row-variant(warning; @c-cremedeviolette);
+.table-row-variant(danger; @c-flan);
+
+.table {
+  // Contextual classes
+  td.info,
+  th.info,
+  tr.info > td,
+  tr.info > th {
+    color: @g20-white;
+  }
+  td.danger,
+  th.danger,
+  tr.danger > td,
+  tr.danger > th {
+    color: @c-curacao;
+  }
+
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border-top: 2px solid @g18-cloud;
+      }
+    }
+  }
+  &.v-center {
+    td {
+      vertical-align: middle;
+    }
+    td > * {
+      vertical-align: middle;
+      display: inline-block;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+  }
+}
+.table-bordered {
+  border: 2px solid @g18-cloud;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border: 2px solid @g18-cloud;
+      }
+    }
+  }
+}
+.table-responsive {
+  @media screen and (max-width: @screen-xs-max) {
+    border: 2px solid @g18-cloud;
+  }
+}

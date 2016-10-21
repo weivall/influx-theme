@@ -1,0 +1,40 @@
+//
+// List groups
+// --------------------------------------------------
+
+.list-group {
+  border-radius: @border-radius-base;
+  text-shadow: none;
+  padding: 2px;
+  background-color: @g20-white;
+  border-bottom: 2px solid @g17-whisper;
+}
+.list-group-item {
+  border: 2px solid @g20-white;
+  background-color: @g19-ghost;
+  border-radius: @border-radius-large !important;
+}
+a.list-group-item {
+  font-weight: 600;
+  color: @g7-graphite;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+  &:hover {
+    background-color: @g17-whisper;
+    color: @g7-graphite;
+  }
+  p {
+    font-weight: 400;
+  }
+}
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+  .gradient-h(@c-pool,@c-comet);
+  border-color: @g20-white;
+
+  .badge {
+    text-shadow: none;
+  }
+}

@@ -1,0 +1,431 @@
+//
+// Buttons
+// --------------------------------------------------
+
+.btn {
+  text-decoration: none !important;
+  text-transform: capitalize;
+  box-shadow: none;
+  font-weight: 700;
+  border-style: solid;
+  margin: 3px 6px;
+  position: relative;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    opacity 0.3s ease !important;
+  outline: none !important;
+  border-radius: 4px;
+  padding: 0 @form-md-padding;
+  height: @form-md-height;
+  line-height: (@form-md-height - 2px);
+  font-size: @form-md-font;
+
+  // Focus Glow (hidden by default)
+  &:after {
+    content: '';
+    display: block;
+    top: -2px;
+    left: -2px;
+    width: ~"calc(100% + 4px)";
+    height: ~"calc(100% + 6px)";
+    position: absolute;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 0px 0px 6px 2px @c-laser;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  &:focus:after {
+    opacity: 1;
+  }
+  // Icons 
+  > .icon {
+    margin: 0 6px 0 0;
+    font-size: 1.125em;
+    position: relative;
+    top: 0px;
+  }
+  // Square Modifier
+  &-square {
+    padding: 0 !important;
+    width: @form-md-height;
+
+    .icon {
+      margin: 0 !important;
+    }
+  }
+  // Side Modifiers
+  &-xs {
+    border-radius: 3px;
+    padding: 0 @form-xs-padding;
+    height: @form-xs-height;
+    line-height: (@form-xs-height - 2px);
+    font-size: @form-xs-font;
+    // Icons 
+    > .icon {
+      top: 0px;
+      margin-right: 3px;
+    }
+    &.btn-square {
+      width: @form-xs-height;
+    }
+  }
+  &-sm {
+    border-radius: 4px;
+    padding: 0 @form-sm-padding;
+    height: @form-sm-height;
+    line-height: (@form-sm-height - 2px);
+    font-size: @form-sm-font;
+    // Icons 
+    > .icon {
+      top: 0px;
+      margin-right: 4px;
+    }
+    &.btn-square {
+      width: @form-sm-height;
+    }
+  }
+  &-md {
+    border-radius: 4px;
+    padding: 0 @form-md-padding;
+    height: @form-md-height;
+    line-height: (@form-md-height - 2px);
+    font-size: @form-md-font;
+    // Icons 
+    > .icon {
+      top: 0px;
+      margin-right: 6px;
+    }
+    &.btn-square {
+      width: @form-md-height;
+    }
+  }
+  &-lg {
+    border-radius: 4px;
+    padding: 0 @form-lg-padding;
+    height: @form-lg-height;
+    line-height: (@form-lg-height - 2px);
+    font-size: @form-lg-font;
+    // Icons 
+    > .icon {
+      top: -0.5px;
+      margin-right: 8px;
+    }
+    &.btn-square {
+      width: @form-lg-height;
+    }
+  }
+}
+// Button Size Modifiers
+.btn-group-xs > .btn,
+.btn.btn-xs {
+  padding: 0 @form-xs-padding;
+  height: @form-xs-height;
+  line-height: (@form-xs-height - 2px);
+  font-size: @form-xs-font;
+}
+.btn-group-sm > .btn,
+.btn.btn-sm {
+  padding: 0 @form-sm-padding;
+  height: @form-sm-height;
+  line-height: (@form-sm-height - 2px);
+  font-size: @form-sm-font;
+}
+.btn-group-lg > .btn,
+.btn.btn-lg {
+  padding: 0 @form-lg-padding;
+  height: @form-lg-height;
+  line-height: (@form-lg-height - 2px);
+  font-size: @form-lg-font;
+}
+
+
+// Solid Button styles mixin
+.btn-base-styles(
+    @bg-color,
+    @bg-color-hover,
+    @text-color,
+    @text-color-hover,
+    @text-color-press,
+    @border-color,
+    @border-color-hover
+  ) {
+
+  // Default State
+  background-color: @bg-color;
+  border-color: @border-color;
+  color: @text-color !important;
+  text-shadow: 0 -1px @border-color;
+  border-width: 0 0 2px 0;
+
+  // Focus State
+  &:focus {
+    background-color: @bg-color;
+    border-color: @border-color;
+    color: @text-color !important;
+    box-shadow: none;
+  }
+
+  // Hover State
+  &:hover,
+  &:focus:hover {
+    background-color: @bg-color-hover;
+    border-color: @border-color-hover;
+    text-shadow: 0 -1px @border-color-hover;
+    color: @text-color-hover !important;
+    cursor: pointer;
+    box-shadow: none;
+  }
+  // MouseDown State
+  &.active,
+  &.active:hover,
+  &:active,
+  &:active:hover,
+  .dropdown.open &.dropdown-toggle  {
+    background-color: @bg-color-hover;
+    border-color: @border-color-hover;
+    text-shadow: 0 -1px @border-color-hover;
+    border-width: 2px 0 0 0;
+    color: @text-color-press !important;
+    cursor: pointer;
+    box-shadow: none;
+    &:after {
+      // Adjusting for jitter with border widths changing
+      top: -4px;
+    }
+  }
+  // Disabled State
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    opacity: 1;
+    background-color: @g16-pearl;
+    border-color: @g15-platinum;
+    color: @g20-white !important;
+    box-shadow: none;
+    text-shadow: 0 -1px @g15-platinum;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &.active,
+    &:active:focus {
+      opacity: 1;
+      background-color: @g16-pearl;
+      border-color: @g15-platinum;
+      color: @g20-white !important;
+      cursor: not-allowed;
+      box-shadow: none;
+      text-shadow: 0 -1px @g15-platinum;
+    }
+    &:after {
+      display: none;
+    }
+  }
+}
+.btn-default {
+  .btn-base-styles(
+    @g12-forge,
+    @g13-mist,
+    @g20-white,
+    @g20-white,
+    @g18-cloud,
+    @g10-wolf,
+    @g11-sidewalk
+  );
+}
+.btn-primary {
+  .btn-base-styles(
+    @c-pool,
+    @c-laser,
+    @g20-white,
+    @g20-white,
+    @c-yeti,
+    @c-ocean,
+    @c-pool
+  );
+}
+.btn-success {
+  .btn-base-styles(
+    @c-rainforest,
+    @c-honeydew,
+    @g20-white,
+    @g20-white,
+    @c-mint,
+    @c-viridian,
+    @c-rainforest
+  );
+}
+.btn-info {
+  .btn-base-styles(
+    @g7-graphite,
+    @g9-mountain,
+    @g20-white,
+    @g20-white,
+    @g18-cloud,
+    @g5-pepper,
+    @g7-graphite
+  );
+}
+.btn-warning {
+  .btn-base-styles(
+    @c-comet,
+    @c-potassium,
+    @g20-white,
+    @g20-white,
+    @c-cremedeviolette,
+    @c-star,
+    @c-comet
+  );
+}
+.btn-danger {
+  .btn-base-styles(
+    @c-curacao,
+    @c-dreamsicle,
+    @g20-white,
+    @g20-white,
+    @c-flan,
+    @c-fire,
+    @c-curacao
+  );
+}
+
+
+// Outline Button styles mixin
+.btn-outline-styles (
+    @text-color,
+    @text-color-hover,
+    @border-color,
+    @border-color-hover,
+    @border-color-press
+  ) {
+
+  // Adjusting line height in response to more borders
+  line-height: (@form-md-height - 4px);
+  &.btn-xs {
+    line-height: (@form-xs-height - 4px);
+  }
+  &.btn-sm {
+    line-height: (@form-sm-height - 4px);
+  }
+  &.btn-md {
+    line-height: (@form-md-height - 4px);
+  }
+  &.btn-lg {
+    line-height: (@form-lg-height - 4px);
+  }
+
+  // Default State
+  border-width: 2px;
+  background-color: @g20-white;
+  border-color: @border-color;
+  color: @text-color !important;
+  &:focus {
+    border-width: 2px;
+    background-color: @g20-white;
+    border-color: @border-color;
+    color: @text-color !important;
+  }
+
+  // Hover State
+  &:hover {
+    background-color: @g20-white;
+    border-color: @border-color-hover;
+    color: @text-color-hover !important;
+  }
+
+  // Focus State Adjustment
+  &:after {
+    left: -4px;
+    top: -4px;
+    width: ~"calc(100% + 8px)";
+    height: ~"calc(100% + 8px)";
+  }
+
+  // MouseDown State
+  &.active,
+  &.active:hover,
+  &:active,
+  &:active:hover,
+  .open &.dropdown-toggle {
+    box-shadow: none;
+    background-color: @g20-white;
+    border-color: @border-color-press;
+    color: @text-color-hover !important;
+  }
+
+  // Disabled State
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    opacity: 1;
+    background-color: @g20-white;
+    border-color: @g18-cloud;
+    color: @g12-forge !important;
+    box-shadow: none;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &.active,
+    &:active:focus {
+      opacity: 1;
+      background-color: @g20-white;
+      border-color: @g18-cloud;
+      color: @g12-forge !important;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+    &:after {
+      display: none;
+    }
+  }
+
+}
+.btn-link {
+  .btn-outline-styles(
+    @c-pool,
+    @c-laser,
+    @g18-cloud,
+    @c-neutrino,
+    @c-hydrogen
+  );
+}
+.btn-link-danger {
+  .btn-outline-styles(
+    @c-curacao,
+    @c-dreamsicle,
+    @g18-cloud,
+    @c-marmelade,
+    @c-tungsten
+  );
+}
+.btn-link-success {
+  .btn-outline-styles(
+    @c-rainforest,
+    @c-honeydew,
+    @g18-cloud,
+    @c-wasabi,
+    @c-krypton
+  );
+}
+
+
+//
+// Button Groups
+// --------------------------------------------------
+.btn-group {
+  > * {
+    margin-left: 0;
+    margin-right: 2px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &.open .dropdown-toggle {
+    box-shadow: none !important;
+  }
+}

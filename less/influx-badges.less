@@ -1,0 +1,26 @@
+//
+// Badges
+// --------------------------------------------------
+
+.badge {
+  background-color: @g12-forge;
+  color: @g20-white;
+
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    color: @c-pool;
+    background-color: @g20-white;
+  }
+
+  // Hover state, but only for links
+  a& {
+    color: @c-pool;
+
+    &:hover,
+    &:focus {
+      color: @c-laser;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}

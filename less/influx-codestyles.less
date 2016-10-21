@@ -1,0 +1,102 @@
+//
+// Code Styles
+// --------------------------------------------------
+
+@code-bg-color: @g19-ghost;
+@code-scrollbar: @c-moonstone;
+@code-font-color: @c-star;
+@code-font-size: 11px;
+@code-font-weight: 600;
+
+code {
+  font-weight: @code-font-weight;
+  background-color: @code-bg-color;
+  border: 1px solid @code-bg-color;
+  text-shadow: none;
+  color: @code-font-color;
+  font-family: Consolas,"Lucida Console",Monaco,monospace;
+  font-size: @code-font-size;
+  letter-spacing: 0.02em;
+  border-radius: 4px;
+
+  /* Reset default tag styles */
+  b,strong,i,em,mark,small,del,ins,sub,sup,u {
+    font-size: @code-font-size;
+    font-weight: @code-font-weight;
+    text-decoration: none;
+    font-style: normal;
+    background-color: inherit;
+    color: @code-font-color;
+    position: static;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+  }
+
+  b { color: @c-dreamsicle;}
+  i { color: @c-pool;}
+}
+pre {
+  font-size: @code-font-size;
+  line-height: 17px;
+  background-color: @code-bg-color;
+  border: 2px solid @code-bg-color;
+  color: @code-font-color;
+  white-space: pre;
+  border-radius: 4px;
+
+  code {
+    border: transparent;
+    background-color: none;
+    white-space: pre;
+    border-radius: 0;
+  }
+  .custom-scrollbar(@code-bg-color,@code-scrollbar);
+
+  &.rainbow-highlighter {
+    .custom-scrollbar(@g3-castle,@c-comet);
+  }
+}
+
+/* Code Highlighting */
+@code-highlight-a: @g10-wolf;
+@code-highlight-b: @c-hydrogen;
+@code-highlight-c: @c-pool;
+@code-highlight-d: @c-viridian;
+@code-highlight-e: @c-honeydew;
+@code-highlight-f: @g20-white;
+@code-highlight-g: @c-curacao;
+@code-highlight-h: @c-tungsten;
+@code-highlight-i: @c-honeydew;
+@code-highlight-j: @c-comet;
+@code-highlight-k: @g6-smoke;
+
+code, pre {
+  &.rainbow-highlighter {
+    background-color: @g3-castle;
+    color: @c-potassium;
+    border-color: @c-shadow;
+
+
+
+    b { color: @code-highlight-a; }
+    strong { color: @code-highlight-b; }
+    i { color: @code-highlight-c; }
+    em { color: @code-highlight-d; }
+    mark { color: @code-highlight-e; }
+    small { color: @code-highlight-f; }
+    del { color: @code-highlight-g; }
+    ins { color: @code-highlight-h; }
+    sub { color: @code-highlight-i; }
+    sup { color: @code-highlight-j; }
+
+    /* Literal highlighting */
+    u {
+      color: @c-potassium;
+      background-color: @code-highlight-k;
+      padding: 2px 4px;
+      border-radius: 3px;
+      text-indent: -4px;
+    }
+  }
+}

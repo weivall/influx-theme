@@ -1,0 +1,38 @@
+//
+// Heros
+// --------------------------------------------------
+
+// This bit is intended for use on the Cloud landing page, but is flexible enough to
+// be used elsewhere. The .hero class is generic, and needs either an additional class
+// to specify a background-image, or to inline the image.
+
+.hero {
+  padding: 16px 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+.hero-light {
+  color: @g20-white;
+}
+@media (min-width: @screen-xs) {
+  .hero { padding: 32px 0;}
+}
+@media (min-width: @screen-sm) {
+  .hero { padding: 64px 0;}
+}
+@media (min-width: @screen-md) {
+  .hero { padding: 96px 0;}
+}
+@media (min-width: @screen-lg) {
+  .hero {
+    padding: 128px 0;
+
+     h1 { font-size: 64px; font-weight: 200; }
+     .btn-lg { font-size: 22px; }
+  }
+}

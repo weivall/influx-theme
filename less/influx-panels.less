@@ -1,0 +1,322 @@
+//
+// Panels
+// --------------------------------------------------
+
+.panel {
+  box-shadow: 0 2px 5px 2px fadeout(@g17-whisper, 50%);
+  background-color: @g20-white;
+  border: none;
+  border-radius: 4px;
+}
+.panel-heading {
+  border-radius: 4px 4px 0 0;
+  background-color: @g20-white;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 30px;
+  color: @g8-storm;
+}
+.panel-body {
+  background-color: @panel-bg;
+  padding: 30px;
+
+  &:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  &:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  > *:first-child {
+    margin-top: 0;
+  }
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+.panel-footer {
+  padding: 14px 30px;
+  border-radius: 0 0 4px 4px;
+  .gradient-v(@g19-ghost,@g20-white);
+  border: none;
+  color: @g11-sidewalk;
+}
+
+.panel-title {
+  color: inherit;
+  font-weight: 500 !important;
+  letter-spacing: 0.015em;
+  margin: 0;
+  font-size: 18px;
+
+  .icon:first-child {
+    margin-right: 7px;
+  }
+
+  .caret {
+    width: 14px;
+    height: 14px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    transition: transform 0.25s ease;
+    border: none;
+
+    &:after {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-family: 'icomoon' !important;
+      content: "\e911";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 16px;
+      transform: translate(-50%,-50%) rotate(90deg);
+    }
+  }
+  .collapsed .caret {
+    transform: rotate(-90deg);
+  }
+
+}
+
+// Contextual Alternatives
+.panel-underline-styles(@text-color,@bg-color,@border-color) {
+  .panel-heading {
+    background-color: @bg-color;
+    padding: 0 30px;
+  }
+  .panel-title {
+    padding: 30px 0;
+    position: relative;
+    color: @text-color;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: @border-color;
+    }
+  }
+}
+.panel-default {
+  .panel-underline-styles(@g8-storm,@g20-white,@g20-white);
+}
+.panel-primary {
+  .panel-underline-styles(@c-pool,@g20-white,@c-neutrino);
+}
+.panel-success {
+  .panel-underline-styles(@c-rainforest,@g20-white,@c-wasabi);
+}
+.panel-info {
+  .panel-underline-styles(@g8-storm,@g20-white,@g18-cloud);
+}
+.panel-warning {
+  .panel-underline-styles(@c-star,@g20-white,@c-cremedeviolette);
+}
+.panel-danger {
+  .panel-underline-styles(@c-curacao,@g20-white,@c-marmelade);
+}
+
+.panel-gradient-styles(@text-color,@bg-color-a,@bg-color-b,@panel-bg-color) {
+  .panel-heading {
+    .gradient-h(@bg-color-a,@bg-color-b);
+    color: @text-color;
+
+    & + .panel-body {
+      position: relative;
+
+      &:after,
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 2px;
+        height: 70%;
+      }
+      &:after {
+        left: 0;
+        .gradient-v(@bg-color-a,@panel-bg-color);
+      }
+      &:before {
+        right: 0;
+        .gradient-v(@bg-color-b,@panel-bg-color);
+      }
+    }
+  }
+  .panel-title {
+    color: @text-color;
+  }
+}
+
+// Solid Alternatives
+.panel-spring {
+  .panel-gradient-styles(@g20-white,@c-laser,@c-honeydew,@g20-white);
+}
+.panel-summer {
+  .panel-gradient-styles(@g20-white,@c-pool,@c-hydrogen,@g20-white);
+}
+.panel-fall {
+  .panel-gradient-styles(@g20-white,@c-dreamsicle,@c-potassium,@g20-white);
+}
+.panel-winter {
+  .panel-gradient-styles(@g20-white,@c-pool,@c-potassium,@g20-white);
+}
+
+// Panels for Enterprise (Minimal Panel)
+.panel-minimal {
+  background-color: transparent !important;
+
+  .panel-heading {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .panel-title {
+    font-weight: 300 !important;
+    font-size: 24px;
+    color: @g8-storm !important;
+  }
+  .panel-body {
+    background-color: @g20-white;
+    border-top-right-radius: @panel-border-radius;
+    border-top-left-radius: @panel-border-radius;
+
+    &:last-child {
+      border-bottom-right-radius: @panel-border-radius;
+      border-bottom-left-radius: @panel-border-radius;
+    }
+  }
+}
+
+// Collapse Panel
+.panel-collapse {
+
+  .panel-heading {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+  .panel-body {
+    border-top: 2px solid @g19-ghost;
+
+    > *:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+  // Grey Text Alternative
+  &.panel-collapse-grey {
+    .panel-title a {
+      color: @g8-storm !important;
+
+      &:hover {
+        color: @g10-wolf !important;
+      }
+    }
+  }
+  // Mint Alternative
+  &.panel-collapse-mint {
+    border-color: @c-wasabi;
+
+    .panel-heading {
+      background-color: @c-mint;
+    }
+    .panel-body {
+      border-color: @c-wasabi;
+      background-color: @c-mint;
+    }
+    .panel-title a {
+      color: @g8-storm !important;
+
+      &:hover {
+        color: @g10-wolf !important;
+      }
+    }
+    code,
+    pre {
+      font-weight: 600;
+      background-color: @c-viridian;
+      color: @c-wasabi;
+      border-color: @c-viridian;
+    }
+    pre {
+      .custom-scrollbar(@c-viridian,@c-wasabi);
+    }
+  }
+  // Frost Alternative
+  &.panel-collapse-frost {
+    border-color: @c-neutrino;
+
+    .panel-heading {
+      background-color: @c-yeti;
+    }
+    .panel-body {
+      border-color: @c-neutrino;
+      background-color: @c-yeti;
+    }
+    .panel-title a {
+      color: @g8-storm !important;
+
+      &:hover {
+        color: @g10-wolf !important;
+      }
+    }
+    code,
+    pre {
+      font-weight: 600;
+      background-color: @c-ocean;
+      color: @g20-white;
+      border-color: @c-ocean;
+    }
+    pre {
+      .custom-scrollbar(@c-ocean,@g20-white);
+    }
+  }
+  // Size Modifiers
+  &.panel-collapse-sm {
+    .panel-heading {
+      padding: 6px 11px;
+    }
+    .panel-title {
+      margin: 2px 0 3px 0;
+    }
+    .panel-title a {
+      font-weight: 600;
+      font-size: 14px;
+
+      span.caret {
+        margin-right: 4px;
+      }
+      span.caret:after {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+// Panel tables
+.panel > .table {
+  border-top: @panel-border;
+  * {
+    border-color: @g19-ghost;
+  }
+}
+.panel-heading + .table {
+  border: none;
+}
+.panel > .table td:first-child,
+.panel > .table th:first-child {
+  padding-left: 30px;
+}
+.panel > .table td:last-child,
+.panel > .table th:last-child {
+  padding-right: 30px;
+}

@@ -1,0 +1,460 @@
+//
+// Navs
+// --------------------------------------------------
+.nav-tablist {
+  display: flex;
+  align-items: center;
+
+  > li {
+
+    > a {
+      position: relative;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 0 12px;
+      background-color: @g17-whisper;
+      color: @g11-sidewalk;
+      height: 41px;
+      line-height: 37px;
+      border: 2px solid @g17-whisper;
+      border-right-width: 0;
+      transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+
+      &:hover {
+        background-color: @g18-cloud;
+        color: @g8-storm;
+        cursor: pointer;
+      }
+    }
+    &:first-of-type > a {
+      border-radius: 4px 0 0 4px;
+    }
+    &:last-of-type > a {
+      border-right-width: 2px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    &.active > a {
+      background-color: @g20-white;
+      color: @g8-storm;
+    }
+    &.disabled > a {
+      color: @g14-chromium;
+      font-style: italic;
+
+      &:hover,
+      &:focus {
+        color: @g14-chromium;
+        text-decoration: none;
+        background-color: @g17-whisper;
+        cursor: @cursor-disabled;
+      }
+      }
+  }
+
+  /* Size Modifiers */
+  &.nav-tablist-lg {
+    > li > a {
+      font-size: 18px;
+      padding: 0 19px;
+      font-weight: 400;
+      height: 54px;
+      line-height: 50px;
+    }
+    > li:first-of-type > a {
+      border-radius: 4px 0 0 4px;
+    }
+    > li:last-of-type > a {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+  &.nav-tablist-sm {
+    > li > a {
+      font-size: 12px;
+      padding: 0 9px;
+      font-weight: 600;
+      height: 31px;
+      line-height: 27px;
+    }
+    > li:first-of-type > a {
+      border-radius: 3px 0 0 3px;
+    }
+    > li:last-of-type > a {
+      border-radius: 0 3px 3px 0;
+    }
+  }
+  &.nav-tablist-xs {
+    > li > a {
+      font-size: 11px;
+      padding: 0 7px;
+      font-weight: 600;
+      height: 27px;
+      line-height: 23px;
+    }
+    > li:first-of-type > a {
+      border-radius: 3px 0 0 3px;
+    }
+    > li:last-of-type > a {
+      border-radius: 0 3px 3px 0;
+    }
+  }
+}
+
+.microtabs-dismiss {
+  position: relative;
+  top: -1px;
+  right: -3px;
+  margin-left: -2px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+
+  /* Using pseudo elements to render an X */
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 11px;
+    background-color: @g15-platinum;
+    border-radius: 1px;
+    transition:
+      background-color 0.25s ease;
+  }
+  &:after {
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  &:before {
+    transform: translate(-50%,-50%) rotate(-45deg);
+  }
+  /* Hover State */
+  &:hover {
+    cursor: pointer;
+
+    &:after,
+    &:before {
+      background-color: @c-dreamsicle;
+    }
+  }
+}
+.nav-microtabs {
+  display: flex;
+  align-items: center;
+  background-color: @g17-whisper;
+  padding: 9px 9px 0 9px;
+
+  > li {
+
+    > a {
+      position: relative;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 0 9px;
+      margin: 0 2px 0 0;
+      background-color: @g17-whisper;
+      color: @g11-sidewalk;
+      height: 30px;
+      line-height: 30px;
+      border: 0;
+      border-radius: 3px 3px 0 0;
+      transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+
+      &:hover {
+        background-color: @g19-ghost;
+        color: @g8-storm;
+        cursor: pointer;
+      }
+    }
+    &:last-of-type > a {
+      margin-right: 0;
+    }
+
+    &.active > a {
+      background-color: @g20-white;
+      color: @g9-mountain;
+    }
+    &.disabled > a {
+      color: @g14-chromium;
+      font-style: italic;
+
+      &:hover,
+      &:focus {
+        color: @g14-chromium;
+        text-decoration: none;
+        background-color: @g17-whisper;
+        cursor: @cursor-disabled;
+      }
+    }
+  }
+
+  /* Contextual Alternatives */
+  &-dark {
+    background-color: @g6-smoke;
+
+    .microtabs-dismiss {
+      background-color: transparent;
+
+      /* Using pseudo elements to render an X */
+      &:after,
+      &:before {
+        width: 2px;
+        background-color: @g10-wolf;
+      }
+      /* Hover State */
+      &:hover {
+
+        &:after,
+        &:before {
+          background-color: @c-tungsten;
+        }
+      }
+    }
+
+    > li {
+
+      > a {
+        color: @g13-mist;
+        background-color: @g7-graphite;
+
+        &:hover {
+          background-color: @g8-storm;
+          color: @g18-cloud;
+        }
+      }
+      &.active > a {
+        background-color: @g8-storm;
+        color: @g18-cloud;
+      }
+      &.disabled > a {
+        color: @g11-sidewalk;
+        background-color: @g7-graphite;
+
+        &:hover,
+        &:focus {
+          color: @g11-sidewalk;
+          background-color: @g7-graphite;
+        }
+      }
+    }
+  }
+  &-darker {
+    background-color: @g5-pepper;
+
+    .microtabs-dismiss {
+      background-color: transparent;
+
+      /* Using pseudo elements to render an X */
+      &:after,
+      &:before {
+        width: 2px;
+        background-color: @g10-wolf;
+      }
+      /* Hover State */
+      &:hover {
+
+        &:after,
+        &:before {
+          background-color: @c-tungsten;
+        }
+      }
+    }
+
+    > li {
+
+      > a {
+        color: @g13-mist;
+        background-color: @g5-pepper;
+
+        &:hover {
+          background-color: @g6-smoke;
+          color: @g18-cloud;
+        }
+      }
+      &.active > a {
+        background-color: @g6-smoke;
+        color: @g18-cloud;
+      }
+      &.disabled > a {
+        color: @g10-wolf;
+        background-color: @g5-pepper;
+
+        &:hover,
+        &:focus {
+          color: @g10-wolf;
+          background-color: @g5-pepper;
+        }
+      }
+    }
+  }
+  @microtabs-white-border: @g18-cloud;
+  &-white {
+    background-color: @g20-white;
+    position: relative;
+
+    .panel-heading + & {
+      /* Reduced top padding looks better when next to a matching panel heading */
+      padding-top: 2px;
+    }
+
+    /* Using pseudo element for border since it can be z-indexed beneath the tabs */
+    &:before {
+      content: '';
+      width: 100%;
+      height: 2px;
+      left: 0;
+      bottom: 0;
+      position: absolute;
+      background-color: @microtabs-white-border;
+      z-index: 1;
+    }
+
+    > li {
+      position: relative;
+      z-index: 2;
+
+      > a {
+        border-width: 2px;
+        border-style: solid;
+        border-color: @microtabs-white-border;
+        background-color: @g18-cloud;
+        /* Removing 4px for borders, keeps text vertically centered */
+        line-height: 26px; // was 30px
+        transition:
+          background-color 0.25s ease,
+          border-color 0.25s ease,
+          color 0.25s ease;
+
+        &:hover {
+          background-color: @g20-white;
+          border-color: @microtabs-white-border;
+        }
+      }
+      &.active > a {
+        background-color: @g20-white;
+        color: @g8-storm;
+        border-color: @microtabs-white-border @microtabs-white-border @g20-white @microtabs-white-border;
+      }
+      &.disabled > a {
+        color: @g14-chromium;
+        border-color: @g20-white @g20-white @microtabs-white-border @g20-white;
+
+        &:hover,
+        &:focus {
+          color: @g14-chromium;
+          background-color: @g20-white;
+          border-color: @g20-white @g20-white @microtabs-white-border @g20-white;
+        }
+      }
+    }
+  }
+  /* Common Seasonal Styles */
+  &-spring,
+  &-summer,
+  &-fall,
+  &-winter {
+
+    .panel-heading + & {
+      /* Reduced top padding looks better when next to a matching panel heading */
+      padding-top: 2px;
+    }
+
+    /* Styles for dismiss buttons inside seasonal alternatives */
+    .microtabs-dismiss {
+      right: -5px;
+      margin-left: -4px;
+
+      /* Using pseudo elements to render an X */
+      &:after,
+      &:before {
+        height: 8px;
+        width: 2px;
+        background-color: @g8-storm;
+        border-radius: 0;
+        transition:
+          height 0.25s ease;
+      }
+      &:after {
+        transform: translate(-50%,-50%) rotate(45deg);
+      }
+      &:before {
+        transform: translate(-50%,-50%) rotate(-45deg);
+      }
+      /* Hover State */
+      &:hover {
+        cursor: pointer;
+
+        &:after,
+        &:before {
+          height: 12px;
+        }
+      }
+    }
+
+
+    > li {
+
+      > a {
+        color: @g8-storm;
+        background-color: fadeout(@g20-white, 60%);
+
+        &:hover {
+          color: @g8-storm;
+          background-color: fadeout(@g20-white, 33%);
+        }
+      }
+      &.active > a {
+        background-color: @g20-white;
+        color: @g8-storm;
+
+        .microtabs-dismiss {
+          background-color: transparent;
+        }
+        .microtabs-dismiss:after,
+        .microtabs-dismiss:before {
+          background-color: @g13-mist;
+        }
+      }
+      &.disabled > a {
+        background-color: fadeout(@g20-white, 81%);
+        color: fadeout(@g20-white, 32%);
+
+        &:hover,
+        &:focus {
+          color: fadeout(@g20-white, 32%);
+          background-color: fadeout(@g20-white, 81%);
+        }
+      }
+    }
+  }
+  &-spring {
+    .gradient-h(@spring-start,@spring-end);
+  }
+  &-summer {
+    .gradient-h(@summer-start,@summer-end);
+  }
+  &-fall {
+    .gradient-h(@fall-start,@fall-end);
+  }
+  &-winter {
+    .gradient-h(@winter-start,@winter-end);
+  }
+}
+
+/*
+    Increase left & right padding on tab container to match panel paadding
+    when it is directly inside a panel
+*/
+.panel > .nav-microtabs {
+  padding-left: 30px;
+  padding-right: 30px;
+}

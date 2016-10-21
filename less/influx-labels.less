@@ -1,0 +1,51 @@
+//
+// Labels
+// --------------------------------------------------
+
+// Label Styles Mixin
+.label-styles(@bgcolor,@color){
+  background-color: @bgcolor;
+  color: @color;
+}
+.label {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.75em;
+
+  // Apply label styles mixin
+  &.label-default {
+    .label-styles(@g16-pearl,inherit);
+  }
+  &.label-primary {
+    .label-styles(@c-yeti,@c-ocean);
+  }
+  &.label-success {
+    .label-styles(@c-mint,@c-viridian);
+  }
+  &.label-info {
+    .label-styles(@g20-white,@g10-wolf);
+  }
+  &.label-warning {
+    .label-styles(@c-cremedeviolette,@c-star);
+  }
+  &.label-danger {
+    .label-styles(@c-flan,@c-curacao);
+  }
+}
+h1 .label,
+h2 .label {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+h1 .label,
+h2 .label,
+h3 .label,
+h4 .label {
+  transform: translateY(-10%);
+}
+h4 .label,
+h5 .label,
+h6 .label,
+p .label {
+  letter-spacing: 0.04em;
+}

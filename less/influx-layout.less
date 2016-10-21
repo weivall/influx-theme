@@ -1,0 +1,102 @@
+//
+// Influx app Layout
+// --------------------------------------------------
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+.influx-layout-styles {
+  position: absolute;
+}
+.ix-app,
+.ix-sidebar,
+.ix-app-wrapper {
+  height: 100%;
+}
+.ix-app {
+  z-index: @-ix-app-z;
+  .influx-layout-styles;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.ix-sidebar {
+  overflow: hidden;
+  z-index: @ix-sidebar-z;
+  .influx-layout-styles;
+  top: 0;
+  left: 0;
+  width: @ix-sidebar-width;
+  .gradient-v(@g7-graphite,@g4-onyx);
+}
+.ix-app-wrapper {
+  z-index: @ix-app-wrapper-z;
+  .influx-layout-styles;
+  top: @ix-app-heading-height;
+  left: @ix-sidebar-width;
+  width: ~"calc(100% - "@ix-sidebar-width~")";
+  height: ~"calc(100% - "@ix-app-heading-height~")";
+  overflow: auto;
+  .gradient-v(@g18-cloud,@g19-ghost);
+  .custom-scrollbar(@g19-ghost,@c-pool);
+}
+.ix-app-heading {
+  z-index: @ix-app-heading-z;
+  .influx-layout-styles;
+  top: 0;
+  left: @ix-sidebar-width;
+  width: ~"calc(100% - "@ix-sidebar-width~")";
+  height: @ix-app-heading-height;
+  background-color: @g20-white;
+
+  // Drop Shadow
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    .gradient-v(fadeout(@g3-castle, 98%), fadeout(@g3-castle, 100%));
+  }
+
+  // App Heading Container
+  &--container {
+    width: 100%;
+    height: @ix-app-heading-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  // App Heading Container Sections
+  .app-heading-section-styles {
+    display: flex;
+    align-items: center;
+  }
+  &--left {
+    .app-heading-section-styles;
+    justify-content: flex-start;
+    text-align: left;
+    > * {
+      margin: 0 @ix-marg-b 0 0;
+    }
+  }
+  &--right {
+    .app-heading-section-styles;
+    justify-content: flex-end;
+    text-align: right;
+    > * {
+      margin: 0 0 0 @ix-marg-a;
+    }
+  }
+}
+.ix-app-title {
+  font-size: @ix-text-base-2;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

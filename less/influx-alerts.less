@@ -1,0 +1,88 @@
+//
+// Alerts
+// --------------------------------------------------
+
+// Common styles
+.alert {
+  border-style: solid;
+  border-width: @ix-border;
+  border-radius: @ix-radius;
+  position: relative;
+  padding: @ix-marg-c;
+
+  button.close {
+    position: absolute;
+    top: @ix-marg-b;
+    right: @ix-marg-b;
+    font-size: @ix-text-base;
+    width: 20px;
+    height: 20px;
+    opacity: 0.25 !important;
+    transition:
+      opacity 0.25s ease;
+
+    &:hover {
+      opacity: 1 !important;
+    }
+  }
+
+  // class for adding an icon inside
+  &-icon {
+    padding-left: (@ix-marg-e - @ix-marg-b);
+
+    span.icon:not(.remove) {
+      position: absolute;
+      top: 50%;
+      left: @ix-marg-c;
+      transform: translateY(-50%);
+      width: (@ix-text-base-2 + 4px);
+      margin: 0;
+      font-size: @ix-text-base-2;
+    }
+  }
+}
+// Alert Mixin
+.alert-styles(
+  @bg-color,
+  @border-color,
+  @text-color,
+  @link-color,
+  @link-hover) {
+
+  background-color: @bg-color;
+  color: @text-color;
+  border-color: @border-color;
+
+  a:link,
+  a:visited {
+    color: @link-color;
+    font-weight: 700;
+    text-decoration: underline;
+    transition:
+      color 0.25s ease;
+  }
+  a:hover {
+    color: @link-hover;
+    border-color: @link-hover;
+  }
+  span.icon {
+    color: @text-color;
+  }
+}
+
+// Apply the mixin to the alerts
+.alert-success {
+  .alert-styles(@c-mint,@c-wasabi,@c-viridian,@ix-link-success,@ix-link-success-hover);
+}
+.alert-primary {
+  .alert-styles(@c-yeti,@c-neutrino,@c-ocean,@ix-link-default,@ix-link-default-hover);
+}
+.alert-warning {
+  .alert-styles(@c-cremedeviolette,@c-moonstone,@c-star,@ix-link-warning,@ix-link-warning-hover);
+}
+.alert-danger {
+  .alert-styles(@c-flan,@c-marmelade,@c-curacao,@ix-link-danger,@ix-link-danger-hover);
+}
+.alert-info {
+  .alert-styles(@g18-cloud,@g16-pearl,@ix-text-default,@ix-link-default,@ix-link-default-hover);
+}

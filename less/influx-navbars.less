@@ -1,0 +1,163 @@
+//
+// Navbar
+// --------------------------------------------------
+
+// Custom Logo Styles
+.influx-logo {
+  display: inline-block;
+  height: 20px;
+}
+
+
+// Common styles
+.navbar {
+  border-radius: @navbar-border-radius;
+  border-style: solid;
+  border-width: 2px;
+}
+.navbar-nav > li > a {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+// Matching li padding here
+.navbar-brand {
+  padding-left: 18px;
+  padding-right: 22px;
+  
+  
+}
+.navbar-logo {
+  transition: opacity 0.25s ease;
+  &:hover,
+  &:focus,
+  &:active:focus {
+    opacity: 0.7;
+  }
+}
+
+// Default navbar
+.navbar-default {
+  background-color: @g20-white;
+  border-color: @g18-cloud;
+
+  .navbar-nav {
+    .gradient-h(@c-pool,@c-comet);
+
+    & > li > a {
+      transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+      color: @g9-mountain;
+      background-color: @g20-white;
+      &:hover,
+      &:focus,
+      &:focus:active {
+        outline: none;
+        background-color: fadeout(@g20-white, 30%);
+        color: @g7-graphite;
+      }
+    }
+
+    & > .open > a {
+      background-color: fadeout(@g20-white, 30%);
+      color: @g7-graphite;
+      &:hover,
+      &:focus,
+      &:focus:active {
+        outline: none;
+        background-color: fadeout(@g20-white, 30%);
+        color: @g7-graphite;
+      }
+    }
+    & > .open.active > a,
+    & > .active > a {
+      background-color: transparent;
+      color: @g20-white;
+      font-weight: 700;
+      &:hover,
+      &:focus,
+      &:focus:active {
+        outline: none;
+        background-color: transparent;
+        color: @g20-white;
+      }
+    }
+  }
+}
+
+// Inverted navbar
+.navbar-inverse {
+  background-color: @g5-pepper;
+  border: none;
+
+  .navbar-nav {
+    .gradient-h(@c-pool,@c-comet);
+
+    & > li > a {
+      transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+      color: @g20-white;
+      background-color: @g5-pepper;
+      &:hover,
+      &:focus,
+      &:focus:active {
+        // background-color: @g17-whisper;
+        background-color: fadeout(@g5-pepper, 30%);
+        color: @g20-white;
+      }
+    }
+
+    & > .open > a {
+      background-color: fadeout(@g5-pepper, 30%);
+      color: @g20-white;
+      &:hover,
+      &:focus,
+      &:focus:active {
+        background-color: fadeout(@g5-pepper, 30%);
+        color: @g20-white;
+      }
+    }
+    & > .open.active > a,
+    & > .active > a {
+      background-color: transparent;
+      color: @g20-white;
+      font-weight: 700;
+      &:hover,
+      &:focus,
+      &:focus:active {
+        background-color: transparent;
+        color: @g20-white;
+      }
+    }
+  }
+}
+
+// Undo rounded corners in static and fixed navbars
+.navbar-static-top,
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  border-radius: 0;
+}
+.navbar-static-top,
+.navbar-fixed-top {
+  border-width: 0 0 2px 0;
+}
+.navbar-fixed-bottom {
+  border-width: 2px 0 0 0;
+}
+
+// Fix active state of dropdown items in collapsed mode
+@media (max-width: @grid-float-breakpoint-max) {
+  .navbar .navbar-nav .open .dropdown-menu > .active > a {
+    &,
+    &:hover,
+    &:focus {
+      color: @g20-white;
+      #gradient > .vertical(@start-color: @dropdown-link-active-bg; @end-color: darken(@dropdown-link-active-bg, 5%));
+    }
+  }
+}

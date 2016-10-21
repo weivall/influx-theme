@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,700,900,700italic' rel='stylesheet' type='text/css'>
+    <link href="../img/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+    <title>Utilities | Influx Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery UI CSS -->
+    <link href="../jquery-ui/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../dist/css/bootstrap-theme.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="ix-app">
+
+      <!-- Side Navbar -->
+      <nav class="ix-sidebar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand"><span style="font-size:24px;position: relative;top:-3px;" class="icon cubo"></span></span>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Standard <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">Components</li>
+                  <li><a href="#section-jumbotron">Jumbotron</a></li>
+                  <li><a href="#section-typography">Typography</a></li>
+                  <li><a href="#section-labels">Labels</a></li>
+                  <li><a href="#section-buttons">Buttons</a></li>
+                  <li><a href="#section-buttongroups">Button Groups</a></li>
+                  <li><a href="#section-modals">Modals</a></li>
+                  <li><a href="#section-forms">Forms</a></li>
+                  <li><a href="#section-tables">Tables</a></li>
+                  <li><a href="#section-panels">Panels</a></li>
+                  <li><a href="#section-badges">Badges</a></li>
+                  <li><a href="#section-tooltips">Tooltips</a></li>
+                  <li><a href="#section-popovers">Popovers</a></li>
+                  <li><a href="#section-dropdowns">Dropdowns</a></li>
+                  <li><a href="#section-navs">Navs</a></li>
+                  <li><a href="#section-navbars">Navbars</a></li>
+                  <li><a href="#section-alerts">Alerts</a></li>
+                  <li><a href="#section-progressbars">Progress Bars</a></li>
+                  <li><a href="#section-listgroups">List Groups</a></li>
+                  <li><a href="#section-wells">Wells</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Custom <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">Components</li>
+                  <li><a href="#section-minimalpanels">Minimal Panels</a></li>
+                  <li><a href="#section-collapsiblepanels">Collapsible Panels</a></li>
+                  <li><a href="#section-radiopanels">Radio Panels</a></li>
+                  <li><a href="#section-heatmap">Heatmap Progress Bars</a></li>
+                  <li><a href="#section-slidertoggles">Slider Toggles</a></li>
+                  <li><a href="#section-hero">Hero</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Utilities <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#section-colorpalette">Color Palette</a></li>
+                  <li><a href="#section-iconfont">Icon Font</a></li>
+                  <li><a href="#section-type-tools">Typography Tools</a></li>
+                  <li><a href="#section-margin-utilities">Margin / Padding Utilities</a></li>
+                  <li><a href="#section-code-highlighting">Code Highlighting</a></li>
+                  <li><a href="#section-flexbox">Flex Box Utilities</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="dark-theme.html">Dark Theme</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <!-- App Heading -->
+      <nav class="ix-app-heading">
+        <div class="container">
+          <div class="ix-app-heading--container">
+
+          <div
+        </div>
+      </nav>
+
+      <!-- App Wrapper -->
+      <div class="ix-app-wrapper">
+      
+        <!-- Hero -->
+        <div class="hero hero-light" style="background-image: url(../img/tibet.jpg);">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <h1>Influx Bootstrap Theme</h1>
+                <h4>Design Documentation &mdash; v0.11</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Color Palette -->
+        <section class="docs-section">
+          <div class="container">
+
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-colorpalette"></a>
+              <a href="#section-colorpalette">
+                <h1>Color Palette</h1>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="panel panel-minimal">
+                  <div class="panel-body">
+                    <div class="docs-color-grid">
+                      <div class="docs-color-column" id="docs-telegraf-swatches">
+                        <h4 class="text-center">Telegraf</h4>
+                        <br/>
+                      </div>
+                      <div class="docs-color-column" id="docs-influxdb-swatches">
+                        <h4 class="text-center">InfluxDB</h4>
+                        <br/>
+                      </div>
+                      <div class="docs-color-column" id="docs-chronograf-swatches">
+                        <h4 class="text-center">Chronograf</h4>
+                        <br/>
+                      </div>
+                      <div class="docs-color-column" id="docs-kapacitor-swatches">
+                        <h4 class="text-center">Kapacitor</h4>
+                        <br/>
+                      </div>
+                    </div>
+                    <br/>
+                    <div class="docs-color-grid">
+                      <div class="docs-color-column" id="docs-nuetral-swatches">
+                        <h4 class="text-center">Influx Nuetrals</h4>
+                        <br/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Icon Font -->
+        <section class="docs-section">
+          <div class="container">
+
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-iconfont"></a>
+              <a href="   #section-iconfont">
+                <h1>Icon Font</h1>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h2 class="panel-title">Icon font created using <a href="http://icomoon.io" target="_blank">icomoon.io</a></h2>
+                  </div>
+                  <div class="panel-body">
+                    <p>Font files are referenced from <code>bootstrap-theme.min.css</code> as a relative path <code>../fonts/</code>. To ensure proper display, make sure your folder structure is like this:</p>
+                    <pre><code>css/<br/>  bootstrap.min.css<br/>  bootstrap-theme.min.css<br/>  bootstrap-theme.min.css.map<br/>fonts/<br/>  icomoon.eot<br/>  icomoon.svg<br/>  icomoon.ttf<br/>  icomoon.woff<br/>  icomoob.woff2</code></pre><br/>
+                    <h4>How to use:</h4>
+                    <p>The icon class can be applied to any element, but realistically works best when applied to inline elements such as <code>&lt;span&gt;</code></p>
+                    <table class="table icon-font-matrix">
+                      <tbody>
+                        <tr>
+                          <td><span class="icon cpu"></span><strong>CPU</strong><code>.icon.cpu</code></td>
+                          <td><span class="icon server"></span><strong>Server</strong><code>.icon.server</code></td>
+                          <td><span class="icon plus"></span><strong>Plus</strong><code>.icon.plus</code></td>
+                          <td><span class="icon remove"></span><strong>Remove (X)</strong><code>.icon.remove</code></td>
+                          <td><span class="icon crown"></span><strong>Crown (Admin)</strong><code>.icon.crown</code></td>
+                        </tr>
+                        <tr>
+                          <td><span class="icon cog"></span><strong>Cog (Thin)</strong><code>.icon.cog</code></td>
+                          <td><span class="icon cog-thick"></span><strong>Cog (Thick)</strong><code>.icon.cog-thick</code></td>
+                          <td><span class="icon graphline"></span><strong>Graph Line</strong><code>.icon.graphline</code></td>
+                          <td><span class="icon flag"></span><strong>Help Flag</strong><code>.icon.flag</code></td>
+                          <td><span class="icon cubo"></span><strong>Cuboctahedron</strong><code>.icon.cubo</code></td>
+                        </tr>
+                        <tr>
+                          <td><span class="icon trash"></span><strong>Trash (Solid)</strong><code>.icon.trash</code></td>
+                          <td><span class="icon trash-outline"></span><strong>Trash (Outline)</strong><code>.icon.trash-outline</code></td>
+                          <td><span class="icon search"></span><strong>Magnifying Glass</strong><code>.icon.search</code></td>
+                          <td><span class="icon wrenches"></span><strong>Wrenches</strong><code>.icon.wrenches</code></td>
+                          <td><span class="icon wrench"></span><strong>Wrench</strong><code>.icon.wrench</code></td>
+                        </tr>
+                        <tr>
+                          <td><span class="icon caret-right"></span><strong>Caret (Right)</strong><code>.icon.caret-right</code></td>
+                          <td><span class="icon caret-left"></span><strong>Caret (Left)</strong><code>.icon.caret-left</code></td>
+                          <td><span class="icon caret-up"></span><strong>Caret (Up)</strong><code>.icon.caret-up</code></td>
+                          <td><span class="icon caret-down"></span><strong>Caret (Down)</strong><code>.icon.caret-down</code></td>
+                          <td><span class="icon duplicate"></span><strong>Duplicate</strong><code>.icon.duplicate</code></td>
+                        </tr>
+                        <tr>
+                          <td><span class="icon arrow-right"></span><strong>Arrow (Right)</strong><code>.icon.arrow-right</code></td>
+                          <td><span class="icon arrow-left"></span><strong>Arrow (Left)</strong><code>.icon.arrow-left</code></td>
+                          <td><span class="icon arrow-up"></span><strong>Arrow (Up)</strong><code>.icon.arrow-up</code></td>
+                          <td><span class="icon arrow-down"></span><strong>Arrow (Down)</strong><code>.icon.arrow-down</code></td>
+                          <td><span class="icon alert-triangle"></span><strong>Alert</strong><code>.icon.alert-triangle</code></td>
+                        </tr>
+                        <tr>
+                          <td><span class="icon location"></span><strong>Map Pin</strong><code>.icon.location</code></td>
+                          <td><span class="icon stop"></span><strong>Stop Sign Alert</strong><code>.icon.stop</code></td>
+                          <td><span class="icon comment"></span><strong>Comment</strong><code>.icon.comment</code></td>
+                          <td><span class="icon comment-discussion"></span><strong>Discussion</strong><code>.icon.comment-discussion</code></td>
+                          <td><span class="icon heart"></span><strong>Heart</strong><code>.icon.heart</code></td>
+                        </tr>
+                        <tr>
+                          <td><span class="icon checkmark"></span><strong>Check Mark</strong><code>.icon.checkmark</code></td>
+                          <td><span class="icon pencil"></span><strong>Pencil</strong><code>.icon.pencil</code></td>
+                          <td><span class="icon cubo-node"></span><strong>Node Cubo</strong><code>.icon.cubo-node</code></td>
+                          <td><span class="icon cubo-uniform"></span><strong>Uniform Width Cubo</strong><code>.icon.cubo-uniform</code></td>
+                          <td><span class="icon clock"></span><strong>Clock</strong><code>.icon.clock</code></td>
+                        </tr>
+                        <tr>
+                          <td><span class="icon star"></span><strong>Star</strong><code>.icon.star</code></td>
+                          <td><span class="icon zap"></span><strong>Lightning (Zap)</strong><code>.icon.zap</code></td>
+                          <td><span class="icon sync"></span><strong>Sync</strong><code>.icon.sync</code></td>
+                          <td><span class="icon link"></span><strong>Hyperlink</strong><code>.icon.link</code></td>
+                          <td><span class="icon user-outline"></span><strong>Profile</strong><code>.icon.user-outline</code></td>
+                        </tr>
+                        <tr>
+                          <td><span class="icon eye"></span><strong>Eye</strong><code>.icon.eye</code></td>
+                          <td><span class="icon download"></span><strong>Download</strong><code>.icon.download</code></td>
+                          <td><span class="icon maximize"></span><strong>Maximize</strong><code>.icon.maximize</code></td>
+                          <td><span class="icon minimize"></span><strong>Minimize</strong><code>.icon.minimize</code></td>
+                          <td><span class="icon google"></span><strong>Google Logo</strong><code>.icon.google</code></td>
+                        </tr>
+                        <tr>
+                          <td><span class="icon google3"></span><strong>Google Logo (Circle)</strong><code>.icon.google3</code></td>
+                          <td><span class="icon google-plus"></span><strong>Google+ Logo</strong><code>.icon.google-plus</code></td>
+                          <td><span class="icon facebook"></span><strong>Facebook Logo</strong><code>.icon.facebook</code></td>
+                          <td><span class="icon facebook2"></span><strong>Facebook Logo (Square)</strong><code>.icon.facebook2</code></td>
+                          <td><span class="icon twitter"></span><strong>Twitter Logo</strong><code>.icon.twitter</code></td>
+                        </tr>
+                        <tr>
+                          <td><span class="icon github"></span><strong>GitHub Logo</strong><code>.icon.github</code></td>
+                          <td><span class="icon trello"></span><strong>Trello Logo</strong><code>.icon.trello</code></td>
+                          <td><span class="icon linkedin"></span><strong>LinkedIn Logo (Square)</strong><code>.icon.linkedin</code></td>
+                          <td><span class="icon linkedin2"></span><strong>LinkedIn Logo</strong><code>.icon.linkedin2</code></td>
+                          <td><span class="icon stackoverflow"></span><strong>Stack Overflow Logo</strong><code>.icon.stackoverflow</code></td>
+                        </tr>
+                        <tr>
+                          <td><span class="icon access-key"></span><strong>Key</strong><code>.icon.access-key</code></td>
+                          <td><span class="icon triangle"></span><strong>Triangle</strong><code>.icon.triangle</code></td>
+                          <td><span class="icon octagon"></span><strong>Octagon</strong><code>.icon.octagon</code></td>
+                          <td><span class="icon dash-a"></span><strong>Dashboards (A)</strong><code>.icon.dash-a</code></td>
+                          <td><span class="icon dash-b"></span><strong>Dashboards (B)</strong><code>.icon.dash-b</code></td>
+                        </tr>
+                        <tr>
+                          <td><span class="icon dash-c"></span><strong>Dashboards (C)</strong><code>.icon.dash-c</code></td>
+                          <td><span class="icon dash-d"></span><strong>Dashboards (D)</strong><code>.icon.dash-d</code></td>
+                          <td><span class="icon dash-e"></span><strong>Dashboards (E)</strong><code>.icon.dash-e</code></td>
+                          <td><span class="icon dash-f"></span><strong>Dashboards (F)</strong><code>.icon.dash-f</code></td>
+                          <td><span class="icon dash-g"></span><strong>Dashboards (G)</strong><code>.icon.dash-g</code></td>
+                        </tr>
+                        <tr>
+                          <td><span class="icon dash-h"></span><strong>Dashboards (H)</strong><code>.icon.dash-h</code></td>
+                          <td><span class="icon dash-i"></span><strong>Dashboards (I)</strong><code>.icon.dash-i</code></td>
+                          <td><span class="icon dash-j"></span><strong>Dashboards (J)</strong><code>.icon.dash-j</code></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Typography Tools -->
+        <section class="docs-section">
+          <div class="container">
+
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-type-tools"></a>
+              <a href="#section-type-tools">
+                <h1>Typography Tools</h1>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h2 class="panel-title">Colored Links</h2>
+                  </div>
+                  <div class="panel-body">
+                    <a href="#" class="link-success">Success Link</a>
+                    <br/><br/>
+                    <pre><code>&lt;a href="#" class="link-success"&gt;Success Link&lt;/a&gt;</code></pre>
+                    <br/>
+                    <a href="#" class="link-danger">Danger Link</a>
+                    <br/><br/>
+                    <pre><code>&lt;a href="#" class="link-danger"&gt;Danger Link&lt;/a&gt;</code></pre>
+                    <br/>
+                    <a href="#" class="link-warning">Warning Link</a>
+                    <br/><br/>
+                    <pre><code>&lt;a href="#" class="link-warning"&gt;Warning Link&lt;/a&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h2 class="panel-title">Colored Text</h2>
+                  </div>
+                  <div class="panel-body">
+                    <span class="text-color-success">Success Text</span>
+                    <br/><br/>
+                    <pre><code>&lt;span class="text-color-success"&gt;Success Text&lt;/span&gt;</code></pre>
+                    <br/>
+                    <span class="text-color-danger">Danger Text</span>
+                    <br/><br/>
+                    <pre><code>&lt;span class="text-color-danger"&gt;Danger Text&lt;/span&gt;</code></pre>
+                    <br/>
+                    <span class="text-color-warning">Warning Text</span>
+                    <br/><br/>
+                    <pre><code>&lt;span class="text-color-warning"&gt;Warning Text&lt;/span&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Margin / Padding Utilities -->
+        <section class="docs-section">
+          <div class="container">
+
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-margin-utilities"></a>
+              <a href="#section-margin-utilities">
+                <h1>Margin / Padding Utilities</h1>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">How to Use</h3>
+                  </div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <p>These are simple utility classes that can be added to an element to avoid writing all new CSS. On the occasion you need to modify the margin or padding in a single instance these are incredibly useful. The classes are named to be self-explanatory and easy to remember.</p>
+                        <p>The flow I like to use these utilities with is:</p>
+                        <ul>
+                          <li>Build the UI using only utility classes and avoiding new CSS as much as possible</li>
+                          <li>Review when done, see if any of the utility class CSS should be worked into a new style or not</li>
+                        </ul>
+                        <p>Some are averse to stacking multiple classes, as it can become hard to scan. I find this not to be a problem, as it allows one to maintain flow without having to swap between markup and styles, resulting in more productivity.</p>
+                      </div>
+                      <div class="col-sm-6">
+                        <table class="table v-center">
+                          <tbody>
+                            <tr class="active">
+                              <th>Margins</th>
+                            </tr>
+                            <tr>
+                              <td><code>.margin-zero</code></td>
+                            </tr>
+                            <tr>
+                              <td><code>.margin-top-zero</code></td>
+                            </tr>
+                            <tr>
+                              <td><code>.margin-right-zero</code></td>
+                            </tr>
+                            <tr>
+                              <td><code>.margin-bottom-zero</code></td>
+                            </tr>
+                            <tr>
+                              <td><code>.margin-left-zero</code></td>
+                            </tr>
+                            <tr class="active">
+                              <th>Padding</th>
+                            </tr>
+                            <tr>
+                              <td><code>.padding-zero</code></td>
+                            </tr>
+                            <tr>
+                              <td><code>.padding-top-zero</code></td>
+                            </tr>
+                            <tr>
+                              <td><code>.padding-right-zero</code></td>
+                            </tr>
+                            <tr>
+                              <td><code>.padding-bottom-zero</code></td>
+                            </tr>
+                            <tr>
+                              <td><code>.padding-left-zero</code></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Code Highlighting -->
+        <section class="docs-section">
+          <div class="container">
+
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-code-highlighting"></a>
+              <a href="#section-code-highlighting">
+                <h1>Code Highlighting</h1>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h2 class="panel-title">How to Use</h2>
+                  </div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <p>There are many code highlighting JS libraries out there, for example we use <a href="http://prismjs.com/" target="_blank">Prism.js</a> to handle code highlighting in our Developer Docs</a>. There is no built-in code highlighting within Bootstrap, so I have created a set of highlighters for manual use. In the future there will be a code highlighting feature built into the theme.</p>
+
+                        <p><strong>Concept</strong><br/>In HTML there are a variety of tags specifically for formatting text. Most websites and applications no longer use these tags as the same effect can be achieved with CSS more cleanly. I have repurposed these tags to function as code highlighters, scoped within code samples.</p>
+                        <p>Taking into consideration the possibility that a external code highlighter might be used in conjunction with this theme, I have put a failsafe in play:</p>
+                        <p>For Code Highlighting to take effect, just add a class to your sample,</p>
+                        <pre><code>&lt;pre class="rainbow-highlighter"&gt;<br/>  &lt;code&gt;&lt;/code&gt;<br/>&lt;/pre&gt;<br/><br/>&lt;code class="rainbow-highlighter"&gt; &lt;/code&gt;</code></pre>
+                        <p>Then use these tags to apply highlights:</p>
+                        <table class="table v-center">
+                          <tbody>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-b"></div>
+                              <td>Bold</td>
+                              <td><code>&lt;b&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><b>Obtuse Mystical Being</b></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-strong"></div>
+                              <td>Important</td>
+                              <td><code>&lt;strong&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><strong>Obtuse Mystical Being</strong></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-i"></div>
+                              <td>Italic</td>
+                              <td><code>&lt;i&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><i>Obtuse Mystical Being</i></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-em"></div>
+                              <td>Emphasized</td>
+                              <td><code>&lt;em&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><em>Obtuse Mystical Being</em></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-mark"></div>
+                              <td>Marked</td>
+                              <td><code>&lt;mark&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><mark>Obtuse Mystical Being</mark></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-small"></div>
+                              <td>Small</td>
+                              <td><code>&lt;small&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><small>Obtuse Mystical Being</small></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-del"></div>
+                              <td>Deleted</td>
+                              <td><code>&lt;del&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><del>Obtuse Mystical Being</del></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-ins"></div>
+                              <td>Inserted</td>
+                              <td><code>&lt;ins&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><ins>Obtuse Mystical Being</ins></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-sub"></div>
+                              <td>Subscript</td>
+                              <td><code>&lt;sub&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><sub>Obtuse Mystical Being</sub></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-sup"></div>
+                              <td>Superscript</td>
+                              <td><code>&lt;sup&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><sup>Obtuse Mystical Being</sup></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-u"></div>
+                              <td>Underline</td>
+                              <td><code>&lt;u&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><u>Obtuse Mystical Being</u></code></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-sm-6">
+                        <p><strong>Example SCSS with Code Highlighting</strong></p>
+                        <pre class="rainbow-highlighter"><code><b>/*<br/>  Basic Button<br/>  -------------------------------------------------<br/>*/</b><br/><br/><mark>@transition-time</mark>: 0.25s;<br/><br/><sup>.btn</sup> {<br/>  <i>height</i>: <strong>32px</strong>;<br/>  <i>line-height</i>: <strong>32px</strong>;<br/>  <i>border-radius</i>: <strong>4px</strong>;<br/>  <i>padding</i>: <strong>0 13px</strong>;<br/>  <i>font-size</i>: <strong>15px</strong>;<br/>  <i>font-weight</i>: <strong>500</strong>;<br/>  <i>background-color</i>: <mark>@btn-default-bg</mark>;<br/><u>  <i>border</i>: <strong>none</strong>;<br/>  <i>text-align</i>: <strong>center</strong>;<br/>  <i>color</i>: <mark>@btn-default-text</mark>;<br/></u><br/>  <i>transition</i>: <strong><br/>    color <mark>@transition-time</mark> ease</strong>,<strong><br/>    background-color <mark>@transition-time</mark> ease</strong>;<br/><br/><b>/* Hover State */</b><br/><ins>&</ins><del>:hover</del> {<br/>  <i>cursor</i>: <strong>pointer</strong>;<br/>  <i>background-color</i>: <mark>@btn-default-bg-hover</mark>;<br/>  <i>color</i>: <mark>@btn-default-text-hover</mark>;<br/>}<br/><br/><b>/* Color Alternatives */</b><br/><ins>&</ins><sup>.blue</sup> {<br/>  <i>background-color</i>: <mark>@btn-blue-bg</mark>;<br/>  <i>color</i>: <mark>@btn-blue-text</mark>;<br/><br/>  <ins>&</ins><del>:hover</del> {<br/>    <i>background-color</i>: <mark>@btn-blue-bg-hover</mark>;<br/>    <i>color</i>: <mark>@btn-blue-text-hover</mark>;<br/>  }<br/>}<br/>}</code></pre>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Flex Box Utilities -->
+        <section class="docs-section">
+          <div class="container">
+
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-flexbox"></a>
+              <a href="#section-flexbox">
+                <h1>Flex Box Utilities</h1>
+              </a>
+            </div>
+            <div class="row">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>These utility classes are designed for use on any element. They are modular and are helful when you want to use a flex-box based layout but don't want to write additional custom classes</p><br/>
+                  <table class="table v-center">
+                    <thead>
+                      <tr>
+                        <th>Class</th>
+                        <th>What it does</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><code>.u-flex</code></td>
+                        <td>When used on an element, sets <code>display: flex;</code>. Usually placed on the parent element in which you want to layout the children with flex box.</td>
+                      </tr>
+                      <tr class="active">
+                        <td><strong>Align Items (ai)</strong></td>
+                        <td>Used on the parent element to vertically align children</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-ai-center</code></td>
+                        <td>Aligns children to their vertical centers</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-ai-stretch</code></td>
+                        <td>Stretches children vertically to match the height of the parent</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-ai-baseline</code></td>
+                        <td>Aligns children vertically to their textual baselines</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-ai-flex-start</code></td>
+                        <td>Aligns children to the start of the flex object (the top of the parent)</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-ai-flex-end</code></td>
+                        <td>Aligns children to the end of the flex object (the bottom of the parent)</td>
+                      </tr>
+                      <tr class="active">
+                        <td><strong>Justify Content (jc)</strong></td>
+                        <td>Used on the parent to control horizontal distribution of children</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-jc-flex-start</code></td>
+                        <td>Aligns children to the beginning of the flex object (the left edge of the parent)</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-jc-flex-end</code></td>
+                        <td>Aligns children to the end of the flex object (the right edge of the parent)</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-jc-center</code></td>
+                        <td>Aligns children to the horizontal center of the flex object</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-jc-space-between</code></td>
+                        <td>Puts as much space between each child as possible</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-jc-space-around</code></td>
+                        <td>Puts as much space around each child as possible</td>
+                      </tr>
+                      <tr class="active">
+                        <td><strong>Align Content (ac)</strong></td>
+                        <td>Used on the parent to control positioning of the children when there are multiple rows of children</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-ac-flex-start</code></td>
+                        <td>Aligns each row of children to the start of the flex object (the top of the parent)</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-ac-flex-end</code></td>
+                        <td>Aligns each row of children to the end of the flex object (the bottom of the parent)</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-ac-center</code></td>
+                        <td>Aligns all rows of children to the parent's vertical center</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-ac-stretch</code></td>
+                        <td>Stretches all rows of children such that they fill the height of the parent</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-ac-space-between</code></td>
+                        <td>Maximizes space between each each row of children</td>
+                      </tr>
+                      <tr>
+                        <td><code>.u-ac-space-around</code></td>
+                        <td>Maximizes space around each each row of children</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="../jquery-ui/jquery-ui.js"></script>
+    <script src="../docs-magic.js"></script>
+  </body>
+</html>

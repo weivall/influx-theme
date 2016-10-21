@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,700,900,700italic' rel='stylesheet' type='text/css'>
+    <link href="../img/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+    <title>Custom Components | Influx Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery UI CSS -->
+    <link href="../jquery-ui/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../dist/css/bootstrap-theme.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="ix-app">
+
+      <!-- Side Navbar -->
+      <nav class="ix-sidebar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand"><span style="font-size:24px;position: relative;top:-3px;" class="icon cubo"></span></span>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Standard <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">Components</li>
+                  <li><a href="#section-jumbotron">Jumbotron</a></li>
+                  <li><a href="#section-typography">Typography</a></li>
+                  <li><a href="#section-labels">Labels</a></li>
+                  <li><a href="#section-buttons">Buttons</a></li>
+                  <li><a href="#section-buttongroups">Button Groups</a></li>
+                  <li><a href="#section-modals">Modals</a></li>
+                  <li><a href="#section-forms">Forms</a></li>
+                  <li><a href="#section-tables">Tables</a></li>
+                  <li><a href="#section-panels">Panels</a></li>
+                  <li><a href="#section-badges">Badges</a></li>
+                  <li><a href="#section-tooltips">Tooltips</a></li>
+                  <li><a href="#section-popovers">Popovers</a></li>
+                  <li><a href="#section-dropdowns">Dropdowns</a></li>
+                  <li><a href="#section-navs">Navs</a></li>
+                  <li><a href="#section-navbars">Navbars</a></li>
+                  <li><a href="#section-alerts">Alerts</a></li>
+                  <li><a href="#section-progressbars">Progress Bars</a></li>
+                  <li><a href="#section-listgroups">List Groups</a></li>
+                  <li><a href="#section-wells">Wells</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Custom <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">Components</li>
+                  <li><a href="#section-minimalpanels">Minimal Panels</a></li>
+                  <li><a href="#section-collapsiblepanels">Collapsible Panels</a></li>
+                  <li><a href="#section-radiopanels">Radio Panels</a></li>
+                  <li><a href="#section-heatmap">Heatmap Progress Bars</a></li>
+                  <li><a href="#section-slidertoggles">Slider Toggles</a></li>
+                  <li><a href="#section-hero">Hero</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Utilities <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#section-colorpalette">Color Palette</a></li>
+                  <li><a href="#section-iconfont">Icon Font</a></li>
+                  <li><a href="#section-type-tools">Typography Tools</a></li>
+                  <li><a href="#section-margin-utilities">Margin / Padding Utilities</a></li>
+                  <li><a href="#section-code-highlighting">Code Highlighting</a></li>
+                  <li><a href="#section-flexbox">Flex Box Utilities</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="dark-theme.html">Dark Theme</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <!-- App Heading -->
+      <nav class="ix-app-heading">
+        <div class="container">
+          <div class="ix-app-heading--container">
+
+          <div
+        </div>
+      </nav>
+
+      <!-- App Wrapper -->
+      <div class="ix-app-wrapper">
+
+        <!-- Hero -->
+        <div class="hero hero-light" style="background-image: url(img/tibet.jpg);">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <h1>Influx Bootstrap Theme</h1>
+                <h4>Design Documentation &mdash; v0.11</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Minimal Panels -->
+        <section class="docs-section">
+          <div class="container">
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-minimalpanels"></a>
+              <a href="#section-minimalpanels">
+                <h1>Minimal Panels</h1>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="panel panel-minimal">
+                  <div class="panel-heading">
+                    <h2 class="panel-title">Panel title goes here</h2>
+                  </div>
+                  <div class="panel-body">
+                    <p>Minimal panels were created for use in the Enterprise Application. The main difference from other panels is that the title is not contained within the panel. This helps differentiate vertically stacked panels from each other. Panel titles are styled similarly to <code>.page-header</code></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Collapsible Panels -->
+        <section class="docs-section">
+          <div class="container">
+
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-collapsiblepanels"></a>
+              <a href="#section-collapsiblepanels">
+                <h1>Collapsible Panels</h1>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h2 class="panel-title">How to Use</h2>
+                  </div>
+                  <div class="panel-body">
+                    <p>Collapsible panels are a combination of some custom CSS and Bootstrap's built in <a href="http://getbootstrap.com/javascript/#collapse" target="_blank">Collapse</a> javascript. This component is useful when you want to list multiple items in rows, and each item has a too much attached information to show all at once.</p>
+                    <p>Collapsible panels can behave one of two ways:</p>
+                    <ol>
+                      <li><strong>Default Style</strong> - Collapsible panels can be opened / closed separately of each other.</li>
+                      <li><strong>Accordion Style</strong> - When only one collapsible panel in a list can be open at one time. Opening a panel closes all other open panels.</li>
+                    </ol>
+                    <hr/>
+                    <p><strong>Implementation</strong></p>
+                    <p>Since the collapse functionality is built-in, this is pretty straightforward. Collapse works by wrapping an element with a collapsing <code>&lt;div&gt;</code> and assigning it a trigger via custom HTML attributes. In these collapsible panels, <code><span style="color:#A4A8B6;">div</span>.panel-body</code> gets wrapped.</p>
+                    <pre><code>&lt;div class="panel panel-collapse"&gt;<br/>  &lt;div class="panel-heading"&gt;<br/>    &lt;h2 class="panel-title"&gt;<br/>      &lt;a role="button" data-toggle="collapse" class="collapsed" href="<span style="color:#22ADF6;">#panel-id-here</span>"&gt;<br/>        &lt;span class="caret"&gt;&lt;/span&gt; Click to Toggle<br/>      &lt;/a&gt;<br/>    &lt;/h2&gt;<br/>  &lt;/div&gt;<br/>  &lt;div class="collapse" id="<span style="color:#22ADF6;">panel-id-here</span>" style="height: 0px;"&gt;<br/>    &lt;div class="panel-body"&gt;<br/>      ...<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+                    <p>Adding <code>style="height: 0px;"</code> sets the collapsible panel to be closed by default</p>
+                    <hr/>
+                    <p><strong>Size Modifiers & Contextual Alternatives</strong></p>
+                    <table class="table v-center">
+                      <tbody>
+                        <tr>
+                          <td><strong>Small</strong></td>
+                          <td><code><span style="color:#A4A8B6;">div.panel.panel-collapse</span>.panel-collapse-sm</code></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Grey</strong></td>
+                          <td><code><span style="color:#A4A8B6;">div.panel.panel-collapse</span>.panel-collapse-grey</code></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Mint</strong></td>
+                          <td><code><span style="color:#A4A8B6;">div.panel.panel-collapse</span>.panel-collapse-mint</code></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Frost</strong></td>
+                          <td><code><span style="color:#A4A8B6;">div.panel.panel-collapse</span>.panel-collapse-frost</code></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <p class="margin-top-zero">Default Version</p>
+                <div class="panel panel-collapse">
+                  <div class="panel-heading">
+                    <h2 class="panel-title"><a role="button" data-toggle="collapse" class="collapsed" href="#collapsePanel"><span class="caret"></span> Click to Toggle</a></h2>
+                  </div>
+                  <div class="collapse" id="collapsePanel">
+                    <div class="panel-body">
+                      <p>Chillwave cardigan fam, wayfarers neutra waistcoat pork belly tilde succulents photo booth artisan deep v. Kombucha offal taxidermy XOXO kitsch. Small batch plaid synth, blog tacos neutra pug blue bottle beard put a bird on it glossier. Paleo XOXO microdosing glossier whatever meggings. 3 wolf moon fam man braid pabst cold-pressed yr. Try-hard activated charcoal fixie portland, 3 wolf moon blue bottle quinoa butcher tacos. Tofu pickled gastropub, skateboard intelligentsia kickstarter schlitz YOLO green juice cliche.</p>
+                    </div>
+                  </div>
+                </div>
+                <br/>
+                <p>Grey Text Alternative</p>
+                <div class="panel panel-collapse panel-collapse-grey">
+                  <div class="panel-heading">
+                    <h2 class="panel-title"><a role="button" data-toggle="collapse" class="collapsed" href="#collapsePanel2"><span class="caret"></span> Click to Toggle</a></h2>
+                  </div>
+                  <div class="collapse" id="collapsePanel2">
+                    <div class="panel-body">
+                      <p>Venmo artisan raclette before they sold out banjo, salvia chia bushwick post-ironic flexitarian cold-pressed 90's. Hot chicken scenester cardigan activated charcoal, man braid man bun crucifix bicycle rights etsy. Meh health goth williamsburg four loko tofu, prism humblebrag ethical tilde 8-bit lumbersexual PBR&B wolf. Semiotics selfies flannel, tousled vape kickstarter microdosing mlkshk small batch bicycle rights chillwave swag vice. Tbh subway tile locavore enamel pin ramps keytar raw denim XOXO. Squid flexitarian ugh, umami food truck distillery pickled narwhal church-key. Bushwick authentic chicharrones vice activated charcoal sustainable, lyft af heirloom hoodie flexitarian small batch fashion axe.</p>
+                    </div>
+                  </div>
+                </div>
+                <br/>
+                <p>Mint (Kapacitor Theme)</p>
+                <div class="panel panel-collapse panel-collapse-mint">
+                  <div class="panel-heading">
+                    <h2 class="panel-title"><a role="button" data-toggle="collapse" class="collapsed" href="#collapsePanel3"><span class="caret"></span> Click to Toggle</a></h2>
+                  </div>
+                  <div class="collapse" id="collapsePanel3">
+                    <div class="panel-body">
+                      <p>Wayfarers flexitarian brooklyn hoodie heirloom enamel pin. Everyday carry bitters kale chips try-hard brooklyn pickled twee, shoreditch forage lomo put a bird on it gochujang synth. Kinfolk tumblr microdosing chicharrones, migas cred single-origin coffee hot chicken tofu cardigan shabby chic four dollar toast. Blue bottle pickled aesthetic everyday carry yuccie. Brunch disrupt 8-bit jean shorts, banjo polaroid fingerstache chartreuse mustache mixtape intelligentsia coloring book prism franzen wolf. Banjo selvage biodiesel schlitz lumbersexual. Kickstarter retro forage occupy freegan swag, seitan messenger bag fashion axe gluten-free dreamcatcher pitchfork green juice.</p>
+                    </div>
+                  </div>
+                </div>
+                <br/>
+                <p>Frost (Grafana Theme)</p>
+                <div class="panel panel-collapse panel-collapse-frost">
+                  <div class="panel-heading">
+                    <h2 class="panel-title"><a role="button" data-toggle="collapse" class="collapsed" href="#collapsePanel4"><span class="caret"></span> Click to Toggle</a></h2>
+                  </div>
+                  <div class="collapse" id="collapsePanel4">
+                    <div class="panel-body">
+                      <p>Paleo typewriter pug 90's, organic post-ironic photo booth offal fanny pack lo-fi actually freegan pickled. Hot chicken actually cardigan, beard echo park master cleanse pug banjo fanny pack heirloom chia pork belly brooklyn microdosing. Coloring book butcher 3 wolf moon bespoke. Glossier green juice umami fashion axe microdosing, ennui pour-over sustainable venmo man braid man bun. 90's dreamcatcher brooklyn blog. Pork belly subway tile deep v, vaporware migas enamel pin 3 wolf moon venmo craft beer ugh raclette pinterest yuccie unicorn. Church-key letterpress flexitarian, chartreuse migas man bun kombucha portland kale chips.</p>
+                    </div>
+                  </div>
+                </div>
+                <br/>
+                <p>Small Size</p>
+                <div class="panel panel-collapse panel-collapse-sm">
+                  <div class="panel-heading">
+                    <h2 class="panel-title"><a role="button" data-toggle="collapse" class="collapsed" href="#collapsePanel5"><span class="caret"></span> Click to Toggle</a></h2>
+                  </div>
+                  <div class="collapse" id="collapsePanel5">
+                    <div class="panel-body">
+                      <p>Vape lomo truffaut cray bitters af vaporware, fashion axe chillwave sustainable forage pop-up. IPhone try-hard beard sartorial, migas gastropub pok pok chartreuse williamsburg cornhole man braid. Pork belly hell of letterpress irony, scenester cliche mumblecore before they sold out four loko readymade lumbersexual quinoa banjo gentrify. Poke you probably haven't heard of them man bun cray blog. Irony pickled ethical selfies. YOLO irony echo park next level blog lyft, poke thundercats skateboard street art everyday carry. Put a bird on it XOXO flexitarian green juice single-origin coffee kitsch heirloom, hammock fanny pack normcore tote bag hella.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h2 class="panel-title">Accordion Style</h2>
+                  </div>
+                  <div class="panel-body">
+                    <p>This effect can be achieved by simply wrapping all your collapsible panels with <code>div.panel-group</code> and adding the <code>data-parent</code> attribute to collapse element.</p>
+                    <pre><code><span style="color:#22ADF6;">&lt;div class="panel-group" id="panel-group-id" role="tablist"&gt;</span><br/>  &lt;div class="panel panel-collapse"&gt;<br/>    &lt;div class="panel-heading"&gt;<br/>      &lt;h2 class="panel-title"&gt;<br/>        &lt;a role="button" data-toggle="collapse" class="collapsed" <span style="color:#22ADF6;">data-parent="#panel-group-id"</span> href="#panel-id-1"&gt;<br/>          &lt;span class="caret"&gt;&lt;/span&gt; Click to Toggle<br/>        &lt;/a&gt;<br/>      &lt;/h2&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="collapse" id="panel-id-1"&gt;<br/>      &lt;div class="panel-body"&gt;<br/>        ...<br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/><br/>  &lt;div class="panel panel-collapse"&gt;<br/>    &lt;div class="panel-heading"&gt;<br/>      &lt;h2 class="panel-title"&gt;<br/>        &lt;a role="button" data-toggle="collapse" class="collapsed" <span style="color:#22ADF6;">data-parent="#panel-group-id"</span> href="#panel-id-2"&gt;<br/>          &lt;span class="caret"&gt;&lt;/span&gt; Click to Toggle<br/>        &lt;/a&gt;<br/>      &lt;/h2&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="collapse" id="panel-id-2"&gt;<br/>      &lt;div class="panel-body"&gt;<br/>        ...<br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/><br/>  &lt;div class="panel panel-collapse"&gt;<br/>    &lt;div class="panel-heading"&gt;<br/>      &lt;h2 class="panel-title"&gt;<br/>        &lt;a role="button" data-toggle="collapse" class="collapsed" <span style="color:#22ADF6;">data-parent="#panel-group-id"</span> href="#panel-id-3"&gt;<br/>          &lt;span class="caret"&gt;&lt;/span&gt; Click to Toggle<br/>        &lt;/a&gt;<br/>      &lt;/h2&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="collapse" id="panel-id-3"&gt;<br/>      &lt;div class="panel-body"&gt;<br/>        ...<br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/><span style="color:#22ADF6;">&lt;/div&gt;</span></code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <p class="margin-top-zero">Example</p>
+                <div class="panel-group" id="accordionPanelGroup" role="tablist">
+                  <div class="panel panel-collapse">
+                    <div class="panel-heading">
+                      <h2 class="panel-title"><a role="button" data-parent="#accordionPanelGroup" data-toggle="collapse" class="collapsed" href="#accordionPanel1"><span class="caret"></span> Click to Toggle</a></h2>
+                    </div>
+                    <div class="collapse" id="accordionPanel1">
+                      <div class="panel-body">
+                        <p>Vape lomo truffaut cray bitters af vaporware, fashion axe chillwave sustainable forage pop-up. IPhone try-hard beard sartorial, migas gastropub pok pok chartreuse williamsburg cornhole man braid. Pork belly hell of letterpress irony, scenester cliche mumblecore before they sold out four loko readymade lumbersexual quinoa banjo gentrify. Poke you probably haven't heard of them man bun cray blog. Irony pickled ethical selfies. YOLO irony echo park next level blog lyft, poke thundercats skateboard street art everyday carry. Put a bird on it XOXO flexitarian green juice single-origin coffee kitsch heirloom, hammock fanny pack normcore tote bag hella.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-collapse">
+                    <div class="panel-heading">
+                      <h2 class="panel-title"><a role="button" data-parent="#accordionPanelGroup" data-toggle="collapse" class="collapsed" href="#accordionPanel2"><span class="caret"></span> Click to Toggle</a></h2>
+                    </div>
+                    <div class="collapse" id="accordionPanel2">
+                      <div class="panel-body">
+                        <p>Vape lomo truffaut cray bitters af vaporware, fashion axe chillwave sustainable forage pop-up. IPhone try-hard beard sartorial, migas gastropub pok pok chartreuse williamsburg cornhole man braid. Pork belly hell of letterpress irony, scenester cliche mumblecore before they sold out four loko readymade lumbersexual quinoa banjo gentrify. Poke you probably haven't heard of them man bun cray blog. Irony pickled ethical selfies. YOLO irony echo park next level blog lyft, poke thundercats skateboard street art everyday carry. Put a bird on it XOXO flexitarian green juice single-origin coffee kitsch heirloom, hammock fanny pack normcore tote bag hella.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-collapse">
+                    <div class="panel-heading">
+                      <h2 class="panel-title"><a role="button" data-parent="#accordionPanelGroup" data-toggle="collapse" class="collapsed" href="#accordionPanel3"><span class="caret"></span> Click to Toggle</a></h2>
+                    </div>
+                    <div class="collapse" id="accordionPanel3">
+                      <div class="panel-body">
+                        <p>Vape lomo truffaut cray bitters af vaporware, fashion axe chillwave sustainable forage pop-up. IPhone try-hard beard sartorial, migas gastropub pok pok chartreuse williamsburg cornhole man braid. Pork belly hell of letterpress irony, scenester cliche mumblecore before they sold out four loko readymade lumbersexual quinoa banjo gentrify. Poke you probably haven't heard of them man bun cray blog. Irony pickled ethical selfies. YOLO irony echo park next level blog lyft, poke thundercats skateboard street art everyday carry. Put a bird on it XOXO flexitarian green juice single-origin coffee kitsch heirloom, hammock fanny pack normcore tote bag hella.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Radio Panels -->
+        <section class="docs-section">
+          <div class="container">
+
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-radiopanels"></a>
+              <a href="#section-radiopanels">
+                <h1>Radio Panels</h1>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <p>Disabled Radio Panel <code>.panel-disabled.panel-anim</code></p>
+                <button class="panel panel-anim panel-disabled">
+                  <div class="panel-checkmark">!!</div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title">A</h3>
+                  </div>
+                  <div class="panel-body">
+                    <p><strong>10GB</strong> Storage</p>
+                    <p><strong>1GB</strong> RAM</p>
+                    <p><strong>1</strong> Core</p>
+                  </div>
+                </button>
+              </div><!-- /.col-sm-4 -->
+
+              <div class="col-sm-4">
+                <p>Radio Panel <code>.panel-available.panel-anim</code></p>
+                <button class="panel panel-anim panel-available">
+                  <div class="panel-checkmark">!!</div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title">B</h3>
+                  </div>
+                  <div class="panel-body">
+                    <p><strong>20GB</strong> Storage</p>
+                    <p><strong>2GB</strong> RAM</p>
+                    <p><strong>2</strong> Cores</p>
+                  </div>
+                </button>
+              </div><!-- /.col-sm-4 -->
+
+              <div class="col-sm-4">
+                <p>Active Radio Panel <code>.panel-selected.panel-anim</code></p>
+                <button class="panel panel-anim panel-selected">
+                  <div class="panel-checkmark">!!</div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title">C</h3>
+                  </div>
+                  <div class="panel-body">
+                    <p><strong>64GB</strong> Storage</p>
+                    <p><strong>8GB</strong> RAM</p>
+                    <p><strong>4</strong> Cores</p>
+                  </div>
+                </button>
+              </div><!-- /.col-sm-4 -->
+
+            </div><!-- / .row -->
+          </div>
+        </section>
+
+        <!-- Heatmap Progress Bars -->
+        <section class="docs-section">
+          <div class="container">
+
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-heatmap"></a>
+              <a href="#section-heatmap">
+                <h1>Heatmap Progress Bars</h1>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h2 class="panel-title">How to Use</h2>
+                  </div>
+                  <div class="panel-body">
+                    <p>For when you want to show a little more urgency when a progress bar is filling up. Useful for <strong>Disk Space</strong> or <strong>Plan Usage</strong>.</p>
+                    <p><strong>Implementation</strong><br/>You must use the inverse of your value, since the design shows the value in the negative space. For example, if you wanted to display <code>20%</code> progress, you would use <code>80%</code> instead.</p>
+                    <pre><code data-lang="html">&lt;div class="progress progress-heatmap"&gt;<br/>  &lt;div class="progress-bar" style="width: 40%;"&gt;<br/>    &lt;span&gt;40%&lt;/span&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+                    <p><em>NOTE:</em> Since the modifier class is applied to the parent element insted of the progress bar itself, there is no need for a modifier class on <code>div.progress-bar</code></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="margin-top-zero">Examples</h4>
+                <br/>
+                <div class="progress progress-heatmap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 66%"><span class="sr-only">66% Complete</span></div>
+                </div>
+                <div class="progress progress-heatmap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%"><span class="sr-only">55% Complete</span></div>
+                </div>
+                <div class="progress progress-heatmap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100" style="width: 44%"><span class="sr-only">44% Complete</span></div>
+                </div>
+                <div class="progress progress-heatmap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%"><span class="sr-only">33% Complete</span></div>
+                </div>
+                <div class="progress progress-heatmap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 22%"><span class="sr-only">22% Complete</span></div>
+                </div>
+                <div class="progress progress-heatmap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100" style="width: 11%"><span class="sr-only">11% Complete</span></div>
+                </div>
+                <br/>
+                <h4>Size Modifiers</h4>
+                <br/>
+                <div class="progress progress-heatmap progress-lg">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%"><span class="sr-only">12% Complete</span></div>
+                </div>
+                <div class="progress progress-heatmap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%"><span class="sr-only">12% Complete</span></div>
+                </div>
+                <div class="progress progress-heatmap progress-sm">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%"><span class="sr-only">12% Complete</span></div>
+                </div>
+                <div class="progress progress-heatmap progress-xs">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%"><span class="sr-only">12% Complete</span></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Slider Toggles -->
+        <section class="docs-section">
+          <div class="container">
+
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-slidertoggles"></a>
+              <a href="#section-slidertoggles">
+                <h1>Slider Toggles</h1>
+              </a>
+              <p>Uses jQuery UI. Initialized with javascript, see options <a href="http://api.jqueryui.com/slider/#option-animate" target="_blank">here</a>.
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <p>Default Slider</p>
+                    <div class="slider-container slider-default">
+                      <div class="slider-label">Small</div>
+                      <div class="slider-cell"><div id="exampleSlider1"></div></div>
+                      <div class="slider-label">Large</div>
+                    </div>
+
+                    <p>Primary Slider</p>
+                    <div class="slider-container slider-primary">
+                      <div class="slider-label">Small</div>
+                      <div class="slider-cell"><div id="exampleSlider2"></div></div>
+                      <div class="slider-label">Large</div>
+                    </div>
+
+                    <p>Success Slider</p>
+                    <div class="slider-container slider-success">
+                      <div class="slider-label">Small</div>
+                      <div class="slider-cell"><div id="exampleSlider3"></div></div>
+                      <div class="slider-label">Large</div>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Horizontal Sliders with 8 Steps, for use on plan selector</div>
+                </div><!-- / .panel -->
+              </div><!-- / .col-md-6 -->
+
+              <div class="col-md-6">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <p>Info Slider</p>
+                    <div class="slider-container slider-info">
+                      <div class="slider-label">Small</div>
+                      <div class="slider-cell"><div id="exampleSlider4"></div></div>
+                      <div class="slider-label">Large</div>
+                    </div>
+
+                    <p>Warning Slider</p>
+                    <div class="slider-container slider-warning">
+                      <div class="slider-label">Small</div>
+                      <div class="slider-cell"><div id="exampleSlider5"></div></div>
+                      <div class="slider-label">Large</div>
+                    </div>
+
+                    <p>Danger Slider</p>
+                    <div class="slider-container slider-danger">
+                      <div class="slider-label">Small</div>
+                      <div class="slider-cell"><div id="exampleSlider6"></div></div>
+                      <div class="slider-label">Large</div>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Horizontal Sliders with 8 Steps, for use on plan selector</div>
+                </div><!-- / .panel -->
+              </div><!-- / .col-md-6 -->
+
+              <div class="col-md-12">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <div class="slider-container slider-primary">
+                      <div class="slider-label">Small</div>
+                      <div class="slider-cell"><div id="exampleRangeSlider"></div></div>
+                      <div class="slider-label">Large</div>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Example of a range slider. <code>min: 1 / max: 100 / step: 1</code></div>
+                </div><!-- / .panel -->
+
+                <div class="panel panel-default">
+                  <div class="panel-body slider-plan-picker-example">
+                    <div class="slider-container slider-plan-picker">
+                      <div class="slider-cell">
+                        <div id="exampleSlider7">
+                          <div class="slider-increment" style="left:0%"></div>
+                          <div class="slider-increment" style="left:20%"></div>
+                          <div class="slider-increment" style="left:40%"></div>
+                          <div class="slider-increment" style="left:60%"></div>
+                          <div class="slider-increment" style="left:80%"></div>
+                          <div class="slider-increment" style="left:100%"></div>
+                          <div class="slider-overlay uno" data-name="uno"></div>
+                          <div class="slider-overlay kilowatt" style="left:30%" data-name="kilowatt"></div>
+                          <div class="slider-overlay megawatt" style="left:80%" data-name="megawatt"></div>
+                          <div id="plan-picker-handle" class="ui-slider-handle ui-state-default ui-corner-all slider-pos-3" style="left:40%;">
+                            <div class="slider-handle"></div>
+                            <div class="slider-pulse"></div>
+                          </div>
+                          <div class="most-popular-plan">Most Popular</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Example of a <code>.slider-plan-picker</code> and using some custom javascript for resizing the handle</div>
+                </div><!-- / .panel -->
+              </div><!-- / .col-md-12 -->
+            </div><!-- / .row -->
+          </div>
+        </section>
+
+        <!-- Hero -->
+        <section class="docs-section">
+          <div class="container">
+
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-hero"></a>
+              <a href="#section-hero">
+                <h1>Hero</h1>
+              </a>
+            </div>
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h2 class="panel-title">How to use it</h2>
+              </div>
+              <div class="panel-body">
+                <div class="col-sm-6">
+                  <p><strong>Theory</strong><br/><br/>In design speak a "Hero" is the large (sometimes massive) full-width header atop a page. They typically have a visually stunning photo or illustration, sometimes a video, and are the most attention grabbing element on the page. A lot of landing pages have heros with a bold tagline and a call to action button. Heros not only look pretty but tend to convert pretty well also. Heros work best when the content inside is focused, short, and has a clear call to action button. Heros are usually the first element on the page, but this is not a hard rule.</p>
+                </div>
+                <div class="col-sm-6">
+                  <p><strong>Implementation</strong><br/><br/>In bootstrap, page sections are designated with a <code>div.container</code>. This element has margins on either side, giving it the appearance of being centered. Because Heros are full-width by definition, you must wrap the container you want to be a hero, in the hero div</p>
+                  <pre><code>&lt;div class="hero hero-light"&gt;<br/>  &lt;div class="container"&gt;<br/>    ...<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+                  <p><strong>Hero Types</strong><br/><br/><code>hero</code> Assumes a light colored background, uses dark text for contrast<br/><code>hero-light</code> Assumes a dark colored background, uses light text for contrast</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Hero Example -->
+        <div class="hero hero-light" style="background-image: url(img/graphs.svg);">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <h1>Hero Container</h1>
+                <p>Pretty cool huh?</p><br/><br/>
+                <a href="#" class="btn btn-lg btn-success" role="button">Click me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="../jquery-ui/jquery-ui.js"></script>
+    <script src="../docs-magic.js"></script>
+  </body>
+</html>

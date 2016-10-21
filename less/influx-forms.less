@@ -1,0 +1,145 @@
+//
+// Form Styles
+// --------------------------------------------------
+.panel form {
+  margin-left: -9px;
+  margin-right: -9px;
+  width: calc(100% + 18px);
+  display: inline-block;
+
+  .alert {
+    margin-bottom: 0px;
+  }
+  &.form-inline {
+    padding-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  &.form-horizontal {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+.panel-body:first-child > form {
+  padding-top: 15px;
+}
+
+// Form Add-Ons
+.input-group-addon {
+  border: 2px solid @g17-whisper;
+  background-color: @g19-ghost;
+  color: @g10-wolf;
+
+  // Error State
+  .has-error & {
+    background-color: @c-flan;
+    color: @c-fire;
+    border-color: @c-tungsten;
+  }
+
+  // Success State
+  .has-success & {
+    background-color: @c-mint;
+    color: @c-viridian;
+    border-color: @c-honeydew;
+  }
+
+  // Warning State
+  .has-warning & {
+    background-color: @c-cremedeviolette;
+    color: @c-star;
+    border-color: @c-moonstone;
+  }
+}
+
+// Base Input Styles
+.form-control {
+  border: 2px solid @g17-whisper;
+  border-radius: @border-radius-base;
+  color: @g9-mountain;
+  background-color: @g20-white;
+  font-weight: 500;
+  box-shadow: none;
+  outline: none;
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+
+  &:focus {
+    border-color: @c-laser;
+    box-shadow: 0 0 8px fadeout(@c-hydrogen, 50%);
+    background-color: @g20-white;
+  }
+  // Modify background color to be different than .panel
+  .panel-body > form &,
+  .panel-body > form &:focus {
+    background-color: @g20-white;
+  }
+  // Style Placeholder Text
+  &::-webkit-input-placeholder { color: @g13-mist;font-weight: 400; /* Chrome/Opera/Safari */ }
+  &::-moz-placeholder { color: @g13-mist;font-weight: 400; /* Firefox 19+ */ }
+  &:-ms-input-placeholder { color: @g13-mist;font-weight: 400; /* IE 10+ */ }
+  &:-moz-placeholder { color: @g13-mist;font-weight: 400; /* Firefox 18- */ }
+
+  // Disabled State
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] &,
+  &.disabled {
+    background-color: @g17-whisper !important;
+    color: @g9-mountain !important;
+  }
+
+  .has-error &,
+  .has-success &,
+  .has-warning & {
+    box-shadow: none;
+    transition:
+      color 0.25s ease,
+      background-color 0.25s ease,
+      border-color 0.4s ease,
+      box-shadow 0.4s ease;
+
+      &:focus {
+        background-color: @g20-white;
+      }
+  }
+
+  // Success State
+  .has-success & {
+    border-color: @c-honeydew;
+    &:focus {
+      border-color: @c-rainforest;
+      box-shadow: 0 0 8px rgba(124,228,144,0.5);
+    }
+  }
+
+  // Error State
+  .has-error & {
+    background-color: @c-flan;
+    border-color: @c-tungsten;
+    &:focus {
+      background-color: @g20-white;
+      border-color: @c-dreamsicle;
+      box-shadow: 0 0 8px rgba(255,133,100,0.5);
+    }
+  }
+
+  // Warning State
+  .has-warning & {
+    border-color: @c-moonstone;
+    &:focus {
+      border-color: @c-comet;
+      box-shadow: 0 0 8px rgba(147,148,255,0.5);
+    }
+  }
+}
+
+.form-group label {
+  font-weight: 400;
+  color: @g11-sidewalk;
+}

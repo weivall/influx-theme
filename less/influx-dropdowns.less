@@ -1,0 +1,54 @@
+//
+// Dropdowns
+// --------------------------------------------------
+
+.dropdown-menu {
+  box-shadow: none;
+  padding: 4px;
+  border: 0;
+  background-color: @g4-onyx;
+
+  .divider {
+    margin: 5px 0;
+    background-color: @g6-smoke;
+    height: 2px;
+  }
+  .dropdown-header {
+    color: @g8-storm;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  > li > a {
+    transition:
+      background-color 0.25s ease,
+      color 0.25s ease;
+    color: @g14-chromium;
+    font-weight: 400;
+    padding: 4px 11px;
+    border-radius: 3px;
+
+    .badge {
+      background-color: @g2-kevlar;
+      color: @c-comet;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: @g7-graphite;
+      color: @g20-white;
+    }
+  }
+
+  > .active > a,
+  > .active > a:hover,
+  > .active > a:focus {
+    .gradient-h(@c-pool,@c-comet);
+    font-weight: 600;
+
+    .badge {
+      background-color: @g20-white;
+      color: @c-comet;
+    }
+  }
+}

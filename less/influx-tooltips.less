@@ -1,0 +1,193 @@
+//
+// Tooltips
+// --------------------------------------------------
+@tooltip-background: @g6-smoke;
+@tooltip-text-color: @g20-white;
+
+// Wrapper for the tooltip content
+.tooltip-inner {
+  padding: 4px 8px;
+  color: @tooltip-text-color;
+  text-align: center;
+  background-color: @tooltip-background;
+  border-radius: @border-radius-base;
+  font-size: 13px;
+  font-weight: 600;
+}
+.tooltip {
+  &.top .tooltip-arrow {
+    border-top-color: @tooltip-background;
+  }
+  &.top-left .tooltip-arrow {
+    border-top-color: @tooltip-background;
+  }
+  &.top-right .tooltip-arrow {
+    border-top-color: @tooltip-background;
+  }
+  &.right .tooltip-arrow {
+    border-right-color: @tooltip-background;
+  }
+  &.left .tooltip-arrow {
+    border-left-color: @tooltip-background;
+  }
+  &.bottom .tooltip-arrow {
+    border-bottom-color: @tooltip-background;
+  }
+  &.bottom-left .tooltip-arrow {
+    border-bottom-color: @tooltip-background;
+  }
+  &.bottom-right .tooltip-arrow {
+    border-bottom-color: @tooltip-background;
+  }
+}
+
+.tooltip-warning + .tooltip {
+  .tooltip-inner {
+    background-color: @c-star;
+    color: @c-cremedeviolette;
+  }
+  &.top .tooltip-arrow {
+      border-top-color: @c-star;
+    }
+    &.top-left .tooltip-arrow {
+      border-top-color: @c-star;
+    }
+    &.top-right .tooltip-arrow {
+      border-top-color: @c-star;
+    }
+    &.right .tooltip-arrow {
+      border-right-color: @c-star;
+    }
+    &.left .tooltip-arrow {
+      border-left-color: @c-star;
+    }
+    &.bottom .tooltip-arrow {
+      border-bottom-color: @c-star;
+    }
+    &.bottom-left .tooltip-arrow {
+      border-bottom-color: @c-star;
+    }
+    &.bottom-right .tooltip-arrow {
+      border-bottom-color: @c-star;
+    }
+}
+.tooltip-danger + .tooltip {
+  .tooltip-inner {
+    background-color: @g1-raven;
+    color: @c-dreamsicle;
+  }
+  &.top .tooltip-arrow {
+      border-top-color: @g1-raven;
+    }
+    &.top-left .tooltip-arrow {
+      border-top-color: @g1-raven;
+    }
+    &.top-right .tooltip-arrow {
+      border-top-color: @g1-raven;
+    }
+    &.right .tooltip-arrow {
+      border-right-color: @g1-raven;
+    }
+    &.left .tooltip-arrow {
+      border-left-color: @g1-raven;
+    }
+    &.bottom .tooltip-arrow {
+      border-bottom-color: @g1-raven;
+    }
+    &.bottom-left .tooltip-arrow {
+      border-bottom-color: @g1-raven;
+    }
+    &.bottom-right .tooltip-arrow {
+      border-bottom-color: @g1-raven;
+    }
+}
+.tooltip-success + .tooltip {
+  .tooltip-inner {
+    background-color: @c-rainforest;
+    color: @c-mint;
+  }
+  &.top .tooltip-arrow {
+      border-top-color: @c-rainforest;
+    }
+    &.top-left .tooltip-arrow {
+      border-top-color: @c-rainforest;
+    }
+    &.top-right .tooltip-arrow {
+      border-top-color: @c-rainforest;
+    }
+    &.right .tooltip-arrow {
+      border-right-color: @c-rainforest;
+    }
+    &.left .tooltip-arrow {
+      border-left-color: @c-rainforest;
+    }
+    &.bottom .tooltip-arrow {
+      border-bottom-color: @c-rainforest;
+    }
+    &.bottom-left .tooltip-arrow {
+      border-bottom-color: @c-rainforest;
+    }
+    &.bottom-right .tooltip-arrow {
+      border-bottom-color: @c-rainforest;
+    }
+}
+.tooltip-info + .tooltip {
+  .tooltip-inner {
+    background-color: @g19-ghost;
+    color: @g8-storm;
+  }
+  &.top .tooltip-arrow {
+      border-top-color: @g19-ghost;
+    }
+    &.top-left .tooltip-arrow {
+      border-top-color: @g19-ghost;
+    }
+    &.top-right .tooltip-arrow {
+      border-top-color: @g19-ghost;
+    }
+    &.right .tooltip-arrow {
+      border-right-color: @g19-ghost;
+    }
+    &.left .tooltip-arrow {
+      border-left-color: @g19-ghost;
+    }
+    &.bottom .tooltip-arrow {
+      border-bottom-color: @g19-ghost;
+    }
+    &.bottom-left .tooltip-arrow {
+      border-bottom-color: @g19-ghost;
+    }
+    &.bottom-right .tooltip-arrow {
+      border-bottom-color: @g19-ghost;
+    }
+}
+.tooltip-primary + .tooltip {
+  .tooltip-inner {
+    background-color: @c-pool;
+    color: @c-yeti;
+  }
+  &.top .tooltip-arrow {
+      border-top-color: @c-pool;
+    }
+    &.top-left .tooltip-arrow {
+      border-top-color: @c-pool;
+    }
+    &.top-right .tooltip-arrow {
+      border-top-color: @c-pool;
+    }
+    &.right .tooltip-arrow {
+      border-right-color: @c-pool;
+    }
+    &.left .tooltip-arrow {
+      border-left-color: @c-pool;
+    }
+    &.bottom .tooltip-arrow {
+      border-bottom-color: @c-pool;
+    }
+    &.bottom-left .tooltip-arrow {
+      border-bottom-color: @c-pool;
+    }
+    &.bottom-right .tooltip-arrow {
+      border-bottom-color: @c-pool;
+    }
+}
