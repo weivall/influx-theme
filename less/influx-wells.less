@@ -8,6 +8,7 @@
   border-color: @g17-whisper;
   border-width: 2px 0 0 0;
   box-shadow: none !important;
+  padding: 30px;
 
   &.well-light {
     background-color: @g19-ghost;
@@ -20,5 +21,12 @@
   &.well-outline {
     background-color: transparent;
     border: 2px solid @g17-whisper;
+  }
+
+  > *:first-child {
+    margin-top: 0;
+  }
+  > *:last-child {
+    margin-bottom: 0;
   }
 }

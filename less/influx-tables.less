@@ -17,6 +17,7 @@
 .table-row-variant(danger; @c-flan);
 
 .table {
+  border-bottom: @ix-border solid @g18-cloud;
   // Contextual classes
   td.info,
   th.info,
@@ -38,7 +39,7 @@
     > tr {
       > th,
       > td {
-        border-top: 2px solid @g18-cloud;
+        border-top: @ix-border solid @g18-cloud;
       }
     }
   }
@@ -49,28 +50,28 @@
     td > * {
       vertical-align: middle;
       display: inline-block;
-      margin-top: 2px;
-      margin-bottom: 2px;
+      margin-top: @ix-border;
+      margin-bottom: @ix-border;
     }
   }
 }
 .table-bordered {
-  border: 2px solid @g18-cloud;
+  border: @ix-border solid @g18-cloud;
   > thead,
   > tbody,
   > tfoot {
     > tr {
       > th,
       > td {
-        border: 2px solid @g18-cloud;
+        border: @ix-border solid @g18-cloud;
       }
     }
   }
 }
 .table-responsive {
-  border: 2px solid @g18-cloud;
+  border: @ix-border solid @g18-cloud;
 
-  .custom-scrollbar(@g18-cloud,@c-potassium);
+  .custom-scrollbar(@g18-cloud,@c-pool);
   .table {
     margin-bottom: 0;
     border: 0 !important;
@@ -87,6 +88,6 @@
   }
 
   @media screen and (max-width: @screen-xs-max) {
-    border: 2px solid @g18-cloud;
+    border: @ix-border solid @g18-cloud;
   }
 }
