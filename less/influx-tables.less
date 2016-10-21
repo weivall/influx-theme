@@ -68,6 +68,24 @@
   }
 }
 .table-responsive {
+  border: 2px solid @g18-cloud;
+
+  .custom-scrollbar(@g18-cloud,@c-potassium);
+  .table {
+    margin-bottom: 0;
+    border: 0 !important;
+  }
+  .table thead th,
+  .table tbody td {
+    white-space: nowrap;
+    &:first-child {
+      border-left: 0 !important;
+    }
+    &:last-child {
+      border-right: 0 !important;
+    }
+  }
+
   @media screen and (max-width: @screen-xs-max) {
     border: 2px solid @g18-cloud;
   }
