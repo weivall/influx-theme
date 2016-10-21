@@ -3662,7 +3662,7 @@ code {
   font-size: 11px;
   font-weight: 600;
   color: #7a65f2;
-  text-shadow: none;
+  text-shadow: 0 -1px #fff;
   letter-spacing: .02em;
   background-color: #fafafc;
   border: 1px solid #fafafc;
