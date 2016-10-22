@@ -26,9 +26,6 @@
 
       <!-- Side Navbar -->
       <nav class="ix-sidebar">
-        <div class="sidebar-logo">
-          <span class="icon cubo-uniform"></span>
-        </div>
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -37,19 +34,23 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <span class="navbar-brand"><span style="font-size:24px;position: relative;top:-3px;" class="icon cubo"></span></span>
+            <span class="navbar-brand">
+              <a href="#">
+                <span class="icon cubo-uniform"></span>
+              </a>
+            </span>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Standard <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle icon triangle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Standard</a>
                 <ul class="dropdown-menu">
                   <li class="dropdown-header">Components</li>
                   <li><a href="#section-jumbotron">Jumbotron</a></li>
                   <li><a href="#section-typography">Typography</a></li>
                   <li><a href="#section-labels">Labels</a></li>
                   <li><a href="#section-buttons">Buttons</a></li>
-                  <li><a href="#section-buttongroups">Button Groups</a></li>
+                  <li class="active"><a href="#section-buttongroups">Button Groups</a></li>
                   <li><a href="#section-modals">Modals</a></li>
                   <li><a href="#section-forms">Forms</a></li>
                   <li><a href="#section-tables">Tables</a></li>
@@ -66,8 +67,8 @@
                   <li><a href="#section-wells">Wells</a></li>
                 </ul>
               </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Custom <span class="caret"></span></a>
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle icon heart" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Custom</a>
                 <ul class="dropdown-menu">
                   <li class="dropdown-header">Components</li>
                   <li><a href="#section-minimalpanels">Minimal Panels</a></li>
@@ -78,7 +79,7 @@
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Utilities <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle icon github" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Utilities</a>
                 <ul class="dropdown-menu">
                   <li><a href="#section-colorpalette">Color Palette</a></li>
                   <li><a href="#section-iconfont">Icon Font</a></li>
@@ -87,6 +88,12 @@
                   <li><a href="#section-code-highlighting">Code Highlighting</a></li>
                   <li><a href="#section-flexbox">Flex Box Utilities</a></li>
                 </ul>
+              </li>
+              <li>
+                <a href="#" class="icon cpu">Woogie!</a>
+              </li>
+              <li>
+                <a href="#" class="icon cpu">Boogie!</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -207,7 +214,6 @@
         <!-- Labels -->
         <section class="docs-section">
           <div class="container">
-            <div class="row">
             <div class="page-header">
               <a class="page-header--anchor" id="section-labels"></a>
               <a href="#section-labels">
@@ -285,8 +291,7 @@
                   <div class="panel-footer">Labels inline with Regular Headings</div>
                 </div><!-- / .panel -->
               </div><!-- / .col-md-12 -->
-
-            </div><!-- / .row -->
+            </div>
           </div>
         </section>
 

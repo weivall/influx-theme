@@ -24,20 +24,20 @@ body, html {
   width: 100%;
 }
 .ix-sidebar {
-  overflow: hidden;
   z-index: @ix-sidebar-z;
   .influx-layout-styles;
   top: 0;
   left: 0;
-  width: @ix-sidebar-width;
-  .gradient-v(@g7-graphite,@g4-onyx);
+  width: 100%;
+  height: @ix-sidebar-width;
+  .gradient-h(@g7-graphite,@g4-onyx);
 }
 .ix-app-wrapper {
   z-index: @ix-app-wrapper-z;
   .influx-layout-styles;
-  top: @ix-app-heading-height;
-  left: @ix-sidebar-width;
-  width: ~"calc(100% - "@ix-sidebar-width~")";
+  top: (@ix-app-heading-height + @ix-sidebar-width);
+  left: 0;
+  width: 100%;
   height: ~"calc(100% - "@ix-app-heading-height~")";
   overflow: auto;
   .gradient-v(@g18-cloud,@g19-ghost);
@@ -46,9 +46,9 @@ body, html {
 .ix-app-heading {
   z-index: @ix-app-heading-z;
   .influx-layout-styles;
-  top: 0;
-  left: @ix-sidebar-width;
-  width: ~"calc(100% - "@ix-sidebar-width~")";
+  top: @ix-sidebar-width;
+  left: 0;
+  width: 100%;
   height: @ix-app-heading-height;
   background-color: @g20-white;
 
@@ -99,4 +99,342 @@ body, html {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+// Hamburger Toggle
+.ix-sidebar .navbar-toggle {
+  background-color: transparent;
+  width: @ix-sidebar-width;
+  height: @ix-sidebar-width;
+  margin: 0 7px 0 0;
+  padding: 0;
+  border: 0;
+
+  .icon-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: @g12-forge;
+    margin: 0 !important;
+    width: 24px;
+    height: 2px;
+    transform: translate(-50%,-50%);
+    transition:
+      top 0.25s ease,
+      opacity 0.25s ease,
+      transform 0.25s ease 0.25s,
+      background-color 0.25s ease;
+    opacity: 0;
+
+    &:nth-of-type(2) {
+      opacity: 1;
+      transform: translate(-50%,-50%) rotate(45deg);
+    }
+    &:nth-of-type(3) {
+      opacity: 1;
+      transform: translate(-50%,-50%) rotate(-45deg);
+    }
+  }
+  &.collapsed {
+    .icon-bar {
+      opacity: 1;
+      transform: translate(-50%,-50%);
+      transition:
+        top 0.25s ease 0.25s,
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        background-color 0.25s ease;
+
+      &:nth-of-type(2) {
+        top: ~"calc(50% - 8px)";
+        transform: translate(-50%,-50%);
+      }
+      &:nth-of-type(3) {
+        top: ~"calc(50% + 8px)";
+        transform: translate(-50%,-50%);
+      }
+    }
+  }
+  &:hover {
+    background-color: transparent;
+    .icon-bar {
+      background-color: @g20-white;
+    }
+  }
+}
+// Logo Tile
+.ix-sidebar .navbar-brand {
+  width: @ix-sidebar-width;
+  height: @ix-sidebar-width;
+  padding: 0;
+  position: relative;
+
+  a:link,
+  a:active,
+  a:visited {
+    background-color: @c-pool;
+    color: @g20-white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition:
+      background-color 0.25s ease;
+  }
+  a:hover {
+    background-color: @c-laser;
+    cursor: pointer;
+  }
+  
+  span.icon {
+    color: @g20-white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 26px;
+    transform: translate(-50%,-50%);
+  }
+}
+// Navbar hamburger menu dropdown
+.ix-sidebar .navbar-collapse {
+  position: absolute;
+  top: @ix-sidebar-width;
+  left: 15px;
+  width: 100%;
+  border: 0;
+  .gradient-h(@c-pool,@c-comet);
+}
+.ix-sidebar .navbar-nav {
+  display: block;
+  margin: 0 -15px;
+  width: ~"calc(100% + 30px)" !important;
+  max-height: @ix-sidebar-drawer-max;
+  overflow: auto;
+
+  .custom-scrollbar(@c-comet,@c-hydrogen);
+
+  // Top Level nav items
+  > li > a:link,
+  > li > a:active,
+  > li > a:visited,
+  > li > a.dropdown-toggle {
+    transition:
+      background-color 0.25s ease,
+      color 0.25s ease;
+    color: @c-neutrino;
+    background-color: transparent;
+    position: relative;
+    padding-left: @ix-sidebar-width;
+    font-family: @ix-text-font !important;
+
+    &:before {
+      font-family: @ix-icon-font !important;
+      display: none;
+    }
+  }
+  // Hover state
+  > li > a:hover,
+  > li > a.dropdown-toggle:hover {
+    color: @g20-white;
+    .gradient-h(fadeout(@c-ocean, 50%),@c-comet);
+  }
+  // Dropdown caret
+  > li > a.dropdown-toggle {
+    &:after {
+      content: "\e902";
+      font-family: 'icomoon' !important;
+      position: absolute;
+      top: 50%;
+      left: (@ix-sidebar-width / 2);
+      color: @c-neutrino;
+      transform: translate(-50%,-50%);
+      transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+    }
+    &:hover:after {
+      color: @g20-white
+    }
+  }
+  // Open State
+  > li.open > a.dropdown-toggle {
+    color: @g20-white;
+    .gradient-h(@c-ocean,@c-comet);
+    &:after {
+      color: @g20-white;
+      transform: translate(-50%,-50%) rotate(-90deg);
+    }
+  }
+}
+// Open Dropdown Menu
+.ix-sidebar .navbar-nav .open .dropdown-menu {
+  padding: 0;
+  .gradient-h(@c-ocean,@c-comet);
+  border-radius: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+
+    > a {
+      padding: 4px 15px 4px 60px;
+      transition:
+        color 0.25s ease,
+        background-color 0.25s ease;
+      color: @c-neutrino;
+
+      &:hover {
+        color: @g20-white;
+        .gradient-h(fadeout(@c-sapphire,50%),@c-comet);
+      }
+    }
+    &.active > a {
+      color: @g20-white;
+      .gradient-h(@c-sapphire,@c-comet);
+    }
+  }
+}
+// Dropdown Header
+.ix-sidebar .navbar-nav .dropdown-menu .dropdown-header {
+  padding: 0 0 @ix-marg-b @ix-sidebar-width !important;
+  margin: 0 0 @ix-marg-b 0 !important;
+  color: @c-neutrino;
+  text-transform: uppercase;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: ~"calc(100% - "@ix-sidebar-width~" - 15px)";
+    left: @ix-sidebar-width;
+    height: 2px;
+    .gradient-h(@c-pool,@c-comet);
+    bottom: 0;
+  }
+}
+
+
+
+
+
+
+// Switch to vertical sidebar once SMALL size has been reached
+@media (min-width: @screen-sm-min) {
+  .ix-sidebar {
+    top: 0;
+    left: 0;
+    width: @ix-sidebar-width;
+    height: 100%;
+    .gradient-v(@g7-graphite,@g4-onyx);
+
+    // Remove all styles from .container that would throw off the layout
+    .container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+  .ix-sidebar .navbar-nav {
+    width: @ix-sidebar-width;
+    overflow: visible;
+
+    > li {
+      width: @ix-sidebar-width;
+      height: @ix-sidebar-width;
+    }
+    // Top level nav squares
+    > li > a:link,
+    > li > a:active,
+    > li > a:visited,
+    > li > a.dropdown-toggle {
+      transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        text-shadow 0.25s ease;
+      color: @g11-sidewalk;
+      width: @ix-sidebar-width;
+      height: @ix-sidebar-width;
+      background-color: transparent;
+      position: relative;
+      padding: 0 !important;
+      font-family: @ix-text-font !important;
+      font-size: 0 !important;
+
+      // Icon
+      &:before {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 26px !important;
+        transform: translate(-50%,-50%);
+      }
+    }
+    // Nav square hover state
+    > li > a:hover,
+    > li > a.dropdown-toggle:hover {
+      color: @g20-white;
+      background-image: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    // Hide caret
+    > li > a.dropdown-toggle:after {
+      content: none;
+      display: none;
+    }
+    // Nav square active state
+    > li.active > a,
+    > li.active > a.dropdown-toggle {
+      color: @g20-white;
+      background-image: none;
+      background-color: @g4-onyx;
+      cursor: pointer;
+
+      &:before {
+        text-shadow:
+          0 0 9px @c-laser,
+          0 0 16px @c-pool,
+          0 0 20px @c-ocean;
+      }
+    }
+    // Open State
+    > li.open > a.dropdown-toggle {
+      color: @g20-white;
+      background-image: none;
+      background-color: @g4-onyx;
+    }
+  }
+  // Reposition dropdown menus to the right
+  .ix-sidebar .navbar-nav .dropdown-menu {
+    top: 0;
+    left: @ix-sidebar-width;
+
+    > li {
+      padding: 0;
+    }
+  }
+  .ix-sidebar .navbar-collapse {
+    left: 0;
+    background-color: transparent;
+    background-image: none;
+    max-height: ~"calc(100% - "@ix-sidebar-width~")";
+    
+  }
+  .ix-app-wrapper {
+    top: @ix-app-heading-height;
+    left: @ix-sidebar-width;
+    width: ~"calc(100% - "@ix-sidebar-width~")";
+    height: ~"calc(100% - "@ix-app-heading-height~")";
+  }
+  .ix-app-heading {
+    top: 0;
+    left: @ix-sidebar-width;
+    width: ~"calc(100% - "@ix-sidebar-width~")";
+  }
 }
