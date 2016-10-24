@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,700,900,700italic' rel='stylesheet' type='text/css'>
+    <link href="../../img/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+    <title>Slider Toggles / Custom / Influx Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery UI CSS -->
+    <link href="../../jquery-ui/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../../dist/css/bootstrap-theme.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="ix-app">
+
+      <!-- Side Navbar -->
+      <nav class="ix-sidebar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand">
+              <a href="#">
+                <span class="icon cubo-uniform"></span>
+              </a>
+            </span>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle icon dash-f" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Standard</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header hidden-sm hidden-md hidden-lg">Components</li>
+                  <li class="navbar-label hidden-xs">Standard</li>
+                  <li><a href="../../standard/jumbotron/index.html">Jumbotron</a></li>
+                  <li><a href="../../standard/typography/index.html">Typography</a></li>
+                  <li><a href="../../standard/labels/index.html">Labels</a></li>
+                  <li><a href="../../standard/buttons/index.html">Buttons</a></li>
+                  <li><a href="../../standard/buttongroups/index.html">Button Groups</a></li>
+                  <li><a href="../../standard/modals/index.html">Modals</a></li>
+                  <li><a href="../../standard/forms/index.html">Forms</a></li>
+                  <li><a href="../../standard/tables/index.html">Tables</a></li>
+                  <li><a href="../../standard/panels/index.html">Panels</a></li>
+                  <li><a href="../../standard/badges/index.html">Badges</a></li>
+                  <li><a href="../../standard/tooltips/index.html">Tooltips</a></li>
+                  <li><a href="../../standard/popovers/index.html">Popovers</a></li>
+                  <li><a href="../../standard/dropdowns/index.html">Dropdowns</a></li>
+                  <li><a href="../../standard/navs/index.html">Navs</a></li>
+                  <li><a href="../../standard/navbars/index.html">Navbars</a></li>
+                  <li><a href="../../standard/alerts/index.html">Alerts</a></li>
+                  <li><a href="../../standard/progressbars/index.html">Progress Bars</a></li>
+                  <li><a href="../../standard/listgroups/index.html">List Groups</a></li>
+                  <li><a href="../../standard/wells/index.html">Wells</a></li>
+                </ul>
+              </li>
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle icon dash-e" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Custom</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header hidden-sm hidden-md hidden-lg">Components</li>
+                  <li class="navbar-label hidden-xs">Custom</li>
+                  <li><a href="../minimalpanels/index.html">Minimal Panels</a></li>
+                  <li><a href="../collapsiblepanels/index.html">Collapsible Panels</a></li>
+                  <li><a href="../heatmap/index.html">Heatmap Progress Bars</a></li>
+                  <li class="active"><a href="#">Slider Toggles</a></li>
+                  <li><a href="../hero/index.html">Hero</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle icon wrenches" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Utilities</a>
+                <ul class="dropdown-menu">
+                  <li class="navbar-label hidden-xs">Utilities</li>
+                  <li><a href="../../utilities/colorpalette/index.html">Color Palette</a></li>
+                  <li><a href="../../utilities/iconfont/index.html">Icon Font</a></li>
+                  <li><a href="../../utilities/type-tools/index.html">Typography Tools</a></li>
+                  <li><a href="../../utilities/margin-utilities/index.html">Margin / Padding Utilities</a></li>
+                  <li><a href="../../utilities/code-highlighting/index.html">Code Highlighting</a></li>
+                  <li><a href="../../utilities/flexbox/index.html">Flex Box Utilities</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://github.com/influxdata/influx-theme" class="icon github">Github</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <!-- App Heading -->
+      <nav class="ix-app-heading">
+        <div class="container">
+          <div class="ix-app-heading--container">
+          <div class="ix-app-heading--left">
+            <h1 class="ix-app-title">Slider Toggles</h1>
+          </div>
+          <div class="ix-app-heading--right">
+            <a href="../heatmap/index.html" class="btn btn-sm btn-default">Previous</a>
+            <a href="../hero/index.html" class="btn btn-sm btn-default">Next</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- App Wrapper -->
+      <div class="ix-app-wrapper">
+        
+        <!-- Slider Toggles -->
+        <section class="docs-section">
+          <div class="container">
+
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-slidertoggles"></a>
+              <a href="#section-slidertoggles">
+                <h1>Slider Toggles</h1>
+              </a>
+              <p>Uses jQuery UI. Initialized with javascript, see options <a href="http://api.jqueryui.com/slider/#option-animate" target="_blank">here</a>.
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <p>Default Slider</p>
+                    <div class="slider-container slider-default">
+                      <div class="slider-label">Small</div>
+                      <div class="slider-cell"><div id="exampleSlider1"></div></div>
+                      <div class="slider-label">Large</div>
+                    </div>
+
+                    <p>Primary Slider</p>
+                    <div class="slider-container slider-primary">
+                      <div class="slider-label">Small</div>
+                      <div class="slider-cell"><div id="exampleSlider2"></div></div>
+                      <div class="slider-label">Large</div>
+                    </div>
+
+                    <p>Success Slider</p>
+                    <div class="slider-container slider-success">
+                      <div class="slider-label">Small</div>
+                      <div class="slider-cell"><div id="exampleSlider3"></div></div>
+                      <div class="slider-label">Large</div>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Horizontal Sliders with 8 Steps, for use on plan selector</div>
+                </div><!-- / .panel -->
+              </div><!-- / .col-md-6 -->
+
+              <div class="col-md-6">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <p>Info Slider</p>
+                    <div class="slider-container slider-info">
+                      <div class="slider-label">Small</div>
+                      <div class="slider-cell"><div id="exampleSlider4"></div></div>
+                      <div class="slider-label">Large</div>
+                    </div>
+
+                    <p>Warning Slider</p>
+                    <div class="slider-container slider-warning">
+                      <div class="slider-label">Small</div>
+                      <div class="slider-cell"><div id="exampleSlider5"></div></div>
+                      <div class="slider-label">Large</div>
+                    </div>
+
+                    <p>Danger Slider</p>
+                    <div class="slider-container slider-danger">
+                      <div class="slider-label">Small</div>
+                      <div class="slider-cell"><div id="exampleSlider6"></div></div>
+                      <div class="slider-label">Large</div>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Horizontal Sliders with 8 Steps, for use on plan selector</div>
+                </div><!-- / .panel -->
+              </div><!-- / .col-md-6 -->
+
+              <div class="col-md-12">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <div class="slider-container slider-primary">
+                      <div class="slider-label">Small</div>
+                      <div class="slider-cell"><div id="exampleRangeSlider"></div></div>
+                      <div class="slider-label">Large</div>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Example of a range slider. <code>min: 1 / max: 100 / step: 1</code></div>
+                </div><!-- / .panel -->
+
+                <div class="panel panel-default">
+                  <div class="panel-body slider-plan-picker-example">
+                    <div class="slider-container slider-plan-picker">
+                      <div class="slider-cell">
+                        <div id="exampleSlider7">
+                          <div class="slider-increment" style="left:0%"></div>
+                          <div class="slider-increment" style="left:20%"></div>
+                          <div class="slider-increment" style="left:40%"></div>
+                          <div class="slider-increment" style="left:60%"></div>
+                          <div class="slider-increment" style="left:80%"></div>
+                          <div class="slider-increment" style="left:100%"></div>
+                          <div class="slider-overlay uno" data-name="uno"></div>
+                          <div class="slider-overlay kilowatt" style="left:30%" data-name="kilowatt"></div>
+                          <div class="slider-overlay megawatt" style="left:80%" data-name="megawatt"></div>
+                          <div id="plan-picker-handle" class="ui-slider-handle ui-state-default ui-corner-all slider-pos-3" style="left:40%;">
+                            <div class="slider-handle"></div>
+                            <div class="slider-pulse"></div>
+                          </div>
+                          <div class="most-popular-plan">Most Popular</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Example of a <code>.slider-plan-picker</code> and using some custom javascript for resizing the handle</div>
+                </div><!-- / .panel -->
+              </div><!-- / .col-md-12 -->
+            </div><!-- / .row -->
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../jquery-ui/jquery-ui.js"></script>
+    <script src="../../docs-magic.js"></script>
+  </body>
+</html>

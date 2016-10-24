@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,700,900,700italic' rel='stylesheet' type='text/css'>
+    <link href="../../img/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+    <title>Buttons / Standard / Influx Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery UI CSS -->
+    <link href="../../jquery-ui/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../../dist/css/bootstrap-theme.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="ix-app">
+
+      <!-- Side Navbar -->
+      <nav class="ix-sidebar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand">
+              <a href="#">
+                <span class="icon cubo-uniform"></span>
+              </a>
+            </span>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle icon dash-f" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Standard</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header hidden-sm hidden-md hidden-lg">Components</li>
+                  <li class="navbar-label hidden-xs">Standard</li>
+                  <li><a href="../jumbotron/index.html">Jumbotron</a></li>
+                  <li><a href="../typography/index.html">Typography</a></li>
+                  <li><a href="../labels/index.html">Labels</a></li>
+                  <li class="active"><a href="#">Buttons</a></li>
+                  <li><a href="../buttongroups/index.html">Button Groups</a></li>
+                  <li><a href="../modals/index.html">Modals</a></li>
+                  <li><a href="../forms/index.html">Forms</a></li>
+                  <li><a href="../tables/index.html">Tables</a></li>
+                  <li><a href="../panels/index.html">Panels</a></li>
+                  <li><a href="../badges/index.html">Badges</a></li>
+                  <li><a href="../tooltips/index.html">Tooltips</a></li>
+                  <li><a href="../popovers/index.html">Popovers</a></li>
+                  <li><a href="../dropdowns/index.html">Dropdowns</a></li>
+                  <li><a href="../navs/index.html">Navs</a></li>
+                  <li><a href="../navbars/index.html">Navbars</a></li>
+                  <li><a href="../alerts/index.html">Alerts</a></li>
+                  <li><a href="../progressbars/index.html">Progress Bars</a></li>
+                  <li><a href="../listgroups/index.html">List Groups</a></li>
+                  <li><a href="../wells/index.html">Wells</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle icon dash-e" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Custom</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header hidden-sm hidden-md hidden-lg">Components</li>
+                  <li class="navbar-label hidden-xs">Custom</li>
+                  <li><a href="../../custom/minimalpanels/index.html">Minimal Panels</a></li>
+                  <li><a href="../../custom/collapsiblepanels/index.html">Collapsible Panels</a></li>
+                  <li><a href="../../custom/heatmap/index.html">Heatmap Progress Bars</a></li>
+                  <li><a href="../../custom/slidertoggles/index.html">Slider Toggles</a></li>
+                  <li><a href="../../custom/hero/index.html">Hero</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle icon wrenches" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Utilities</a>
+                <ul class="dropdown-menu">
+                  <li class="navbar-label hidden-xs">Utilities</li>
+                  <li><a href="../../utilities/colorpalette/index.html">Color Palette</a></li>
+                  <li><a href="../../utilities/iconfont/index.html">Icon Font</a></li>
+                  <li><a href="../../utilities/type-tools/index.html">Typography Tools</a></li>
+                  <li><a href="../../utilities/margin-utilities/index.html">Margin / Padding Utilities</a></li>
+                  <li><a href="../../utilities/code-highlighting/index.html">Code Highlighting</a></li>
+                  <li><a href="../../utilities/flexbox/index.html">Flex Box Utilities</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://github.com/influxdata/influx-theme" class="icon github">Github</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <!-- App Heading -->
+      <nav class="ix-app-heading">
+        <div class="container">
+          <div class="ix-app-heading--container">
+          <div class="ix-app-heading--left">
+            <h1 class="ix-app-title">Buttons</h1>
+          </div>
+          <div class="ix-app-heading--right">
+            <a href="../labels/index.html" class="btn btn-sm btn-default">Previous</a>
+            <a href="../buttongroups/index.html" class="btn btn-sm btn-default">Next</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- App Wrapper -->
+      <div class="ix-app-wrapper">
+      
+        <!-- Buttons -->
+        <section class="docs-section">
+          <div class="container">
+
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-buttons"></a>
+              <a href="#section-buttons">
+                <h1>Buttons</h1>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">How to Use</h3>
+                  </div>
+                  <div class="panel-body">
+                    <div class="col-sm-4 col-md-5">
+                      <p>Buttons are to software as links are to web sites. They serve to confirm user input, activate tools, change views, etc. Depending on the context you may want a button of a different size or color. In bootstrap there are two ways to make a button:</p>
+                    </div>
+                    <div class="col-sm-8 col-md-7">
+                      <p><strong>1. Anchor Tag</strong> for when you want a text link to look and behave like a button</p>
+                      <pre data-lang="html"><code>&lt;a class="btn btn-default" role="button" href="#"&gt;Button Text&lt;/a&gt;</code></pre>
+                      <p><strong>2. Button Tag</strong> for when you want an actual button</p>
+                      <pre data-lang="html"><code>&lt;button class="btn btn-default"&gt;Button Text&lt;/button&gt;</code></pre>
+                    </div>
+
+                    <table class="table v-center">
+                      <thead>
+                        <tr>
+                          <th><h4>Button Styles</h4></th>
+                          <th class="text-center"><code>.btn.btn-xs</code></th>
+                          <th class="text-center"><code>.btn.btn-sm</code></th>
+                          <th class="text-center"><code>.btn</code></th>
+                          <th class="text-center"><code>.btn.btn-lg</code></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><code>.btn-default</code></td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-default btn-xs">Button</button>
+                            <button type="button" class="btn btn-default btn-xs disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-default btn-sm">Button</button>
+                            <button type="button" class="btn btn-default btn-sm disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-default">Button</button>
+                            <button type="button" class="btn btn-default disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-default btn-lg">Button</button>
+                            <button type="button" class="btn btn-default btn-lg disabled" disabled>Disabled</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>.btn-primary</code></td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-primary btn-xs">Button</button>
+                            <button type="button" class="btn btn-primary btn-xs disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-primary btn-sm">Button</button>
+                            <button type="button" class="btn btn-primary btn-sm disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-primary">Button</button>
+                            <button type="button" class="btn btn-primary disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-primary btn-lg">Button</button>
+                            <button type="button" class="btn btn-primary btn-lg disabled" disabled>Disabled</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>.btn-success</code></td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-success btn-xs">Button</button>
+                            <button type="button" class="btn btn-success btn-xs disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-success btn-sm">Button</button>
+                            <button type="button" class="btn btn-success btn-sm disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-success">Button</button>
+                            <button type="button" class="btn btn-success disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-success btn-lg">Button</button>
+                            <button type="button" class="btn btn-success btn-lg disabled" disabled>Disabled</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>.btn-warning</code></td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-warning btn-xs">Button</button>
+                            <button type="button" class="btn btn-warning btn-xs disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-warning btn-sm">Button</button>
+                            <button type="button" class="btn btn-warning btn-sm disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-warning">Button</button>
+                            <button type="button" class="btn btn-warning disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-warning btn-lg">Button</button>
+                            <button type="button" class="btn btn-warning btn-lg disabled" disabled>Disabled</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>.btn-danger</code></td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-danger btn-xs">Button</button>
+                            <button type="button" class="btn btn-danger btn-xs disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-danger btn-sm">Button</button>
+                            <button type="button" class="btn btn-danger btn-sm disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-danger">Button</button>
+                            <button type="button" class="btn btn-danger disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-danger btn-lg">Button</button>
+                            <button type="button" class="btn btn-danger btn-lg disabled" disabled>Disabled</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>.btn-info</code></td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-info btn-xs">Button</button>
+                            <button type="button" class="btn btn-info btn-xs disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-info btn-sm">Button</button>
+                            <button type="button" class="btn btn-info btn-sm disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-info">Button</button>
+                            <button type="button" class="btn btn-info disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-info btn-lg">Button</button>
+                            <button type="button" class="btn btn-info btn-lg disabled" disabled>Disabled</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>.btn-link</code></td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-link btn-xs">Button</button>
+                            <button type="button" class="btn btn-link btn-xs disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-link btn-sm">Button</button>
+                            <button type="button" class="btn btn-link btn-sm disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-link">Button</button>
+                            <button type="button" class="btn btn-link disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-link btn-lg">Button</button>
+                            <button type="button" class="btn btn-link btn-lg disabled" disabled>Disabled</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>.btn-link-danger</code></td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-link-danger btn-xs">Button</button>
+                            <button type="button" class="btn btn-link-danger btn-xs disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-link-danger btn-sm">Button</button>
+                            <button type="button" class="btn btn-link-danger btn-sm disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-link-danger">Button</button>
+                            <button type="button" class="btn btn-link-danger disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-link-danger btn-lg">Button</button>
+                            <button type="button" class="btn btn-link-danger btn-lg disabled" disabled>Disabled</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>.btn-link-success</code></td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-link-success btn-xs">Button</button>
+                            <button type="button" class="btn btn-link-success btn-xs disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-link-success btn-sm">Button</button>
+                            <button type="button" class="btn btn-link-success btn-sm disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-link-success">Button</button>
+                            <button type="button" class="btn btn-link-success disabled" disabled>Disabled</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-link-success btn-lg">Button</button>
+                            <button type="button" class="btn btn-link-success btn-lg disabled" disabled>Disabled</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>          
+                  </div>
+                </div><!-- / .panel -->
+              </div><!-- / .col-md-12 -->
+            </div><!-- / .row -->
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Buttons with Icons</h3>
+                  </div>
+                  <div class="panel-body">
+                    <p><code>span.icon</code> should always be before the button text</p>
+                    <table class="table v-center margin-bottom-zero">
+                      <thead>
+                        <tr>
+                          <th class="text-center"><code>.btn.btn-xs</code></th>
+                          <th class="text-center"><code>.btn.btn-sm</code></th>
+                          <th class="text-center"><code>.btn</code></th>
+                          <th class="text-center"><code>.btn.btn-lg</code></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-warning btn-xs"><span class="icon star"></span> Button</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-warning btn-sm"><span class="icon star"></span> Button</button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-warning"><span class="icon star"></span> Button</button> 
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-warning btn-lg"><span class="icon star"></span> Button</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>  
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Square Buttons (Icons Only)</h3>
+                  </div>
+                  <div class="panel-body">
+                    <table class="table v-center margin-bottom-zero">
+                      <thead>
+                        <tr>
+                          <th class="text-center"><code>.btn.btn-square.btn-xs</code></th>
+                          <th class="text-center"><code>.btn.btn-square.btn-sm</code></th>
+                          <th class="text-center"><code>.btn.btn-square</code></th>
+                          <th class="text-center"><code>.btn.btn-square.btn-lg</code></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-square btn-warning btn-xs"><span class="icon star"></span></button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-square btn-warning btn-sm"><span class="icon star"></span></button>
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-square btn-warning"><span class="icon star"></span></button> 
+                          </td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-square btn-warning btn-lg"><span class="icon star"></span></button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../jquery-ui/jquery-ui.js"></script>
+    <script src="../../docs-magic.js"></script>
+  </body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,700,900,700italic' rel='stylesheet' type='text/css'>
+    <link href="../../img/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+    <title>Code Highlighting / Utilities / Influx Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery UI CSS -->
+    <link href="../../jquery-ui/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../../dist/css/bootstrap-theme.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="ix-app">
+
+      <!-- Side Navbar -->
+      <nav class="ix-sidebar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand">
+              <a href="#">
+                <span class="icon cubo-uniform"></span>
+              </a>
+            </span>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle icon dash-f" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Standard</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header hidden-sm hidden-md hidden-lg">Components</li>
+                  <li class="navbar-label hidden-xs">Standard</li>
+                  <li><a href="../../standard/jumbotron/index.html">Jumbotron</a></li>
+                  <li><a href="../../standard/typography/index.html">Typography</a></li>
+                  <li><a href="../../standard/labels/index.html">Labels</a></li>
+                  <li><a href="../../standard/buttons/index.html">Buttons</a></li>
+                  <li><a href="../../standard/buttongroups/index.html">Button Groups</a></li>
+                  <li><a href="../../standard/modals/index.html">Modals</a></li>
+                  <li><a href="../../standard/forms/index.html">Forms</a></li>
+                  <li><a href="../../standard/tables/index.html">Tables</a></li>
+                  <li><a href="../../standard/panels/index.html">Panels</a></li>
+                  <li><a href="../../standard/badges/index.html">Badges</a></li>
+                  <li><a href="../../standard/tooltips/index.html">Tooltips</a></li>
+                  <li><a href="../../standard/popovers/index.html">Popovers</a></li>
+                  <li><a href="../../standard/dropdowns/index.html">Dropdowns</a></li>
+                  <li><a href="../../standard/navs/index.html">Navs</a></li>
+                  <li><a href="../../standard/navbars/index.html">Navbars</a></li>
+                  <li><a href="../../standard/alerts/index.html">Alerts</a></li>
+                  <li><a href="../../standard/progressbars/index.html">Progress Bars</a></li>
+                  <li><a href="../../standard/listgroups/index.html">List Groups</a></li>
+                  <li><a href="../../standard/wells/index.html">Wells</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle icon dash-e" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Custom</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header hidden-sm hidden-md hidden-lg">Components</li>
+                  <li class="navbar-label hidden-xs">Custom</li>
+                  <li><a href="../../custom/minimalpanels/index.html">Minimal Panels</a></li>
+                  <li><a href="../../custom/collapsiblepanels/index.html">Collapsible Panels</a></li>
+                  <li><a href="../../custom/heatmap/index.html">Heatmap Progress Bars</a></li>
+                  <li><a href="../../custom/slidertoggles/index.html">Slider Toggles</a></li>
+                  <li><a href="../../custom/hero/index.html">Hero</a></li>
+                </ul>
+              </li>
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle icon wrenches" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Utilities</a>
+                <ul class="dropdown-menu">
+                  <li class="navbar-label hidden-xs">Utilities</li>
+                  <li><a href="../colorpalette/index.html">Color Palette</a></li>
+                  <li><a href="../iconfont/index.html">Icon Font</a></li>
+                  <li><a href="../type-tools/index.html">Typography Tools</a></li>
+                  <li><a href="../margin-utilities/index.html">Margin / Padding Utilities</a></li>
+                  <li class="active"><a href="#">Code Highlighting</a></li>
+                  <li><a href="../flexbox/index.html">Flex Box Utilities</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://github.com/influxdata/influx-theme" class="icon github">Github</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <!-- App Heading -->
+      <nav class="ix-app-heading">
+        <div class="container">
+          <div class="ix-app-heading--container">
+          <div class="ix-app-heading--left">
+            <h1 class="ix-app-title">Code Highlighting</h1>
+          </div>
+          <div class="ix-app-heading--right">
+            <a href="../margin-utilities/index.html" class="btn btn-sm btn-default">Previous</a>
+            <a href="../flexbox/index.html" class="btn btn-sm btn-default">Next</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- App Wrapper -->
+      <div class="ix-app-wrapper">
+        
+        <!-- Code Highlighting -->
+        <section class="docs-section">
+          <div class="container">
+
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-code-highlighting"></a>
+              <a href="#section-code-highlighting">
+                <h1>Code Highlighting</h1>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h2 class="panel-title">How to Use</h2>
+                  </div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <p>There are many code highlighting JS libraries out there, for example we use <a href="http://prismjs.com/" target="_blank">Prism.js</a> to handle code highlighting in our Developer Docs</a>. There is no built-in code highlighting within Bootstrap, so I have created a set of highlighters for manual use. In the future there will be a code highlighting feature built into the theme.</p>
+
+                        <p><strong>Concept</strong><br/>In HTML there are a variety of tags specifically for formatting text. Most websites and applications no longer use these tags as the same effect can be achieved with CSS more cleanly. I have repurposed these tags to function as code highlighters, scoped within code samples.</p>
+                        <p>Taking into consideration the possibility that a external code highlighter might be used in conjunction with this theme, I have put a failsafe in play:</p>
+                        <p>For Code Highlighting to take effect, just add a class to your sample,</p>
+                        <pre><code>&lt;pre class="rainbow-highlighter"&gt;<br/>  &lt;code&gt;&lt;/code&gt;<br/>&lt;/pre&gt;<br/><br/>&lt;code class="rainbow-highlighter"&gt; &lt;/code&gt;</code></pre>
+                        <p>Then use these tags to apply highlights:</p>
+                        <table class="table v-center">
+                          <tbody>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-b"></div>
+                              <td>Bold</td>
+                              <td><code>&lt;b&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><b>Obtuse Mystical Being</b></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-strong"></div>
+                              <td>Important</td>
+                              <td><code>&lt;strong&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><strong>Obtuse Mystical Being</strong></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-i"></div>
+                              <td>Italic</td>
+                              <td><code>&lt;i&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><i>Obtuse Mystical Being</i></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-em"></div>
+                              <td>Emphasized</td>
+                              <td><code>&lt;em&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><em>Obtuse Mystical Being</em></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-mark"></div>
+                              <td>Marked</td>
+                              <td><code>&lt;mark&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><mark>Obtuse Mystical Being</mark></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-small"></div>
+                              <td>Small</td>
+                              <td><code>&lt;small&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><small>Obtuse Mystical Being</small></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-del"></div>
+                              <td>Deleted</td>
+                              <td><code>&lt;del&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><del>Obtuse Mystical Being</del></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-ins"></div>
+                              <td>Inserted</td>
+                              <td><code>&lt;ins&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><ins>Obtuse Mystical Being</ins></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-sub"></div>
+                              <td>Subscript</td>
+                              <td><code>&lt;sub&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><sub>Obtuse Mystical Being</sub></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-sup"></div>
+                              <td>Superscript</td>
+                              <td><code>&lt;sup&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><sup>Obtuse Mystical Being</sup></code></td>
+                            </tr>
+                            <tr>
+                              <td><div class="docs-micro-swatch highlight-u"></div>
+                              <td>Underline</td>
+                              <td><code>&lt;u&gt;</code></td>
+                              <td><code class="rainbow-highlighter"><u>Obtuse Mystical Being</u></code></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-sm-6">
+                        <p><strong>Example SCSS with Code Highlighting</strong></p>
+                        <pre class="rainbow-highlighter"><code><b>/*<br/>  Basic Button<br/>  -------------------------------------------------<br/>*/</b><br/><br/><mark>@transition-time</mark>: 0.25s;<br/><br/><sup>.btn</sup> {<br/>  <i>height</i>: <strong>32px</strong>;<br/>  <i>line-height</i>: <strong>32px</strong>;<br/>  <i>border-radius</i>: <strong>4px</strong>;<br/>  <i>padding</i>: <strong>0 13px</strong>;<br/>  <i>font-size</i>: <strong>15px</strong>;<br/>  <i>font-weight</i>: <strong>500</strong>;<br/>  <i>background-color</i>: <mark>@btn-default-bg</mark>;<br/><u>  <i>border</i>: <strong>none</strong>;<br/>  <i>text-align</i>: <strong>center</strong>;<br/>  <i>color</i>: <mark>@btn-default-text</mark>;<br/></u><br/>  <i>transition</i>: <strong><br/>    color <mark>@transition-time</mark> ease</strong>,<strong><br/>    background-color <mark>@transition-time</mark> ease</strong>;<br/><br/><b>/* Hover State */</b><br/><ins>&</ins><del>:hover</del> {<br/>  <i>cursor</i>: <strong>pointer</strong>;<br/>  <i>background-color</i>: <mark>@btn-default-bg-hover</mark>;<br/>  <i>color</i>: <mark>@btn-default-text-hover</mark>;<br/>}<br/><br/><b>/* Color Alternatives */</b><br/><ins>&</ins><sup>.blue</sup> {<br/>  <i>background-color</i>: <mark>@btn-blue-bg</mark>;<br/>  <i>color</i>: <mark>@btn-blue-text</mark>;<br/><br/>  <ins>&</ins><del>:hover</del> {<br/>    <i>background-color</i>: <mark>@btn-blue-bg-hover</mark>;<br/>    <i>color</i>: <mark>@btn-blue-text-hover</mark>;<br/>  }<br/>}<br/>}</code></pre>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../jquery-ui/jquery-ui.js"></script>
+    <script src="../../docs-magic.js"></script>
+  </body>
+</html>

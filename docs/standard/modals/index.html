@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,700,900,700italic' rel='stylesheet' type='text/css'>
+    <link href="../../img/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+    <title>Modals / Standard / Influx Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery UI CSS -->
+    <link href="../../jquery-ui/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../../dist/css/bootstrap-theme.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="ix-app">
+
+      <!-- Side Navbar -->
+      <nav class="ix-sidebar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand">
+              <a href="#">
+                <span class="icon cubo-uniform"></span>
+              </a>
+            </span>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle icon dash-f" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Standard</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header hidden-sm hidden-md hidden-lg">Components</li>
+                  <li class="navbar-label hidden-xs">Standard</li>
+                  <li><a href="../jumbotron/index.html">Jumbotron</a></li>
+                  <li><a href="../typography/index.html">Typography</a></li>
+                  <li><a href="../labels/index.html">Labels</a></li>
+                  <li><a href="../buttons/index.html">Buttons</a></li>
+                  <li><a href="../buttongroups/index.html">Button Groups</a></li>
+                  <li class="active"><a href="#">Modals</a></li>
+                  <li><a href="../forms/index.html">Forms</a></li>
+                  <li><a href="../tables/index.html">Tables</a></li>
+                  <li><a href="../panels/index.html">Panels</a></li>
+                  <li><a href="../badges/index.html">Badges</a></li>
+                  <li><a href="../tooltips/index.html">Tooltips</a></li>
+                  <li><a href="../popovers/index.html">Popovers</a></li>
+                  <li><a href="../dropdowns/index.html">Dropdowns</a></li>
+                  <li><a href="../navs/index.html">Navs</a></li>
+                  <li><a href="../navbars/index.html">Navbars</a></li>
+                  <li><a href="../alerts/index.html">Alerts</a></li>
+                  <li><a href="../progressbars/index.html">Progress Bars</a></li>
+                  <li><a href="../listgroups/index.html">List Groups</a></li>
+                  <li><a href="../wells/index.html">Wells</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle icon dash-e" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Custom</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header hidden-sm hidden-md hidden-lg">Components</li>
+                  <li class="navbar-label hidden-xs">Custom</li>
+                  <li><a href="../../custom/minimalpanels/index.html">Minimal Panels</a></li>
+                  <li><a href="../../custom/collapsiblepanels/index.html">Collapsible Panels</a></li>
+                  <li><a href="../../custom/heatmap/index.html">Heatmap Progress Bars</a></li>
+                  <li><a href="../../custom/slidertoggles/index.html">Slider Toggles</a></li>
+                  <li><a href="../../custom/hero/index.html">Hero</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle icon wrenches" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Utilities</a>
+                <ul class="dropdown-menu">
+                  <li class="navbar-label hidden-xs">Utilities</li>
+                  <li><a href="../../utilities/colorpalette/index.html">Color Palette</a></li>
+                  <li><a href="../../utilities/iconfont/index.html">Icon Font</a></li>
+                  <li><a href="../../utilities/type-tools/index.html">Typography Tools</a></li>
+                  <li><a href="../../utilities/margin-utilities/index.html">Margin / Padding Utilities</a></li>
+                  <li><a href="../../utilities/code-highlighting/index.html">Code Highlighting</a></li>
+                  <li><a href="../../utilities/flexbox/index.html">Flex Box Utilities</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://github.com/influxdata/influx-theme" class="icon github">Github</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <!-- App Heading -->
+      <nav class="ix-app-heading">
+        <div class="container">
+          <div class="ix-app-heading--container">
+          <div class="ix-app-heading--left">
+            <h1 class="ix-app-title">Modals</h1>
+          </div>
+          <div class="ix-app-heading--right">
+            <a href="../buttongroups/index.html" class="btn btn-sm btn-default">Previous</a>
+            <a href="../forms/index.html" class="btn btn-sm btn-default">Next</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- App Wrapper -->
+      <div class="ix-app-wrapper">
+        
+        <!-- Modals -->
+        <section class="docs-section">
+          <div class="container">
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-modals"></a>
+              <a href="#section-modals">
+                <h1>Modals</h1>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h2 class="panel-title">How to Use</h2>
+                  </div>
+                  <div class="panel-body">
+                    <p><strong>Definition from <a href="http://www.webopedia.com/TERM/M/modal_window.html" taret="_blank">Webopedia</a></strong></p>
+                    <blockquote><small>A modal window is any type of window that is a child (secondary window) to a parent window and usurps the parent's control. It is commonly associated with an Internet Web site pop-up window that stays in front of the original window.  A user may not press any controls or enter any information on the parent window (the original window which opened the modal) until the modal has been closed. A modal window is commonly used when the author wants to retain the user's focus on the information in the modal as it is impossible for the user to interact with the other windows of the same process.</small></blockquote>
+                    <p><strong>Modals & UX</strong><br/>Modals are one of the most extreme ways to get a user's attention. Hence the name, modals (or "Modal Dialogs", "Modal Windows") cause a complete shift in the modality of the user. Thus it is best to only use a modal when it feels expected, in the interest of reducing cognitive overhead.</p>
+                    <p><strong>Examples of when to use a Modal</strong></p>
+                    <ul>
+                      <li>User exits current view without saving changes<br/><small>This action could have expensive consequences, so it is worth it to hijack the user's attention</small></li>
+                      <li>User deletes a large amount of data<br/><small>Also an expensive action, wise to double check before completing.</small></li>
+                      <li>User clicks on a thumbnail<br/><small>It is common for thumbnails (or other elements with zoom affordance) to trigger a modal with a larger version of the same thing</small></li>
+                    </ul>
+                    <p><strong>Transparency and Context Switching</strong><br/>Switching contexts is super expensive for the user, and some user flows have too much context switching. Modals provide a great way to focus the user on a (usually) small experience without completely divorcing them from their previous task. The transparent background underneath Modals tells the user that they haven't completely left what they were just doing. It's as if the interface is saying "Do this real quick then I'll be out of your way". In effect, modals are micro-pages layered on top of an existing page.</p>
+                    <p>The smaller a Modal is, the less "in your face" it feels. It is best to keep modals as small as possible.</p>
+                    <p><strong>How not to use a Modal</strong><br/>If you aren't sure whether a modal is the appropriate interaction, see if there are other less intrusive means such as a <a href="#">Popover</a>. In most cases, the modal feels heavyhanded when other options are available.</p>
+                    <hr/>
+                    <p><strong>Implementation</strong><br/>See <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Bootstrap Docs: Javascript - Modals</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h2 class="panel-title">Modal Sizes</h2>
+                  </div>
+                  <div class="panel-body">
+                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#example-regular-modal">Regular Modal</button>
+                    <br/><br/>
+                    <pre data-lang="html"><code>&lt;div class="modal-dialog" role="document"&gt;<br/>  &lt;div class="modal-content"&gt;<br/>    ...<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+                    <hr/>
+                    <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#example-large-modal">Large Modal</button>
+                    <br/><br/>
+                    <pre data-lang="html"><code>&lt;div class="modal-dialog modal-lg" role="document"&gt;<br/>  &lt;div class="modal-content"&gt;<br/>    ...<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+                    <hr/>
+                    <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#example-small-modal">Small Modal</button>
+                    <br/><br/>
+                    <pre data-lang="html"><code>&lt;div class="modal-dialog modal-sm" role="document"&gt;<br/>  &lt;div class="modal-content"&gt;<br/>    ...<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+                  </div>
+                </div><!-- / .panel -->
+              </div><!-- / .col-md-4 -->
+            </div><!-- / .row -->
+          </div>
+        </section>
+
+          <!-- Example Modal -->
+          <div class="modal fade" id="example-regular-modal" tabindex="-1" role="dialog" aria-labelledby="addNodeLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="addNodeLabel">Feedback</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Tell us more about your issue, and we'll do our best to take care of it</p>
+                  <form>
+                    <div class="form-group col-md-6">
+                      <label for="modalFormEmail">Email address</label>
+                      <input type="email" class="form-control" id="modalFormEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="modalFormPassword">Password</label>
+                      <input type="password" class="form-control" id="modalFormPassword" placeholder="Password">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="modalFormSelect"># of Rabbits</label>
+                      <select class="form-control" id="modalFormSelect">
+                        <option>100</option>
+                        <option>200</option>
+                        <option>300</option>
+                        <option>400</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label for="modalFormNumber"># of Souls</label>
+                      <input type="number" class="form-control" id="modalFormNumber" value="6" min="1" max="666">
+                    </div>
+                    <div class="form-group col-md-5">
+                      <label for="modalFormDate">Exp. Date</label>
+                      <input type="date" class="form-control" id="modalFormDate">
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label for="modalFormParagraph">What is your quest?</label>
+                      <textarea class="form-control" id="modalFormParagraph" rows="5" placeholder="Ex: I seek the holy grail!"></textarea>
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label for="modalInputDisabled" class="sr-only">Disabled</label>
+                      <input type="text" class="form-control disabled" disabled id="modalInputDisabled" placeholder="Disabled" value="Disabled">
+                    </div>
+                    <div class="form-group col-md-3 has-success">
+                      <label for="modalInputSuccess" class="sr-only">Success</label>
+                      <input type="text" class="form-control" id="modalInputSuccess" placeholder="Success" value="Success">
+                    </div>
+                    <div class="form-group col-md-3 has-warning">
+                      <label for="modalInputWarning" class="sr-only">Warning</label>
+                      <input type="text" class="form-control" id="modalInputWarning" placeholder="Warning" value="Warning">
+                    </div>
+                    <div class="form-group col-md-3 has-error">
+                      <label for="modalInputError" class="sr-only">Error</label>
+                      <input type="text" class="form-control" id="modalInputError" placeholder="Error" value="Error">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-success">Add Nodes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Large Modal -->
+          <div class="modal fade" id="example-large-modal" tabindex="-1" role="dialog" aria-labelledby="addNodeLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="addNodeLabel">Feedback</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Tell us more about your issue, and we'll do our best to take care of it</p>
+                  <form>
+                    <div class="form-group col-md-6">
+                      <label for="modalFormEmail">Email address</label>
+                      <input type="email" class="form-control" id="modalFormEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="modalFormPassword">Password</label>
+                      <input type="password" class="form-control" id="modalFormPassword" placeholder="Password">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="modalFormSelect"># of Rabbits</label>
+                      <select class="form-control" id="modalFormSelect">
+                        <option>100</option>
+                        <option>200</option>
+                        <option>300</option>
+                        <option>400</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label for="modalFormNumber"># of Souls</label>
+                      <input type="number" class="form-control" id="modalFormNumber" value="6" min="1" max="666">
+                    </div>
+                    <div class="form-group col-md-5">
+                      <label for="modalFormDate">Exp. Date</label>
+                      <input type="date" class="form-control" id="modalFormDate">
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label for="modalFormParagraph">What is your quest?</label>
+                      <textarea class="form-control" id="modalFormParagraph" rows="5" placeholder="Ex: I seek the holy grail!"></textarea>
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label for="modalInputDisabled" class="sr-only">Disabled</label>
+                      <input type="text" class="form-control disabled" disabled id="modalInputDisabled" placeholder="Disabled" value="Disabled">
+                    </div>
+                    <div class="form-group col-md-3 has-success">
+                      <label for="modalInputSuccess" class="sr-only">Success</label>
+                      <input type="text" class="form-control" id="modalInputSuccess" placeholder="Success" value="Success">
+                    </div>
+                    <div class="form-group col-md-3 has-warning">
+                      <label for="modalInputWarning" class="sr-only">Warning</label>
+                      <input type="text" class="form-control" id="modalInputWarning" placeholder="Warning" value="Warning">
+                    </div>
+                    <div class="form-group col-md-3 has-error">
+                      <label for="modalInputError" class="sr-only">Error</label>
+                      <input type="text" class="form-control" id="modalInputError" placeholder="Error" value="Error">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-success">Add Nodes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small Modal -->
+          <div class="modal fade" id="example-small-modal" tabindex="-1" role="dialog" aria-labelledby="addNodeLabel">
+            <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="addNodeLabel">Report a Bug</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Tell us more about the issue, and we'll do our best to take care of it</p>
+                  <form>
+                    <div class="form-group col-md-12">
+                      <label for="modalFormEmail">Which Product were you using?</label>
+                      <select class="form-control" id="modalFormEmail">
+                        <option>Telegraf</option>
+                        <option>InfluxDB</option>
+                        <option>Chronograf</option>
+                        <option>Kapacitor</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label for="modalFormParagraph">Describe the bug</label>
+                      <textarea class="form-control" id="modalFormParagraph" rows="5" placeholder="Ex: The modal wouldn't load for me"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-success">Submit Report</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../jquery-ui/jquery-ui.js"></script>
+    <script src="../../docs-magic.js"></script>
+  </body>
+</html>

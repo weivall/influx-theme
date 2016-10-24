@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,700,900,700italic' rel='stylesheet' type='text/css'>
+    <link href="../../img/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+    <title>Tables / Standard / Influx Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery UI CSS -->
+    <link href="../../jquery-ui/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../../dist/css/bootstrap-theme.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="ix-app">
+
+      <!-- Side Navbar -->
+      <nav class="ix-sidebar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand">
+              <a href="#">
+                <span class="icon cubo-uniform"></span>
+              </a>
+            </span>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle icon dash-f" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Standard</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header hidden-sm hidden-md hidden-lg">Components</li>
+                  <li class="navbar-label hidden-xs">Standard</li>
+                  <li><a href="../jumbotron/index.html">Jumbotron</a></li>
+                  <li><a href="../typography/index.html">Typography</a></li>
+                  <li><a href="../labels/index.html">Labels</a></li>
+                  <li><a href="../buttons/index.html">Buttons</a></li>
+                  <li><a href="../buttongroups/index.html">Button Groups</a></li>
+                  <li><a href="../modals/index.html">Modals</a></li>
+                  <li><a href="../forms/index.html">Forms</a></li>
+                  <li class="active"><a href="#">Tables</a></li>
+                  <li><a href="../panels/index.html">Panels</a></li>
+                  <li><a href="../badges/index.html">Badges</a></li>
+                  <li><a href="../tooltips/index.html">Tooltips</a></li>
+                  <li><a href="../popovers/index.html">Popovers</a></li>
+                  <li><a href="../dropdowns/index.html">Dropdowns</a></li>
+                  <li><a href="../navs/index.html">Navs</a></li>
+                  <li><a href="../navbars/index.html">Navbars</a></li>
+                  <li><a href="../alerts/index.html">Alerts</a></li>
+                  <li><a href="../progressbars/index.html">Progress Bars</a></li>
+                  <li><a href="../listgroups/index.html">List Groups</a></li>
+                  <li><a href="../wells/index.html">Wells</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle icon dash-e" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Custom</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header hidden-sm hidden-md hidden-lg">Components</li>
+                  <li class="navbar-label hidden-xs">Custom</li>
+                  <li><a href="../../custom/minimalpanels/index.html">Minimal Panels</a></li>
+                  <li><a href="../../custom/collapsiblepanels/index.html">Collapsible Panels</a></li>
+                  <li><a href="../../custom/heatmap/index.html">Heatmap Progress Bars</a></li>
+                  <li><a href="../../custom/slidertoggles/index.html">Slider Toggles</a></li>
+                  <li><a href="../../custom/hero/index.html">Hero</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle icon wrenches" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Utilities</a>
+                <ul class="dropdown-menu">
+                  <li class="navbar-label hidden-xs">Utilities</li>
+                  <li><a href="../../utilities/colorpalette/index.html">Color Palette</a></li>
+                  <li><a href="../../utilities/iconfont/index.html">Icon Font</a></li>
+                  <li><a href="../../utilities/type-tools/index.html">Typography Tools</a></li>
+                  <li><a href="../../utilities/margin-utilities/index.html">Margin / Padding Utilities</a></li>
+                  <li><a href="../../utilities/code-highlighting/index.html">Code Highlighting</a></li>
+                  <li><a href="../../utilities/flexbox/index.html">Flex Box Utilities</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://github.com/influxdata/influx-theme" class="icon github">Github</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <!-- App Heading -->
+      <nav class="ix-app-heading">
+        <div class="container">
+          <div class="ix-app-heading--container">
+          <div class="ix-app-heading--left">
+            <h1 class="ix-app-title">Tables</h1>
+          </div>
+          <div class="ix-app-heading--right">
+            <a href="../forms/index.html" class="btn btn-sm btn-default">Previous</a>
+            <a href="../panels/index.html" class="btn btn-sm btn-default">Next</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- App Wrapper -->
+      <div class="ix-app-wrapper">
+        
+        <!-- Tables -->
+        <section class="docs-section">
+          <div class="container">
+            <div class="page-header">
+              <a class="page-header--anchor" id="section-tables"></a>
+              <a href="#section-tables">
+                <h1>Tables</h1>
+              </a>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Basic Table</h3>
+                  </div>
+                  <div class="panel-body">
+                    <p>You know the drill, tables have been around since 1993. Tables in this theme are intended to always be on a white background. In most cases this means limiting table usage to within wells or panels. To inherit proper table styles, do the following:</p>
+                    <pre data-lang="html"><code>&lt;table class="table"&gt; ... &lt;/table&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <hr class="dark"/>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Bordered Table</h3>
+                  </div>
+                  <div class="panel-body">
+                    <p>For those sticky situations when you need a stupid obvious table</p>
+                    <pre><code>&lt;table class="table table-bordered"&gt; ... &lt;/table&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-body">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <hr class="dark"/>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Striped Table</h3>
+                  </div>
+                  <div class="panel-body">
+                    <p>Highlighting even or odd rows can massively improve the user's ability to scan the table</p>
+                    <pre><code>&lt;table class="table table-striped"&gt; ... &lt;/table&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-body">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <hr class="dark"/>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Condensed Table</h3>
+                  </div>
+                  <div class="panel-body">
+                    <p>Sometimes you have a really dense table, and you don't want it to take up a ton of space. Condensed Tables (hence the name) shrink the breathing room of the table. This can be harder to scan but does make more efficient use of the space.</p>
+                    <pre><code>&lt;table class="table table-condensed"&gt; ... &lt;/table&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-body">
+                    <table class="table table-condensed">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <hr class="dark"/>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Mix & Match Table Styles</h3>
+                  </div>
+                  <div class="panel-body">
+                    <p>All of the table modifier classes above can be combined. Here's an example of a fully loaded table:</p>
+                    <pre><code>&lt;table class="table table-bordered table-striped table-condensed"&gt; ... &lt;/table&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-body">
+                    <table class="table table-bordered table-striped table-condensed">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <hr class="dark"/>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Responsive Tables</h3>
+                  </div>
+                  <div class="panel-body">
+                    <p>The name is somewhat misleading, as the styles are unaffected by screen size. This is for when you have a table with too much stuff in it and it's starting to look cramped. Instead of trying to crush it all in there, "Responsive" Tables enable the table to scroll horizontally.</p>
+                    <p><em>NOTE:</em><br/>Table cells inside a Responsive Table do not wrap text. This is partially to encourage overflow (makes it more obvious you can scroll), and to preserve legibility within individual cells. If you are displaying a long string (for example) you may want to consider truncating it as much as possible.</p>
+                    <pre><code>&lt;div class="table-responsive"&gt;<br/>  &lt;table class="table table-bordered"&gt; ... &lt;/table&gt;<br/>&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-body">
+                    <div class="table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                            <th>Member Since</th>
+                            <th>Region</th>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Jersey</th>
+                            <th>Height</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>12/21/2004</td>
+                            <td>US-West</td>
+                            <td>24</td>
+                            <td>8</td>
+                            <td>#22</td>
+                            <td>5'11"</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>3/16/2007</td>
+                            <td>US-West</td>
+                            <td>33</td>
+                            <td>25</td>
+                            <td>#07</td>
+                            <td>5'10"</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>7/11/2011</td>
+                            <td>US-West</td>
+                            <td>13</td>
+                            <td>6</td>
+                            <th>#13</th>
+                            <td>6'2"</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../jquery-ui/jquery-ui.js"></script>
+    <script src="../../docs-magic.js"></script>
+  </body>
+</html>
