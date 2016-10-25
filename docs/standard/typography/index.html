@@ -116,56 +116,120 @@
 
       <!-- App Wrapper -->
       <div class="ix-app-wrapper">
-      
-        <!-- Typography -->
+
+        <!-- Type Scale -->
         <section class="docs-section">
           <div class="container">
-            <!-- Typography -->
+
             <div class="row">
               <div class="col-sm-12">
                 <div class="page-header">
-                  <a class="page-header--anchor" id="section-typography"></a>
-                  <a href="#section-typography">
-                    <h1>Typography</h1>
+                  <a class="page-header--anchor" id="type-scale"></a>
+                  <a href="#type-scale">
+                    <h1>The Type Scale</h1>
                   </a>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-5 col-md-4">
                 <div class="panel panel-info">
                   <div class="panel-heading">
-                    <h2 class="panel-title">Examples</h2>
+                    <h2 class="panel-title">What Is It?</h2>
                   </div>
                   <div class="panel-body">
-                    <h1>Heading 1 <small>Sub-Heading</small></h1>
-                    <h2>Heading 2 <small>Sub-Heading</small></h2>
-                    <h3>Heading 3 <small>Sub-Heading</small></h3>
-                    <h4>Heading 4 <small>Sub-Heading</small></h4>
-                    <h5>Heading 5 <small>Sub-Heading</small></h5>
-                    <h6>Heading 6 <small>Sub-Heading</small></h6>
-                    <p>Four loko polaroid tumblr, bicycle rights green juice fashion axe thundercats poutine lomo cray disrupt. Salvia <a href="#">bushwick lo-fi sriracha</a>, cold-pressed farm-to-table pork belly. Hella humblebrag mlkshk, whatever brunch selvage keytar wolf skateboard pug 3 wolf moon normcore. Viral cred ennui, post-ironic blue bottle echo park pop-up mixtape mustache <code>#swag</code> everyday carry kinfolk cardigan tousled sustainable. Direct trade ennui williamsburg kale chips, brooklyn semiotics meditation ugh kogi. Mixtape tilde polaroid meh flannel art party sriracha, authentic kickstarter keytar intelligentsia etsy. Godard etsy plaid pop-up kinfolk roof party.</p>
-                    <p><small>Synth bitters you probably haven't heard of them, poutine brunch narwhal locavore affogato ugh squid organic shabby chic put a bird on it. Meditation man bun irony, bitters photo booth raw denim messenger bag affogato craft beer. Lyft yuccie snackwave, etsy poutine air plant tattooed tilde.</small></p>
+                    <p>A Type Scale is a ratio that controls the proportions of a corresponding Type System. The Scale is a single number used to calculate leading, font size, and margins for each type element. Using a scale ensures that the type grows in pleasing and consistent proportions.</p>
+                    <p>The Type Scale in this theme is <b>1.19</b>, which is on the smaller end. Large format print ads use type scales as big as 1.9 for maximum contrast between heading sizes. Some like to use the Golden Ratio as their type scale, but I find it too extreme for Software UI usage.</p>
+                    <p><strong>Things to Consider:</strong><br/>There will always be 6 heading sizes in the browser. It is easiest to pick the Base size (H6) first, then the largest possible size (H1). Adjust the scale until the largest size is equal to your largest.</p>
+                    <p><strong>Why is H6 the same as the Base size?</strong><br/>Since Paragraphs also use the Base size, it may seem natural to make the smallest heading larger. However, most heading styles are bold and the smallest doesn't need a larger font size to be distinct from Paragraphs.</p>
                   </div>
                 </div><!-- / .panel -->
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-7 col-md-8">
                 <div class="panel panel-info">
                   <div class="panel-heading">
-                    <h2 class="panel-title">Other Type Elements</h2>
+                    <h2 class="panel-title">How It Works</h2>
                   </div>
                   <div class="panel-body">
-                    <ul> 
-                      <li>Unordered List A</li>
-                      <li>Unordered List B</li>
-                      <li>Unordered List C</li>
-                    </ul>
-                    <ol>
-                      <li>Ordered List A</li>
-                      <li>Ordered List B</li>
-                      <li>Ordered List C</li>
-                    </ol>
-                    <blockquote>Salvia pug coloring <strong>book fap</strong> poke try-hard. Occupy hella flannel, iPhone ennui pinterest unicorn locavore everyday carry pok pok. DIY copper mug cardigan you probably haven't heard of them chia, <a href="#">neutra normcore</a> beard pok pok quinoa ramps. Cardigan brooklyn celiac, tumeric butcher af brunch before they sold out humblebrag ramps locavore taxidermy.</blockquote>
-                    <hr/>
-                    <p>Skateboard banjo gochujang tbh, art party YOLO listicle kickstarter enamel pin literally <mark>neutra vice truffaut selvage coloring book.</mark> Mlkshk try-hard pok pok, tbh austin put a bird on it keytar blog. Pop-up pour-over jianbing plaid, waistcoat 8-bit retro pork belly locavore.</p>
+                    <p>See the Scale column for example implementation. Font weights and letter spacing have been hand adjusted for each heading. Values for Final, Line Height, and Margin have all been rounded up to the nearest whole number.</p>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Element</th>
+                          <th>Base</th>
+                          <th><span class="text-color-success">Scale</span></th>
+                          <th>Final</th>
+                          <th>Line Height</th>
+                          <th>Margin</th>
+                          <th>Preview</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><code>&lt;h1&gt;</code></td>
+                          <td><code>14.5px</code></td>
+                          <td><code><u>1.19<sup>5</sup></u></code></td>
+                          <td><code>35px</code></td>
+                          <td><code>43.75px</code></td>
+                          <td><code>19.25px</code></td>
+                          <td><h1>Hello Boss Mon!</h1></td>
+                        </tr>
+                        <tr>
+                          <td><code>&lt;h2&gt;</code></td>
+                          <td><code>14.5px</code></td>
+                          <td><code><u>1.19<sup>4</sup></u></code></td>
+                          <td><code>30px</code></td>
+                          <td><code>37.5px</code></td>
+                          <td><code>16.5px</code></td>
+                          <td><h2>Hello Boss Mon!</h2></td>
+                        </tr>
+                        <tr>
+                          <td><code>&lt;h3&gt;</code></td>
+                          <td><code>14.5px</code></td>
+                          <td><code><u>1.19<sup>3</sup></u></code></td>
+                          <td><code>25px</code></td>
+                          <td><code>31.5px</code></td>
+                          <td><code>13.75px</code></td>
+                          <td><h3>Hello Boss Mon!</h3></td>
+                        </tr>
+                        <tr>
+                          <td><code>&lt;h4&gt;</code></td>
+                          <td><code>14.5px</code></td>
+                          <td><code><u>1.19<sup>2</sup></u></code></td>
+                          <td><code>21px</code></td>
+                          <td><code>26.25px</code></td>
+                          <td><code>11.55px</code></td>
+                          <td><h4>Hello Boss Mon!</h4></td>
+                        </tr>
+                        <tr>
+                          <td><code>&lt;h5&gt;</code></td>
+                          <td><code>14.5px</code></td>
+                          <td><code><u>1.19</u></code></td>
+                          <td><code>18px</code></td>
+                          <td><code>22.5px</code></td>
+                          <td><code>9.9px</code></td>
+                          <td><h5>Hello Boss Mon!</h5></td>
+                        </tr>
+                        <tr>
+                          <td><code>&lt;h6&gt;</code></td>
+                          <td><code>14.5px</code></td>
+                          <td><code><u>1</u></code></td>
+                          <td><code>14.5px</code></td>
+                          <td><code>18.125px</code></td>
+                          <td><code>7.9px</code></td>
+                          <td><h6>Hello Boss Mon!</h6></td>
+                        </tr>
+                        <tr>
+                          <td><code>&lt;p&gt;</code></td>
+                          <td><code>14.5px</code></td>
+                          <td><code><u>1</u></code></td>
+                          <td><code>14.5px</code></td>
+                          <td><code>22.475px</code></td>
+                          <td><code>7.9px</code></td>
+                          <td><p>Hello Boss Mon!</p></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <p>* Top Margin is always <code>8px</code><br/>** Bottom Margin is <code>Final Size * 0.55</code><br/>*** Line Height is <code>Final Size * 1.25</code><br/>**** Paragraphs have a Line Height multiplier of <code>1.55</code> for more breathable text.</p>
                   </div>
                 </div><!-- / .panel -->
               </div>
@@ -173,6 +237,120 @@
             </div><!-- /row -->
           </div>
         </section>
+      
+        <!-- Examples -->
+        <section class="docs-section">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="page-header">
+                  <a class="page-header--anchor" id="examples"></a>
+                  <a href="#examples">
+                    <h1>Examples</h1>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="panel panel-info">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-sm-4 col-md-3">
+                        <h4>Headings</h4>
+                        <pre data-lang="html"><code>&lt;h1&gt;<br/>  Heading 1<br/>  &lt;small&gt;Sub-Heading&lt;/small&gt;<br/>&lt;/h1&gt;</code></pre>
+                      </div>
+                      <div class="col-sm-8 col-md-9">
+                        <h1>Heading 1 <small>Sub-Heading</small></h1>
+                        <h2>Heading 2 <small>Sub-Heading</small></h2>
+                        <h3>Heading 3 <small>Sub-Heading</small></h3>
+                        <h4>Heading 4 <small>Sub-Heading</small></h4>
+                        <h5>Heading 5 <small>Sub-Heading</small></h5>
+                        <h6>Heading 6 <small>Sub-Heading</small></h6>
+                      </div>
+                    </div>
+
+                    <hr/>
+                    
+                    <div class="row">
+                      <div class="col-sm-4 col-md-3">
+                        <h4>Paragraph</h4>
+                        <pre data-lang="html"><code>&lt;p&gt;<br/>  ...<br/>&lt;/p&gt;</code></pre>
+                        <pre data-lang="html"><code>&lt;p&gt;<br/>  &lt;small&gt;<br/>    ...<br/>  &lt;/small&gt;<br/>&lt;/p&gt;</code></pre>
+                      </div>
+                      <div class="col-sm-8 col-md-9">
+                        <p>Four loko polaroid tumblr, bicycle rights green juice fashion axe thundercats poutine lomo cray disrupt. Salvia <a href="#">bushwick lo-fi sriracha</a>, cold-pressed farm-to-table pork belly. Hella humblebrag mlkshk, whatever brunch selvage keytar wolf skateboard pug 3 wolf moon normcore. Viral cred ennui, post-ironic blue bottle echo park pop-up mixtape mustache <code>#swag</code> everyday carry kinfolk cardigan tousled sustainable. Direct trade ennui williamsburg kale chips, brooklyn semiotics meditation ugh kogi. Mixtape tilde polaroid meh flannel art party sriracha, authentic kickstarter keytar intelligentsia etsy. Godard etsy plaid pop-up kinfolk roof party.</p>
+                        <p><small>Synth bitters you probably haven't heard of them, poutine brunch narwhal locavore affogato ugh squid organic shabby chic put a bird on it. Meditation man bun irony, bitters photo booth raw denim messenger bag affogato craft beer. Lyft yuccie snackwave, etsy poutine air plant tattooed tilde.</small></p>
+                      </div>
+                    </div>
+
+                    <hr/>
+                    
+                    <div class="row">
+                      <div class="col-sm-4 col-md-3">
+                        <h4>Lists</h4>
+                        <pre data-lang="html"><code>&lt;ul&gt;<br/>  ...<br/>&lt;/ul&gt;</code></pre>
+                        <pre data-lang="html"><code>&lt;ol&gt;<br/>  ...<br/>&lt;/ol&gt;</code></pre>
+                      </div>
+                      <div class="col-sm-8 col-md-9">
+                        <ul> 
+                          <li>Unordered List A</li>
+                          <li>Unordered List B</li>
+                          <li>Unordered List C</li>
+                        </ul>
+                        <br/><br/>
+                        <ol>
+                          <li>Ordered List A</li>
+                          <li>Ordered List B</li>
+                          <li>Ordered List C</li>
+                        </ol>
+                      </div>
+                    </div>
+
+                    <hr/>
+                    
+                    <div class="row">
+                      <div class="col-sm-4 col-md-3">
+                        <h4>Blockquote</h4>
+                        <pre data-lang="html"><code>&lt;blockquote&gt;<br/>  ...<br/>&lt;/blockquote&gt;</code></pre>
+                      </div>
+                      <div class="col-sm-8 col-md-9">
+                        <blockquote>Salvia pug coloring <strong>book fap</strong> poke try-hard. Occupy hella flannel, iPhone ennui pinterest unicorn locavore everyday carry pok pok. DIY copper mug cardigan you probably haven't heard of them chia, <a href="#">neutra normcore</a> beard pok pok quinoa ramps. Cardigan brooklyn celiac, tumeric butcher af brunch before they sold out humblebrag ramps locavore taxidermy.</blockquote>
+                      </div>
+                    </div>
+
+                    <hr/>
+                    
+                    <div class="row">
+                      <div class="col-sm-4 col-md-3">
+                        <h4>Horizontal Rule</h4>
+                        <pre data-lang="html"><code>&lt;hr/&gt;<br/>&lt;hr class="dark" /&gt;</code></pre>
+                      </div>
+                      <div class="col-sm-8 col-md-9">
+                        <hr/>
+                        <hr class="dark"/>
+                      </div>
+                    </div>
+
+                    <hr/>
+                    
+                    <div class="row">
+                      <div class="col-sm-4 col-md-3">
+                        <h4>Marked Text</h4>
+                        <pre data-lang="html"><code>&lt;mark&gt; ... &lt;/mark&gt;</code></pre>
+                      </div>
+                      <div class="col-sm-8 col-md-9">
+                        <p>Skateboard banjo gochujang tbh, art party YOLO listicle kickstarter enamel pin literally <mark>neutra vice truffaut selvage coloring book.</mark> Mlkshk try-hard pok pok, tbh austin put a bird on it keytar blog. Pop-up pour-over jianbing plaid, waistcoat 8-bit retro pork belly locavore.</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div><!-- / .panel -->
+              </div>
+
+            </div><!-- /row -->
+          </div>
+        </section>
+
       </div>
 
     </div>

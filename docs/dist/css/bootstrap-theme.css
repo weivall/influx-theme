@@ -555,6 +555,10 @@ html {
   height: -webkit-calc(100% -  60px );
   height:         calc(100% -  60px );
   overflow: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 .ix-app-splash::-webkit-scrollbar {
   width: 14px;
@@ -4314,11 +4318,27 @@ code u {
   text-decoration: none;
   background-color: inherit;
 }
+code sup,
+code sub {
+  position: relative;
+  margin-left: 2px;
+  font-size: 85%;
+  color: inherit;
+}
+code sup {
+  top: -4px;
+}
+code sub {
+  top: 4px;
+}
 code b {
   color: #ff8564;
 }
 code i {
   color: #5aa3fa;
+}
+code u {
+  color: #4ed8a0;
 }
 code.rainbow-highlighter {
   text-shadow: none;

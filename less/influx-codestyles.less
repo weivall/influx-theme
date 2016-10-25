@@ -34,8 +34,22 @@ code {
     padding: 0;
   }
 
+  sup, sub {
+    position: relative;
+    font-size: 85%;
+    margin-left: 2px;
+    color: inherit;
+  }
+  sup {
+    top: -4px;
+  }
+  sub {
+    top: 4px;
+  }
+
   b { color: @c-dreamsicle;}
   i { color: @c-pool;}
+  u { color: @c-rainforest;}
 
   &.rainbow-highlighter {
     text-shadow: none;
