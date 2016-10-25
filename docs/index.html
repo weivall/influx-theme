@@ -35,7 +35,7 @@
               <span class="icon-bar"></span>
             </button>
             <span class="navbar-brand">
-              <a href="index.html">
+              <a href="#">
                 <span class="icon cubo-uniform"></span>
               </a>
             </span>
@@ -43,10 +43,18 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle icon dash-f" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Standard</a>
+                <a href="#" class="dropdown-toggle icon cube" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Getting Started</a>
                 <ul class="dropdown-menu">
-                  <li class="dropdown-header hidden-sm hidden-md hidden-lg">Components</li>
-                  <li class="navbar-label hidden-xs">Standard</li>
+                  <li class="navbar-label hidden-xs">Getting Started</li>
+                  <li><a href="getting-started/overview/index.html">Overview</a></li>
+                  <li><a href="getting-started/assets/index.html">Assets</a></li>
+                  <li><a href="getting-started/grid-system/index.html">Using The Responsive Grid</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle icon component-a" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Components</a>
+                <ul class="dropdown-menu">
+                  <li class="navbar-label hidden-xs">Components</li>
                   <li><a href="standard/jumbotron/index.html">Jumbotron</a></li>
                   <li><a href="standard/typography/index.html">Typography</a></li>
                   <li><a href="standard/labels/index.html">Labels</a></li>
@@ -69,10 +77,9 @@
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle icon dash-e" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Custom</a>
+                <a href="#" class="dropdown-toggle icon component-b" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Custom Components</a>
                 <ul class="dropdown-menu">
-                  <li class="dropdown-header hidden-sm hidden-md hidden-lg">Components</li>
-                  <li class="navbar-label hidden-xs">Custom</li>
+                  <li class="navbar-label hidden-xs">Custom Components</li>
                   <li><a href="custom/minimalpanels/index.html">Minimal Panels</a></li>
                   <li><a href="custom/collapsiblepanels/index.html">Collapsible Panels</a></li>
                   <li><a href="custom/heatmap/index.html">Heatmap Progress Bars</a></li>
@@ -92,8 +99,17 @@
                   <li><a href="utilities/flexbox/index.html">Flex Box Utilities</a></li>
                 </ul>
               </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle icon dash-e" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Layouts</a>
+                <ul class="dropdown-menu">
+                  <li class="navbar-label hidden-xs">Layouts</li>
+                  <li><a href="layouts/basic/index.html">Basic</a></li>
+                  <li><a href="layouts/fixed-navbar/index.html">Fixed Navbar</a></li>
+                  <li><a href="layouts/mr-fusion/index.html">Mr. Fusion</a></li>
+                </ul>
+              </li>
               <li>
-                <a href="https://github.com/influxdata/influx-theme" class="icon github">Github</a>
+                <a href="https://github.com/influxdata/influx-theme" target="_blank" class="icon github">Github</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -106,10 +122,50 @@
         <!-- Hero -->
         <div class="hero hero-light">
           <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2">
-                <h1>Influx Bootstrap Theme</h1>
+            <div class="row text-left">
+              <div class="col-xs-12">
                 <h4>Design Documentation &mdash; v0.12</h4>
+                <h1>Influx Bootstrap Theme</h1>
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h2 class="panel-title">Getting Started</h2>
+                  </div>
+                  <div class="panel-body">
+                    <p><a href="getting-started/overview/index.html">Overview</a></p>
+                    <p><a href="getting-started/overview/index.html">Assets In The Theme</a></p>
+                    <p><a href="getting-started/overview/index.html">Using The Responsive Grid</a></p>
+                    <p><a href="layouts/basic/index.html">Example Layout: Basic</a></p>
+                    <p><a href="layouts/fixed-nav/index.html">Example Layout: Fixed Navbar</a></p>
+                    <p><a href="layouts/mr-fusion/index.html">Example Layout: Mr. Fusion</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h2 class="panel-title">Component Reference</h2>
+                  </div>
+                  <div class="panel-body">
+                    <p><a href="standard/jumbotron/index.html">Standard Components</a></p>
+                    <p><a href="custom/minimalpanels/index.html">Custom Components</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h2 class="panel-title">Utilities</h2>
+                  </div>
+                  <div class="panel-body">
+                    <p><a href="utilities/iconfont/index.html">Icon Font</a></p>
+                    <p><a href="utilities/flexbox/index.html">Flex Box Utilities</a></p>
+                    <p><a href="utilities/colorpalette/index.html">Color Palette</a></p>
+                    <p><a href="utilities/margin-utilities/index.html">Margin & Padding Utilities</a></p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

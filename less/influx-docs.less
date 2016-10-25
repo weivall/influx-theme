@@ -1,0 +1,206 @@
+//
+// Icon Font Table
+// --------------------------------------------------
+
+table.table.icon-font-matrix {
+  border: none;
+  
+  tr > td {
+    text-align: center;
+    padding: 15px;
+    width: 20%;
+    border: none;
+
+    > * {
+      display: inline-block;
+      width: 100%;
+      vertical-align: middle;
+    }
+
+    span.icon {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+    strong {
+      margin-bottom: 8px;
+      opacity: 0.5;
+    }
+  }
+}
+
+//
+// Color Palette
+// --------------------------------------------------
+.docs-color-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.docs-color-column {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0 2px;
+
+  &:first-of-type {
+    padding-left: 0;
+  }
+  &:last-of-type {
+    padding-right: 0;
+  }
+}
+.docs-color-field {
+  background-color: transparent;
+  display: inline-block;
+  width: 80px;
+  font-weight: 300;
+  font-family: Consolas,"Lucida Console",Monaco,monospace;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: -6px;
+}
+.docs-color-swatch {
+  position: relative;
+  font-size: 14px;
+  margin: 0;
+  padding: 36px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: @g20-white;
+
+  &:first-of-type {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  &:last-of-type {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.light-bg {
+    color: @g8-storm;
+
+    .docs-color-field {
+      color: @g8-storm
+    }
+  }
+  h4, h5 {
+    position: absolute;
+    top: 8px;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.4;
+  }
+  h4 {
+    right: 8px;
+    font-weight: 600;
+  }
+  h5 {
+    font-weight: 900;
+    left: 8px;
+  }
+}
+
+.docs-micro-swatch {
+  width: 24px;
+  height: 12px;
+  border-radius: 6px;
+  display: inline-block;
+  vertical-align: middle;
+
+  &.highlight {
+    &-b { background-color: @code-highlight-a; }
+    &-strong { background-color: @code-highlight-b; }
+    &-i { background-color: @code-highlight-c; }
+    &-em { background-color: @code-highlight-d; }
+    &-mark { background-color: @code-highlight-e; }
+    &-small { background-color: @code-highlight-f; }
+    &-del { background-color: @code-highlight-g; }
+    &-ins { background-color: @code-highlight-h; }
+    &-sub { background-color: @code-highlight-i; }
+    &-sup { background-color: @code-highlight-j; }
+    &-u { background-color: @code-highlight-k; }
+  }
+}
+
+//
+// Docs Section
+// --------------------------------------------------
+section.docs-section {
+  width: 100%;
+  padding: 100px 0;
+  border-bottom: 2px solid @g17-whisper;
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
+
+  .page-header {
+    border-bottom: 0;
+  }
+}
+
+//
+// Example + Code Sample
+// --------------------------------------------------
+.panel.docs-example {
+  background-color: @g17-whisper;
+  box-shadow: inset 0 2px 5px 2px fadeout(@g0-obsidian, 97%);
+
+  .example {
+    padding: @ix-marg-e 0;
+  }
+
+  .panel-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    // .gradient-v(@g20-white,@g19-ghost);
+    background-color: transparent;
+    position: relative;
+
+    // Border
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 30px;
+      right: 30px;
+      height: 2px;
+      bottom: 0;
+      background-color: @g16-pearl;
+    }
+    // Label
+    &:before {
+      content: 'Example';
+      display: block;
+      position: absolute;
+      top: @ix-marg-c;
+      left: 30px;
+      font-size: @ix-text-base;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: @g14-chromium;
+    }
+  }
+  pre {
+    background-image: none;
+    background-color: transparent;
+    padding: @ix-marg-c 30px;
+    margin: 0;
+  }
+}
