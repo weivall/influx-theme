@@ -6181,6 +6181,9 @@ body.modal-open nav.navbar {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+table.table.icon-font-matrix {
+  border: none;
+}
 table.table.icon-font-matrix tr > td {
   width: 20%;
   padding: 15px;
