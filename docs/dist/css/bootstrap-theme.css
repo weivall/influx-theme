@@ -326,6 +326,21 @@ span.text-color-danger {
 .icon.component-a:before {
   content: "\e933";
 }
+.icon.pulse-a:before {
+  content: "\e934";
+}
+.icon.pulse-b:before {
+  content: "\e935";
+}
+.icon.pulse-c:before {
+  content: "\e936";
+}
+.icon.pulse-d:before {
+  content: "\e937";
+}
+.icon.pulse-e:before {
+  content: "\e938";
+}
 .icon.alert-triangle:before {
   content: "\f02d";
 }
